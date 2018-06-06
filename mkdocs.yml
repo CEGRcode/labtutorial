@@ -1,0 +1,10 @@
+site_name: BMB Lab Tutorial
+
+pages:
+  - Welcome: 'index.md'
+  - Galaxy: 'galaxy.md'
+  - Planemo: 'planemo.md'
+  - PEGR: 'pegr.md'
+  - Grails: 'grails.md'
+  - Debug: 'debug.md'
+  - FAQ: 'FAQ.md'

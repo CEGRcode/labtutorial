@@ -1,0 +1,199 @@
+{
+    "docs": [
+        {
+            "location": "/", 
+            "text": "Welcome\n\n\nIntroduction\n\n\nThis tutorial is updated as of May 28, 2018 by Hedgie Jo.\nOriginally written by Prashant Kuntala in 8th March, 2018.\n\n\nFor information regarding mkdocs visit \nmkdocs.org\n.\n\n\nHere is the basic workflow:\n\n\n\n\nInstall\n\n\nExample\n\n\nTest\n\n\nDebug\n\n\nFAQ\n\n\n\n\nQuick Commands\n\n\nList of main commands and their purpose.\n\n\n\n\nplanemo tool_init --id 'wrap' --name 'Tool Wrapper'\n - generate xml file\n\n\nplanemo l\n - wrapper syntax check for the galaxy coding standard\n\n\nplanemo t\n - test tool functionality\n\n\nplanemo s\n - serve planemo on local host\n\n\n\n\nProject layout\n\n\nmkdocs.yml      # The configuration file.\ndocs/\n    index.md    # The documentation homepage.\n    galaxy.md   # Galaxy tutorial\n    planemo.md  # Planemo tutorial with basic examples\n    pegr.md     # PEGR tutorial step-by-step guide\n    debug.md    # Debugging help\n    faq.md      # Frequently Asked Questions\n\n\n\nNavigation\n\n\nHere are some tips on how to navigate through the site.\n\n\n- Navigation Bar: select any pages you want to view\n- Search: search any keyword on the site\n- Previous: Go back to the previous page\n- Next: Move forward to the next page", 
+            "title": "Welcome"
+        }, 
+        {
+            "location": "/#welcome", 
+            "text": "", 
+            "title": "Welcome"
+        }, 
+        {
+            "location": "/#introduction", 
+            "text": "This tutorial is updated as of May 28, 2018 by Hedgie Jo.\nOriginally written by Prashant Kuntala in 8th March, 2018.  For information regarding mkdocs visit  mkdocs.org .  Here is the basic workflow:   Install  Example  Test  Debug  FAQ", 
+            "title": "Introduction"
+        }, 
+        {
+            "location": "/#quick-commands", 
+            "text": "List of main commands and their purpose.   planemo tool_init --id 'wrap' --name 'Tool Wrapper'  - generate xml file  planemo l  - wrapper syntax check for the galaxy coding standard  planemo t  - test tool functionality  planemo s  - serve planemo on local host", 
+            "title": "Quick Commands"
+        }, 
+        {
+            "location": "/#project-layout", 
+            "text": "mkdocs.yml      # The configuration file.\ndocs/\n    index.md    # The documentation homepage.\n    galaxy.md   # Galaxy tutorial\n    planemo.md  # Planemo tutorial with basic examples\n    pegr.md     # PEGR tutorial step-by-step guide\n    debug.md    # Debugging help\n    faq.md      # Frequently Asked Questions", 
+            "title": "Project layout"
+        }, 
+        {
+            "location": "/#navigation", 
+            "text": "Here are some tips on how to navigate through the site.  - Navigation Bar: select any pages you want to view\n- Search: search any keyword on the site\n- Previous: Go back to the previous page\n- Next: Move forward to the next page", 
+            "title": "Navigation"
+        }, 
+        {
+            "location": "/galaxy/", 
+            "text": "Galaxy\n\n\nPre-Install\n\n\n-Install samtools (locally) on your machine if it is not already installed.\n\n\n(mac) $ brew install samtools\n(other) http://samtools.sourceforge.net/-Install yarn on your machine, if it is not already installed\n\n\n(mac) $ brew install yarn\n(other) https://yarnpkg.com/en/docs/install\n\n\n-NOTE: make sure you clone the galaxy somewhere lower in the directory structure to avoid conda issues and problems.\n\n\nBEST CHOICE: clone it to your ~/Desktop\n\n\n-Go the tutorial link:   https://galaxyproject.org/admin/get-galaxy/\n-$ git clone -b release_17.09 https://github.com/galaxyproject/galaxy.git\n-$ git branch \u2013a(though this step is not necessary, but a preference).\n-$ git checkout master (thoughthis step is not necessary,but a preference).\n-Go into the directory \u201cgalaxy\u201d and type:  sh run.sh (you can follow the tutorial link)\n-Couple of dependencies are installed and you should see the galaxy running at localhost:8080\n-Basic tutorial starting point:\nhttps://galaxyproject.org/learn/\nhttps://github.com/galaxyproject/dagobah-training\n\n\nGo the tutorial link:  \ngalaxyproject.org/admin/#get-galaxy\n.", 
+            "title": "Galaxy"
+        }, 
+        {
+            "location": "/galaxy/#galaxy", 
+            "text": "", 
+            "title": "Galaxy"
+        }, 
+        {
+            "location": "/galaxy/#pre-install", 
+            "text": "-Install samtools (locally) on your machine if it is not already installed.  (mac) $ brew install samtools\n(other) http://samtools.sourceforge.net/-Install yarn on your machine, if it is not already installed  (mac) $ brew install yarn\n(other) https://yarnpkg.com/en/docs/install  -NOTE: make sure you clone the galaxy somewhere lower in the directory structure to avoid conda issues and problems.  BEST CHOICE: clone it to your ~/Desktop  -Go the tutorial link:   https://galaxyproject.org/admin/get-galaxy/\n-$ git clone -b release_17.09 https://github.com/galaxyproject/galaxy.git\n-$ git branch \u2013a(though this step is not necessary, but a preference).\n-$ git checkout master (thoughthis step is not necessary,but a preference).\n-Go into the directory \u201cgalaxy\u201d and type:  sh run.sh (you can follow the tutorial link)\n-Couple of dependencies are installed and you should see the galaxy running at localhost:8080\n-Basic tutorial starting point:\nhttps://galaxyproject.org/learn/\nhttps://github.com/galaxyproject/dagobah-training  Go the tutorial link:   galaxyproject.org/admin/#get-galaxy .", 
+            "title": "Pre-Install"
+        }, 
+        {
+            "location": "/planemo/", 
+            "text": "Planemo\n\n\nPre-Installs\n\n\nInstall anaconda (locally) on your machine if it is not already installed: \nanaconda.com/#download\n.\n\n\nInstall wget on your machine, if it is not already installed:\n\n\n\n\n$ brew install wget\n - (mac)\n\n\n$ sudo apt-get install wget\n - (others)\n\n\n\n\nInstall virtualenv on your machine, if it is not already installed.\n\n\n\n\n$ brew install virtualenv\n - (mac)\n\n\n$ sudo apt-get install virtualenv\n - (others)\n\n\n\n\nNOTE: make sure local galaxy is installed.\n\n\nGo the tutorial link:  \ngalaxyproject.org/admin/#get-galaxy\n.\n\n\nInstall pip on your machine, if it is not already installed.\n\n\n\n\n$ brew install pip\n - (mac)\n\n\n\n\n$ sudo apt-get install pip\n - (others)\n\n\n\n\n\n\n$ virtualenv .venv; . .venv/bin/activate\n\n\n\n\n$ pip install \u2013-upgrade pip # Upgrade pip if needed.\n\n\n$ pip install planemo\n\n\n\n\nCouple of dependencies are installed and you should see the galaxy running at localhost:8080\n\n\nBasic tutorial starting point: \nplanemo.readthedocs.io/en/latest/#installation.html\n.\n\n\nVersion\n\n\nTips\n\n\nA lot of troubles with the initial setup comes from the version conflict of multiple tools and dependencies. One can find the list of compatible version below:\n\n\npython\nplanemo\ngalaxy\n\n\nExample\n\n\nSeqtk\n\n\nUse conda to install Seqtk:\n\n\n\n\n$ conda install --force --yes -c bioconda seqtk=1.2\n\n\n$ seqtk seq\n - check if seqtk is installed\n\n\n\n\nDownload an example FASTQ file\n\n\n\n\n$ wget https://raw.githubusercontent.com/galaxyproject/galaxy-test-data/master/2.fastq\n\n\n$ seqtk seq -A 2.fastq \n 2.fasta\n\n\n\n\n$ cat 2.fasta\n\n\n\n\nIf you are unable to download or execute wget command, simply copy \n paste the text and save as both 2.fastq and 2.fasta and continue along the steps:\n\n\n\n\n\n\nEAS54_6_R1_2_1_413_324\n  CCCTTCTTGTCTTCAGCGTTTCTCC\nEAS54_6_R1_2_1_540_792\n  TTGGCAGGCCAAGGCCGATGGATCA\nEAS54_6_R1_2_1_443_348\n  GTTGCTTCTGGCGTGGGTGGGGGGG\n\n\n\n\n\n\n\n\nRun the following command to generate seqtk_seq.xml file. These contain minimal requirements for the xml file.\n\n\n    $ planemo tool_init --force \\\n                --id 'seqtk_seq' \\\n                --name 'Convert to FASTA (seqtk)' \\\n                --requirement seqtk@1.2 \\\n                --example_command 'seqtk seq -a 2.fastq \n 2.fasta' \\\n                --example_input 2.fastq \\\n                --example_output 2.fasta \\\n                --test_case \\\n                --cite_url 'https://github.com/lh3/seqtk' \\\n                --help_from_command 'seqtk seq'\n\n\n\nExplanation of each  command options:\n(for more information, see https://planemo.readthedocs.io/en/latest/commands.html)\n\n\n    id                      Short identifier for new tool (no whitespace).\n    force                   Overwrite existing tool if present.\n    name                    Name for new tool.\n    description             Short description for new tool.\n    requirement             Name of the package.  requirements will be set using Bioconda.\n    example_command         Example to command with paths to build Cheetah template from. Must follow with --example_input and --example_output.\n    example_input           Replace input file.\n    example_output          Replace output file.\n    test_case               Generate test-data directory with tool test cases from the supplied example.\n    cite_url                Supply a URL for citation.\n    help_from_command       Auto populate help from supplied command.\n\n\n\nTips\n\n\nPlanemo lint command only checks if the syntax is correct, so if you are unable to generate the tool using planemo commands or have existing\none already, check to make sure the above commands are satisfied.\n\n\ngetRandomBed\n\n\nDownload getRandomBed.py tool:\n\n\nUse the following commands to generate the xml file getRandomBed.xml\n\n\n    planemo tool_init --force \\\n                    --id 'getRandomBed' \\\n                    --name 'Random Bed' \\\n                    --requirement python@2.7.14 \\\n                    --example_command '$__tool_directory__/genRandomBed.py $inputBed' \\\n                    --example_input inputBed \\\n                    --example_output randomBed \\\n                    --test_case \\\n                    --cite_url 'http://www.pughlab.psu.edu/' \\\n                    --help_from_command 'getRandomBed'\n\n\n\nPlanemo lint to review tool for XML validity, syntax errors, and compliance with IUC best practices.\n\n\n    planemo l\n\n\n\nOutput:\n\n\n\n\nFunctionality test\n\n\n    planemo t\n\n\n\nWrapping\n\n\nConsider the following small Perl script.\n\n\n    #!/usr/bin/perl -w\n\n    # usage : perl toolExample.pl \nFASTA file\n \noutput file\n\n\n\n    open (IN, \"\n$ARGV[0]\");\n    open (OUT, \"\n$ARGV[1]\");\n    while (\nIN\n) {\n        chop;\n        if (m/^\n/) {\n            s/^\n//;\n            if ($. \n 1) {\n                print OUT sprintf(\"%.3f\", $gc/$length) . \"\\n\";\n            }\n            $gc = 0;\n            $length = 0;\n        } else {\n            ++$gc while m/[gc]/ig;\n            $length += length $_;\n        }\n    }\n    print OUT sprintf(\"%.3f\", $gc/$length) . \"\\n\";\n    close( IN );\n    close( OUT );\n\n\n\nExercise: Create an xml file for the script with an output as follows:\n\n\n    \ntool id=\"gc_content\" name=\"Compute GC content\"\n\n      \ndescription\nfor each sequence in a file\n/description\n\n      \ncommand\nperl $__tool_directory__/gc_content.pl $input output.tsv\n/command\n\n      \ninputs\n\n        \nparam format=\"fasta\" name=\"input\" type=\"data\" label=\"Source file\"/\n\n      \n/inputs\n\n      \noutputs\n\n        \ndata format=\"tabular\" name=\"output\" from_work_dir=\"output.tsv\" /\n\n      \n/outputs\n\n      \nhelp\n\n    This tool computes GC content from a FASTA file.\n      \n/help\n\n    \n/tool\n\n\n\n\nSolution:\n\n\nTest\n\n\nUsing Planemo to Test\n\n\nThis guide assumes that you have already installed Planemo and have a directory with one or more Galaxy tool XML files.\n\n\n1) Lint\n\n\nPlanemo can check if the XML file adheres to the Galaxy coding standard using the lint (l) command.\n\n\n\n\n$ planemo lint\n\n\n$ planemo l --help\n\n\n\n\nFor demonstration, type the following in the same directory where your seqtk.xml is located.\n\n\n\n\n$ planemo lint seqtk.xml\n\n\n\n\nThe following output should be generated. If output says \"Failed linting\" at the end, see the error report guidelines here:\n\ngithub.com/galaxyproject/planemo/#issues\n.\n\n\n2) Test\n\n\nThe test command can be used to test the functionality of tool(s). In other words, it checks if the xml file works as supposed to.\n\n\n\n\n$ planemo test\n - test all the xml files in the current directory\n\n\n$ planemo test --galaxy_root=../galaxy seqtk.xml\n - with optional parameters and specify file(s) to run the test.\n\n\n\n\nBy default, planemo will search parent directories to see if any is a Galaxy instance.\n\n\n\n\nImportant note: if you specify --galaxy_root folder, reverting it back might be difficult since the  planemo virtual environment path is set up to the galaxy directory. You can try to force planemo to download a disposable instance with the --install_galaxy flag.\n\n\n$ planemo test --install_galaxy seqtk.xml\n\n\n\n\nThe following output should be generated. If error occurs, refer to the error report page on GitHub.\n\n\nSuccessful output:\n\n\n        $ planemo t\n        ...\n        All 1 test(s) executed passed.\n        seqtk_seq[0]: passed\n\n\n\n3) Serve\n\n\nIf the result says All test passed, then we can open Galaxy with the serve (or with s).\n\n\n    $ planemo s\n    ...\n    serving on http://127.0.0.1:8086", 
+            "title": "Planemo"
+        }, 
+        {
+            "location": "/planemo/#planemo", 
+            "text": "", 
+            "title": "Planemo"
+        }, 
+        {
+            "location": "/planemo/#pre-installs", 
+            "text": "Install anaconda (locally) on your machine if it is not already installed:  anaconda.com/#download .  Install wget on your machine, if it is not already installed:   $ brew install wget  - (mac)  $ sudo apt-get install wget  - (others)   Install virtualenv on your machine, if it is not already installed.   $ brew install virtualenv  - (mac)  $ sudo apt-get install virtualenv  - (others)   NOTE: make sure local galaxy is installed.  Go the tutorial link:   galaxyproject.org/admin/#get-galaxy .  Install pip on your machine, if it is not already installed.   $ brew install pip  - (mac)   $ sudo apt-get install pip  - (others)    $ virtualenv .venv; . .venv/bin/activate   $ pip install \u2013-upgrade pip # Upgrade pip if needed.  $ pip install planemo   Couple of dependencies are installed and you should see the galaxy running at localhost:8080  Basic tutorial starting point:  planemo.readthedocs.io/en/latest/#installation.html .", 
+            "title": "Pre-Installs"
+        }, 
+        {
+            "location": "/planemo/#version", 
+            "text": "", 
+            "title": "Version"
+        }, 
+        {
+            "location": "/planemo/#tips", 
+            "text": "A lot of troubles with the initial setup comes from the version conflict of multiple tools and dependencies. One can find the list of compatible version below:  python\nplanemo\ngalaxy", 
+            "title": "Tips"
+        }, 
+        {
+            "location": "/planemo/#example", 
+            "text": "", 
+            "title": "Example"
+        }, 
+        {
+            "location": "/planemo/#seqtk", 
+            "text": "Use conda to install Seqtk:   $ conda install --force --yes -c bioconda seqtk=1.2  $ seqtk seq  - check if seqtk is installed   Download an example FASTQ file   $ wget https://raw.githubusercontent.com/galaxyproject/galaxy-test-data/master/2.fastq  $ seqtk seq -A 2.fastq   2.fasta   $ cat 2.fasta   If you are unable to download or execute wget command, simply copy   paste the text and save as both 2.fastq and 2.fasta and continue along the steps:    EAS54_6_R1_2_1_413_324\n  CCCTTCTTGTCTTCAGCGTTTCTCC\nEAS54_6_R1_2_1_540_792\n  TTGGCAGGCCAAGGCCGATGGATCA\nEAS54_6_R1_2_1_443_348\n  GTTGCTTCTGGCGTGGGTGGGGGGG     Run the following command to generate seqtk_seq.xml file. These contain minimal requirements for the xml file.      $ planemo tool_init --force \\\n                --id 'seqtk_seq' \\\n                --name 'Convert to FASTA (seqtk)' \\\n                --requirement seqtk@1.2 \\\n                --example_command 'seqtk seq -a 2.fastq   2.fasta' \\\n                --example_input 2.fastq \\\n                --example_output 2.fasta \\\n                --test_case \\\n                --cite_url 'https://github.com/lh3/seqtk' \\\n                --help_from_command 'seqtk seq'  Explanation of each  command options:\n(for more information, see https://planemo.readthedocs.io/en/latest/commands.html)      id                      Short identifier for new tool (no whitespace).\n    force                   Overwrite existing tool if present.\n    name                    Name for new tool.\n    description             Short description for new tool.\n    requirement             Name of the package.  requirements will be set using Bioconda.\n    example_command         Example to command with paths to build Cheetah template from. Must follow with --example_input and --example_output.\n    example_input           Replace input file.\n    example_output          Replace output file.\n    test_case               Generate test-data directory with tool test cases from the supplied example.\n    cite_url                Supply a URL for citation.\n    help_from_command       Auto populate help from supplied command.", 
+            "title": "Seqtk"
+        }, 
+        {
+            "location": "/planemo/#tips_1", 
+            "text": "Planemo lint command only checks if the syntax is correct, so if you are unable to generate the tool using planemo commands or have existing\none already, check to make sure the above commands are satisfied.", 
+            "title": "Tips"
+        }, 
+        {
+            "location": "/planemo/#getrandombed", 
+            "text": "Download getRandomBed.py tool:  Use the following commands to generate the xml file getRandomBed.xml      planemo tool_init --force \\\n                    --id 'getRandomBed' \\\n                    --name 'Random Bed' \\\n                    --requirement python@2.7.14 \\\n                    --example_command '$__tool_directory__/genRandomBed.py $inputBed' \\\n                    --example_input inputBed \\\n                    --example_output randomBed \\\n                    --test_case \\\n                    --cite_url 'http://www.pughlab.psu.edu/' \\\n                    --help_from_command 'getRandomBed'  Planemo lint to review tool for XML validity, syntax errors, and compliance with IUC best practices.      planemo l  Output:   Functionality test      planemo t", 
+            "title": "getRandomBed"
+        }, 
+        {
+            "location": "/planemo/#wrapping", 
+            "text": "Consider the following small Perl script.      #!/usr/bin/perl -w\n\n    # usage : perl toolExample.pl  FASTA file   output file \n\n\n    open (IN, \" $ARGV[0]\");\n    open (OUT, \" $ARGV[1]\");\n    while ( IN ) {\n        chop;\n        if (m/^ /) {\n            s/^ //;\n            if ($.   1) {\n                print OUT sprintf(\"%.3f\", $gc/$length) . \"\\n\";\n            }\n            $gc = 0;\n            $length = 0;\n        } else {\n            ++$gc while m/[gc]/ig;\n            $length += length $_;\n        }\n    }\n    print OUT sprintf(\"%.3f\", $gc/$length) . \"\\n\";\n    close( IN );\n    close( OUT );  Exercise: Create an xml file for the script with an output as follows:       tool id=\"gc_content\" name=\"Compute GC content\" \n       description for each sequence in a file /description \n       command perl $__tool_directory__/gc_content.pl $input output.tsv /command \n       inputs \n         param format=\"fasta\" name=\"input\" type=\"data\" label=\"Source file\"/ \n       /inputs \n       outputs \n         data format=\"tabular\" name=\"output\" from_work_dir=\"output.tsv\" / \n       /outputs \n       help \n    This tool computes GC content from a FASTA file.\n       /help \n     /tool   Solution:", 
+            "title": "Wrapping"
+        }, 
+        {
+            "location": "/planemo/#test", 
+            "text": "", 
+            "title": "Test"
+        }, 
+        {
+            "location": "/planemo/#using-planemo-to-test", 
+            "text": "This guide assumes that you have already installed Planemo and have a directory with one or more Galaxy tool XML files.", 
+            "title": "Using Planemo to Test"
+        }, 
+        {
+            "location": "/planemo/#1-lint", 
+            "text": "Planemo can check if the XML file adheres to the Galaxy coding standard using the lint (l) command.   $ planemo lint  $ planemo l --help   For demonstration, type the following in the same directory where your seqtk.xml is located.   $ planemo lint seqtk.xml   The following output should be generated. If output says \"Failed linting\" at the end, see the error report guidelines here: github.com/galaxyproject/planemo/#issues .", 
+            "title": "1) Lint"
+        }, 
+        {
+            "location": "/planemo/#2-test", 
+            "text": "The test command can be used to test the functionality of tool(s). In other words, it checks if the xml file works as supposed to.   $ planemo test  - test all the xml files in the current directory  $ planemo test --galaxy_root=../galaxy seqtk.xml  - with optional parameters and specify file(s) to run the test.   By default, planemo will search parent directories to see if any is a Galaxy instance.   Important note: if you specify --galaxy_root folder, reverting it back might be difficult since the  planemo virtual environment path is set up to the galaxy directory. You can try to force planemo to download a disposable instance with the --install_galaxy flag.  $ planemo test --install_galaxy seqtk.xml   The following output should be generated. If error occurs, refer to the error report page on GitHub.  Successful output:          $ planemo t\n        ...\n        All 1 test(s) executed passed.\n        seqtk_seq[0]: passed", 
+            "title": "2) Test"
+        }, 
+        {
+            "location": "/planemo/#3-serve", 
+            "text": "If the result says All test passed, then we can open Galaxy with the serve (or with s).      $ planemo s\n    ...\n    serving on http://127.0.0.1:8086", 
+            "title": "3) Serve"
+        }, 
+        {
+            "location": "/pegr/", 
+            "text": "PEGR\n\n\nPre-Install\n\n\n-Install samtools (locally) on your machine if it is not already installed.\n\n\n(mac) $ brew install samtools\n(other) http://samtools.sourceforge.net/-Install yarn on your machine, if it is not already installed\n\n\n(mac) $ brew install yarn\n(other) https://yarnpkg.com/en/docs/install\n\n\n-NOTE: make sure you clone the galaxy somewhere lower in the directory structure to avoid conda issues and problems.\n\n\nBEST CHOICE: clone it to your ~/Desktop\n\n\n-Go the tutorial link:   https://galaxyproject.org/admin/get-galaxy/\n-$ git clone -b release_17.09 https://github.com/galaxyproject/galaxy.git\n-$ git branch \u2013a(though this step is not necessary, but a preference).\n-$ git checkout master (thoughthis step is not necessary,but a preference).\n-Go into the directory \u201cgalaxy\u201d and type:  sh run.sh (you can follow the tutorial link)\n-Couple of dependencies are installed and you should see the galaxy running at localhost:8080\n-Basic tutorial starting point:\nhttps://galaxyproject.org/learn/\nhttps://github.com/galaxyproject/dagobah-training\n\n\nGo the tutorial link:  \ngalaxyproject.org/admin/#get-galaxy\n.", 
+            "title": "PEGR"
+        }, 
+        {
+            "location": "/pegr/#pegr", 
+            "text": "", 
+            "title": "PEGR"
+        }, 
+        {
+            "location": "/pegr/#pre-install", 
+            "text": "-Install samtools (locally) on your machine if it is not already installed.  (mac) $ brew install samtools\n(other) http://samtools.sourceforge.net/-Install yarn on your machine, if it is not already installed  (mac) $ brew install yarn\n(other) https://yarnpkg.com/en/docs/install  -NOTE: make sure you clone the galaxy somewhere lower in the directory structure to avoid conda issues and problems.  BEST CHOICE: clone it to your ~/Desktop  -Go the tutorial link:   https://galaxyproject.org/admin/get-galaxy/\n-$ git clone -b release_17.09 https://github.com/galaxyproject/galaxy.git\n-$ git branch \u2013a(though this step is not necessary, but a preference).\n-$ git checkout master (thoughthis step is not necessary,but a preference).\n-Go into the directory \u201cgalaxy\u201d and type:  sh run.sh (you can follow the tutorial link)\n-Couple of dependencies are installed and you should see the galaxy running at localhost:8080\n-Basic tutorial starting point:\nhttps://galaxyproject.org/learn/\nhttps://github.com/galaxyproject/dagobah-training  Go the tutorial link:   galaxyproject.org/admin/#get-galaxy .", 
+            "title": "Pre-Install"
+        }, 
+        {
+            "location": "/debug/", 
+            "text": "Debug\n\n\nThis guide outlines some of the common warning messages and errors during the planemo installation \n testing procedures.\n\n\nCommon Warnings\n\n\nExample:\n\n\n.. WARNING: No tests found, most tools should define test cases.\n.. WARNING: No valid test(s) found.\n\n\n\nThis indicates that there are no test cases written in the wrapper(.xml file).\nIncluding any test, for an example:\n\n\nCommon Errors\n\n\n\n\ndbkey error: https://github.com/galaxyproject/planemo/issues/746\n\n\nCannot locate xUnit report: https://github.com/galaxyproject/planemo/issues/724\n\n\nplanemo couldn't find a target test-data directory: This means that there is no test-data directory created for planemo testing.\n  Fix the issue by simply checking planemo l or create a test-data directory manually and copy all input \n output files.", 
+            "title": "Debug"
+        }, 
+        {
+            "location": "/debug/#debug", 
+            "text": "This guide outlines some of the common warning messages and errors during the planemo installation   testing procedures.", 
+            "title": "Debug"
+        }, 
+        {
+            "location": "/debug/#common-warnings", 
+            "text": "Example:  .. WARNING: No tests found, most tools should define test cases.\n.. WARNING: No valid test(s) found.  This indicates that there are no test cases written in the wrapper(.xml file).\nIncluding any test, for an example:", 
+            "title": "Common Warnings"
+        }, 
+        {
+            "location": "/debug/#common-errors", 
+            "text": "dbkey error: https://github.com/galaxyproject/planemo/issues/746  Cannot locate xUnit report: https://github.com/galaxyproject/planemo/issues/724  planemo couldn't find a target test-data directory: This means that there is no test-data directory created for planemo testing.\n  Fix the issue by simply checking planemo l or create a test-data directory manually and copy all input   output files.", 
+            "title": "Common Errors"
+        }, 
+        {
+            "location": "/FAQ/", 
+            "text": "FAQ\n\n\nFrequently Asked Questions\n\n\nInstallation\n\n\nCan planemo_init add additional features without generating the whole wrapper using the command line?\n\n\nNo. You must use planemo_init with all the options included, you cannot add additional cases to an already existing wrapper (xml file).\n\n\nTest\n\n\nDoes planemo t not work if you don't include all the input and output test files in the same directory?\n\n\nYes. you must include all the input and output files in order to test. You can also select specific wrappers for testing, such as planemo t your.xml then you only need to include the test files for your.xml wrapper.\n\n\nDebug\n\n\nWhere can I get help with debugging?\n\n\nYou can search for open planemo issues and get help here: https://github.com/galaxyproject/planemo/issues.", 
+            "title": "FAQ"
+        }, 
+        {
+            "location": "/FAQ/#faq", 
+            "text": "Frequently Asked Questions", 
+            "title": "FAQ"
+        }, 
+        {
+            "location": "/FAQ/#installation", 
+            "text": "", 
+            "title": "Installation"
+        }, 
+        {
+            "location": "/FAQ/#can-planemo_init-add-additional-features-without-generating-the-whole-wrapper-using-the-command-line", 
+            "text": "No. You must use planemo_init with all the options included, you cannot add additional cases to an already existing wrapper (xml file).", 
+            "title": "Can planemo_init add additional features without generating the whole wrapper using the command line?"
+        }, 
+        {
+            "location": "/FAQ/#test", 
+            "text": "", 
+            "title": "Test"
+        }, 
+        {
+            "location": "/FAQ/#does-planemo-t-not-work-if-you-dont-include-all-the-input-and-output-test-files-in-the-same-directory", 
+            "text": "Yes. you must include all the input and output files in order to test. You can also select specific wrappers for testing, such as planemo t your.xml then you only need to include the test files for your.xml wrapper.", 
+            "title": "Does planemo t not work if you don't include all the input and output test files in the same directory?"
+        }, 
+        {
+            "location": "/FAQ/#debug", 
+            "text": "", 
+            "title": "Debug"
+        }, 
+        {
+            "location": "/FAQ/#where-can-i-get-help-with-debugging", 
+            "text": "You can search for open planemo issues and get help here: https://github.com/galaxyproject/planemo/issues.", 
+            "title": "Where can I get help with debugging?"
+        }
+    ]
+}
