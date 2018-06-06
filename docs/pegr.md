@@ -11,7 +11,7 @@ Here are the list of tools we will install prior to installing local PEGR:
 
 Install curl (For Windows, use Git Bash)
 
-Install sdkman ([tutorial](http://sdkman.io/install.html))
+Install sdkman ([tutorial](http://sdkman.io/install.html)):
 
   * `$ curl -s "https://get.sdkman.io" | bash`
   * `$ source "$HOME/.sdkman/bin/sdkman-init.sh"`
@@ -23,7 +23,7 @@ Install Grails:
 * `$ sdk list grails`      # check your installation of grails
 * `$ sdk use grails 2.5.4` # change your default grails to version 2.5.4
 
--	Now close the terminal and quit the terminal in your dashboard. [ Important!]
+-	Now close the terminal and quit the terminal in your dashboard. [Important!]
 
 Install Groovy:
 
@@ -57,10 +57,10 @@ Download the [MySQL file](https://psu.app.box.com/file/175943271869) and rename 
 * `Go to System Preferences->MySql Icon` -(other) click to start the SQL server.
 * `$ mysql.server start` -(mac) if you have installed using homebrew
 
--	Open the terminal and navigate to the folder where you have the pegrDB.sql file
+-	Open the terminal and navigate to the same directory as the pegrDB.sql file
 * `$ mysql -u root -p` # Connect to your server
 
-- it will prompt you for that password it gave you. [ if you installed MySQL using the .dmg file] otherwise, in the case of homebrew, there is no password set for root. You should be able to see the prompt mysql>
+This will prompt you for that password it gave you. [ if you installed MySQL using the .dmg file] otherwise, in the case of homebrew, there is no password set for root. You should be able to see the prompt mysql>
 
 After successfully connected to the MySQL, set the password for root
 
@@ -78,19 +78,19 @@ After successfully connected to the MySQL, set the password for root
 
 Create a new user to access your “pegr” database
 
-    mysql>  create user ‘your_ username’@’localhost’ identified by ‘your_password’;
+    mysql> create user ‘your_ username’@’localhost’ identified by ‘your_password’;
     mysql> grant all privileges on *.* to ‘your_username’@’localhost’;
 
 For an example,
 
-    mysql>  create user hedgiejo@localhost identified by mypassword12;
+    mysql> create user hedgiejo@localhost identified by mypassword12;
     mysql> grant all privileges on *.* to hedgiejo@localhost;
 
 Modify an existing account to gain a login credentials (need a valid non-WebAccess account)
 Within your pegrDB, locate the user "labadmin" and replace the password value:
 
     UPDATE user
-    set password="reb$8$6q"
+    set password="password"
     where username="labadmin";
 
 Open the BuildConfig.groovy file at pegr/grails-app/conf/BuildConfig.groovy and check the plugins block and verify that the build for the tomcat is appropiate to your version and add the below lines within the plugin block

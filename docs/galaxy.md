@@ -42,7 +42,9 @@ This makes sure that galaxy takes your configurations rather than the default on
 - Open the galaxy.ini file and search for “admin_users” and add the username to have admin access.
 
 - Install the below tools from your admin toolshed. (usually install those with the “Owner” being “iuc” or “devteam”), because the other “Owners” can have their own version for the tool in the Toolshed.
-* data_manager_bwa_mem_index_builderodata_manager_fetch_genome_dbkeys_all_fastaodata_manager_sam_fasta_index_builderodata_manager_twobit_builder
+
+
+data_manager_bwa_mem_index_builderodata_manager_fetch_genome_dbkeys_all_fastaodata_manager_sam_fasta_index_builderodata_manager_twobit_builder
 
 - Upload the “sacCer3_cegr. fa” fasta file into the galaxy using the “upload button” on the left pane top right corner.
 (available in the data folder, provided along with this documentation).
@@ -74,37 +76,41 @@ Log in with the correct credentials
 * `Password: password`
 - You should see the below page.
 
-## Installing RepeatMasker on mac [optional]
-- If you want to use it, not required for YEPQC pipeline
+## Installing RepeatMasker on mac (optional, not required for YEPQC pipeline)
 
 -	Go to the website http://www.repeatmasker.org/RMDownload.html
 -	You need to install the prerequisites first.
--	Our choice of Sequence Search engine is RMBlast.
-*	Install RMBlast from http://www.repeatmasker.org/RMBlast.html
+
+### Pre-Install
+Install RMBlast (sequence Search engine): [RMBlast](http://www.repeatmasker.org/RMBlast.html)
+
 *	You can just download all the binaries from these two locations based on your machine (mac, linux)
 *	ftp://ftp.ncbi.nlm.nih.gov/blast/executables/rmblast/2.2.28/
 *	ftp://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/2.2.28/
+
 *	extract them and copy all the binaries into “/usr/local/bin/” so that all users can use them.
 
--	Once you have RMBlast setup , check whether you have “rmblastn“ binary in /usr/local/bin/
+- Check whether you have “rmblastn“ binary in /usr/local/bin/
 -	If you don’t then follow the steps in the RMBLAST installation website above.
 
--	Install TFR
--	Download your copy from this website: http://tandem.bu.edu/trf/trf.download.html
+Install TFR: [download](http://tandem.bu.edu/trf/trf.download.html)
+
 -	Now follow the rest of the instructions on http://www.repeatmasker.org/RMDownload.html
 
--	Under the Installation section
-*	Download the RepeatMasker.tar.gz
-*	Uncompress and copy it to /usr/local/
-*	cd /usr/local/RepeatMasker and sudo perl ./configure
-*	It prompts for various paths for the executables which we just installed.
-*	Specify the paths in correctly and add the path to RepeatMasker to your $PATH
+Under the Installation section:
+
+    Download the RepeatMasker.tar.gz
+    Uncompress and copy it to /usr/local/
+    cd /usr/local/RepeatMasker and sudo perl ./configure
+    It prompts for various paths for the executables which we just installed.
+    Specify the paths in correctly and add the path to RepeatMasker to your $PATH
 
 ## Adding the cegr galaxy output statistics for the core pipeline.
 
-- Reference to add new tools into galaxy: https://galaxyproject.org/admin/tools/add-tool-tutorial/
-- Download the tools from seqcode
-* https://github.com/seqcode/cegr-galaxy.git-extract and copy the cegr_statistics folder into your “tools” folder in galaxy.
+- [Reference](https://galaxyproject.org/admin/tools/add-tool-tutorial/) to add new tools into galaxy.
+
+- Download the tools from [seqcode](https://github.com/seqcode/cegr-galaxy.git-extract) and copy the cegr_statistics folder into your “tools” folder in galaxy.
+
 - Please remember that below lines make your galaxy run on port 8090 and local pegr run on port 8080.
 - Configure the port for galaxy in “galaxy.ini” file.
 - You need to generate an apikey in your local galaxy so that it can communicate with the local PEGR.
