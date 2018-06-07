@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>Debug - Planemo Tutorial</title>
+        <title>Debug - IT Tutorial</title>
         <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../css/font-awesome-4.5.0.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -38,7 +38,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="..">Planemo Tutorial</a>
+            <a class="navbar-brand" href="..">IT Tutorial</a>
         </div>
 
         <!-- Expanded navigation -->
@@ -57,6 +57,9 @@
                     <li >
                         <a href="../pegr/">PEGR</a>
                     </li>
+                    <li >
+                        <a href="../grails/">Grails</a>
+                    </li>
                     <li class="active">
                         <a href="./">Debug</a>
                     </li>
@@ -72,7 +75,7 @@
                     </a>
                 </li>
                     <li >
-                        <a rel="next" href="../pegr/">
+                        <a rel="next" href="../grails/">
                             <i class="fa fa-arrow-left"></i> Previous
                         </a>
                     </li>
@@ -92,6 +95,7 @@
         <li class="main active"><a href="#debug">Debug</a></li>
             <li><a href="#common-warnings">Common Warnings</a></li>
             <li><a href="#common-errors">Common Errors</a></li>
+            <li><a href="#version-conflicts">Version Conflicts</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
@@ -111,7 +115,12 @@ Including any test, for an example:</p>
 <li>Cannot locate xUnit report: https://github.com/galaxyproject/planemo/issues/724</li>
 <li>planemo couldn't find a target test-data directory: This means that there is no test-data directory created for planemo testing.
   Fix the issue by simply checking planemo l or create a test-data directory manually and copy all input &amp; output files.</li>
-</ul></div>
+</ul>
+<h2 id="version-conflicts">Version Conflicts</h2>
+<p>A lot of troubles with the initial setup comes from the version conflict of multiple tools and dependencies. One can find the list of compatible version below:</p>
+<p>python
+planemo
+galaxy</p></div>
         </div>
 
         <footer class="col-md-12">

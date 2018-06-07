@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>Planemo - Planemo Tutorial</title>
+        <title>Planemo - IT Tutorial</title>
         <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../css/font-awesome-4.5.0.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -38,7 +38,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="..">Planemo Tutorial</a>
+            <a class="navbar-brand" href="..">IT Tutorial</a>
         </div>
 
         <!-- Expanded navigation -->
@@ -56,6 +56,9 @@
                     </li>
                     <li >
                         <a href="../pegr/">PEGR</a>
+                    </li>
+                    <li >
+                        <a href="../grails/">Grails</a>
                     </li>
                     <li >
                         <a href="../debug/">Debug</a>
@@ -90,58 +93,96 @@
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
         <li class="main active"><a href="#planemo">Planemo</a></li>
-            <li><a href="#pre-installs">Pre-Installs</a></li>
-            <li><a href="#version">Version</a></li>
+            <li><a href="#pre-install">Pre-Install</a></li>
+            <li><a href="#install">Install</a></li>
+            <li><a href="#usage">Usage</a></li>
             <li><a href="#example">Example</a></li>
-            <li><a href="#tips_1">Tips</a></li>
-            <li><a href="#getrandombed">getRandomBed</a></li>
-            <li><a href="#wrapping">Wrapping</a></li>
-        <li class="main "><a href="#test">Test</a></li>
-            <li><a href="#using-planemo-to-test">Using Planemo to Test</a></li>
-            <li><a href="#1-lint">1) Lint</a></li>
-            <li><a href="#2-test">2) Test</a></li>
-            <li><a href="#3-serve">3) Serve</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
 <h1 id="planemo">Planemo</h1>
-<h2 id="pre-installs">Pre-Installs</h2>
-<p>Install anaconda (locally) on your machine if it is not already installed: <a href="https://www.anaconda.com/download">anaconda.com/#download</a>.</p>
-<p>Install wget on your machine, if it is not already installed:</p>
+<p>Here is the basic workflow:</p>
+<ul>
+<li>Pre-Install</li>
+<li>Install</li>
+<li>Usage</li>
+<li>Example</li>
+</ul>
+<h2 id="pre-install">Pre-Install</h2>
+<p>Install <a href="https://www.anaconda.com/download">anaconda</a> (locally) on your machine.</p>
+<p>Install wget:</p>
 <ul>
 <li><code>$ brew install wget</code> - (mac)</li>
 <li><code>$ sudo apt-get install wget</code> - (others)</li>
 </ul>
-<p>Install virtualenv on your machine, if it is not already installed.</p>
+<p>Install virtual environment:</p>
 <ul>
 <li><code>$ brew install virtualenv</code> - (mac)</li>
 <li><code>$ sudo apt-get install virtualenv</code> - (others)</li>
 </ul>
-<p>NOTE: make sure local galaxy is installed.</p>
-<p>Go the tutorial link:  <a href="https://galaxyproject.org/admin/get-galaxy/">galaxyproject.org/admin/#get-galaxy</a>.</p>
-<p>Install pip on your machine, if it is not already installed.</p>
+<p>NOTE: make sure <a href="https://galaxyproject.org/admin/get-galaxy/">local galaxy</a> is installed.
+Couple of dependencies are installed and you should see the galaxy running at localhost:8080</p>
+<p>Install pip:</p>
 <ul>
 <li><code>$ brew install pip</code> - (mac)</li>
-<li>
-<p><code>$ sudo apt-get install pip</code> - (others)</p>
-</li>
-<li>
-<p><code>$ virtualenv .venv; . .venv/bin/activate</code></p>
-</li>
+<li><code>$ sudo apt-get install pip</code> - (others)</li>
+</ul>
+<h2 id="install">Install</h2>
+<p>Install planemo:</p>
+<ul>
+<li><code>$ virtualenv .venv; . .venv/bin/activate</code></li>
 <li><code>$ pip install –-upgrade pip # Upgrade pip if needed.</code></li>
 <li><code>$ pip install planemo</code></li>
 </ul>
-<p>Couple of dependencies are installed and you should see the galaxy running at localhost:8080</p>
-<p>Basic tutorial starting point: <a href="https://planemo.readthedocs.io/en/latest/installation.html">planemo.readthedocs.io/en/latest/#installation.html</a>.</p>
-<h2 id="version">Version</h2>
-<h3 id="tips">Tips</h3>
-<p>A lot of troubles with the initial setup comes from the version conflict of multiple tools and dependencies. One can find the list of compatible version below:</p>
-<p>python
-planemo
-galaxy</p>
+<p>Basic <a href="https://planemo.readthedocs.io/en/latest/installation.html">tutorial</a></p>
+<h2 id="usage">Usage</h2>
+<p>This guide assumes that you have already installed Planemo and have a directory with one or more Galaxy tool with input &amp; output files.</p>
+<h3 id="1-init">1) Init</h3>
+<p>Create galaxy tool wrapper using the init command.</p>
+<ul>
+<li><code>$ planemo init</code></li>
+</ul>
+<p>Example:</p>
+<pre><code>$ planemo tool_init
+                --id 'id' \
+                --name 'Name of the file' \
+                --description 'Description (optional)' \
+                --requirement software_version@2.2 \
+                --example_command 'input &amp; output command' \
+                --example_input input_file \
+                --example_output output_file \
+                --test_case \
+                --cite_url 'https://url' \
+                --help_from_command 'id'
+</code></pre>
+<p>NOTE: Planemo is unable to partially initialize, for example if your xml file is missing "citation" section during linting, in order to add it from the command line you need to initialize the entire wrapper. So it's really for creating a new wrapper not modifying an existing one.</p>
+<h3 id="2-lint">2) Lint</h3>
+<p>Planemo can check review tool for XML validity, syntax errors, and compliance with IUC best practices using the lint (l) command.</p>
+<ul>
+<li><code>$ planemo l</code> # same as planemo lint</li>
+<li><code>$ planemo l --help</code></li>
+</ul>
+<p>You will also see the test-data directory generated for testing.</p>
+<h3 id="3-test">3) Test</h3>
+<p>The test command can be used to test the functionality of tool(s). In other words, it checks if the xml file works as supposed to.</p>
+<ul>
+<li><code>$ planemo test</code> - test all the xml files in the current directory</li>
+<li><code>$ planemo test --galaxy_root=../galaxy wrapper.xml</code> - with optional parameters and specify file(s) to run the test.</li>
+</ul>
+<p>By default, planemo will search parent directories to see if any is a Galaxy instance.</p>
+<p>Important note: if you specify --galaxy_root folder, reverting it back might be difficult since the  planemo virtual environment path is set up to the galaxy directory. You can try to force planemo to download a disposable instance with the --install_galaxy flag.</p>
+<ul>
+<li>Ex: <code>$ planemo test --install_galaxy wrapper.xml</code></li>
+</ul>
+<h3 id="4-serve">4) Serve</h3>
+<p>After passing the test we can open Galaxy with the serve (or with s).</p>
+<pre><code>$ planemo s
+...
+serving on http://127.0.0.1:8086
+</code></pre>
 <h2 id="example">Example</h2>
-<h3 id="seqtk">Seqtk</h3>
+<h3 id="1-seqtk">1) Seqtk</h3>
 <p>Use conda to install Seqtk:</p>
 <ul>
 <li><code>$ conda install --force --yes -c bioconda seqtk=1.2</code></li>
@@ -151,78 +192,82 @@ galaxy</p>
 <ul>
 <li><code>$ wget https://raw.githubusercontent.com/galaxyproject/galaxy-test-data/master/2.fastq</code></li>
 <li><code>$ seqtk seq -A 2.fastq &gt; 2.fasta</code></li>
-<li>
-<p><code>$ cat 2.fasta</code></p>
-<ul>
-<li>If you are unable to download or execute wget command, simply copy &amp; paste the text and save as both 2.fastq and 2.fasta and continue along the steps:</li>
+<li><code>$ cat 2.fasta</code></li>
 </ul>
-<blockquote>
-<p>EAS54_6_R1_2_1_413_324
-  CCCTTCTTGTCTTCAGCGTTTCTCC
-EAS54_6_R1_2_1_540_792
-  TTGGCAGGCCAAGGCCGATGGATCA
-EAS54_6_R1_2_1_443_348
-  GTTGCTTCTGGCGTGGGTGGGGGGG</p>
-</blockquote>
+<p>If you are unable to download or execute the wget command, simply copy &amp; paste the text and save as both 2.fastq and 2.fasta and continue along the steps:</p>
+<pre><code>&gt;EAS54_6_R1_2_1_413_324
+CCCTTCTTGTCTTCAGCGTTTCTCC
+&gt;EAS54_6_R1_2_1_540_792
+TTGGCAGGCCAAGGCCGATGGATCA
+&gt;EAS54_6_R1_2_1_443_348
+GTTGCTTCTGGCGTGGGTGGGGGGG
+</code></pre>
+<p>Run the following command to generate seqtk_seq.xml file. These contain minimal requirements for the xml file.</p>
+<pre><code>$ planemo tool_init --force \
+              --id 'seqtk_seq' \
+              --name 'Convert to FASTA (seqtk)' \
+              --requirement seqtk@1.2 \
+              --example_command 'seqtk seq -a 2.fastq &gt; 2.fasta' \
+              --example_input 2.fastq \
+              --example_output 2.fasta \
+              --test_case \
+              --cite_url 'https://github.com/lh3/seqtk' \
+              --help_from_command 'seqtk seq'
+</code></pre>
+<p>Explanation of each command options (more <a href="https://planemo.readthedocs.io/en/latest/commands.html">here</a>):</p>
+<pre><code>id                      Short identifier for new tool (no whitespace).
+force                   Overwrite existing tool if present.
+name                    Name for new tool.
+description             Short description for new tool.
+requirement             Name of the package.  requirements will be set using Bioconda.
+example_command         Example to command with paths to build Cheetah template from. Must follow with --example_input and --example_output.
+example_input           Replace input file.
+example_output          Replace output file.
+test_case               Generate test-data directory with tool test cases from the supplied example.
+cite_url                Supply a URL for citation.
+help_from_command       Auto populate help from supplied command.
+</code></pre>
+<p>Type the following in the same directory where your seqtk.xml is located.</p>
+<ul>
+<li>
+<p><code>$ planemo lint seqtk.xml</code></p>
+</li>
+<li>
+<p>Tip: Planemo lint command only checks if the syntax is correct, so if you are unable to pass the lint using planemo, check to make sure the above requirements are satisfied. If output says "Failed linting" at the end, see the current <a href="https://github.com/galaxyproject/planemo/#issues">github issues</a>.</p>
 </li>
 </ul>
-<p>Run the following command to generate seqtk_seq.xml file. These contain minimal requirements for the xml file.</p>
-<pre><code>    $ planemo tool_init --force \
-                --id 'seqtk_seq' \
-                --name 'Convert to FASTA (seqtk)' \
-                --requirement seqtk@1.2 \
-                --example_command 'seqtk seq -a 2.fastq &gt; 2.fasta' \
-                --example_input 2.fastq \
-                --example_output 2.fasta \
-                --test_case \
-                --cite_url 'https://github.com/lh3/seqtk' \
-                --help_from_command 'seqtk seq'
-</code></pre>
-<p>Explanation of each  command options:
-(for more information, see https://planemo.readthedocs.io/en/latest/commands.html)</p>
-<pre><code>    id                      Short identifier for new tool (no whitespace).
-    force                   Overwrite existing tool if present.
-    name                    Name for new tool.
-    description             Short description for new tool.
-    requirement             Name of the package.  requirements will be set using Bioconda.
-    example_command         Example to command with paths to build Cheetah template from. Must follow with --example_input and --example_output.
-    example_input           Replace input file.
-    example_output          Replace output file.
-    test_case               Generate test-data directory with tool test cases from the supplied example.
-    cite_url                Supply a URL for citation.
-    help_from_command       Auto populate help from supplied command.
-</code></pre>
-<h2 id="tips_1">Tips</h2>
-<p>Planemo lint command only checks if the syntax is correct, so if you are unable to generate the tool using planemo commands or have existing
-one already, check to make sure the above commands are satisfied.</p>
-<h2 id="getrandombed">getRandomBed</h2>
-<p>Download getRandomBed.py tool:</p>
-<p>Use the following commands to generate the xml file getRandomBed.xml</p>
-<pre><code>    planemo tool_init --force \
-                    --id 'getRandomBed' \
-                    --name 'Random Bed' \
-                    --requirement python@2.7.14 \
-                    --example_command '$__tool_directory__/genRandomBed.py $inputBed' \
-                    --example_input inputBed \
-                    --example_output randomBed \
-                    --test_case \
-                    --cite_url 'http://www.pughlab.psu.edu/' \
-                    --help_from_command 'getRandomBed'
-</code></pre>
-<p>Planemo lint to review tool for XML validity, syntax errors, and compliance with IUC best practices.</p>
-<pre><code>    planemo l
+<p>Output:
+<img alt="Screenshot" src="../image/output.jpg" /></p>
+<p>Functionality test</p>
+<pre><code>$ planemo t
 </code></pre>
 <p>Output:</p>
-<p><img alt="Screenshot" src="../output.jpg" /></p>
-<p>Functionality test</p>
-<pre><code>    planemo t
+<pre><code>$ planemo t
+...
+All 1 test(s) executed passed.
+seqtk_seq[0]: passed
 </code></pre>
-<h2 id="wrapping">Wrapping</h2>
-<p>Consider the following small Perl script.</p>
+<p>If error occurs, refer to the error report page on GitHub.</p>
+<h3 id="2-getrandombed">2) getRandomBed</h3>
+<p>Download getRandomBed.py tool:</p>
+<p>Use the planemo commands to generate the xml file getRandomBed.xml</p>
+<p>Solution:</p>
+<pre><code>planemo tool_init --force \
+                --id 'getRandomBed' \
+                --name 'Random Bed' \
+                --requirement python@2.7.14 \
+                --example_command '$__tool_directory__/genRandomBed.py $inputBed' \
+                --example_input inputBed \
+                --example_output randomBed \
+                --test_case \
+                --cite_url 'http://www.pughlab.psu.edu/' \
+                --help_from_command 'getRandomBed'
+</code></pre>
+<h3 id="3-toolexamplepl">3) toolExample.pl</h3>
+<p>Consider the following Perl script.</p>
 <pre><code>    #!/usr/bin/perl -w
 
     # usage : perl toolExample.pl &lt;FASTA file&gt; &lt;output file&gt;
-
 
     open (IN, "&lt;$ARGV[0]");
     open (OUT, "&gt;$ARGV[1]");
@@ -242,62 +287,36 @@ one already, check to make sure the above commands are satisfied.</p>
     }
     print OUT sprintf("%.3f", $gc/$length) . "\n";
     close( IN );
-    close( OUT );
+    close( OUT ); #__end__
 </code></pre>
-<p>Exercise: Create an xml file for the script with an output as follows:</p>
-<pre><code>    &lt;tool id="gc_content" name="Compute GC content"&gt;
-      &lt;description&gt;for each sequence in a file&lt;/description&gt;
-      &lt;command&gt;perl $__tool_directory__/gc_content.pl $input output.tsv&lt;/command&gt;
-      &lt;inputs&gt;
-        &lt;param format="fasta" name="input" type="data" label="Source file"/&gt;
-      &lt;/inputs&gt;
-      &lt;outputs&gt;
-        &lt;data format="tabular" name="output" from_work_dir="output.tsv" /&gt;
-      &lt;/outputs&gt;
-      &lt;help&gt;
-    This tool computes GC content from a FASTA file.
-      &lt;/help&gt;
-    &lt;/tool&gt;
+<p>Create an xml file for the script with an output as follows:</p>
+<pre><code>&lt;tool id="gc_content" name="Compute GC content"&gt;
+  &lt;description&gt;for each sequence in a file&lt;/description&gt;
+  &lt;command&gt;perl $__tool_directory__/gc_content.pl $input output.tsv&lt;/command&gt;
+  &lt;inputs&gt;
+    &lt;param format="fasta" name="input" type="data" label="Source file"/&gt;
+  &lt;/inputs&gt;
+  &lt;outputs&gt;
+    &lt;data format="tabular" name="output" from_work_dir="output.tsv" /&gt;
+  &lt;/outputs&gt;
+  &lt;help&gt;
+This tool computes GC content from a FASTA file.
+  &lt;/help&gt;
+&lt;/tool&gt;
 </code></pre>
 <p>Solution:</p>
-<h1 id="test">Test</h1>
-<h2 id="using-planemo-to-test">Using Planemo to Test</h2>
-<p>This guide assumes that you have already installed Planemo and have a directory with one or more Galaxy tool XML files.</p>
-<h2 id="1-lint">1) Lint</h2>
-<p>Planemo can check if the XML file adheres to the Galaxy coding standard using the lint (l) command.</p>
-<ul>
-<li><code>$ planemo lint</code></li>
-<li><code>$ planemo l --help</code></li>
-</ul>
-<p>For demonstration, type the following in the same directory where your seqtk.xml is located.</p>
-<ul>
-<li><code>$ planemo lint seqtk.xml</code></li>
-</ul>
-<p>The following output should be generated. If output says "Failed linting" at the end, see the error report guidelines here:
-<a href="https://github.com/galaxyproject/planemo/#issues">github.com/galaxyproject/planemo/#issues</a>.</p>
-<h2 id="2-test">2) Test</h2>
-<p>The test command can be used to test the functionality of tool(s). In other words, it checks if the xml file works as supposed to.</p>
-<ul>
-<li><code>$ planemo test</code> - test all the xml files in the current directory</li>
-<li><code>$ planemo test --galaxy_root=../galaxy seqtk.xml</code> - with optional parameters and specify file(s) to run the test.</li>
-</ul>
-<p>By default, planemo will search parent directories to see if any is a Galaxy instance.</p>
-<ul>
-<li>Important note: if you specify --galaxy_root folder, reverting it back might be difficult since the  planemo virtual environment path is set up to the galaxy directory. You can try to force planemo to download a disposable instance with the --install_galaxy flag.</li>
-<li><code>$ planemo test --install_galaxy seqtk.xml</code></li>
-</ul>
-<p>The following output should be generated. If error occurs, refer to the error report page on GitHub.</p>
-<p>Successful output:</p>
-<pre><code>        $ planemo t
-        ...
-        All 1 test(s) executed passed.
-        seqtk_seq[0]: passed
+<pre><code>planemo tool_init   --force \
+                    --id 'gc_content' \
+                    --name 'Compute GC content' \
+                    --description 'for each sequence in a file' \
+                    --example_command 'perl $__tool_directory__/gc_content.pl $input output.tsv' \
+                    --example_input input.fasta \
+                    --example_output output.tsv \
+                    --help 'This tool computes GC content from a FASTA file.'
 </code></pre>
-<h2 id="3-serve">3) Serve</h2>
-<p>If the result says All test passed, then we can open Galaxy with the serve (or with s).</p>
-<pre><code>    $ planemo s
-    ...
-    serving on http://127.0.0.1:8086
+<p>Q: Will this pass the planemo lint test?</p>
+<p>A: No it is missing the following parameters:</p>
+<pre><code>                test_case, requirement, citation, help_from_command
 </code></pre></div>
         </div>
 
