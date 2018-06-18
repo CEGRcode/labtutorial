@@ -1,7 +1,7 @@
 # lab_tutorial
 
-<!---
-This is a Penn State BMB lab tutorial page for Galaxy, Planemo, PEGR, and contains Grails Groovy tutorial as well.
+
+This is a Penn State BMB lab IT tutorial page for Galaxy, Planemo, PEGR, and Grails Groovy.
 Mkdocs version: 0.17.3
 Last Modified: June 7, 2018
 
@@ -24,5 +24,3 @@ git push origin master
 
 3. Deploy the site on GitHub
 mkdocs gh-deploy
-
- -->
