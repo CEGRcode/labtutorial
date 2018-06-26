@@ -1,12 +1,5 @@
 # Planemo
 
-Here is the basic workflow:
-
-- Pre-Install
-- Install
-- Usage
-- Example
-
 ## Pre-Install
 
 Install [anaconda](https://www.anaconda.com/download) (locally) on your machine.
@@ -48,6 +41,8 @@ Create galaxy tool wrapper using the init command.
 
 * `$ planemo init`
 
+CONGRATULATIONS, YOU HAVE SUCCESSFULLY SET UP THE PLANEMO TOOL!
+
 Example:
 
 	$ planemo tool_init
@@ -67,8 +62,8 @@ NOTE: Planemo is unable to partially initialize, for example if your xml file is
 ### 2) Lint
 Planemo can check review tool for XML validity, syntax errors, and compliance with IUC best practices using the lint (l) command.
 
-* `$ planemo l` # same as planemo lint
-* `$ planemo l --help`
+* `$ planemo lint` # same as planemo lint
+* `$ planemo lint --help`
 
 You will also see the test-data directory generated for testing.
 
@@ -148,8 +143,7 @@ Type the following in the same directory where your seqtk.xml is located.
 
 - Tip: Planemo lint command only checks if the syntax is correct, so if you are unable to pass the lint using planemo, check to make sure the above requirements are satisfied. If output says "Failed linting" at the end, see the current [github issues](https://github.com/galaxyproject/planemo/#issues).
 
-Output:
-![Screenshot](image/output.jpg)
+Successful output [here](image/output.jpg)
 
 Functionality test
 
@@ -230,7 +224,7 @@ Create an xml file for the script with an output as follows:
 
 Solution:
 
-	planemo tool_init 	--force \
+	planemo tool_init --force \
 						--id 'gc_content' \
 						--name 'Compute GC content' \
 						--description 'for each sequence in a file' \

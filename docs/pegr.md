@@ -1,12 +1,5 @@
 # PEGR
 
-Here are the list of tools we will install prior to installing local PEGR:
-
-  - Sdkman
-  - Grails
-  - Groovy
-  - Java
-
 ## Pre-Install
 
 Install curl (For Windows, use Git Bash)
@@ -36,6 +29,9 @@ Install Java:
 * `$ sdk install java 8u141-zulu` # alternate version that is also compatible
 * `$ sdk list java` # Check your current version of java
 
+Install MAMP:
+* `https://www.mamp.info/en/downloads/` # download link
+
 -	Now Close your terminal and quit the terminal on the dashboard.[Need to do above step, if you want to run pegr locally ;)]
 
 * `$ grails` # Make Grails install necessary dependencies
@@ -54,7 +50,7 @@ Install Java:
 
 Download the [MySQL file](https://psu.app.box.com/file/175943271869) and rename it to pegrDB.sql
 
-* `Go to System Preferences->MySql Icon` -(other) click to start the SQL server.
+Go to System Preferences and find MySql icon, then click to start the SQL server.
 * `$ mysql.server start` -(mac) if you have installed using homebrew
 
 -	Open the terminal and navigate to the same directory as the pegrDB.sql file
@@ -64,7 +60,7 @@ This will prompt you for that password it gave you. [ if you installed MySQL usi
 
 After successfully connected to the MySQL, set the password for root
 
-	mysql> ALTER USER ‘root’@’localhost’ IDENTIFIED BY ‘<your new password> ‘;
+* `$ mysql> ALTER USER 'root'@'localhost' IDENTIFIED BY '<your new password>';`
 
 •	Create and switch to the new database:
 
@@ -73,27 +69,24 @@ After successfully connected to the MySQL, set the password for root
 	mysql> source pegrDB.sql
 	mysql> show tables;
 
-  •	Successful output:
-![Screenshot](image/pegr/pegr12.png)
+  •	Successful output [here](image/pegr/pegr12.png)
 
 Create a new user to access your “pegr” database
 
-    mysql> create user ‘your_ username’@’localhost’ identified by ‘your_password’;
-    mysql> grant all privileges on *.* to ‘your_username’@’localhost’;
+    * `$ mysql> create user 'your_ username'@'localhost' identified by 'your_password';`
+    * `$ mysql> grant all privileges on *.* to 'your_username'@'localhost';`
 
 For an example,
 
-    mysql> create user hedgiejo@localhost identified by mypassword12;
+    mysql> create user hedgiejo@localhost identified by mypassword;
     mysql> grant all privileges on *.* to hedgiejo@localhost;
 
 Modify an existing account to gain a login credentials (need a valid non-WebAccess account)
 Within your pegrDB, locate the user "labadmin" and replace the password value:
 
-    UPDATE user
-    set password="password"
-    where username="labadmin";
+    `$ mysql> UPDATE user set password="password" where username="labadmin";`
 
-Open the BuildConfig.groovy file at pegr/grails-app/conf/BuildConfig.groovy and check the plugins block and verify that the build for the tomcat is appropiate to your version and add the below lines within the plugin block
+Open the BuildConfig.groovy file at pegr/grails-app/conf/BuildConfig.groovy and check the plugins block and verify that the build for the tomcat is appropriate to your version and add the below lines within the plugin block
 
     compile ":spring-security-core:2.0.0"
     compile "org.grails.plugins:quartz:1.0.1"
@@ -107,9 +100,9 @@ Now open DataSource.groovy at the pegr/grails-app/conf/DataSource.groovy and edi
         development {
             dataSource {
                 dbCreate = "update" // one of 'create', 'create-drop', 'update', 'validate', ''
-                url = "jdbc:mysql://localhost:3306/pegr"
-    			username=" your_username "
-    			password="YOURPASSWORDHERE"
+                url = "database_url"
+    			username=" your_username"
+    			password="your_password"
             }
         }
     }
@@ -117,10 +110,11 @@ Now open DataSource.groovy at the pegr/grails-app/conf/DataSource.groovy and edi
 Now go into the pegr folder and run pegr
   * `$ grails run-app`
 
-This will successfully start and provide with you an url (http://localhost:8081/pegr)
-- usually which directs you to the login screen of PEGR.
+This will successfully start and provide with you an url (http://localhost:8081/pegr) that usually directs you to the login screen of PEGR.
 
 Login using the following labadmin credentials:
 
     Username: labadmin
     Password: passcode
+
+CONGRATULATIONS, YOU HAVE SUCCESSFULLY SET UP THE LOCAL PEGR!

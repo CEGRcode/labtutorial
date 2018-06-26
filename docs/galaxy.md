@@ -43,7 +43,6 @@ This makes sure that galaxy takes your configurations rather than the default on
 
 - Install the below tools from your admin toolshed. (usually install those with the “Owner” being “iuc” or “devteam”), because the other “Owners” can have their own version for the tool in the Toolshed.
 
-
 data_manager_bwa_mem_index_builderodata_manager_fetch_genome_dbkeys_all_fastaodata_manager_sam_fasta_index_builderodata_manager_twobit_builder
 
 - Upload the “sacCer3_cegr. fa” fasta file into the galaxy using the “upload button” on the left pane top right corner.
@@ -56,10 +55,9 @@ data_manager_bwa_mem_index_builderodata_manager_fetch_genome_dbkeys_all_fastaoda
 * `CreateDBkey and reference geneomeoTwoBitoBWA-MEM`
 * `SAM Fasta`
 
--Below is a screenshot for each of the steps, in the same order of execution.
--Once you click on the “Create DBkey and Reference Genome”
--Fill out the information as below and click “Execute”.
--You can specify sequence name to be “SacCer3_cegr” and leave everything as default in all the tools.
+- Below is a screenshot for each of the steps, in the same order of execution.
+- Once you click on the “Create DBkey and Reference Genome”, fill out the information as below and click “Execute”.
+- You can specify sequence name to be “SacCer3_cegr” and leave everything as default in all the tools.
 
 - Once you have run all the tools, you need to check couple of things populate in the internal databases of galaxy. You can check that information from your “Admin” page.
 - Go to Admin -> View Tool Data Table Entries -> __dbkeys__

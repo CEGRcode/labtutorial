@@ -10,8 +10,6 @@ Example:
     .. WARNING: No valid test(s) found.
 
 This indicates that there are no test cases written in the wrapper(.xml file).
-Including any test, for an example:
-
 
 ## Common Errors
 
@@ -22,8 +20,8 @@ Including any test, for an example:
 
 ## Version Conflicts
 
-A lot of troubles with the initial setup comes from the version conflict of multiple tools and dependencies. One can find the list of compatible version below:
+A lot of troubles with the initial setup comes from the version conflict of multiple tools and dependencies. One can find the list of compatible versions below:
 
-python
-planemo
-galaxy
+Python 3.6.5
+Planemo 0.53.0
+Galaxy

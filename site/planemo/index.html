@@ -102,13 +102,6 @@
                 <div class="col-md-9" role="main">
 
 <h1 id="planemo">Planemo</h1>
-<p>Here is the basic workflow:</p>
-<ul>
-<li>Pre-Install</li>
-<li>Install</li>
-<li>Usage</li>
-<li>Example</li>
-</ul>
 <h2 id="pre-install">Pre-Install</h2>
 <p>Install <a href="https://www.anaconda.com/download">anaconda</a> (locally) on your machine.</p>
 <p>Install wget:</p>
@@ -143,6 +136,7 @@ Couple of dependencies are installed and you should see the galaxy running at lo
 <ul>
 <li><code>$ planemo init</code></li>
 </ul>
+<p>CONGRATULATIONS, YOU HAVE SUCCESSFULLY SET UP THE PLANEMO TOOL!</p>
 <p>Example:</p>
 <pre><code>$ planemo tool_init
                 --id 'id' \
@@ -160,8 +154,8 @@ Couple of dependencies are installed and you should see the galaxy running at lo
 <h3 id="2-lint">2) Lint</h3>
 <p>Planemo can check review tool for XML validity, syntax errors, and compliance with IUC best practices using the lint (l) command.</p>
 <ul>
-<li><code>$ planemo l</code> # same as planemo lint</li>
-<li><code>$ planemo l --help</code></li>
+<li><code>$ planemo lint</code> # same as planemo lint</li>
+<li><code>$ planemo lint --help</code></li>
 </ul>
 <p>You will also see the test-data directory generated for testing.</p>
 <h3 id="3-test">3) Test</h3>
@@ -236,8 +230,7 @@ help_from_command       Auto populate help from supplied command.
 <p>Tip: Planemo lint command only checks if the syntax is correct, so if you are unable to pass the lint using planemo, check to make sure the above requirements are satisfied. If output says "Failed linting" at the end, see the current <a href="https://github.com/galaxyproject/planemo/#issues">github issues</a>.</p>
 </li>
 </ul>
-<p>Output:
-<img alt="Screenshot" src="../image/output.jpg" /></p>
+<p>Successful output <a href="../image/output.jpg">here</a></p>
 <p>Functionality test</p>
 <pre><code>$ planemo t
 </code></pre>
@@ -305,7 +298,7 @@ This tool computes GC content from a FASTA file.
 &lt;/tool&gt;
 </code></pre>
 <p>Solution:</p>
-<pre><code>planemo tool_init   --force \
+<pre><code>planemo tool_init --force \
                     --id 'gc_content' \
                     --name 'Compute GC content' \
                     --description 'for each sequence in a file' \

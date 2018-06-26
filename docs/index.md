@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This tutorial is updated as of May 28, 2018 by Hedgie Jo.
+This tutorial is updated as of June 20, 2018 by Hedgie Jo.
 Originally written by Prashant Kuntala in 8th March, 2018.
 
 This page was made using mkdocs, for more information visit [mkdocs.org](http://mkdocs.org).
