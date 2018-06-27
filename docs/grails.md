@@ -50,7 +50,7 @@ The biggest suggestion from the video is installing a fresh, new grails 3 app an
 
 After the migration, you must test intensively to catch any unexpected errors.
 
-<<<<<<< HEAD
+
 ---
 
 ## PEGR Upgrade Notes (Grails 2.5.5 -> 3.3.5)
@@ -135,7 +135,5 @@ $ grails s2-quickstart User Role
 [pattern:'/report/togglePreferredAlignment/**', access:['ROLE_ADMIN']],
 ~~~~
 =======
-### Spring security
 
-Refer to the Spring Security Core Plugin - Reference Documentation [here](http://grails-plugins.github.io/grails-spring-security-core/latest/)
->>>>>>> d7cf8eeeef811a039bc3f3a4ae1112b586279fda
+
