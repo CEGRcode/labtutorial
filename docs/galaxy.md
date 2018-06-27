@@ -12,7 +12,7 @@ Install yarn on your machine, if not already installed.
 * `$ brew install yarn` # (mac)
 * `https://yarnpkg.com/en/docs/install` # (other)
 
-## Install Local Galaxy
+## Install
 
 - Go to the tutorial link:  [galaxyproject.org/admin/#get-galaxy](https://galaxyproject.org/admin/get-galaxy/)
 - Clone the galaxy somewhere lower in the directory structure to avoid conda issues and problems. BEST CHOICE: clone it to your ~/Desktop
@@ -29,29 +29,28 @@ Basic starting point tutorials:
 * [galaxyproject.org/#learn](https://galaxyproject.org/learn/)
 * [github.com/galaxyproject/#dagobah-training](https://github.com/galaxyproject/dagobah-training)
 
-## Install sacCer3_cegr Genome build into your Local Galaxy
+## Install sacCer3_cegr Genome build
 
 - Run the galaxy on http://127.0.0.1:8080.
 - Register by click on User -> register
-  * Use the following credentials
-  * `Username: cegr@psu.edu` # username should be same to make the api calls work
-  * `Password: your_password` # create a password of your choice
-- Create a copy of “galaxy.ini.sample” in Config folder and rename it to “galaxy.ini”.
 
-This makes sure that galaxy takes your configurations rather than the default ones.
+  * Use the following credentials
+
+    * `Username: cegr@psu.edu # username should be same to make the api calls work`
+    * `Password: your_password # create a password of your choice`
+
+- Create a copy of “galaxy.ini.sample” in Config folder and rename it to “galaxy.ini”.
 - Open the galaxy.ini file and search for “admin_users” and add the username to have admin access.
 
-- Install the below tools from your admin toolshed. (usually install those with the “Owner” being “iuc” or “devteam”), because the other “Owners” can have their own version for the tool in the Toolshed.
+Install the below tools from your admin toolshed. (usually install those with the “Owner” being “iuc” or “devteam”).
 
-data_manager_bwa_mem_index_builderodata_manager_fetch_genome_dbkeys_all_fastaodata_manager_sam_fasta_index_builderodata_manager_twobit_builder
+    data_manager_bwa_mem_index_builderodata_manager_fetch_genome_dbkeys_all_fastaodata_manager_sam_fasta_index_builderodata_manager_twobit_builder
 
-- Upload the “sacCer3_cegr. fa” fasta file into the galaxy using the “upload button” on the left pane top right corner.
-(available in the data folder, provided along with this documentation).
-- Once you have uploaded, you should see the file appear in the “history pane” on your right.
+Upload the “sacCer3_cegr. fa” fasta file into the galaxy using the “upload button” on the left pane top right corner.
+(available in the data folder, provided along with this documentation). Once you have uploaded, you should see the file appear in the “history pane” on your right.
 
-- Go to Admin portal. Under the “data” section. Click on localdata.
+Go to Admin portal. Under the “data” section. Click on localdata.
 - You need to run the following “data managers tools” that we just installed in the exact order as below:
-
 * `CreateDBkey and reference geneomeoTwoBitoBWA-MEM`
 * `SAM Fasta`
 
@@ -59,14 +58,12 @@ data_manager_bwa_mem_index_builderodata_manager_fetch_genome_dbkeys_all_fastaoda
 - Once you click on the “Create DBkey and Reference Genome”, fill out the information as below and click “Execute”.
 - You can specify sequence name to be “SacCer3_cegr” and leave everything as default in all the tools.
 
-- Once you have run all the tools, you need to check couple of things populate in the internal databases of galaxy. You can check that information from your “Admin” page.
+Once you have run all the tools, you need to check couple of things populate in the internal databases of galaxy.
+
 - Go to Admin -> View Tool Data Table Entries -> __dbkeys__
 - Similarly check “all_fasta”,”twobit”,”bwa_mem_indexes” (all the ones that are bold in the below image, should contain an entry for sacCer3_cegr)
 
-- Above are the screenshots for three of the database tables, in your local galaxy.
-- If you have those entries in the respective tables, then you are good to go.
-
-## Installing the Galaxy / ChIP-exo Workflow into your local instance
+## Install the Galaxy / ChIP-exo Workflow
 - Go to https://chipexo-gw.aci.ics.psu.edu/,
 
 Log in with the correct credentials
@@ -74,22 +71,22 @@ Log in with the correct credentials
 * `Password: password`
 - You should see the below page.
 
-## Installing RepeatMasker on mac (optional, not required for YEPQC pipeline)
+## Install RepeatMasker on mac (optional)
 
+- This is not required for YEPQC pipeline)
 -	Go to the website http://www.repeatmasker.org/RMDownload.html
 -	You need to install the prerequisites first.
 
 ### Pre-Install
 Install RMBlast (sequence Search engine): [RMBlast](http://www.repeatmasker.org/RMBlast.html)
 
-*	You can just download all the binaries from these two locations based on your machine (mac, linux)
-*	ftp://ftp.ncbi.nlm.nih.gov/blast/executables/rmblast/2.2.28/
-*	ftp://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/2.2.28/
+You can just download all the binaries from these two locations based on your machine (mac, linux)
+* `ftp://ftp.ncbi.nlm.nih.gov/blast/executables/rmblast/2.2.28/`
+* `ftp://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/2.2.28/`
 
 *	extract them and copy all the binaries into “/usr/local/bin/” so that all users can use them.
 
-- Check whether you have “rmblastn“ binary in /usr/local/bin/
--	If you don’t then follow the steps in the RMBLAST installation website above.
+- Check whether you have “rmblastn“ binary in /usr/local/bin/. If you don’t then follow the steps in the RMBLAST installation website above.
 
 Install TFR: [download](http://tandem.bu.edu/trf/trf.download.html)
 
@@ -103,16 +100,16 @@ Under the Installation section:
     It prompts for various paths for the executables which we just installed.
     Specify the paths in correctly and add the path to RepeatMasker to your $PATH
 
-## Adding the cegr galaxy output statistics for the core pipeline.
+## Add the cegr galaxy output statistics for the core pipeline.
 
 - [Reference](https://galaxyproject.org/admin/tools/add-tool-tutorial/) to add new tools into galaxy.
-
 - Download the tools from [seqcode](https://github.com/seqcode/cegr-galaxy.git-extract) and copy the cegr_statistics folder into your “tools” folder in galaxy.
 
-- Please remember that below lines make your galaxy run on port 8090 and local pegr run on port 8080.
+Please remember that below lines make your galaxy run on port 8090 and local pegr run on port 8080.
+
 - Configure the port for galaxy in “galaxy.ini” file.
 - You need to generate an apikey in your local galaxy so that it can communicate with the local PEGR.
-- On “Admin/UserManagement” click on “API keys”. Click on “Generate a new key now”. Use that key in the below steps. (make sure you don’t generate keys for the same user twice, it can lead to errors.)
+- On “Admin/UserManagement” click on “API keys”. Click on “Generate a new key now”. Use that key in the below steps. (don't generate keys for the same user twice, it can lead to errors.)
 - create a copy of “stats_config.ini.sample” and rename it to “cegr_config.ini.sample”
 - add the below lines into the file.
 
@@ -120,15 +117,18 @@ Under the Installation section:
 - Go to your “config” folder and make a copy of “tools_conf.xml.main” and rename it to “tools_conf.xml”
 - Add below lines at the end of the file within the </toolbox>
 
-- Save and restart galaxy.
+Save and restart galaxy.
+
 - You can edit the pipeline to remove “Repeat masker” in the paired_002” workflow.
 - Below images show removal of “Repeat masker” and rearranging the workflow.
 
-## Adding your workflow id into your Local PEGR DB
-- Each workflow in galaxy has a unique id that is assigned internally.
-- We use bioblend framework (python) to access galaxy and retrieve your workflow id.
-- Documentation: https://bioblend.readthedocs.io/en/latest/api_docs/galaxy/docs.html-You can use the “getWorkflowid.py” python script to get the workflow id.
+## Add workflow id into your Local PEGR DB
+Each workflow in galaxy has a unique id that is assigned internally. We use bioblend framework (python) to access galaxy and retrieve your workflow id.
+
+[Documentation](https://bioblend.readthedocs.io/en/latest/api_docs/galaxy/docs.html). You can use the “getWorkflowid.py” python script to get the workflow id.
+
 Make sure you replace your galaxy instance url and apikey from your local instance.(script is available in the data folder, provided along with this documentation). Make sure that your galaxy is running before you use the script.
-- Your output from the script looks like below.
+
+- Successful output:
 
   CONGRATULATIONS, YOU HAVE SUCCESSFULLY SET UP THE LOCAL GALAXY!
