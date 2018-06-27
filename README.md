@@ -8,7 +8,7 @@ You can find the live site on the github page: https://cegrcode.github.io/labtut
 Mkdocs version: 0.17.3
 Last Modified: June 27, 2018
 
-####Steps to Build & Publish Mkdocs on GitHub Page:
+#### Steps to Build & Publish Mkdocs on GitHub Page:
 
 1. Clone the repository:
     * `git clone https://github.com/CEGRcode/labtutorial.git`
@@ -36,7 +36,7 @@ Last Modified: June 27, 2018
     * `mkdocs gh-deploy`
 
 
-####Quick Mkdocs Tutorial
+#### Quick Mkdocs Tutorial
 
 1. Title/Subtitles
 
