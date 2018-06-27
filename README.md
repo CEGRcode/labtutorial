@@ -48,11 +48,12 @@ Use '#' to indicate titles and Subtitles. The font size will decrease with more 
 
 2. Lists
 
-Use '* ` `' to create list of commands and steps, etc
+Use * to create list of commands and steps, etc. If you want it to be highlighted then use * and enclose the command inside ``
 
 3. Hyperlinks
 
-You can just add a link like this one http://127.0.0.1:8000/ or hide the details by giving it a shorter, concise title
+You can just add a link like this one: http://127.0.0.1:8000/, or hide the details by giving it a shorter, more concise title.
 
-  Format: '[]()' # put title in [], and link inside ()
-  You can also reference an image path instead of link, such as image/pegr/pegr12.png
+    Format: put title in [], and link inside (). [] () # no space in between the two
+
+    You can also reference an image path instead of link, such as image/pegr/pegr12.png
