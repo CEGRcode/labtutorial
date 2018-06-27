@@ -100,13 +100,6 @@
                 <div class="col-md-9" role="main">
 
 <h1 id="pegr">PEGR</h1>
-<p>Here are the list of tools we will install prior to installing local PEGR:</p>
-<ul>
-<li>Sdkman</li>
-<li>Grails</li>
-<li>Groovy</li>
-<li>Java</li>
-</ul>
 <h2 id="pre-install">Pre-Install</h2>
 <p>Install curl (For Windows, use Git Bash)</p>
 <p>Install sdkman (<a href="http://sdkman.io/install.html">tutorial</a>):</p>
@@ -117,10 +110,10 @@
 </ul>
 <p>Install Grails:</p>
 <ul>
-<li><code>$ sdk install grails 2.5.4</code></li>
+<li><code>$ sdk install grails 2.5.5</code></li>
 <li><code>$ sdk list grails</code>      # check your installation of grails</li>
 <li>
-<p><code>$ sdk use grails 2.5.4</code> # change your default grails to version 2.5.4</p>
+<p><code>$ sdk use grails 2.5.5</code> # change your default grails to version 2.5.4</p>
 </li>
 <li>
 <p>Now close the terminal and quit the terminal in your dashboard. [Important!]</p>
@@ -135,14 +128,16 @@
 <ul>
 <li><code>$ sdk install java 7u141-zulu</code> # install Java (specific version needed for current PEGR)</li>
 <li><code>$ sdk install java 8u141-zulu</code> # alternate version that is also compatible</li>
-<li>
-<p><code>$ sdk list java</code> # Check your current version of java</p>
-</li>
+<li><code>$ sdk list java</code> # Check your current version of java</li>
+</ul>
+<p>Install MAMP:
+* <code>https://www.mamp.info/en/downloads/</code> # download link</p>
+<ul>
 <li>
 <p>Now Close your terminal and quit the terminal on the dashboard.[Need to do above step, if you want to run pegr locally ;)]</p>
 </li>
 <li>
-<p><code>$ grails</code> # Make Grails install necessary dependencies</p>
+<p><code>$ grails</code> # check if grails has been successfully installed</p>
 </li>
 <li>Press ctrl+C to exit the prompt.</li>
 </ul>
@@ -156,43 +151,43 @@
 grails.project.source.level = 1.6 -&gt; grails.project.source.level = 1.7
 </code></pre>
 <p>Download the <a href="https://psu.app.box.com/file/175943271869">MySQL file</a> and rename it to pegrDB.sql</p>
+<p>Go to System Preferences and find MySql icon, then click to start the SQL server.</p>
 <ul>
-<li><code>Go to System Preferences-&gt;MySql Icon</code> -(other) click to start the SQL server.</li>
 <li>
 <p><code>$ mysql.server start</code> -(mac) if you have installed using homebrew</p>
 </li>
 <li>
 <p>Open the terminal and navigate to the same directory as the pegrDB.sql file</p>
 </li>
-<li><code>$ mysql -u root -p</code> # Connect to your server</li>
+<li>
+<p><code>$ mysql -u root -p</code> # Connect to your server</p>
+</li>
 </ul>
 <p>This will prompt you for that password it gave you. [ if you installed MySQL using the .dmg file] otherwise, in the case of homebrew, there is no password set for root. You should be able to see the prompt mysql&gt;</p>
 <p>After successfully connected to the MySQL, set the password for root</p>
-<pre><code>mysql&gt; ALTER USER ‘root’@’localhost’ IDENTIFIED BY ‘&lt;your new password&gt; ‘;
-</code></pre>
+<ul>
+<li><code>$ mysql&gt; ALTER USER 'root'@'localhost' IDENTIFIED BY '&lt;your new password&gt;';</code></li>
+</ul>
 <p>•   Create and switch to the new database:</p>
 <pre><code>mysql&gt; Create database pegr;
 mysql&gt; use pegr;
 mysql&gt; source pegrDB.sql
 mysql&gt; show tables;
 </code></pre>
-<p>• Successful output:
-<img alt="Screenshot" src="../image/pegr/pegr12.png" /></p>
+<p>• Successful output <a href="../image/pegr/pegr12.png">here</a></p>
 <p>Create a new user to access your “pegr” database</p>
-<pre><code>mysql&gt; create user ‘your_ username’@’localhost’ identified by ‘your_password’;
-mysql&gt; grant all privileges on *.* to ‘your_username’@’localhost’;
+<pre><code>mysql&gt; create user 'username'@'localhost' identified by 'password';
+mysql&gt; grant all privileges on *.* to 'username'@'localhost';
 </code></pre>
 <p>For an example,</p>
-<pre><code>mysql&gt; create user hedgiejo@localhost identified by mypassword12;
-mysql&gt; grant all privileges on *.* to hedgiejo@localhost;
+<pre><code>mysql&gt; create user hyc5135@localhost identified by 'mypassword';
+mysql&gt; grant all privileges on *.* to hyc5135@localhost;
 </code></pre>
 <p>Modify an existing account to gain a login credentials (need a valid non-WebAccess account)
 Within your pegrDB, locate the user "labadmin" and replace the password value:</p>
-<pre><code>UPDATE user
-set password="password"
-where username="labadmin";
+<pre><code>$ mysql&gt; UPDATE user set password="password" where username="labadmin";
 </code></pre>
-<p>Open the BuildConfig.groovy file at pegr/grails-app/conf/BuildConfig.groovy and check the plugins block and verify that the build for the tomcat is appropiate to your version and add the below lines within the plugin block</p>
+<p>Open the BuildConfig.groovy file at pegr/grails-app/conf/BuildConfig.groovy and check the plugins block and verify that the build for the tomcat is appropriate to your version and add the below lines within the plugin block</p>
 <pre><code>compile ":spring-security-core:2.0.0"
 compile "org.grails.plugins:quartz:1.0.1"
 compile "org.grails.plugins:mail:1.0.7"
@@ -203,21 +198,23 @@ compile "org.grails.plugins:mail:1.0.7"
     development {
         dataSource {
             dbCreate = "update" // one of 'create', 'create-drop', 'update', 'validate', ''
-            url = "jdbc:mysql://localhost:3306/pegr"
-            username=" your_username "
-            password="YOURPASSWORDHERE"
+            url = "database_url"
+            username=" your_username"
+            password="your_password"
         }
     }
 }
 </code></pre>
-<p>Now go into the pegr folder and run pegr
-  * <code>$ grails run-app</code></p>
-<p>This will successfully start and provide with you an url (http://localhost:8081/pegr)
-- usually which directs you to the login screen of PEGR.</p>
+<p>Now go into the pegr folder and run pegr</p>
+<ul>
+<li><code>$ grails run-app</code></li>
+</ul>
+<p>This will successfully start and provide with you an url (http://localhost:8081/pegr) that usually directs you to the login screen of PEGR.</p>
 <p>Login using the following labadmin credentials:</p>
 <pre><code>Username: labadmin
 Password: passcode
-</code></pre></div>
+</code></pre>
+<p>CONGRATULATIONS, YOU HAVE SUCCESSFULLY SET UP THE LOCAL PEGR!</p></div>
         </div>
 
         <footer class="col-md-12">
