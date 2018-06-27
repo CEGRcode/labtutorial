@@ -94,7 +94,6 @@
     <ul class="nav bs-sidenav">
         <li class="main active"><a href="#grails">Grails</a></li>
             <li><a href="#grails-tutorial">Grails Tutorial</a></li>
-            <li><a href="#head">&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</a></li>
             <li><a href="#pegr-upgrade-notes-grails-255-335">PEGR Upgrade Notes (Grails 2.5.5 -&gt; 3.3.5)</a></li>
     </ul>
 </div></div>
@@ -140,7 +139,7 @@ For step-by-step migration guide click [here]</p>
   Source vs Binary Plugins</p>
 <p>The biggest suggestion from the video is installing a fresh, new grails 3 app and migrating from the original grails 2 app instead of trying to make the changes in the original app. This will create a clean migration platform.</p>
 <p>After the migration, you must test intensively to catch any unexpected errors.</p>
-<h2 id="head">&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</h2>
+<hr />
 <h2 id="pegr-upgrade-notes-grails-255-335">PEGR Upgrade Notes (Grails 2.5.5 -&gt; 3.3.5)</h2>
 <p>Written by Pierce Chaffin
 Last Updated 06/27/18</p>
@@ -222,26 +221,7 @@ $ cp -rf ../old_app/grails-app/* grails-app
 <li>Thus, as shown below make a mapping for every page with rules with regards to User Roles.</li>
 </ul>
 <pre><code>[pattern:'/report/togglePreferredAlignment/**', access:['ROLE_ADMIN']],
-</code></pre>
-
-<p>=======</p>
-<h3 id="spring-security">Spring security</h3>
-<p>Refer to the Spring Security Core Plugin - Reference Documentation <a href="http://grails-plugins.github.io/grails-spring-security-core/latest/">here</a></p>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>d7cf8eeeef811a039bc3f3a4ae1112b586279fda</p>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote></div>
+</code></pre></div>
         </div>
 
         <footer class="col-md-12">
