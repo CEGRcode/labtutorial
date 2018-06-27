@@ -50,6 +50,92 @@ The biggest suggestion from the video is installing a fresh, new grails 3 app an
 
 After the migration, you must test intensively to catch any unexpected errors.
 
+<<<<<<< HEAD
+---
+
+## PEGR Upgrade Notes (Grails 2.5.5 -> 3.3.5)
+Written by Pierce Chaffin
+Last Updated 06/27/18
+
+*This is not all inclusive of bugs you will encounter however I am working to add those as soon as I can*
+Notes:
+
+
+### Initial Migration of Files
+
+![Alt](/image/grailschanges.png "Title")
+
+* First Step is to create a new grails project in grails 3.3.5 in a new directory.sdf
+* Next is to migrate all relevant files to their new homes in the new file hierarchy in grails 3.x
+
+#### Start with the source files
+
+~~~~
+$ cp -rf ../old_app/src/groovy/* src/main/groovy
+$ cp -rf ../old_app/src/java/* src/main/groovy
+$ cp -rf ../old_app/grails-app/* grails-app
+~~~~
+#### Then migrate all test files
+~~~~
+$ cp -rf ../old_app/test/unit/* src/main/groovy
+$ cp -rf ../old_app/src/java/* src/main/groovy
+$ cp -rf ../old_app/grails-app/* grails-app
+~~~~
+
+* Now that was it for the easy segments … onto all the configuration files and reorganization
+
+* For starters lets migrate all dependencies from BuildConfig.groovy to the new build.gradle file
+
+* (Mind you all of these plugins have new names and access locations as codehaus and other packages no longer exist)
+
+* Ex: As the lib directory no longer is directly supported do this …
+
+~~~~
+      compile fileTree(dir:'lib', include:'.jar')
+~~~~
+
+#### Additionally, going back to codehaus
+* ##### org.codehaus.groovy.grails. has been migrated to grails.code.GrailsApplication.*
+* At this point in terminal we are going to want to resolve controller dependencies as well as some domain dependencies
+##### Do this by running
+~~~~
+$ grails compile
+~~~~
+
+*Do this quite a few times, looking at the stack trace and resolving as you go*
+
+* First issue you will probably encounter is that of @grails.validation.Validateable
+* This is no longer in Grails 3 and needs to be changed to a class implementation
+~~~~
+class XXXX implements grails.validation.Validateable()
+~~~~
+
+#### A few other notes with regards to syntax … a few packages in grails have changed simply in terminology .. i.e. j_username is now simply username in Spring Security Core (auth.gsp)
+
+![Alt](/image/grailschanges2.png "Title")
+![Alt](/image/grailschanges3.png "Title")
+
+* Once you compile successfully you can try to run-app but almost assuredly will find that this doesn’t work
+* Next comes the configuration files … Start by moving URLMappings.groovy to the controllers directory
+* And then change Config.groovy to application.groovy
+* And then it is up to you (I went with the YAML file) as to where you want to merge in your DataSource.groovy (Either into application.yml or application.groovy
+* Delete log4j from the application.groovy file
+* Migrate the URLInterceptMapping to the new formatting and change it to a static rules mapping
+##### Run
+~~~~
+$ grails s2-quickstart User Role
+~~~~
+
+#### Past this, a lot of functionality might still not work as some dependencies are still not lining up properly
+* At this point the concept of the security in Grails being different in defaults is the largest obstacle.
+* In grails 3.x, by default all pages are inaccessible unless explicitly notated in the static rules of the application security for specific rules.
+* Thus, as shown below make a mapping for every page with rules with regards to User Roles.
+
+~~~~
+[pattern:'/report/togglePreferredAlignment/**', access:['ROLE_ADMIN']],
+~~~~
+=======
 ### Spring security
 
 Refer to the Spring Security Core Plugin - Reference Documentation [here](http://grails-plugins.github.io/grails-spring-security-core/latest/)
+>>>>>>> d7cf8eeeef811a039bc3f3a4ae1112b586279fda
