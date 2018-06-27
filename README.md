@@ -34,3 +34,25 @@ Steps to Build & Publish Mkdocs on GitHub Page:
 
 7. Deploy the site on GitHub
     * `mkdocs gh-deploy`
+
+
+Quick Mkdocs Tutorial
+
+1. Title/Subtitles
+
+Use '#' to indicate titles and Subtitles. The font size will decrease with more '#' you add
+
+# This is the main title
+## This is the subtitle
+### This is the sub-subtitle
+
+2. Lists
+
+Use '* ` `' to create list of commands and steps, etc
+
+3. Hyperlinks
+
+You can just add a link like this one http://127.0.0.1:8000/ or hide the details by giving it a shorter, concise title
+
+  Format: '[]()' # put title in [], and link inside ()
+  You can also reference an image path instead of link, such as image/pegr/pegr12.png
