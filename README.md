@@ -2,6 +2,9 @@
 
 
 This is a Penn State BMB lab IT tutorial page for Galaxy, Planemo, PEGR, and Grails Groovy.
+
+You can find the live site on the github page: https://cegrcode.github.io/labtutorial/
+
 Mkdocs version: 0.17.3
 Last Modified: June 7, 2018
 
