@@ -3,7 +3,7 @@
 
 This website is built from [markdown](https://guides.github.com/features/mastering-markdown/) files using [`MkDocs`](https://www.mkdocs.org/)
 
-:sparkles: Please read the documentation on how to use [`MkDocs`]((https://www.mkdocs.org/), before cloning and making updates to this repo & website :sparkles:
+:sparkles: Please read the documentation on how to use [`MkDocs`](https://www.mkdocs.org/), before cloning and making updates to this repo & website :sparkles:
 
 |Useful Commands | Description |
 |----|----|
