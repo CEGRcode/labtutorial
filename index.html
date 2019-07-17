@@ -8,7 +8,7 @@
   <meta name="description" content="None">
   
   <link rel="shortcut icon" href="img/favicon.ico">
-  <title>Welcome - IT Tutorial</title>
+  <title>Home - PughLab-guides</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="css/theme.css" type="text/css" />
@@ -17,7 +17,7 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Welcome";
+    var mkdocs_page_name = "Home";
     var mkdocs_page_input_path = "index.md";
     var mkdocs_page_url = null;
   </script>
@@ -36,7 +36,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href="." class="icon icon-home"> IT Tutorial</a>
+        <a href="." class="icon icon-home"> PughLab-guides</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
@@ -50,22 +50,28 @@
           
             <li class="toctree-l1 current">
 		
-    <a class="current" href=".">Welcome</a>
+    <a class="current" href=".">Home</a>
     <ul class="subnav">
             
-    <li class="toctree-l2"><a href="#welcome">Welcome</a></li>
+    <li class="toctree-l2"><a href="#introduction">Introduction</a></li>
+    
+
+    <li class="toctree-l2"><a href="#infrastructure-details">Infrastructure Details</a></li>
+    
+
+    <li class="toctree-l2"><a href="#software-stacks">Software Stacks</a></li>
     
         <ul>
         
-            <li><a class="toctree-l3" href="#introduction">Introduction</a></li>
-        
-            <li><a class="toctree-l3" href="#quick-commands">Quick Commands</a></li>
-        
-            <li><a class="toctree-l3" href="#project-layout">Project layout</a></li>
-        
-            <li><a class="toctree-l3" href="#navigation">Navigation</a></li>
+            <li><a class="toctree-l3" href="#development-tools">Development Tools</a></li>
         
         </ul>
+    
+
+    <li class="toctree-l2"><a href="#tutorials-reading-material">Tutorials &amp; Reading Material</a></li>
+    
+
+    <li class="toctree-l2"><a href="#contributors">Contributors</a></li>
     
 
     </ul>
@@ -111,7 +117,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href=".">IT Tutorial</a>
+        <a href=".">PughLab-guides</a>
       </nav>
 
       
@@ -123,8 +129,11 @@
     
       
     
-    <li>Welcome</li>
+    <li>Home</li>
     <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/CEGRcode/labtutorial/edit/master/docs/index.md"
+          class="icon icon-github"> Edit on GitHub</a>
       
     </li>
   </ul>
@@ -133,58 +142,122 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="welcome">Welcome</h1>
-<h2 id="introduction">Introduction</h2>
-<p>This tutorial is updated as of June 20, 2018 by Hedgie Jo.
-Originally written by Prashant Kuntala in 8th March, 2018.</p>
-<p>This page was made using mkdocs, for more information visit <a href="http://mkdocs.org">mkdocs.org</a>.</p>
-<h2 id="quick-commands">Quick Commands</h2>
-<p>List of main commands and their purpose.</p>
-<p>Galaxy</p>
+                <h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">#</a></h2>
+<p>This website contains installation guides to setup primary software packages and development infrastructure for <strong>Mac</strong> Workstations. Maintained and Curated by <a href="https://www.pughlab.psu.edu/">PughLab</a>.</p>
+<h2 id="infrastructure-details">Infrastructure Details<a class="headerlink" href="#infrastructure-details" title="Permanent link">#</a></h2>
+<p>The lab takes advantage of <a href="https://galaxyproject.github.io/">GALAXY</a> to create data analysis &amp; visualization pipelines for large-scale data processing on the <a href="https://ics.psu.edu/about/">ACI-ICS</a> clusters and also leverages <a href="https://www.xsede.org/">XSEDE</a> resources for compute requirements.</p>
+<p>For day to day bioinformatics, install &amp; start using <a href="https://github.com/CEGRcode/scriptmanager/releases">Script Manager.</a></p>
+<table>
+<thead>
+<tr>
+<th>ICS-ACI Resource URL</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://ics.psu.edu/computing-services/account-setup/">Account Setup</a></td>
+</tr>
+<tr>
+<td><a href="https://ics.psu.edu/computing-services/ics-aci-user-guide/">User's Guide</a></td>
+</tr>
+</tbody>
+</table>
+<p><em>Make sure you are added to the PughLab ACI allocations and relevant group space once you get an ACI account.</em></p>
+<h2 id="software-stacks">Software Stacks<a class="headerlink" href="#software-stacks" title="Permanent link">#</a></h2>
+<p>Below are some the Web development stacks being used in the lab.</p>
+<table>
+<thead>
+<tr>
+<th>Project</th>
+<th>Abbreviation</th>
+<th>Stack</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Yeast Epigenome Project</td>
+<td>YEP</td>
+<td>MERN</td>
+</tr>
+<tr>
+<td>Protein Capture Reagent Program Validation</td>
+<td>PCRP</td>
+<td>MERN</td>
+</tr>
+<tr>
+<td>Platform for Epigenetic and Genomic Research</td>
+<td>PEGR</td>
+<td><a href="https://www.mysql.com/">MySql</a>, <a href="https://grails.org/">Grails</a>, <a href="https://groovy-lang.org/">Groovy</a></td>
+</tr>
+</tbody>
+</table>
 <ul>
-<li><code>sh run.sh</code> - run the local galaxy instance</li>
-<li><code>grails</code> - install dependencies</li>
-</ul>
-<p>Planemo</p>
-<ul>
-<li><code>planemo tool_init --id 'wrap' --name 'Tool Wrapper'</code> - generate xml file</li>
-<li><code>planemo l</code> - wrapper syntax check for the galaxy coding standard</li>
-<li><code>planemo t</code> - test tool functionality</li>
-<li><code>planemo s</code> - serve planemo on local host</li>
-</ul>
-<p>PEGR</p>
-<ul>
-<li><code>mysql.server start</code> - start the sql server, in this case the local pegr instance</li>
-<li><code>grails run-app</code> - start the grails app<pre><code>mysql&gt; Create database pegr; # create pegr database
-mysql&gt; use pegr;             # set pegr as the database
-mysql&gt; source pegrDB.sql     # use the sql server
-mysql&gt; show tables;          # view tables
-</code></pre>
+<li>
+<p>MERN Stack is made up of <a href="https://www.mongodb.com/">MongoDB</a>, <a href="https://expressjs.com/">Express</a>, <a href="https://reactjs.org/">React</a>, <a href="https://nodejs.org/en/">NodeJS</a></p>
+</li>
+<li>
+<p>For more project repositories, go to PughLab's <a href="https://github.com/CEGRcode">GitHub</a></p>
 </li>
 </ul>
-<p>Grails</p>
+<h4 id="development-tools">Development Tools<a class="headerlink" href="#development-tools" title="Permanent link">#</a></h4>
 <ul>
-<li><code>grails</code> - install local dependencies</li>
-<li><code>grails run-app</code> - start the grails app</li>
+<li>Install the missing package manager for macOS : <a href="https://brew.sh/"><code>Homebrew</code></a></li>
+<li>Command line tools using Xcode, paste this command in a terminal :  <code>xcode-select --install</code></li>
+<li>For <code>Python3</code> &amp; <code>Python2.x</code> development, download &amp; install <a href="https://www.anaconda.com/">Anaconda</a></li>
+<li>Install <code>Java8.x</code> and <code>Java JDK</code> before you download the latest release of <a href="https://github.com/CEGRcode/scriptmanager/releases">ScriptManager</a></li>
 </ul>
-<h2 id="project-layout">Project layout</h2>
-<pre><code>mkdocs.yml      # The configuration file.
-docs/
-    index.md    # The documentation homepage.
-    galaxy.md   # Galaxy tutorial
-    planemo.md  # Planemo tutorial
-    pegr.md     # PEGR tutorial
-    grails.md   # Grails Groovy tutorial
-    debug.md    # Debugging help
-    faq.md      # Frequently Asked Questions
-</code></pre>
-<h2 id="navigation">Navigation</h2>
-<p>Here are some tips on how to navigate through the site.</p>
-<pre><code>- Navigation Bar: select any pages you want to view
-- Search: search any keyword on the site
-- Previous: Go back to the previous page
-- Next: Move forward to the next page
-</code></pre>
+<h2 id="tutorials-reading-material">Tutorials &amp; Reading Material<a class="headerlink" href="#tutorials-reading-material" title="Permanent link">#</a></h2>
+<ul>
+<li>Understanding Shell scripts, Markdown, Git and start using ACI clusters.<ul>
+<li><a href="https://bootcamp.biostars.io/#day2">PSU Biostars Bootcamp #day2</a></li>
+</ul>
+</li>
+<li>Beginner Web Development tutorials <a href="https://developer.mozilla.org/en-US/docs/Web/Tutorials">MDN Web Docs</a><ul>
+<li>Web technologies at a glance.<ul>
+<li><a href="https://www.tutorialspoint.com/html5/">HTML</a></li>
+<li><a href="https://www.tutorialspoint.com/css/">CSS</a></li>
+<li><a href="https://www.tutorialspoint.com/javascript">Javascript</a>    </li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Understanding React<ul>
+<li><a href="https://reactjs.org/blog/2013/06/05/why-react.html">Why did they build React ?</a>    </li>
+<li><a href="https://reactjs.org/docs/getting-started.html">Official React docs</a></li>
+</ul>
+</li>
+<li>Creating REST API with Node.js<ul>
+<li><a href="https://www.youtube.com/watch?v=0oXYLzuucwE&amp;list=PL55RiY5tL51q4D-B63KBnygU6opNPFk_q">video tutorial</a></li>
+</ul>
+</li>
+<li>Creating React Applications<ul>
+<li><a href="https://www.youtube.com/watch?v=OxIDLw0M-m0&amp;list=PL4cUxeGkcC9ij8CfkAY2RAGb-tmkNwQHG">video tutorial</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="contributors">Contributors<a class="headerlink" href="#contributors" title="Permanent link">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Lab Position</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Prashant Kumar Kuntala</td>
+<td>Computational Scientist</td>
+</tr>
+<tr>
+<td>Hedgie Jo</td>
+<td>Undergraduate Researcher</td>
+</tr>
+<tr>
+<td>Pierce Chaffin</td>
+<td>Undergraduate Researcher</td>
+</tr>
+</tbody>
+</table>
               
             </div>
           </div>
@@ -218,6 +291,8 @@ docs/
   <div class="rst-versions" role="note" style="cursor: pointer">
     <span class="rst-current-version" data-toggle="rst-current-version">
       
+          <a href="https://github.com/CEGRcode/labtutorial/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
       
       
         <span style="margin-left: 15px"><a href="galaxy/" style="color: #fcfcfc">Next &raquo;</a></span>
@@ -233,5 +308,5 @@ docs/
 
 <!--
 MkDocs version : 1.0.4
-Build Date UTC : 2019-07-17 15:50:27
+Build Date UTC : 2019-07-17 20:28:34
 -->

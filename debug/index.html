@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Debug - IT Tutorial</title>
+  <title>Debug - PughLab-guides</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -36,7 +36,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> IT Tutorial</a>
+        <a href=".." class="icon icon-home"> PughLab-guides</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
@@ -50,7 +50,7 @@
           
             <li class="toctree-l1">
 		
-    <a class="" href="..">Welcome</a>
+    <a class="" href="..">Home</a>
 	    </li>
           
             <li class="toctree-l1">
@@ -109,7 +109,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">IT Tutorial</a>
+        <a href="..">PughLab-guides</a>
       </nav>
 
       
@@ -124,6 +124,9 @@
     <li>Debug</li>
     <li class="wy-breadcrumbs-aside">
       
+        <a href="https://github.com/CEGRcode/labtutorial/edit/master/docs/debug.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
     </li>
   </ul>
   <hr/>
@@ -131,22 +134,22 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="debug">Debug</h1>
+                <h1 id="debug">Debug<a class="headerlink" href="#debug" title="Permanent link">#</a></h1>
 <p>This guide outlines some of the common warning messages and errors during the planemo installation &amp; testing procedures.</p>
-<h2 id="common-warnings">Common Warnings</h2>
+<h2 id="common-warnings">Common Warnings<a class="headerlink" href="#common-warnings" title="Permanent link">#</a></h2>
 <p>Example:</p>
 <pre><code>.. WARNING: No tests found, most tools should define test cases.
 .. WARNING: No valid test(s) found.
 </code></pre>
 <p>This indicates that there are no test cases written in the wrapper(.xml file).</p>
-<h2 id="common-errors">Common Errors</h2>
+<h2 id="common-errors">Common Errors<a class="headerlink" href="#common-errors" title="Permanent link">#</a></h2>
 <ul>
 <li>dbkey error: https://github.com/galaxyproject/planemo/issues/746</li>
 <li>Cannot locate xUnit report: https://github.com/galaxyproject/planemo/issues/724</li>
 <li>planemo couldn't find a target test-data directory: This means that there is no test-data directory created for planemo testing.
   Fix the issue by simply checking planemo l or create a test-data directory manually and copy all input &amp; output files.</li>
 </ul>
-<h2 id="version-conflicts">Version Conflicts</h2>
+<h2 id="version-conflicts">Version Conflicts<a class="headerlink" href="#version-conflicts" title="Permanent link">#</a></h2>
 <p>A lot of troubles with the initial setup comes from the version conflict of multiple tools and dependencies. One can find the list of compatible versions below:</p>
 <p>Python 3.6.5
 Planemo 0.53.0
@@ -185,6 +188,8 @@ Galaxy</p>
 
   <div class="rst-versions" role="note" style="cursor: pointer">
     <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/CEGRcode/labtutorial/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
         <span><a href="../grails/" style="color: #fcfcfc;">&laquo; Previous</a></span>

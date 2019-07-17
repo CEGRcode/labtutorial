@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Planemo - IT Tutorial</title>
+  <title>Planemo - PughLab-guides</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -36,7 +36,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> IT Tutorial</a>
+        <a href=".." class="icon icon-home"> PughLab-guides</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
@@ -50,7 +50,7 @@
           
             <li class="toctree-l1">
 		
-    <a class="" href="..">Welcome</a>
+    <a class="" href="..">Home</a>
 	    </li>
           
             <li class="toctree-l1">
@@ -111,7 +111,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">IT Tutorial</a>
+        <a href="..">PughLab-guides</a>
       </nav>
 
       
@@ -126,6 +126,9 @@
     <li>Planemo</li>
     <li class="wy-breadcrumbs-aside">
       
+        <a href="https://github.com/CEGRcode/labtutorial/edit/master/docs/planemo.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
     </li>
   </ul>
   <hr/>
@@ -133,8 +136,8 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="planemo">Planemo</h1>
-<h2 id="pre-install">Pre-Install</h2>
+                <h1 id="planemo">Planemo<a class="headerlink" href="#planemo" title="Permanent link">#</a></h1>
+<h2 id="pre-install">Pre-Install<a class="headerlink" href="#pre-install" title="Permanent link">#</a></h2>
 <p>Install <a href="https://www.anaconda.com/download">anaconda</a> (locally) on your machine.</p>
 <p>Install wget:</p>
 <ul>
@@ -153,7 +156,7 @@ Couple of dependencies are installed and you should see the galaxy running at lo
 <li><code>$ brew install pip</code> - (mac)</li>
 <li><code>$ sudo apt-get install pip</code> - (others)</li>
 </ul>
-<h2 id="install">Install</h2>
+<h2 id="install">Install<a class="headerlink" href="#install" title="Permanent link">#</a></h2>
 <p>Install planemo:</p>
 <ul>
 <li><code>$ virtualenv .venv; . .venv/bin/activate</code></li>
@@ -161,9 +164,9 @@ Couple of dependencies are installed and you should see the galaxy running at lo
 <li><code>$ pip install planemo</code></li>
 </ul>
 <p>Basic <a href="https://planemo.readthedocs.io/en/latest/installation.html">tutorial</a></p>
-<h2 id="usage">Usage</h2>
+<h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">#</a></h2>
 <p>This guide assumes that you have already installed Planemo and have a directory with one or more Galaxy tool with input &amp; output files.</p>
-<h3 id="1-init">1) Init</h3>
+<h3 id="1-init">1) Init<a class="headerlink" href="#1-init" title="Permanent link">#</a></h3>
 <p>Create galaxy tool wrapper using the init command.</p>
 <ul>
 <li><code>$ planemo init</code></li>
@@ -183,14 +186,14 @@ Couple of dependencies are installed and you should see the galaxy running at lo
                 --help_from_command 'id'
 </code></pre>
 <p>NOTE: Planemo is unable to partially initialize, for example if your xml file is missing "citation" section during linting, in order to add it from the command line you need to initialize the entire wrapper. So it's really for creating a new wrapper not modifying an existing one.</p>
-<h3 id="2-lint">2) Lint</h3>
+<h3 id="2-lint">2) Lint<a class="headerlink" href="#2-lint" title="Permanent link">#</a></h3>
 <p>Planemo can check review tool for XML validity, syntax errors, and compliance with IUC best practices using the lint (l) command.</p>
 <ul>
 <li><code>$ planemo lint</code> # same as planemo lint</li>
 <li><code>$ planemo lint --help</code></li>
 </ul>
 <p>You will also see the test-data directory generated for testing.</p>
-<h3 id="3-test">3) Test</h3>
+<h3 id="3-test">3) Test<a class="headerlink" href="#3-test" title="Permanent link">#</a></h3>
 <p>The test command can be used to test the functionality of tool(s). In other words, it checks if the xml file works as supposed to.</p>
 <ul>
 <li><code>$ planemo test</code> - test all the xml files in the current directory</li>
@@ -201,14 +204,14 @@ Couple of dependencies are installed and you should see the galaxy running at lo
 <ul>
 <li>Ex: <code>$ planemo test --install_galaxy wrapper.xml</code></li>
 </ul>
-<h3 id="4-serve">4) Serve</h3>
+<h3 id="4-serve">4) Serve<a class="headerlink" href="#4-serve" title="Permanent link">#</a></h3>
 <p>After passing the test we can open Galaxy with the serve (or with s).</p>
 <pre><code>$ planemo s
 ...
 serving on http://127.0.0.1:8086
 </code></pre>
-<h2 id="example">Example</h2>
-<h3 id="1-seqtk">1) Seqtk</h3>
+<h2 id="example">Example<a class="headerlink" href="#example" title="Permanent link">#</a></h2>
+<h3 id="1-seqtk">1) Seqtk<a class="headerlink" href="#1-seqtk" title="Permanent link">#</a></h3>
 <p>Use conda to install Seqtk:</p>
 <ul>
 <li><code>$ conda install --force --yes -c bioconda seqtk=1.2</code></li>
@@ -273,7 +276,7 @@ All 1 test(s) executed passed.
 seqtk_seq[0]: passed
 </code></pre>
 <p>If error occurs, refer to the error report page on GitHub.</p>
-<h3 id="2-getrandombed">2) getRandomBed</h3>
+<h3 id="2-getrandombed">2) getRandomBed<a class="headerlink" href="#2-getrandombed" title="Permanent link">#</a></h3>
 <p>Download getRandomBed.py tool:</p>
 <p>Use the planemo commands to generate the xml file getRandomBed.xml</p>
 <p>Solution:</p>
@@ -288,7 +291,7 @@ seqtk_seq[0]: passed
                 --cite_url 'http://www.pughlab.psu.edu/' \
                 --help_from_command 'getRandomBed'
 </code></pre>
-<h3 id="3-toolexamplepl">3) toolExample.pl</h3>
+<h3 id="3-toolexamplepl">3) toolExample.pl<a class="headerlink" href="#3-toolexamplepl" title="Permanent link">#</a></h3>
 <p>Consider the following Perl script.</p>
 <pre><code>    #!/usr/bin/perl -w
 
@@ -377,6 +380,8 @@ This tool computes GC content from a FASTA file.
 
   <div class="rst-versions" role="note" style="cursor: pointer">
     <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/CEGRcode/labtutorial/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
         <span><a href="../galaxy/" style="color: #fcfcfc;">&laquo; Previous</a></span>
