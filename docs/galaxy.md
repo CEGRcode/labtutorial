@@ -1,5 +1,3 @@
-# Galaxy
-
 ## Pre-Install
 
 Install samtools (locally) on your machine if it is not already installed.

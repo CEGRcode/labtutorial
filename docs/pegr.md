@@ -39,7 +39,7 @@ Install MAMP:
 
 ## PEGR Install
 
-•	Go to any directory of your choice and clone the PEGR git repo.
+•	:smile: Go to any directory of your choice and clone the PEGR git repo.
 
 * `$ git clone https://github.com/seqcode/pegr.git` # clone "pegr" in your directory
 

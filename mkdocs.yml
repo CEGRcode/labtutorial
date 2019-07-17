@@ -1,10 +1,24 @@
-site_name: IT Tutorial
+site_name: PughLab-guides
 
-pages:
-  - Welcome: 'index.md'
-  - Galaxy: 'galaxy.md'
-  - Planemo: 'planemo.md'
-  - PEGR: 'pegr.md'
-  - Grails: 'grails.md'
-  - Debug: 'debug.md'
-  - FAQ: 'FAQ.md'
+nav:
+- Home: 'index.md'
+- Galaxy: 'galaxy.md'
+- Planemo: 'planemo.md'
+- PEGR: 'pegr.md'
+- Grails: 'grails.md'
+- Debug: 'debug.md'
+- FAQ: 'FAQ.md'
+
+theme:
+  name: 'readthedocs'
+  shortcuts:
+        help: 191    # ?
+        next: 78     # n
+        previous: 80 # p
+        search: 83   # s
+
+repo_url: https://github.com/CEGRcode/labtutorial
+
+markdown_extensions:
+    - toc:
+        permalink: "#"
