@@ -14,7 +14,7 @@ from bioblend.galaxy import GalaxyInstance
 # creating a new GalaxyInstance
 # gi = GalaxyInstance(url='http://example.galaxy.url', key='your-API-key')
 
-gi = GalaxyInstance(url='http://localhost:8090', key='a8bbc078ee5243fd056a8c6e00ca994c')
+gi = GalaxyInstance(url='http://localhost:8090', key='a8bbc078ee5243fd095a8c6e00ca994c')
 workflows = gi.workflows.get_workflows()
 
 # iterating through all the workflows and printing the information.

@@ -231,3 +231,126 @@ _The above lines informs GALAXY, where it can find the tools and corresponding t
 ![CEGR tools view](./image/cegr_tools.png)
 
 - `Congratulations!` you have successfully installed `output_statistics` tools into your galaxy.
+
+----
+
+## Connecting Galaxy to PEGR
+
+_Galaxy and PEGR communicate with each other using API keys. If you have not setup a local developmental PEGR. Set it up using these [instructions](./pegr.md) & come back to this section_
+
+_In the above section we installed `output_statistics` tools. These are the tools that send back information to `PEGR`. We did not configure the tools in the above section, which we will do in this section._
+
+**Changing Galaxy's port**
+
+- First, we will configure `Galaxy` to run on a different `port` so that it does not conflict with `PEGR`'s default port.
+- Open `galaxy/config/galaxy.ini` in a text editor and search for `port` setting. Change the port to `8090`. Below image shows the change in `galaxy.ini`.
+
+![galaxy port change](./image/galaxy_port_change.png)
+
+**Generating Galaxy API key**
+
+- Click on `Admin` tab, under `User Management` section, click on `API keys`.
+- Click on `Generate` button to create an API key. Don't regenerate a new key, if you already have one at this point.
+
+**CEGR `output_statistics` configuration**
+
+- Open `galaxy/tools/stats_config.ini.sample` and add below information
+
+```ini
+
+# Configuration file for the CEGR Galaxy ChIP-exo statistics tools.
+
+[defaults]
+
+# This section contains default settings for command line parameters that
+# can be overridden when they are passed to executed scripts.
+
+PEGR_API_KEY =  <REPLACE THIS WITH PEGR API KEY>
+PEGR_URL = http://localhost:8080/pegr/api/stats
+
+GALAXY_API_KEY = <REPLACE THIS WITH YOUR GALAXY ADMIN USER's API KEY>
+GALAXY_BASE_URL = http://localhost:8090
+
+
+[tool_categories]
+
+input_dataset_r1 = output_fastqRead1
+input_dataset_r2 = output_fastqRead2
+toolshed.g2.bx.psu.edu/repos/iuc/bam_to_scidx/bam_to_scidx/1.0.1 = output_bamToScidx
+toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_intersectbed/2.27.0.0 = output_bedtoolsIntersect
+toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa_mem/0.7.17.1 = output_bwaMem
+toolshed.g2.bx.psu.edu/repos/iuc/cwpair2/cwpair2/1.1.0 = output_cwpair2
+toolshed.g2.bx.psu.edu/repos/iuc/genetrack/genetrack/1.0.1 = output_genetrack
+toolshed.g2.bx.psu.edu/repos/iuc/extract_genomic_dna/Extract genomic DNA 1/3.0.3 = output_extractGenomicDNA
+toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.70 = output_fastqc
+toolshed.g2.bx.psu.edu/repos/iuc/pe_histogram/pe_histogram/1.0.1 = output_peHistogram
+toolshed.g2.bx.psu.edu/repos/bgruening/repeat_masker/repeatmasker_wrapper/0.1.2 =output_repeatMasker
+toolshed.g2.bx.psu.edu/repos/iuc/meme_meme/meme_meme/4.11.2.0 = output_meme
+toolshed.g2.bx.psu.edu/repos/iuc/fasta_nucleotide_color_plot/fasta_nucleotide_color_plot/1.0.1 = output_fourColorPlot
+toolshed.g2.bx.psu.edu/repos/jjohnson/samtools_filter/samtools_filter/1.1.1 = output_samtoolFilter
+toolshed.g2.bx.psu.edu/repos/devteam/picard/picard_MarkDuplicates/2.7.1.1 = output_markDuplicates
+toolshed.g2.bx.psu.edu/repos/iuc/meme_fimo/meme_fimo/4.11.2.0 = output_fimo
+toolshed.g2.bx.psu.edu/repos/iuc/tag_pileup_frequency/tag_pileup_frequency/1.0.1 = output_tagPileup
+
+
+```
+
+- Below is an example configuration, after you add your API Keys.
+
+![Example config](./image/sample_stats_config.png)
+
+- Rename `stats_config.ini.sample` to `stats_config.ini`
+
+**Install bioblend**
+
+_bioblend is a python library to interact with Galaxy, using APIs_
+
+- Installation instructions [here](https://bioblend.readthedocs.io/en/latest/#installation)
+- If you have already installed [`Anaconda`](https://www.anaconda.com/) & [`pip`](https://pypi.org/project/pip/)
+    - `pip install bioblend`
+- Using bioblend [docs](https://bioblend.readthedocs.io/en/latest/api_docs/galaxy/docs.html)
+
+**Adding core-sequencing workflowId into your local development PEGRdb**
+
+_This step is important, as it lets PEGR know which workflow stats to accept and update on PEGR web frontend_
+
+- Download `getWorkflowid.py` from [here](./image/data/getWorkflowid.py)
+- Open the script and replace the `url` and `key` with your local galaxy url and API key respectively. After adding your API-key, looks like the below image:
+
+![Get workflowid](./image/getworkflowid.png)
+
+- Start your galaxy
+- Run the script to retrieve the workflowId. Below is an image showing expected output
+
+![expected output for get workflowid](./image/localgalaxy_27.png)
+
+- Your workflow id is `ebfb8f50c6abde6d` in the above example.
+- Start your `MySQL` server and log into it using the username and password that you used while setting up `PEGR` or you can login as root  `mysql -u root -p`
+
+```
+use pegr;
+describe pipeline;
+```
+
+![example query](./image/localgalaxy_28.png)
+
+- Edit below query with a `pipeline-name` of your choice and add the `workflowid` you retrieved from above script and execute it. Below is an example query that you need
+
+
+```
+insert into pipeline( version,name,note,pipeline_version,steps,workflow_id)
+values( 1,
+
+'<pipeline-name>',
+
+'Locally installed galaxy sending JSON dictionaires to locally installed pegr','001', '[["input_dataset_r1_output_stats","fastqRead1"],["input_dataset_r2_output_stats","fastqRead2"],["fastqc_output_stats","fastqc"],["fastqc_output_stats2","fastqc"],["mark_duplicates_bam_output_stats","markDuplicates"],["samtool_filter2_output_stats","samtoolFilter"],["pe_histogram_output_stats","peHistogram"],["bam_to_scidx_output_stats","bamToScidx"],["genetrack_output_stats","genetrack"],["bedtools_intersectbed_output_stats","bedtoolsIntersect"],["cwpair2_output_stats","cwpair2"],["extract_genomic_dna_output_stats","extractGenomicDNA"],["extract_genomic_dna_output_stats2","extractGenomicDNA"],["repeatmasker_wrapper_output_stats","repeatMasker"],["repeatmasker_wrapper_output_stats2","repeatMasker"],["meme_meme_output_stats","meme"],["meme_fimo_output_stats","fimo"],["extract_genomic_dna_output_stats3","extractGenomicDNA"],["fasta_nucleotide_color_plot_output_stats","fourColorPlot"],["tag_pileup_frequency_output_stats","tagPileup"]]' ,
+
+"<workflowid>");
+
+```
+
+- This how your query looks like after adding your pipeline-name and workflowid
+
+![query](./image/localgalaxy_29.png)
+
+- You are all set for executing the pipeline. _(if you have followed and set up the keys correctly, there should be no errors)_
