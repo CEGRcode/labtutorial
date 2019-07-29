@@ -58,31 +58,22 @@
     <a class="current" href="./">Galaxy</a>
     <ul class="subnav">
             
-    <li class="toctree-l2"><a href="#pre-install">Pre-Install</a></li>
+    <li class="toctree-l2"><a href="#dependencies">Dependencies</a></li>
     
 
-    <li class="toctree-l2"><a href="#install">Install</a></li>
+    <li class="toctree-l2"><a href="#installing-galaxy">Installing Galaxy</a></li>
     
 
-    <li class="toctree-l2"><a href="#install-saccer3_cegr-genome-build">Install sacCer3_cegr Genome build</a></li>
+    <li class="toctree-l2"><a href="#configuring-galaxy">Configuring Galaxy</a></li>
     
 
-    <li class="toctree-l2"><a href="#install-the-galaxy-chip-exo-workflow">Install the Galaxy / ChIP-exo Workflow</a></li>
+    <li class="toctree-l2"><a href="#adding-custom-genomes">Adding Custom Genomes</a></li>
     
 
-    <li class="toctree-l2"><a href="#install-repeatmasker-on-mac-optional">Install RepeatMasker on mac (optional)</a></li>
-    
-        <ul>
-        
-            <li><a class="toctree-l3" href="#pre-install_1">Pre-Install</a></li>
-        
-        </ul>
+    <li class="toctree-l2"><a href="#importing-chip-exo-workflow">Importing ChIP-exo Workflow</a></li>
     
 
-    <li class="toctree-l2"><a href="#add-the-cegr-galaxy-output-statistics-for-the-core-pipeline">Add the cegr galaxy output statistics for the core pipeline.</a></li>
-    
-
-    <li class="toctree-l2"><a href="#add-workflow-id-into-your-local-pegr-db">Add workflow id into your Local PEGR DB</a></li>
+    <li class="toctree-l2"><a href="#integrating-cegr-output_statistics">Integrating CEGR output_statistics</a></li>
     
 
     </ul>
@@ -148,145 +139,272 @@
           <div role="main">
             <div class="section">
               
-                <h2 id="pre-install">Pre-Install<a class="headerlink" href="#pre-install" title="Permanent link">#</a></h2>
-<p>Install samtools (locally) on your machine if it is not already installed.</p>
+                <h2 id="dependencies">Dependencies<a class="headerlink" href="#dependencies" title="Permanent link">#</a></h2>
 <ul>
-<li><code>$ brew install samtools</code> # (mac)</li>
-<li><code>http://samtools.sourceforge.net/-Install</code> # (other)</li>
-</ul>
-<p>Install yarn on your machine, if not already installed.</p>
-<ul>
-<li><code>$ brew install yarn</code> # (mac)</li>
-<li><code>https://yarnpkg.com/en/docs/install</code> # (other)</li>
-</ul>
-<h2 id="install">Install<a class="headerlink" href="#install" title="Permanent link">#</a></h2>
-<ul>
-<li>Go to the tutorial link:  <a href="https://galaxyproject.org/admin/get-galaxy/">galaxyproject.org/admin/#get-galaxy</a></li>
-<li>Clone the galaxy somewhere lower in the directory structure to avoid conda issues and problems. BEST CHOICE: clone it to your ~/Desktop</li>
-<li><code>$ git clone -b release_17.09 https://github.com/galaxyproject/galaxy.git</code></li>
-<li><code>$ git branch –a</code> # optional</li>
-<li>
-<p><code>$ git checkout master</code> # optional</p>
-</li>
-<li>
-<p>Go into the directory “galaxy”</p>
-</li>
-<li><code>sh run.sh</code> # run galaxy server</li>
-<li>Couple of dependencies are installed and you should see the galaxy running at localhost:8080</li>
-</ul>
-<p>Basic starting point tutorials:</p>
-<ul>
-<li><a href="https://galaxyproject.org/learn/">galaxyproject.org/#learn</a></li>
-<li><a href="https://github.com/galaxyproject/dagobah-training">github.com/galaxyproject/#dagobah-training</a></li>
-</ul>
-<h2 id="install-saccer3_cegr-genome-build">Install sacCer3_cegr Genome build<a class="headerlink" href="#install-saccer3_cegr-genome-build" title="Permanent link">#</a></h2>
-<ul>
-<li>Run the galaxy on http://127.0.0.1:8080.</li>
-<li>
-<p>Register by click on User -&gt; register</p>
-</li>
-<li>
-<p>Use the following credentials</p>
-<ul>
-<li><code>Username: cegr@psu.edu # username should be same to make the api calls work</code></li>
-<li><code>Password: your_password # create a password of your choice</code></li>
+<li>Assuming you have installed the required <a href="http://127.0.0.1:8000/#development-tools">development tools for Mac OS</a></li>
+<li>Install <a href="http://samtools.sourceforge.net/-Install">samtools</a>.<ul>
+<li><code>brew install samtools</code></li>
 </ul>
 </li>
-<li>
-<p>Create a copy of “galaxy.ini.sample” in Config folder and rename it to “galaxy.ini”.</p>
-</li>
-<li>Open the galaxy.ini file and search for “admin_users” and add the username to have admin access.</li>
+<li>Install <a href="https://yarnpkg.com/en/docs/install">yarn</a>.<ul>
+<li><code>brew install yarn</code></li>
 </ul>
-<p>Install the below tools from your admin toolshed. (usually install those with the “Owner” being “iuc” or “devteam”).</p>
-<pre><code>data_manager_bwa_mem_index_builderodata_manager_fetch_genome_dbkeys_all_fastaodata_manager_sam_fasta_index_builderodata_manager_twobit_builder
+</li>
+</ul>
+<hr />
+<h2 id="installing-galaxy">Installing Galaxy<a class="headerlink" href="#installing-galaxy" title="Permanent link">#</a></h2>
+<p><em>It is recommended that you clone galaxy to your <code>~/Desktop</code>, so that GALAXY's internal paths are shorter and avoid conda throwing any errors that your path exceeds the maximum characters for tool install paths</em></p>
+<p><em>here we are going to work with <code>17.09</code> release of GALAXY.</em></p>
+<ul>
+<li>Open a <code>terminal</code> and clone GALAXY to your <code>~/Desktop</code>.</li>
+</ul>
+<pre><code>cd ~/Desktop
+git clone -b release_17.09 https://github.com/galaxyproject/galaxy.git
 </code></pre>
-<p>Upload the “sacCer3_cegr. fa” fasta file into the galaxy using the “upload button” on the left pane top right corner.
-(available in the data folder, provided along with this documentation). Once you have uploaded, you should see the file appear in the “history pane” on your right.</p>
-<p>Go to Admin portal. Under the “data” section. Click on localdata.
-- You need to run the following “data managers tools” that we just installed in the exact order as below:
-* <code>CreateDBkey and reference geneomeoTwoBitoBWA-MEM</code>
-* <code>SAM Fasta</code></p>
+
 <ul>
-<li>Below is a screenshot for each of the steps, in the same order of execution.</li>
-<li>Once you click on the “Create DBkey and Reference Genome”, fill out the information as below and click “Execute”.</li>
-<li>You can specify sequence name to be “SacCer3_cegr” and leave everything as default in all the tools.</li>
+<li>Start GALAXY</li>
 </ul>
-<p>Once you have run all the tools, you need to check couple of things populate in the internal databases of galaxy.</p>
-<ul>
-<li>Go to Admin -&gt; View Tool Data Table Entries -&gt; <strong>dbkeys</strong></li>
-<li>Similarly check “all_fasta”,”twobit”,”bwa_mem_indexes” (all the ones that are bold in the below image, should contain an entry for sacCer3_cegr)</li>
-</ul>
-<h2 id="install-the-galaxy-chip-exo-workflow">Install the Galaxy / ChIP-exo Workflow<a class="headerlink" href="#install-the-galaxy-chip-exo-workflow" title="Permanent link">#</a></h2>
-<ul>
-<li>Go to https://chipexo-gw.aci.ics.psu.edu/,</li>
-</ul>
-<p>Log in with the correct credentials
-* <code>Username: username</code>
-* <code>Password: password</code>
-- You should see the below page.</p>
-<h2 id="install-repeatmasker-on-mac-optional">Install RepeatMasker on mac (optional)<a class="headerlink" href="#install-repeatmasker-on-mac-optional" title="Permanent link">#</a></h2>
-<ul>
-<li>This is not required for YEPQC pipeline)</li>
-<li>Go to the website http://www.repeatmasker.org/RMDownload.html</li>
-<li>You need to install the prerequisites first.</li>
-</ul>
-<h3 id="pre-install_1">Pre-Install<a class="headerlink" href="#pre-install_1" title="Permanent link">#</a></h3>
-<p>Install RMBlast (sequence Search engine): <a href="http://www.repeatmasker.org/RMBlast.html">RMBlast</a></p>
-<p>You can just download all the binaries from these two locations based on your machine (mac, linux)
-* <code>ftp://ftp.ncbi.nlm.nih.gov/blast/executables/rmblast/2.2.28/</code>
-* <code>ftp://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/2.2.28/</code></p>
-<ul>
-<li>
-<p>extract them and copy all the binaries into “/usr/local/bin/” so that all users can use them.</p>
-</li>
-<li>
-<p>Check whether you have “rmblastn“ binary in /usr/local/bin/. If you don’t then follow the steps in the RMBLAST installation website above.</p>
-</li>
-</ul>
-<p>Install TFR: <a href="http://tandem.bu.edu/trf/trf.download.html">download</a></p>
-<ul>
-<li>Now follow the rest of the instructions on http://www.repeatmasker.org/RMDownload.html</li>
-</ul>
-<p>Under the Installation section:</p>
-<pre><code>Download the RepeatMasker.tar.gz
-Uncompress and copy it to /usr/local/
-cd /usr/local/RepeatMasker and sudo perl ./configure
-It prompts for various paths for the executables which we just installed.
-Specify the paths in correctly and add the path to RepeatMasker to your $PATH
+<pre><code>cd galaxy
+sh run.sh
 </code></pre>
-<h2 id="add-the-cegr-galaxy-output-statistics-for-the-core-pipeline">Add the cegr galaxy output statistics for the core pipeline.<a class="headerlink" href="#add-the-cegr-galaxy-output-statistics-for-the-core-pipeline" title="Permanent link">#</a></h2>
+
+<p><em>Note that when you are starting galaxy for the first time, it takes some time to install required internal dependencies and setup its internal database. Once its gone through it, you should be able to see the start up page.</em></p>
 <ul>
-<li><a href="https://galaxyproject.org/admin/tools/add-tool-tutorial/">Reference</a> to add new tools into galaxy.</li>
-<li>Download the tools from <a href="https://github.com/seqcode/cegr-galaxy.git-extract">seqcode</a> and copy the cegr_statistics folder into your “tools” folder in galaxy.</li>
+<li>Congratulations you have successfully installed GALAXY on your local machine.</li>
 </ul>
-<p>Please remember that below lines make your galaxy run on port 8090 and local pegr run on port 8080.</p>
+<table>
+<thead>
+<tr>
+<th>Useful resources &amp; tutorials</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://galaxyproject.org/admin/get-galaxy/">Get galaxy</a></td>
+</tr>
+<tr>
+<td><a href="https://galaxyproject.org/learn/">Learn galaxy</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/galaxyproject/dagobah-training">Dagobah training</a></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="configuring-galaxy">Configuring Galaxy<a class="headerlink" href="#configuring-galaxy" title="Permanent link">#</a></h2>
+<p><strong>Setting up an Admin</strong></p>
+<p><code>galaxy.ini</code> file contains most of the configurations to your local galaxy. It has some predefined defaults which you might want to re-think before changing anything.</p>
+<p><em>We will be using <code>cegr@psu.edu</code> as the default admin, so that it can be used to integrate with PEGR in the PEGR tutorial, where we use our local galaxy to send out information to PEGR</em></p>
 <ul>
-<li>Configure the port for galaxy in “galaxy.ini” file.</li>
-<li>You need to generate an apikey in your local galaxy so that it can communicate with the local PEGR.</li>
-<li>On “Admin/UserManagement” click on “API keys”. Click on “Generate a new key now”. Use that key in the below steps. (don't generate keys for the same user twice, it can lead to errors.)</li>
-<li>create a copy of “stats_config.ini.sample” and rename it to “cegr_config.ini.sample”</li>
+<li>Make sure your Galaxy is not online, before making any changes to configuration.</li>
+<li>Open your galaxy folder in <code>Finder</code> on your mac. you should see a <code>config/</code> folder.</li>
+<li>Inside the <code>config/</code>, you will find a <code>galaxy.ini.sample</code> file.</li>
+<li>Copy the <code>galaxy.ini.sample</code> within the same folder and rename the copied file to <code>galaxy.ini</code></li>
+<li>Open the <code>galaxy.ini</code> in a text editor of your choice.</li>
+<li>Search for the line that starts with <code>admin_users</code> and add <code>cegr@psu.edu</code></li>
+</ul>
+<p><img alt="Galaxy Admin config Image" src="../image/localgalaxy_23.png" /></p>
+<p><em>Above image shows the change. make sure you have edited <code>~/Desktop/galaxy/config/galaxy.ini</code></em></p>
+<ul>
+<li>Start your Galaxy now, <code>sh run.sh</code></li>
+<li>Click on <code>User</code> menu and then click <code>register</code></li>
+<li>You should see a registration page as below</li>
+</ul>
+<p><img alt="Galaxy register page" src="../image/register.png" /></p>
+<ul>
+<li>Enter <code>cegr@psu.edu</code> as the email address and choose a <code>password</code>, <code>public name</code> of your choice.</li>
+<li>Once you login, you should now have the <code>Admin</code> menu show up on the menu bar on the top.</li>
+</ul>
+<p><img alt="Galaxy Admin option" src="../image/adminmenu.png" /></p>
+<ul>
+<li>When you click on the <code>Admin</code> tab, you should see the below page.</li>
+</ul>
+<p><img alt="Galaxy Admin page" src="../image/adminpage.png" /></p>
+<hr />
+<h2 id="adding-custom-genomes">Adding Custom Genomes<a class="headerlink" href="#adding-custom-genomes" title="Permanent link">#</a></h2>
+<p><em><code>sacCer3_cegr</code> is the customized yeast genome we are using within the lab. Though the differences are few (to the best of my knowledge), but are very important to keep in mind while performing general data analysis. This genome deviates from the UCSC recommendations</em></p>
+<p><em><code>sacCer3_cegr</code> contains <code>2-micron</code> regions &amp; chromosome naming is using <code>decimal number</code> instead of <code>roman numerals.</code> This causes some disadvantages to use tools like bedGraphToBigWig, etc.</em></p>
+<ul>
+<li>Click on <code>Admin</code> tab, then under <code>Tools and Tool Shed</code> section, click on <code>Search Tool Shed</code></li>
+</ul>
+<p><img alt="Galaxy ToolShed" src="../image/galaxy_toolshed.png" /></p>
+<ul>
+<li>Click on <code>Galaxy Main Tool Shed</code></li>
+</ul>
+<p><img alt="Galaxy ToolShed Categories" src="../image/toolshed_categories.png" /></p>
+<ul>
+<li>Search &amp; Install below tools. you can copy and paste below tool names into the search box.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Tool Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>data_manager_bwa_mem_index_builder</code></td>
+</tr>
+<tr>
+<td><code>data_manager_fetch_genome_dbkeys_all_fasta</code></td>
+</tr>
+<tr>
+<td><code>data_manager_sam_fasta_index_builder</code></td>
+</tr>
+<tr>
+<td><code>data_manager_twobit_builder</code></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Below images previews the steps for installing a tool.</li>
+</ul>
+<p><img alt="Tool Install ex1" src="../image/install_ex1.png" /></p>
+<p><img alt="Tool Install ex2" src="../image/install_ex2.png" /></p>
+<p><img alt="Tool Install ex3" src="../image/install_ex3.png" /></p>
+<ul>
+<li>Once you have installed all the above tools, You can verify the installation at <code>Admin &gt; Tools and Tool shed &gt; Manage installed tools</code></li>
+</ul>
+<p><img alt="Manage installed tools" src="../image/localgalaxy_1.png" /></p>
+<ul>
+<li>Download the <code>sacCer3_cegr</code> genome from <a href="../image/data/sacCer3_cegr.fa">here</a></li>
+<li>Upload the file you downloaded above into galaxy, using the <code>upload button</code> located on the tools menu, as shown in the image below.</li>
+</ul>
+<p><img alt="Upload button location" src="../image/upload_button.png" /></p>
+<ul>
+<li>Once you have uploaded, you should see the file appear in the “history pane” on your right.</li>
+<li>Go to <code>Admin</code> tab, under <code>Data</code> section, Click on <code>Local data</code> to get <code>Data manager</code></li>
+</ul>
+<p><img alt="Data Manager" src="../image/localgalaxy_2.png" /></p>
+<ul>
+<li>We need to run below tools one after the other in the exact order mentioned below:</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>Order</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Create DBkey and reference geneome</td>
+<td>#1</td>
+</tr>
+<tr>
+<td>TwoBit</td>
+<td>#2</td>
+</tr>
+<tr>
+<td>BWA-MEM</td>
+<td>#3</td>
+</tr>
+<tr>
+<td>SAM Fasta</td>
+<td>#4</td>
+</tr>
+</tbody>
+</table>
+<p><em>All these tools are available from the <code>Admin &gt; Data &gt; Local data</code> section. Below are images for step-by-step execution of above tools in the same order. use them to fill out any default information that is required and follow along</em></p>
+<ul>
+<li>You can specify sequence name to be <code>sacCer3_cegr</code> and leave everything as default in all the tools.</li>
+</ul>
+<p><img alt="Step 1" src="../image/localgalaxy_3.png" />
+<img alt="Step 2" src="../image/localgalaxy_4.png" />
+<img alt="Step 3" src="../image/localgalaxy_5.png" />
+<img alt="Step 4" src="../image/localgalaxy_6.png" />
+<img alt="Step 5" src="../image/localgalaxy_7.png" /></p>
+<ul>
+<li>Once you have run all the tools, you need to check couple of things that populate in the internal database of galaxy. You can check that information from your <code>Admin</code> page.</li>
+<li>Go to <code>Admin &gt; Data &gt; Local data</code> section, under <code>View Tool Data Table Entries</code>. Click on <code>__dbkeys__</code> you should see something like below.</li>
+</ul>
+<p><img alt="viewtools data table entries" src="../image/localgalaxy_11.png" /></p>
+<p><img alt="Step 6" src="../image/localgalaxy_8.png" /></p>
+<ul>
+<li>Similarly check <code>all_fasta</code>,<code>twobit</code>, <code>bwa_mem_indexes</code>. All of them should contain an entry for <code>sacCer3_cegr</code>. Path could be different in your case.</li>
+</ul>
+<p><img alt="Step 7" src="../image/localgalaxy_9.png" />
+<img alt="Step 8" src="../image/localgalaxy_10.png" />
+<img alt="Step 9" src="../image/localgalaxy_12.png" /></p>
+<ul>
+<li>If your able to see similar results as above images. <code>Congratulations!</code> you have successfully added a custom genome build into your galaxy.</li>
+</ul>
+<hr />
+<h2 id="importing-chip-exo-workflow">Importing ChIP-exo Workflow<a class="headerlink" href="#importing-chip-exo-workflow" title="Permanent link">#</a></h2>
+<p><em>We will install the core-sequencing workflow that the lab uses to analyze all the samples that are sequenced. This pipeline is run to create BAM files, peak calling using genetrack and MEME motif analysis.</em></p>
+<ul>
+<li>Download the workflow file <a href="../image/data/Galaxy-Workflow-paired_002.ga">here.</a></li>
+<li>Once you have downloaded the workflow. You can <code>import</code> it into your local galaxy from the <code>Workflow</code> tab using the <code>upload or import workflow</code> button located beside the search bar. <em>(see image below).</em></li>
+</ul>
+<p><img alt="Workflow upload" src="../image/localgalaxy_16.png" /></p>
+<p><img alt="Workflow import menu" src="../image/localgalaxy_17.png" /></p>
+<ul>
+<li>Once you have selected the workflow file and clicked <code>import</code>. You might see some errors such as below. Nothing to worry, the error messages is caused by tools that are not yet installed &amp; are important for the workflow to run in your galaxy.</li>
+</ul>
+<p><img alt="Workflow import errors" src="../image/localgalaxy_18.png" /></p>
+<ul>
+<li>Click on <code>edit</code> option under the workflow drop-down menu. To find out the missing tools.</li>
+<li>You need to install each tool manually from toolshed. Go to <code>Admin &gt; Tools and Tool Shed &gt; Search toolShed</code> to search and install each tool that is missing.</li>
+</ul>
+<p><em>Few tools have their toolnames in the workflow that end with <code>output_statistics</code>. These are the tools that are not available on <code>Galaxy toolshed</code> and need to be side-loaded separately, which we will do in the next section. so for now, you can ignore installing these tools and their errors.</em></p>
+<hr />
+<h2 id="integrating-cegr-output_statistics">Integrating CEGR <em><code>output_statistics</code></em><a class="headerlink" href="#integrating-cegr-output_statistics" title="Permanent link">#</a></h2>
+<p><em>This section is similar to adding custom tools into Galaxy, here is a  (<a href="https://galaxyproject.org/admin/tools/add-tool-tutorial/">tutorial</a>). <code>cegr-galaxy</code> repo contains other important scripts that are used to run the core-sequencing pipeline on production galaxy. The repo has a <code>README</code> file detailing the usage of each script.</em></p>
+<ul>
 <li>
-<p>add the below lines into the file.</p>
+<p>Clone the repository containing the CEGR tools from <a href="https://github.com/seqcode/cegr-galaxy">seqcode/cegr-galaxy</a></p>
+<ul>
+<li><code>git clone https://github.com/seqcode/cegr-galaxy.git</code></li>
+</ul>
 </li>
 <li>
-<p>Now you need to make galaxy know how to use these tools.</p>
+<p>Copy the entire <code>cegr_statistics</code> folder to this location <code>galaxy/tools/</code> within your local galaxy.</p>
 </li>
-<li>Go to your “config” folder and make a copy of “tools_conf.xml.main” and rename it to “tools_conf.xml”</li>
-<li>Add below lines at the end of the file within the </toolbox></li>
+<li>Open <code>galaxy/config/tool_conf.xml</code> in a text editor of your choice.</li>
 </ul>
-<p>Save and restart galaxy.</p>
+<p><em>If the above file doesn't exist, there should be a file in the same config directory called <code>tool_conf.xml.main</code>, copy and rename the file to <code>tool_conf.xml</code></em></p>
 <ul>
-<li>You can edit the pipeline to remove “Repeat masker” in the paired_002” workflow.</li>
-<li>Below images show removal of “Repeat masker” and rearranging the workflow.</li>
+<li>Add below lines at the end of file, within the <code>&lt;/toolbox&gt;</code> tag.</li>
 </ul>
-<h2 id="add-workflow-id-into-your-local-pegr-db">Add workflow id into your Local PEGR DB<a class="headerlink" href="#add-workflow-id-into-your-local-pegr-db" title="Permanent link">#</a></h2>
-<p>Each workflow in galaxy has a unique id that is assigned internally. We use bioblend framework (python) to access galaxy and retrieve your workflow id.</p>
-<p><a href="https://bioblend.readthedocs.io/en/latest/api_docs/galaxy/docs.html">Documentation</a>. You can use the “getWorkflowid.py” python script to get the workflow id.</p>
-<p>Make sure you replace your galaxy instance url and apikey from your local instance.(script is available in the data folder, provided along with this documentation). Make sure that your galaxy is running before you use the script.</p>
+<pre><code>&lt;section id=&quot;cegr_tools&quot; name=&quot;CEGR&quot;&gt;
+    &lt;tool file=&quot;cegr_statistics/bam_to_scidx_output_stats.xml&quot; /&gt;
+    &lt;tool file=&quot;cegr_statistics/bedtools_intersectbed_output_stats.xml&quot; /&gt;
+    &lt;tool file=&quot;cegr_statistics/bwa_mem_output_stats_single.xml&quot; /&gt;
+    &lt;tool file=&quot;cegr_statistics/cwpair2_output_stats.xml&quot; /&gt;
+    &lt;tool file=&quot;cegr_statistics/extract_genomic_dna_output_stats.xml&quot; /&gt;
+    &lt;tool file=&quot;cegr_statistics/extract_genomic_dna_output_stats2.xml&quot; /&gt;
+    &lt;tool file=&quot;cegr_statistics/extract_genomic_dna_output_stats3.xml&quot; /&gt;
+    &lt;tool file=&quot;cegr_statistics/fasta_nucleotide_color_plot_output_stats.xml&quot; /&gt;
+    &lt;tool file=&quot;cegr_statistics/fastqc_output_stats.xml&quot; /&gt;
+    &lt;tool file=&quot;cegr_statistics/fastqc_output_stats2.xml&quot; /&gt;
+    &lt;tool file=&quot;cegr_statistics/genetrack_output_stats.xml&quot; /&gt;
+    &lt;tool file=&quot;cegr_statistics/input_dataset_r1_output_stats.xml&quot; /&gt;
+    &lt;tool file=&quot;cegr_statistics/input_dataset_r2_output_stats.xml&quot; /&gt;
+    &lt;tool file=&quot;cegr_statistics/mark_duplicates_bam_output_stats.xml&quot; /&gt;
+    &lt;tool file=&quot;cegr_statistics/meme_fimo_output_stats.xml&quot; /&gt;
+    &lt;tool file=&quot;cegr_statistics/meme_meme_output_stats.xml&quot; /&gt;
+    &lt;tool file=&quot;cegr_statistics/pe_histogram_output_stats.xml&quot; /&gt;
+    &lt;tool file=&quot;cegr_statistics/repeatmasker_wrapper_output_stats.xml&quot; /&gt;
+    &lt;tool file=&quot;cegr_statistics/repeatmasker_wrapper_output_stats2.xml&quot; /&gt;
+    &lt;tool file=&quot;cegr_statistics/samtool_filter2_output_stats.xml&quot; /&gt;
+    &lt;tool file=&quot;cegr_statistics/tag_pileup_frequency_output_stats.xml&quot; /&gt;
+  &lt;/section&gt;
+
+</code></pre>
+
+<p><em>The above lines informs GALAXY, where it can find the tools and corresponding toolwrappers</em></p>
 <ul>
-<li>Successful output:</li>
+<li>The file <code>galaxy/config/tool_config.xml</code> should look something like below:</li>
 </ul>
-<p>CONGRATULATIONS, YOU HAVE SUCCESSFULLY SET UP THE LOCAL GALAXY!</p>
+<p><img alt="Adding CEGR tools" src="../image/addingcegrtools.png" /></p>
+<ul>
+<li>Save the file and restart Galaxy. You should now see these tools appear under <code>Tools</code> menu within galaxy's <code>Analyze Data</code> tab similar to below.</li>
+</ul>
+<p><img alt="CEGR tools view" src="../image/cegr_tools.png" /></p>
+<ul>
+<li><code>Congratulations!</code> you have successfully installed <code>output_statistics</code> tools into your galaxy.</li>
+</ul>
               
             </div>
           </div>
