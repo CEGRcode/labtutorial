@@ -76,6 +76,9 @@
     <li class="toctree-l2"><a href="#integrating-cegr-output_statistics">Integrating CEGR output_statistics</a></li>
     
 
+    <li class="toctree-l2"><a href="#connecting-galaxy-to-pegr">Connecting Galaxy to PEGR</a></li>
+    
+
     </ul>
 	    </li>
           
@@ -404,6 +407,122 @@ sh run.sh
 <p><img alt="CEGR tools view" src="../image/cegr_tools.png" /></p>
 <ul>
 <li><code>Congratulations!</code> you have successfully installed <code>output_statistics</code> tools into your galaxy.</li>
+</ul>
+<hr />
+<h2 id="connecting-galaxy-to-pegr">Connecting Galaxy to PEGR<a class="headerlink" href="#connecting-galaxy-to-pegr" title="Permanent link">#</a></h2>
+<p><em>Galaxy and PEGR communicate with each other using API keys. If you have not setup a local developmental PEGR. Set it up using these <a href="../pegr/">instructions</a> &amp; come back to this section</em></p>
+<p><em>In the above section we installed <code>output_statistics</code> tools. These are the tools that send back information to <code>PEGR</code>. We did not configure the tools in the above section, which we will do in this section.</em></p>
+<p><strong>Changing Galaxy's port</strong></p>
+<ul>
+<li>First, we will configure <code>Galaxy</code> to run on a different <code>port</code> so that it does not conflict with <code>PEGR</code>'s default port.</li>
+<li>Open <code>galaxy/config/galaxy.ini</code> in a text editor and search for <code>port</code> setting. Change the port to <code>8090</code>. Below image shows the change in <code>galaxy.ini</code>.</li>
+</ul>
+<p><img alt="galaxy port change" src="../image/galaxy_port_change.png" /></p>
+<p><strong>Generating Galaxy API key</strong></p>
+<ul>
+<li>Click on <code>Admin</code> tab, under <code>User Management</code> section, click on <code>API keys</code>.</li>
+<li>Click on <code>Generate</code> button to create an API key. Don't regenerate a new key, if you already have one at this point.</li>
+</ul>
+<p><strong>CEGR <code>output_statistics</code> configuration</strong></p>
+<ul>
+<li>Open <code>galaxy/tools/stats_config.ini.sample</code> and add below information</li>
+</ul>
+<pre><code class="ini">
+# Configuration file for the CEGR Galaxy ChIP-exo statistics tools.
+
+[defaults]
+
+# This section contains default settings for command line parameters that
+# can be overridden when they are passed to executed scripts.
+
+PEGR_API_KEY =  &lt;REPLACE THIS WITH PEGR API KEY&gt;
+PEGR_URL = http://localhost:8080/pegr/api/stats
+
+GALAXY_API_KEY = &lt;REPLACE THIS WITH YOUR GALAXY ADMIN USER's API KEY&gt;
+GALAXY_BASE_URL = http://localhost:8090
+
+
+[tool_categories]
+
+input_dataset_r1 = output_fastqRead1
+input_dataset_r2 = output_fastqRead2
+toolshed.g2.bx.psu.edu/repos/iuc/bam_to_scidx/bam_to_scidx/1.0.1 = output_bamToScidx
+toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_intersectbed/2.27.0.0 = output_bedtoolsIntersect
+toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa_mem/0.7.17.1 = output_bwaMem
+toolshed.g2.bx.psu.edu/repos/iuc/cwpair2/cwpair2/1.1.0 = output_cwpair2
+toolshed.g2.bx.psu.edu/repos/iuc/genetrack/genetrack/1.0.1 = output_genetrack
+toolshed.g2.bx.psu.edu/repos/iuc/extract_genomic_dna/Extract genomic DNA 1/3.0.3 = output_extractGenomicDNA
+toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.70 = output_fastqc
+toolshed.g2.bx.psu.edu/repos/iuc/pe_histogram/pe_histogram/1.0.1 = output_peHistogram
+toolshed.g2.bx.psu.edu/repos/bgruening/repeat_masker/repeatmasker_wrapper/0.1.2 =output_repeatMasker
+toolshed.g2.bx.psu.edu/repos/iuc/meme_meme/meme_meme/4.11.2.0 = output_meme
+toolshed.g2.bx.psu.edu/repos/iuc/fasta_nucleotide_color_plot/fasta_nucleotide_color_plot/1.0.1 = output_fourColorPlot
+toolshed.g2.bx.psu.edu/repos/jjohnson/samtools_filter/samtools_filter/1.1.1 = output_samtoolFilter
+toolshed.g2.bx.psu.edu/repos/devteam/picard/picard_MarkDuplicates/2.7.1.1 = output_markDuplicates
+toolshed.g2.bx.psu.edu/repos/iuc/meme_fimo/meme_fimo/4.11.2.0 = output_fimo
+toolshed.g2.bx.psu.edu/repos/iuc/tag_pileup_frequency/tag_pileup_frequency/1.0.1 = output_tagPileup
+
+
+</code></pre>
+
+<ul>
+<li>Below is an example configuration, after you add your API Keys.</li>
+</ul>
+<p><img alt="Example config" src="../image/sample_stats_config.png" /></p>
+<ul>
+<li>Rename <code>stats_config.ini.sample</code> to <code>stats_config.ini</code></li>
+</ul>
+<p><strong>Install bioblend</strong></p>
+<p><em>bioblend is a python library to interact with Galaxy, using APIs</em></p>
+<ul>
+<li>Installation instructions <a href="https://bioblend.readthedocs.io/en/latest/#installation">here</a></li>
+<li>If you have already installed <a href="https://www.anaconda.com/"><code>Anaconda</code></a> &amp; <a href="https://pypi.org/project/pip/"><code>pip</code></a><ul>
+<li><code>pip install bioblend</code></li>
+</ul>
+</li>
+<li>Using bioblend <a href="https://bioblend.readthedocs.io/en/latest/api_docs/galaxy/docs.html">docs</a></li>
+</ul>
+<p><strong>Adding core-sequencing workflowId into your local development PEGRdb</strong></p>
+<p><em>This step is important, as it lets PEGR know which workflow stats to accept and update on PEGR web frontend</em></p>
+<ul>
+<li>Download <code>getWorkflowid.py</code> from <a href="../image/data/getWorkflowid.py">here</a></li>
+<li>Open the script and replace the <code>url</code> and <code>key</code> with your local galaxy url and API key respectively. After adding your API-key, looks like the below image:</li>
+</ul>
+<p><img alt="Get workflowid" src="../image/getworkflowid.png" /></p>
+<ul>
+<li>Start your galaxy</li>
+<li>Run the script to retrieve the workflowId. Below is an image showing expected output</li>
+</ul>
+<p><img alt="expected output for get workflowid" src="../image/localgalaxy_27.png" /></p>
+<ul>
+<li>Your workflow id is <code>ebfb8f50c6abde6d</code> in the above example.</li>
+<li>Start your <code>MySQL</code> server and log into it using the username and password that you used while setting up <code>PEGR</code> or you can login as root  <code>mysql -u root -p</code></li>
+</ul>
+<pre><code>use pegr;
+describe pipeline;
+</code></pre>
+
+<p><img alt="example query" src="../image/localgalaxy_28.png" /></p>
+<ul>
+<li>Edit below query with a <code>pipeline-name</code> of your choice and add the <code>workflowid</code> you retrieved from above script and execute it. Below is an example query that you need</li>
+</ul>
+<pre><code>insert into pipeline( version,name,note,pipeline_version,steps,workflow_id)
+values( 1,
+
+'&lt;pipeline-name&gt;',
+
+'Locally installed galaxy sending JSON dictionaires to locally installed pegr','001', '[[&quot;input_dataset_r1_output_stats&quot;,&quot;fastqRead1&quot;],[&quot;input_dataset_r2_output_stats&quot;,&quot;fastqRead2&quot;],[&quot;fastqc_output_stats&quot;,&quot;fastqc&quot;],[&quot;fastqc_output_stats2&quot;,&quot;fastqc&quot;],[&quot;mark_duplicates_bam_output_stats&quot;,&quot;markDuplicates&quot;],[&quot;samtool_filter2_output_stats&quot;,&quot;samtoolFilter&quot;],[&quot;pe_histogram_output_stats&quot;,&quot;peHistogram&quot;],[&quot;bam_to_scidx_output_stats&quot;,&quot;bamToScidx&quot;],[&quot;genetrack_output_stats&quot;,&quot;genetrack&quot;],[&quot;bedtools_intersectbed_output_stats&quot;,&quot;bedtoolsIntersect&quot;],[&quot;cwpair2_output_stats&quot;,&quot;cwpair2&quot;],[&quot;extract_genomic_dna_output_stats&quot;,&quot;extractGenomicDNA&quot;],[&quot;extract_genomic_dna_output_stats2&quot;,&quot;extractGenomicDNA&quot;],[&quot;repeatmasker_wrapper_output_stats&quot;,&quot;repeatMasker&quot;],[&quot;repeatmasker_wrapper_output_stats2&quot;,&quot;repeatMasker&quot;],[&quot;meme_meme_output_stats&quot;,&quot;meme&quot;],[&quot;meme_fimo_output_stats&quot;,&quot;fimo&quot;],[&quot;extract_genomic_dna_output_stats3&quot;,&quot;extractGenomicDNA&quot;],[&quot;fasta_nucleotide_color_plot_output_stats&quot;,&quot;fourColorPlot&quot;],[&quot;tag_pileup_frequency_output_stats&quot;,&quot;tagPileup&quot;]]' ,
+
+&quot;&lt;workflowid&gt;&quot;);
+
+</code></pre>
+
+<ul>
+<li>This how your query looks like after adding your pipeline-name and workflowid</li>
+</ul>
+<p><img alt="query" src="../image/localgalaxy_29.png" /></p>
+<ul>
+<li>You are all set for executing the pipeline. <em>(if you have followed and set up the keys correctly, there should be no errors)</em></li>
 </ul>
               
             </div>
