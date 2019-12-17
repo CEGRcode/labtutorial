@@ -63,17 +63,16 @@
     <a class="current" href="./">Planemo</a>
     <ul class="subnav">
             
-    <li class="toctree-l2"><a href="#planemo">Planemo</a></li>
+    <li class="toctree-l2"><a href="#guidelines">Guidelines</a></li>
+    
+
+    <li class="toctree-l2"><a href="#install">Install</a></li>
     
         <ul>
         
-            <li><a class="toctree-l3" href="#pre-install">Pre-Install</a></li>
+            <li><a class="toctree-l3" href="#using-planemo">Using Planemo</a></li>
         
-            <li><a class="toctree-l3" href="#install">Install</a></li>
-        
-            <li><a class="toctree-l3" href="#usage">Usage</a></li>
-        
-            <li><a class="toctree-l3" href="#example">Example</a></li>
+            <li><a class="toctree-l3" href="#writing-functional-tests-for-tool-wrappers">Writing functional tests for Tool Wrappers</a></li>
         
         </ul>
     
@@ -83,17 +82,17 @@
           
             <li class="toctree-l1">
 		
+    <a class="" href="../Frontend Deployment/">Frontend Deployment</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../Backend Deployment/">Backend Deployment</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
     <a class="" href="../pegr/">PEGR</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="../grails/">Grails</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="../debug/">Debug</a>
 	    </li>
           
             <li class="toctree-l1">
@@ -136,216 +135,97 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="planemo">Planemo<a class="headerlink" href="#planemo" title="Permanent link">#</a></h1>
-<h2 id="pre-install">Pre-Install<a class="headerlink" href="#pre-install" title="Permanent link">#</a></h2>
-<p>Install <a href="https://www.anaconda.com/download">anaconda</a> (locally) on your machine.</p>
-<p>Install wget:</p>
+                <h1 id="guidelines">Guidelines<a class="headerlink" href="#guidelines" title="Permanent link">#</a></h1>
+<p><em><strong>Best Practices &amp; Standards</strong></em></p>
 <ul>
-<li><code>$ brew install wget</code> - (mac)</li>
-<li><code>$ sudo apt-get install wget</code> - (others)</li>
+<li><a href="https://galaxy-iuc-standards.readthedocs.io/en/latest/best_practices.html">Creating Galaxy tools</a></li>
+<li><a href="https://galaxy-iuc-standards.readthedocs.io/en/latest/best_practices/tool_xml.html">Writing tool wrappers</a></li>
 </ul>
-<p>Install virtual environment:</p>
+<p><em><strong>Tool Development</strong></em></p>
 <ul>
-<li><code>$ brew install virtualenv</code> - (mac)</li>
-<li><code>$ sudo apt-get install virtualenv</code> - (others)</li>
+<li><a href="https://docs.galaxyproject.org/en/latest/dev/schema.html">Galaxy XML Tags </a></li>
+<li><a href="https://planemo.readthedocs.io/en/latest/readme.html">What is Planemo ?</a></li>
+<li><a href="https://planemo.readthedocs.io/en/latest/writing_standalone.html">Building Galaxy Tools Using Planemo</a></li>
+<li><a href="https://galaxyproject.github.io/training-material/topics/dev/">Galaxy Development Training Slides</a></li>
 </ul>
-<p>NOTE: make sure <a href="https://galaxyproject.org/admin/get-galaxy/">local galaxy</a> is installed.
-Couple of dependencies are installed and you should see the galaxy running at localhost:8080</p>
-<p>Install pip:</p>
+<p><em><strong>Publishing to GALAXY Toolshed</strong></em></p>
 <ul>
-<li><code>$ brew install pip</code> - (mac)</li>
-<li><code>$ sudo apt-get install pip</code> - (others)</li>
+<li><a href="https://galaxy-iuc-standards.readthedocs.io/en/latest/best_practices/integration_checklist.html#testing-your-tool">ToolShed Readiness Checklist</a></li>
+<li><a href="https://planemo.readthedocs.io/en/latest/publishing.html">Publishing tools from Planemo</a></li>
 </ul>
-<h2 id="install">Install<a class="headerlink" href="#install" title="Permanent link">#</a></h2>
-<p>Install planemo:</p>
+<p><em>Make sure you refer to the above links while writing tools and their xml wrappers. It will be easy to submit tools to <code>Intergalactic Utilities Commission</code><a href="https://github.com/galaxyproject/tools-iuc">IUC</a>, if you followed the above standards. <a href="https://www.webfx.com/tools/emoji-cheat-sheet/">emoji cheatsheet</a> reference used in this documentation.</em></p>
+<h1 id="install">Install<a class="headerlink" href="#install" title="Permanent link">#</a></h1>
 <ul>
-<li><code>$ virtualenv .venv; . .venv/bin/activate</code></li>
-<li><code>$ pip install –-upgrade pip # Upgrade pip if needed.</code></li>
-<li><code>$ pip install planemo</code></li>
+<li>Follow the instructions in the <a href="https://planemo.readthedocs.io/en/latest/installation.html">documentation</a> to install on your machine.</li>
 </ul>
-<p>Basic <a href="https://planemo.readthedocs.io/en/latest/installation.html">tutorial</a></p>
-<h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">#</a></h2>
-<p>This guide assumes that you have already installed Planemo and have a directory with one or more Galaxy tool with input &amp; output files.</p>
-<h3 id="1-init">1) Init<a class="headerlink" href="#1-init" title="Permanent link">#</a></h3>
-<p>Create galaxy tool wrapper using the init command.</p>
-<ul>
-<li><code>$ planemo init</code></li>
-</ul>
-<p>CONGRATULATIONS, YOU HAVE SUCCESSFULLY SET UP THE PLANEMO TOOL!</p>
-<p>Example:</p>
-<pre><code>$ planemo tool_init
-                --id 'id' \
-                --name 'Name of the file' \
-                --description 'Description (optional)' \
-                --requirement software_version@2.2 \
-                --example_command 'input &amp; output command' \
-                --example_input input_file \
-                --example_output output_file \
-                --test_case \
-                --cite_url 'https://url' \
-                --help_from_command 'id'
-</code></pre>
-<p>NOTE: Planemo is unable to partially initialize, for example if your xml file is missing "citation" section during linting, in order to add it from the command line you need to initialize the entire wrapper. So it's really for creating a new wrapper not modifying an existing one.</p>
-<h3 id="2-lint">2) Lint<a class="headerlink" href="#2-lint" title="Permanent link">#</a></h3>
-<p>Planemo can check review tool for XML validity, syntax errors, and compliance with IUC best practices using the lint (l) command.</p>
-<ul>
-<li><code>$ planemo lint</code> # same as planemo lint</li>
-<li><code>$ planemo lint --help</code></li>
-</ul>
-<p>You will also see the test-data directory generated for testing.</p>
-<h3 id="3-test">3) Test<a class="headerlink" href="#3-test" title="Permanent link">#</a></h3>
-<p>The test command can be used to test the functionality of tool(s). In other words, it checks if the xml file works as supposed to.</p>
-<ul>
-<li><code>$ planemo test</code> - test all the xml files in the current directory</li>
-<li><code>$ planemo test --galaxy_root=../galaxy wrapper.xml</code> - with optional parameters and specify file(s) to run the test.</li>
-</ul>
-<p>By default, planemo will search parent directories to see if any is a Galaxy instance.</p>
-<p>Important note: if you specify --galaxy_root folder, reverting it back might be difficult since the  planemo virtual environment path is set up to the galaxy directory. You can try to force planemo to download a disposable instance with the --install_galaxy flag.</p>
-<ul>
-<li>Ex: <code>$ planemo test --install_galaxy wrapper.xml</code></li>
-</ul>
-<h3 id="4-serve">4) Serve<a class="headerlink" href="#4-serve" title="Permanent link">#</a></h3>
-<p>After passing the test we can open Galaxy with the serve (or with s).</p>
-<pre><code>$ planemo s
-...
-serving on http://127.0.0.1:8086
-</code></pre>
-<h2 id="example">Example<a class="headerlink" href="#example" title="Permanent link">#</a></h2>
-<h3 id="1-seqtk">1) Seqtk<a class="headerlink" href="#1-seqtk" title="Permanent link">#</a></h3>
-<p>Use conda to install Seqtk:</p>
-<ul>
-<li><code>$ conda install --force --yes -c bioconda seqtk=1.2</code></li>
-<li><code>$ seqtk seq</code> - check if seqtk is installed</li>
-</ul>
-<p>Download an example FASTQ file</p>
-<ul>
-<li><code>$ wget https://raw.githubusercontent.com/galaxyproject/galaxy-test-data/master/2.fastq</code></li>
-<li><code>$ seqtk seq -A 2.fastq &gt; 2.fasta</code></li>
-<li><code>$ cat 2.fasta</code></li>
-</ul>
-<p>If you are unable to download or execute the wget command, simply copy &amp; paste the text and save as both 2.fastq and 2.fasta and continue along the steps:</p>
-<pre><code>&gt;EAS54_6_R1_2_1_413_324
-CCCTTCTTGTCTTCAGCGTTTCTCC
-&gt;EAS54_6_R1_2_1_540_792
-TTGGCAGGCCAAGGCCGATGGATCA
-&gt;EAS54_6_R1_2_1_443_348
-GTTGCTTCTGGCGTGGGTGGGGGGG
-</code></pre>
-<p>Run the following command to generate seqtk_seq.xml file. These contain minimal requirements for the xml file.</p>
-<pre><code>$ planemo tool_init --force \
-              --id 'seqtk_seq' \
-              --name 'Convert to FASTA (seqtk)' \
-              --requirement seqtk@1.2 \
-              --example_command 'seqtk seq -a 2.fastq &gt; 2.fasta' \
-              --example_input 2.fastq \
-              --example_output 2.fasta \
-              --test_case \
-              --cite_url 'https://github.com/lh3/seqtk' \
-              --help_from_command 'seqtk seq'
-</code></pre>
-<p>Explanation of each command options (more <a href="https://planemo.readthedocs.io/en/latest/commands.html">here</a>):</p>
-<pre><code>id                      Short identifier for new tool (no whitespace).
-force                   Overwrite existing tool if present.
-name                    Name for new tool.
-description             Short description for new tool.
-requirement             Name of the package.  requirements will be set using Bioconda.
-example_command         Example to command with paths to build Cheetah template from. Must follow with --example_input and --example_output.
-example_input           Replace input file.
-example_output          Replace output file.
-test_case               Generate test-data directory with tool test cases from the supplied example.
-cite_url                Supply a URL for citation.
-help_from_command       Auto populate help from supplied command.
-</code></pre>
-<p>Type the following in the same directory where your seqtk.xml is located.</p>
+<h2 id="using-planemo">Using Planemo<a class="headerlink" href="#using-planemo" title="Permanent link">#</a></h2>
 <ul>
 <li>
-<p><code>$ planemo lint seqtk.xml</code></p>
+<p>Three step process that every tool need to go through :</p>
+<ul>
+<li><code>planemo lint &lt;your_tool.xml&gt;</code></li>
+<li><code>planemo test  &lt;your_tool.xml&gt; --galaxy_root=[path to your local galaxy instance] --test_data [path to the directory containing your testdata]</code></li>
+<li><code>planemo serve &lt;your_tool.xml&gt; --galaxy_root=[path to your local galaxy instance]</code></li>
+</ul>
 </li>
 <li>
-<p>Tip: Planemo lint command only checks if the syntax is correct, so if you are unable to pass the lint using planemo, check to make sure the above requirements are satisfied. If output says "Failed linting" at the end, see the current <a href="https://github.com/galaxyproject/planemo/#issues">github issues</a>.</p>
+<p>If you don't want to use (or) don't have your local galaxy for testing, <code>Planemo</code> will download &amp; spin-up a standalone galaxy to test your wrappers. make sure you installed <code>Planemo</code> within a python environment as instructed in <a href="https://planemo.readthedocs.io/en/latest/readme.html">installation</a> documentation for <code>Planemo</code>.</p>
+</li>
+<li>
+<p>Each of the above commands supports <code>--help</code> option. use it for the entire list of supported options.</p>
+</li>
+<li>
+<p>If <code>--no-xsd</code> option is used for <code>linting</code> the tool wrapper,<code>Planemo</code> finds errors and warnings within your wrappers by ignoring the validation of correct XML schema. (read the documentation for more info, you might generally want to avoid using this option)</p>
+</li>
+<li>
+<p><code>planemo test</code> expects test data to be available in a folder named as <code>test-data</code>. you need to write tool specific tests and also provide test data for testing the wrapper, before running the command.</p>
 </li>
 </ul>
-<p>Successful output <a href="../image/output.jpg">here</a></p>
-<p>Functionality test</p>
-<pre><code>$ planemo t
+<h2 id="writing-functional-tests-for-tool-wrappers">Writing functional tests for Tool Wrappers<a class="headerlink" href="#writing-functional-tests-for-tool-wrappers" title="Permanent link">#</a></h2>
+<p><strong>References to writing proper tests</strong></p>
+<ul>
+<li><a href="https://galaxyproject.org/admin/tools/writing-tests/">Basic Tests</a></li>
+<li><a href="https://docs.galaxyproject.org/en/latest/dev/schema.html#tool-tests">Using <code>&lt;tests&gt;&lt;/tests&gt;</code> XML tag</a></li>
+<li><a href="https://planemo.readthedocs.io/en/latest/writing_advanced.html#test-driven-development">Advanced Tests</a></li>
+<li>Using <a href="http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html"><code>reStructuredText</code></a> to format <code>help</code> section within the tool wrapper - <a href="https://docs.galaxyproject.org/en/latest/dev/schema.html#tool-help">documentation</a></li>
+<li>
+<p>Use the online <a href="http://rst.ninjs.org/">restructedText editor</a> to write and format your content under <code>&lt;help&gt; &lt;/help&gt;</code> section for the wrapper.</p>
+</li>
+<li>
+<p>planemo creates a <code>tool_test_output.html</code> file to showing the errors and debugging information if tools fail otherwise, shows the test output.</p>
+</li>
+<li>
+<p><code>planemo serve</code> lets you visualize the tools wrapper in GALAXY instance once it passes the tests.</p>
+</li>
+</ul>
+<p><strong>Flake8 &amp; pycodestyle for python tools</strong></p>
+<ul>
+<li>Python scripts must conform to <code>pep8</code> standards and also pass <code>flake8</code>, so that your tools pass the <code>travisCI</code> tests done by <code>IUC</code>.</li>
+<li><code>pycodestyle</code> is the utility to test your python scripts for pep8 coding standards</li>
+</ul>
+<pre><code>pycodestyle --show-pep8 --show-source --ignore=E501 &lt;your_tool&gt;.py
 </code></pre>
-<p>Output:</p>
-<pre><code>$ planemo t
-...
-All 1 test(s) executed passed.
-seqtk_seq[0]: passed
-</code></pre>
-<p>If error occurs, refer to the error report page on GitHub.</p>
-<h3 id="2-getrandombed">2) getRandomBed<a class="headerlink" href="#2-getrandombed" title="Permanent link">#</a></h3>
-<p>Download getRandomBed.py tool:</p>
-<p>Use the planemo commands to generate the xml file getRandomBed.xml</p>
-<p>Solution:</p>
-<pre><code>planemo tool_init --force \
-                --id 'getRandomBed' \
-                --name 'Random Bed' \
-                --requirement python@2.7.14 \
-                --example_command '$__tool_directory__/genRandomBed.py $inputBed' \
-                --example_input inputBed \
-                --example_output randomBed \
-                --test_case \
-                --cite_url 'http://www.pughlab.psu.edu/' \
-                --help_from_command 'getRandomBed'
-</code></pre>
-<h3 id="3-toolexamplepl">3) toolExample.pl<a class="headerlink" href="#3-toolexamplepl" title="Permanent link">#</a></h3>
-<p>Consider the following Perl script.</p>
-<pre><code>    #!/usr/bin/perl -w
 
-    # usage : perl toolExample.pl &lt;FASTA file&gt; &lt;output file&gt;
+<ul>
+<li>
+<p>For the case of submitting and testing the pep8 conformations, the IUC ignores some of the minor errors , such as E501, E201, E202. Refer the below issue on IUC, on what was actually proposed. <a href="https://github.com/galaxyproject/tools-iuc/issues/467">tools-iuc/issue/467</a></p>
+</li>
+<li>
+<p>I would install <em>flake8</em> and <em>flake8-import-order</em> to do a simple test to remove any errors that pop up after pep8. Below is the command to test the flake8 on the scripts within the current directory.</p>
+</li>
+</ul>
+<pre><code># installing flake8 and flake8-import-order
+pip install flake8 flake8-import-order
 
-    open (IN, "&lt;$ARGV[0]");
-    open (OUT, "&gt;$ARGV[1]");
-    while (&lt;IN&gt;) {
-        chop;
-        if (m/^&gt;/) {
-            s/^&gt;//;
-            if ($. &gt; 1) {
-                print OUT sprintf("%.3f", $gc/$length) . "\n";
-            }
-            $gc = 0;
-            $length = 0;
-        } else {
-            ++$gc while m/[gc]/ig;
-            $length += length $_;
-        }
-    }
-    print OUT sprintf("%.3f", $gc/$length) . "\n";
-    close( IN );
-    close( OUT ); #__end__
+# Testing for flake8 errors
+flake8 --ignore=E201,E202,E501 --count .
 </code></pre>
-<p>Create an xml file for the script with an output as follows:</p>
-<pre><code>&lt;tool id="gc_content" name="Compute GC content"&gt;
-  &lt;description&gt;for each sequence in a file&lt;/description&gt;
-  &lt;command&gt;perl $__tool_directory__/gc_content.pl $input output.tsv&lt;/command&gt;
-  &lt;inputs&gt;
-    &lt;param format="fasta" name="input" type="data" label="Source file"/&gt;
-  &lt;/inputs&gt;
-  &lt;outputs&gt;
-    &lt;data format="tabular" name="output" from_work_dir="output.tsv" /&gt;
-  &lt;/outputs&gt;
-  &lt;help&gt;
-This tool computes GC content from a FASTA file.
-  &lt;/help&gt;
-&lt;/tool&gt;
-</code></pre>
-<p>Solution:</p>
-<pre><code>planemo tool_init --force \
-                    --id 'gc_content' \
-                    --name 'Compute GC content' \
-                    --description 'for each sequence in a file' \
-                    --example_command 'perl $__tool_directory__/gc_content.pl $input output.tsv' \
-                    --example_input input.fasta \
-                    --example_output output.tsv \
-                    --help 'This tool computes GC content from a FASTA file.'
-</code></pre>
-<p>Q: Will this pass the planemo lint test?</p>
-<p>A: No it is missing the following parameters:</p>
-<pre><code>                test_case, requirement, citation, help_from_command
-</code></pre>
+
+<ul>
+<li>flake8 documentation : <a href="http://flake8.pycqa.org/en/latest/">here</a></li>
+<li>flake8-import-order : <a href="https://github.com/PyCQA/flake8-import-order">here</a></li>
+<li>pycodestyle documentation: <a href="https://pycodestyle.readthedocs.io/en/latest/">here</a></li>
+</ul>
               
             </div>
           </div>
@@ -353,7 +233,7 @@ This tool computes GC content from a FASTA file.
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../pegr/" class="btn btn-neutral float-right" title="PEGR">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../Frontend Deployment/" class="btn btn-neutral float-right" title="Frontend Deployment">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href="../galaxy/" class="btn btn-neutral" title="Galaxy"><span class="icon icon-circle-arrow-left"></span> Previous</a>
@@ -387,7 +267,7 @@ This tool computes GC content from a FASTA file.
         <span><a href="../galaxy/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../pegr/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../Frontend Deployment/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

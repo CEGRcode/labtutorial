@@ -63,6 +63,16 @@
     <a class="" href="../planemo/">Planemo</a>
 	    </li>
           
+            <li class="toctree-l1">
+		
+    <a class="" href="../Frontend Deployment/">Frontend Deployment</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../Backend Deployment/">Backend Deployment</a>
+	    </li>
+          
             <li class="toctree-l1 current">
 		
     <a class="current" href="./">PEGR</a>
@@ -76,20 +86,14 @@
         
             <li><a class="toctree-l3" href="#pegr-install">PEGR Install</a></li>
         
+            <li><a class="toctree-l3" href="#grails-tutorial">Grails Tutorial</a></li>
+        
+            <li><a class="toctree-l3" href="#pegr-upgrade-notes-grails-255-335">PEGR Upgrade Notes (Grails 2.5.5 -&gt; 3.3.5)</a></li>
+        
         </ul>
     
 
     </ul>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="../grails/">Grails</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="../debug/">Debug</a>
 	    </li>
           
             <li class="toctree-l1">
@@ -248,6 +252,131 @@ compile "org.grails.plugins:mail:1.0.7"
 Password: passcode
 </code></pre>
 <p>CONGRATULATIONS, YOU HAVE SUCCESSFULLY SET UP THE LOCAL PEGR!</p>
+<hr />
+<h2 id="grails-tutorial">Grails Tutorial<a class="headerlink" href="#grails-tutorial" title="Permanent link">#</a></h2>
+<p>•   Tutorial link reference: http://grails.asia/</p>
+<h3 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">#</a></h3>
+<p>What is Grails?</p>
+<p>Grails is an open source web application framework that uses the Apache Groovy programming language (based on Java). It is intended to be a high-productivity framework by following the "coding by convention" paradigm, providing a stand-alone development environment and hiding much of the configuration detail from the developer.</p>
+<h3 id="benefits">Benefits<a class="headerlink" href="#benefits" title="Permanent link">#</a></h3>
+<ol>
+<li>Convention over configuration ushers in abundant productivity for the developers.</li>
+<li>Grails enables you to write DRY code. If you have any existing Java code, reusing it in Grails should be no problem.</li>
+<li>Developers don’t need to write all the plumbing/boilerplate code with Grails.
+Here, developers have a big relief as they can concentrate more on turning your ideas into applications instead of chasing after configuring the framework components.</li>
+<li>As it is free of XML configuration, the Groovy on Grails can help you to develop the application in real time.</li>
+<li>Grails supports scaffolding. This helps developers to create applications with CRUD functionalities- Create, Read, Update and delete.</li>
+<li>Simple and easy to maintain code.</li>
+</ol>
+<h3 id="migration">Migration<a class="headerlink" href="#migration" title="Permanent link">#</a></h3>
+<p>Grails 3.0 is a complete ground up rewrite of Grails and introduces new concepts and components for many parts of the framework.
+When upgrading an application or plugin from Grails 3.0 there are many areas to consider including:
+For step-by-step migration guide click [here]</p>
+<p>The migration of Grails app version 2 to 3 can be done with helpful <a href="https://www.youtube.com/watch?v=IhehO9aM5bk">links</a>.</p>
+<p>To summarize the video, there are three main changes:</p>
+<ul>
+<li>Different file directories</li>
+<li>Merged files</li>
+<li>Deleted files</li>
+</ul>
+<p>There are also more changes as follows:</p>
+<p>Removal of dynamic scaffolding from Grails 3.0.0 till 3.0.4 when it was re-introduced
+  Removal of before and after interceptors
+  Project structure differences
+  File location differences
+  Configuration differences
+  Package name differences
+  Legacy Gant Scripts
+  Gradle Build System
+  Changes to Plugins
+  Source vs Binary Plugins</p>
+<p>The biggest suggestion from the video is installing a fresh, new grails 3 app and migrating from the original grails 2 app instead of trying to make the changes in the original app. This will create a clean migration platform.</p>
+<p>After the migration, you must test intensively to catch any unexpected errors.</p>
+<hr />
+<h2 id="pegr-upgrade-notes-grails-255-335">PEGR Upgrade Notes (Grails 2.5.5 -&gt; 3.3.5)<a class="headerlink" href="#pegr-upgrade-notes-grails-255-335" title="Permanent link">#</a></h2>
+<p><strong>Written by:</strong>  Pierce Chaffin 
+<strong>Last Updated:</strong> 06/27/18</p>
+<p><em>This is not all inclusive of bugs you will encounter however I am working to add those as soon as I can</em>
+Notes:</p>
+<h3 id="initial-migration-of-files">Initial Migration of Files<a class="headerlink" href="#initial-migration-of-files" title="Permanent link">#</a></h3>
+<p><img alt="Alt" src="/image/grailschanges.png" title="Title" /></p>
+<ul>
+<li>First Step is to create a new grails project in grails 3.3.5 in a new directory.sdf</li>
+<li>Next is to migrate all relevant files to their new homes in the new file hierarchy in grails 3.x</li>
+</ul>
+<h4 id="start-with-the-source-files">Start with the source files<a class="headerlink" href="#start-with-the-source-files" title="Permanent link">#</a></h4>
+<pre><code>$ cp -rf ../old_app/src/groovy/* src/main/groovy
+$ cp -rf ../old_app/src/java/* src/main/groovy
+$ cp -rf ../old_app/grails-app/* grails-app
+</code></pre>
+
+<h4 id="then-migrate-all-test-files">Then migrate all test files<a class="headerlink" href="#then-migrate-all-test-files" title="Permanent link">#</a></h4>
+<pre><code>$ cp -rf ../old_app/test/unit/* src/main/groovy
+$ cp -rf ../old_app/src/java/* src/main/groovy
+$ cp -rf ../old_app/grails-app/* grails-app
+</code></pre>
+
+<ul>
+<li>
+<p>Now that was it for the easy segments … onto all the configuration files and reorganization</p>
+</li>
+<li>
+<p>For starters lets migrate all dependencies from BuildConfig.groovy to the new build.gradle file</p>
+</li>
+<li>
+<p>(Mind you all of these plugins have new names and access locations as codehaus and other packages no longer exist)</p>
+</li>
+<li>
+<p>Ex: As the lib directory no longer is directly supported do this …</p>
+</li>
+</ul>
+<pre><code>      compile fileTree(dir:'lib', include:'.jar')
+</code></pre>
+
+<h4 id="additionally-going-back-to-codehaus">Additionally, going back to codehaus<a class="headerlink" href="#additionally-going-back-to-codehaus" title="Permanent link">#</a></h4>
+<ul>
+<li>
+<h5 id="orgcodehausgroovygrails-has-been-migrated-to-grailscodegrailsapplication">org.codehaus.groovy.grails. has been migrated to grails.code.GrailsApplication.*<a class="headerlink" href="#orgcodehausgroovygrails-has-been-migrated-to-grailscodegrailsapplication" title="Permanent link">#</a></h5>
+</li>
+<li>At this point in terminal we are going to want to resolve controller dependencies as well as some domain dependencies</li>
+</ul>
+<h5 id="do-this-by-running">Do this by running<a class="headerlink" href="#do-this-by-running" title="Permanent link">#</a></h5>
+<pre><code>$ grails compile
+</code></pre>
+
+<p><em>Do this quite a few times, looking at the stack trace and resolving as you go</em></p>
+<ul>
+<li>First issue you will probably encounter is that of @grails.validation.Validateable</li>
+<li>This is no longer in Grails 3 and needs to be changed to a class implementation</li>
+</ul>
+<pre><code>class XXXX implements grails.validation.Validateable()
+</code></pre>
+
+<h4 id="a-few-other-notes-with-regards-to-syntax-a-few-packages-in-grails-have-changed-simply-in-terminology-ie-j_username-is-now-simply-username-in-spring-security-core-authgsp">A few other notes with regards to syntax … a few packages in grails have changed simply in terminology .. i.e. j_username is now simply username in Spring Security Core (auth.gsp)<a class="headerlink" href="#a-few-other-notes-with-regards-to-syntax-a-few-packages-in-grails-have-changed-simply-in-terminology-ie-j_username-is-now-simply-username-in-spring-security-core-authgsp" title="Permanent link">#</a></h4>
+<p><img alt="Alt" src="/image/grailschanges2.png" title="Title" />
+<img alt="Alt" src="/image/grailschanges3.png" title="Title" /></p>
+<ul>
+<li>Once you compile successfully you can try to run-app but almost assuredly will find that this doesn’t work</li>
+<li>Next comes the configuration files … Start by moving URLMappings.groovy to the controllers directory</li>
+<li>And then change Config.groovy to application.groovy</li>
+<li>And then it is up to you (I went with the YAML file) as to where you want to merge in your DataSource.groovy (Either into application.yml or application.groovy</li>
+<li>Delete log4j from the application.groovy file</li>
+<li>Migrate the URLInterceptMapping to the new formatting and change it to a static rules mapping</li>
+</ul>
+<h5 id="run">Run<a class="headerlink" href="#run" title="Permanent link">#</a></h5>
+<pre><code>$ grails s2-quickstart User Role
+</code></pre>
+
+<h4 id="past-this-a-lot-of-functionality-might-still-not-work-as-some-dependencies-are-still-not-lining-up-properly">Past this, a lot of functionality might still not work as some dependencies are still not lining up properly<a class="headerlink" href="#past-this-a-lot-of-functionality-might-still-not-work-as-some-dependencies-are-still-not-lining-up-properly" title="Permanent link">#</a></h4>
+<ul>
+<li>At this point the concept of the security in Grails being different in defaults is the largest obstacle.</li>
+<li>In grails 3.x, by default all pages are inaccessible unless explicitly notated in the static rules of the application security for specific rules.</li>
+<li>Thus, as shown below make a mapping for every page with rules with regards to User Roles.</li>
+</ul>
+<pre><code>[pattern:'/report/togglePreferredAlignment/**', access:['ROLE_ADMIN']],
+</code></pre>
+
+<hr />
               
             </div>
           </div>
@@ -255,10 +384,10 @@ Password: passcode
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../grails/" class="btn btn-neutral float-right" title="Grails">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../FAQ/" class="btn btn-neutral float-right" title="FAQ">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../planemo/" class="btn btn-neutral" title="Planemo"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../Backend Deployment/" class="btn btn-neutral" title="Backend Deployment"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -286,10 +415,10 @@ Password: passcode
           <a href="https://github.com/CEGRcode/labtutorial/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href="../planemo/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../Backend Deployment/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../grails/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../FAQ/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
