@@ -1,240 +1,79 @@
-# Planemo
+# Guidelines
 
-## Pre-Install
+_**Best Practices & Standards**_
 
-Install [anaconda](https://www.anaconda.com/download) (locally) on your machine.
+- [Creating Galaxy tools](https://galaxy-iuc-standards.readthedocs.io/en/latest/best_practices.html)
+- [Writing tool wrappers](https://galaxy-iuc-standards.readthedocs.io/en/latest/best_practices/tool_xml.html)
 
-Install wget:
+_**Tool Development**_
 
-* `$ brew install wget` - (mac)
-* `$ sudo apt-get install wget` - (others)
+- [Galaxy XML Tags ](https://docs.galaxyproject.org/en/latest/dev/schema.html)
+- [What is Planemo ?](https://planemo.readthedocs.io/en/latest/readme.html)
+- [Building Galaxy Tools Using Planemo](https://planemo.readthedocs.io/en/latest/writing_standalone.html)
+- [Galaxy Development Training Slides](https://galaxyproject.github.io/training-material/topics/dev/)
 
-Install virtual environment:
+_**Publishing to GALAXY Toolshed**_
 
-* `$ brew install virtualenv` - (mac)
-* `$ sudo apt-get install virtualenv` - (others)
+- [ToolShed Readiness Checklist](https://galaxy-iuc-standards.readthedocs.io/en/latest/best_practices/integration_checklist.html#testing-your-tool)
+- [Publishing tools from Planemo](https://planemo.readthedocs.io/en/latest/publishing.html)
 
-NOTE: make sure [local galaxy](https://galaxyproject.org/admin/get-galaxy/) is installed.
-Couple of dependencies are installed and you should see the galaxy running at localhost:8080
 
-Install pip:
+_Make sure you refer to the above links while writing tools and their xml wrappers. It will be easy to submit tools to `Intergalactic Utilities Commission `[IUC](https://github.com/galaxyproject/tools-iuc), if you followed the above standards. [emoji cheatsheet](https://www.webfx.com/tools/emoji-cheat-sheet/) reference used in this documentation._
 
-* `$ brew install pip` - (mac)
-* `$ sudo apt-get install pip` - (others)
+# Install
 
-## Install
+- Follow the instructions in the [documentation](https://planemo.readthedocs.io/en/latest/installation.html) to install on your machine.
 
-Install planemo:
+## Using Planemo
 
-* `	$ virtualenv .venv; . .venv/bin/activate`
-* `	$ pip install –-upgrade pip # Upgrade pip if needed.`
-* `	$ pip install planemo`
+- Three step process that every tool need to go through :
+    - `planemo lint <your_tool.xml>`
+    - `planemo test  <your_tool.xml> --galaxy_root=[path to your local galaxy instance] --test_data [path to the directory containing your testdata]`
+    - `planemo serve <your_tool.xml> --galaxy_root=[path to your local galaxy instance] `
 
-Basic [tutorial](https://planemo.readthedocs.io/en/latest/installation.html)
-## Usage
+- If you don't want to use (or) don't have your local galaxy for testing, `Planemo` will download & spin-up a standalone galaxy to test your wrappers. make sure you installed `Planemo` within a python environment as instructed in [installation](https://planemo.readthedocs.io/en/latest/readme.html) documentation for `Planemo`.
 
-This guide assumes that you have already installed Planemo and have a directory with one or more Galaxy tool with input & output files.
+- Each of the above commands supports `--help` option. use it for the entire list of supported options.
 
-### 1) Init
+- If `--no-xsd` option is used for `linting` the tool wrapper,`Planemo` finds errors and warnings within your wrappers by ignoring the validation of correct XML schema. (read the documentation for more info, you might generally want to avoid using this option)
 
-Create galaxy tool wrapper using the init command.
+- `planemo test` expects test data to be available in a folder named as `test-data`. you need to write tool specific tests and also provide test data for testing the wrapper, before running the command.
 
-* `$ planemo init`
+## Writing functional tests for Tool Wrappers
 
-CONGRATULATIONS, YOU HAVE SUCCESSFULLY SET UP THE PLANEMO TOOL!
+**References to writing proper tests**
 
-Example:
+- [Basic Tests](https://galaxyproject.org/admin/tools/writing-tests/)
+- [Using `<tests></tests>` XML tag](https://docs.galaxyproject.org/en/latest/dev/schema.html#tool-tests)
+- [Advanced Tests](https://planemo.readthedocs.io/en/latest/writing_advanced.html#test-driven-development)
+- Using [`reStructuredText`](http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html) to format `help` section within the tool wrapper - [documentation](https://docs.galaxyproject.org/en/latest/dev/schema.html#tool-help)
+- Use the online [restructedText editor](http://rst.ninjs.org/) to write and format your content under `<help> </help>` section for the wrapper.
 
-	$ planemo tool_init
-					--id 'id' \
-					--name 'Name of the file' \
-					--description 'Description (optional)' \
-					--requirement software_version@2.2 \
-					--example_command 'input & output command' \
-					--example_input input_file \
-					--example_output output_file \
-					--test_case \
-					--cite_url 'https://url' \
-					--help_from_command 'id'
+- planemo creates a `tool_test_output.html` file to showing the errors and debugging information if tools fail otherwise, shows the test output.
 
-NOTE: Planemo is unable to partially initialize, for example if your xml file is missing "citation" section during linting, in order to add it from the command line you need to initialize the entire wrapper. So it's really for creating a new wrapper not modifying an existing one.
+- `planemo serve` lets you visualize the tools wrapper in GALAXY instance once it passes the tests.
 
-### 2) Lint
-Planemo can check review tool for XML validity, syntax errors, and compliance with IUC best practices using the lint (l) command.
+**Flake8 & pycodestyle for python tools**
 
-* `$ planemo lint` # same as planemo lint
-* `$ planemo lint --help`
+- Python scripts must conform to `pep8` standards and also pass `flake8`, so that your tools pass the `travisCI` tests done by `IUC`.
+- `pycodestyle` is the utility to test your python scripts for pep8 coding standards
 
-You will also see the test-data directory generated for testing.
+```
+pycodestyle --show-pep8 --show-source --ignore=E501 <your_tool>.py
+```
 
-### 3) Test
-The test command can be used to test the functionality of tool(s). In other words, it checks if the xml file works as supposed to.
+- For the case of submitting and testing the pep8 conformations, the IUC ignores some of the minor errors , such as E501, E201, E202. Refer the below issue on IUC, on what was actually proposed. [tools-iuc/issue/467](https://github.com/galaxyproject/tools-iuc/issues/467)
 
-* `$ planemo test` - test all the xml files in the current directory
-* `$ planemo test --galaxy_root=../galaxy wrapper.xml` - with optional parameters and specify file(s) to run the test.
+- I would install _flake8_ and _flake8-import-order_ to do a simple test to remove any errors that pop up after pep8. Below is the command to test the flake8 on the scripts within the current directory.
 
-By default, planemo will search parent directories to see if any is a Galaxy instance.
+```
+# installing flake8 and flake8-import-order
+pip install flake8 flake8-import-order
 
-Important note: if you specify --galaxy_root folder, reverting it back might be difficult since the  planemo virtual environment path is set up to the galaxy directory. You can try to force planemo to download a disposable instance with the --install_galaxy flag.
+# Testing for flake8 errors
+flake8 --ignore=E201,E202,E501 --count .
+```
 
-* Ex: `$ planemo test --install_galaxy wrapper.xml`
-
-### 4) Serve
-After passing the test we can open Galaxy with the serve (or with s).
-
-	$ planemo s
-	...
-	serving on http://127.0.0.1:8086
-
-## Example
-
-### 1) Seqtk
-
-Use conda to install Seqtk:
-
-* `$ conda install --force --yes -c bioconda seqtk=1.2`
-* `$ seqtk seq` - check if seqtk is installed
-
-Download an example FASTQ file
-
-*	`$ wget https://raw.githubusercontent.com/galaxyproject/galaxy-test-data/master/2.fastq`
-*	`$ seqtk seq -A 2.fastq > 2.fasta`
-*	`$ cat 2.fasta`
-
-If you are unable to download or execute the wget command, simply copy & paste the text and save as both 2.fastq and 2.fasta and continue along the steps:
-
-	>EAS54_6_R1_2_1_413_324
-	CCCTTCTTGTCTTCAGCGTTTCTCC
-	>EAS54_6_R1_2_1_540_792
-	TTGGCAGGCCAAGGCCGATGGATCA
-	>EAS54_6_R1_2_1_443_348
-	GTTGCTTCTGGCGTGGGTGGGGGGG
-
-Run the following command to generate seqtk_seq.xml file. These contain minimal requirements for the xml file.
-
-	$ planemo tool_init --force \
-                  --id 'seqtk_seq' \
-                  --name 'Convert to FASTA (seqtk)' \
-                  --requirement seqtk@1.2 \
-                  --example_command 'seqtk seq -a 2.fastq > 2.fasta' \
-                  --example_input 2.fastq \
-                  --example_output 2.fasta \
-                  --test_case \
-                  --cite_url 'https://github.com/lh3/seqtk' \
-                  --help_from_command 'seqtk seq'
-
-Explanation of each command options (more [here](https://planemo.readthedocs.io/en/latest/commands.html)):
-
-	id						Short identifier for new tool (no whitespace).
-	force					Overwrite existing tool if present.
-	name					Name for new tool.
-	description				Short description for new tool.
-	requirement 			Name of the package.  requirements will be set using Bioconda.
-	example_command			Example to command with paths to build Cheetah template from. Must follow with --example_input and --example_output.
-	example_input			Replace input file.
-	example_output			Replace output file.
-	test_case				Generate test-data directory with tool test cases from the supplied example.
-	cite_url				Supply a URL for citation.
-	help_from_command		Auto populate help from supplied command.
-
-Type the following in the same directory where your seqtk.xml is located.
-
-* `$ planemo lint seqtk.xml`
-
-- Tip: Planemo lint command only checks if the syntax is correct, so if you are unable to pass the lint using planemo, check to make sure the above requirements are satisfied. If output says "Failed linting" at the end, see the current [github issues](https://github.com/galaxyproject/planemo/#issues).
-
-Successful output [here](image/output.jpg)
-
-Functionality test
-
-	$ planemo t
-
-Output:
-
-	$ planemo t
-	...
-	All 1 test(s) executed passed.
-	seqtk_seq[0]: passed
-
-If error occurs, refer to the error report page on GitHub.
-
-### 2) getRandomBed
-
-Download getRandomBed.py tool:
-
-Use the planemo commands to generate the xml file getRandomBed.xml
-
-Solution:
-
-	planemo tool_init --force \
-                    --id 'getRandomBed' \
-                    --name 'Random Bed' \
-                    --requirement python@2.7.14 \
-                    --example_command '$__tool_directory__/genRandomBed.py $inputBed' \
-                    --example_input inputBed \
-                    --example_output randomBed \
-                    --test_case \
-                    --cite_url 'http://www.pughlab.psu.edu/' \
-                    --help_from_command 'getRandomBed'
-
-### 3) toolExample.pl
-
-Consider the following Perl script.
-
-		#!/usr/bin/perl -w
-
-		# usage : perl toolExample.pl <FASTA file> <output file>
-
-		open (IN, "<$ARGV[0]");
-		open (OUT, ">$ARGV[1]");
-		while (<IN>) {
-		    chop;
-		    if (m/^>/) {
-		        s/^>//;
-		        if ($. > 1) {
-		            print OUT sprintf("%.3f", $gc/$length) . "\n";
-		        }
-		        $gc = 0;
-		        $length = 0;
-		    } else {
-		        ++$gc while m/[gc]/ig;
-		        $length += length $_;
-		    }
-		}
-		print OUT sprintf("%.3f", $gc/$length) . "\n";
-		close( IN );
-		close( OUT ); #__end__
-
-
-Create an xml file for the script with an output as follows:
-
-	<tool id="gc_content" name="Compute GC content">
-	  <description>for each sequence in a file</description>
-	  <command>perl $__tool_directory__/gc_content.pl $input output.tsv</command>
-	  <inputs>
-	    <param format="fasta" name="input" type="data" label="Source file"/>
-	  </inputs>
-	  <outputs>
-	    <data format="tabular" name="output" from_work_dir="output.tsv" />
-	  </outputs>
-	  <help>
-	This tool computes GC content from a FASTA file.
-	  </help>
-	</tool>
-
-Solution:
-
-	planemo tool_init --force \
-						--id 'gc_content' \
-						--name 'Compute GC content' \
-						--description 'for each sequence in a file' \
-						--example_command 'perl $__tool_directory__/gc_content.pl $input output.tsv' \
-						--example_input input.fasta \
-						--example_output output.tsv \
-						--help 'This tool computes GC content from a FASTA file.'
-
-Q: Will this pass the planemo lint test?
-
-A: No it is missing the following parameters:
-
-					test_case, requirement, citation, help_from_command
+- flake8 documentation : [here](http://flake8.pycqa.org/en/latest/)
+- flake8-import-order : [here](https://github.com/PyCQA/flake8-import-order)
+- pycodestyle documentation: [here](https://pycodestyle.readthedocs.io/en/latest/)
