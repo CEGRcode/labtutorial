@@ -2,8 +2,12 @@ site_name: PughLab-guides
 
 nav:
 - Home: 'index.md'
-- Buffers: 'Buffers.md'
-- Yeast: 'Yeast.md'
+- Galaxy: 'galaxy.md'
+- Planemo: 'planemo.md'
+- Frontend Deployment: 'Frontend Deployment.md'
+- Backend Deployment: 'Backend Deployment.md'
+- PEGR: 'pegr.md'
+- FAQ: 'FAQ.md'
 
 
 theme:
@@ -14,7 +18,7 @@ theme:
         previous: 80 # p
         search: 83   # s
 
-repo_url: https://github.com/CEGRcode/GeneralLab
+repo_url: https://github.com/CEGRcode/labtutorial
 
 markdown_extensions:
     - toc:
