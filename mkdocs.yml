@@ -4,6 +4,7 @@ nav:
 - Home: 'index.md'
 - Galaxy: 'galaxy.md'
 - Planemo: 'planemo.md'
+- CAC: 'CAC.md'
 - Frontend Deployment: 'Frontend Deployment.md'
 - Backend Deployment: 'Backend Deployment.md'
 - PEGR: 'pegr.md'
@@ -11,12 +12,14 @@ nav:
 
 
 theme:
-  name: 'readthedocs'
+  name: 'gitbook'
   shortcuts:
         help: 191    # ?
         next: 78     # n
         previous: 80 # p
         search: 83   # s
+
+plugins: []
 
 repo_url: https://github.com/CEGRcode/labtutorial
 
