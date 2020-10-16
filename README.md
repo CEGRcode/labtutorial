@@ -1,3 +1,7 @@
+### Viewing this website
+
+Go to http://pughlab.mbg.cornell.edu/labtutorial/
+
 ### Updating this website
 ---
 
