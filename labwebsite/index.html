@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<title>Lab Websites - PughLab-guides</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="generator" content="mkdocs-1.1.2, mkdocs-gitbook-1.0.7">
+
+<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+<meta name="HandheldFriendly" content="true"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta rel="next" href="" />
+<link href="../css/style.min.css" rel="stylesheet"> 
+</head>
+
+<body>
+<div class="book">
+<div class="book-summary">
+
+<nav role="navigation">
+<ul class="summary">
+<li>
+<a href=".." target="_blank" class="custom-link">PughLab-guides</a>
+</li>
+<li class="divider"></li>
+<li class="chapter" data-path="">
+<a href="..">Home</a>
+<li class="chapter" data-path="galaxy/">
+<a href="../galaxy/">Galaxy</a>
+<li class="chapter" data-path="planemo/">
+<a href="../planemo/">Planemo</a>
+<li class="chapter" data-path="CAC/">
+<a href="../CAC/">CAC</a>
+<li class="chapter" data-path="Frontend%20Deployment/">
+<a href="../Frontend%20Deployment/">Frontend Deployment</a>
+<li class="chapter" data-path="Backend%20Deployment/">
+<a href="../Backend%20Deployment/">Backend Deployment</a>
+<li class="chapter" data-path="pegr/">
+<a href="../pegr/">PEGR</a>
+<li class="chapter active" data-path="labwebsite/">
+<a href="./">Lab Websites</a>
+<li class="chapter" data-path="FAQ/">
+<a href="../FAQ/">FAQ</a>
+<li class="divider"></li>
+
+
+
+<li><a href="http://www.mkdocs.org">
+Published with MkDocs
+</a></li>
+
+<li><a href="https://github.com/GitbookIO/theme-default">
+Theme by GitBook
+</a></li>
+</ul>
+
+</nav>
+
+</div> <!-- end of book-summary -->
+
+<div class="book-body">
+<div class="body-inner">
+<div class="book-header" role="navigation">
+
+<!-- Title -->
+<h1>
+<i class="fa fa-circle-o-notch fa-spin"></i>
+<a href="." ></a>
+</h1>
+
+</div> <!-- end of book-header -->
+
+<div class="page-wrapper" tabindex="-1" role="main">
+<div class="page-inner">
+
+<section class="normal markdown-section">
+
+
+
+<h1 id="pugh-lab-website-at-cornell">Pugh lab website at Cornell<a class="headerlink" href="#pugh-lab-website-at-cornell" title="Permanent link">#</a></h1>
+<p>The current lab website at Cornell is built using <a href="https://jekyllrb.com/">jekyll</a> and hosted through <a href="https://pages.github.com/">GitHub pages</a>.</p>
+<blockquote>
+<p>Ask Gretta regarding domain name and dns related details.</p>
+</blockquote>
+<h4 id="what-is-jekyll">What is jekyll ?<a class="headerlink" href="#what-is-jekyll" title="Permanent link">#</a></h4>
+<p>Jekyll is a static site generator. It takes text written in your favorite markup language and uses layouts to create a static website. You can tweak the site’s look and feel, URLs, the data displayed on the page, and more.</p>
+<p>There are many static site generators available both free and paid. Each comes with its pros and cons. Choosing a particular generator is mostly based on user's technical knowledge, features, ease of deployment, programming (development) language and community support, used by large open-source projects, etc. Here are some other static site generators : <a href="https://www.mkdocs.org/">MkDocs</a>, <a href="https://docusaurus.io/">Docusaurus</a>, <a href="https://jamstack.org/generators/">more</a></p>
+<h4 id="why-jekyll">Why jekyll ?<a class="headerlink" href="#why-jekyll" title="Permanent link">#</a></h4>
+<p>GitHub is built partly using <a href="https://rubyonrails.org/">Ruby-on-Rails</a> web framework and Jekyll is natively supported by GitHub pages. The reason being both are based on <a href="https://www.ruby-lang.org/en/">Ruby</a> programming language. Jekyll uses ruby under the hood to process and generate the final static website. <strong>You don't need to learn <code>ruby</code> in order to use <code>jekyll</code>.</strong></p>
+<h4 id="install-jekyll">Install Jekyll<a class="headerlink" href="#install-jekyll" title="Permanent link">#</a></h4>
+<p>Install jekyll using these <a href="https://jekyllrb.com/docs/installation/">docs </a>. Highly recommend going through this <a href="https://jekyllrb.com/docs/step-by-step/01-setup/">tutorial</a> before making any changes to the lab website. This tutorial is helpful to understand the folder structure. Be a good programmer and rely on the official documentation for all use-cases. Everything you need for reference on Jekyll is <a href="https://jekyllrb.com/docs/">here</a></p>
+<h4 id="who-you-are">Who you are ?<a class="headerlink" href="#who-you-are" title="Permanent link">#</a></h4>
+<p>You are a grad student, postdoc or computational staff having basic knowledge on web technologies (HTML5, CSS3, JS), GitHub and markdown.</p>
+<h4 id="making-changes-to-the-pugh-lab-website">Making changes to the Pugh lab website<a class="headerlink" href="#making-changes-to-the-pugh-lab-website" title="Permanent link">#</a></h4>
+<blockquote>
+<p>you need to be part of the CEGRcode GitHub organization and have <code>git push</code> authorization to make any changes to the website.</p>
+</blockquote>
+<ul>
+<li>Clone the <code>cegrcode.github.io</code> repo.</li>
+<li>Make your changes to one or more pages. Here is <a href="https://jekyllrb.com/docs/">jekyll docs</a></li>
+<li>Commit your changes locally using <code>git add .</code> and then <code>git commit -m</code> and add your commit message.</li>
+<li>push your changes to GitHub <code>master branch</code>. GitHub builds and deploys the changes.</li>
+<li>See the latest deployment under <code>Environments</code> section on the right side of the repo.</li>
+</ul>
+<blockquote>
+<p>GitHub repo for the lab website is configured to build and deploy the website automatically on git push to the master branch. There is no need of creating additional branches, merge-pull cycle for this repo.</p>
+</blockquote>
+
+
+</section>
+
+</div> <!-- end of page-inner -->
+</div> <!-- end of page-wrapper -->
+
+</div> <!-- end of body-inner -->
+
+</div> <!-- end of book-body -->
+<script src="../js/main.js"></script>
+<script src="../js/gitbook.min.js"></script>
+<script src="../js/theme.min.js"></script>
+</body>
+</html>
