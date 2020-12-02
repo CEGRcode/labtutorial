@@ -52,6 +52,10 @@ Below are some the Web development stacks being used in the lab.
     - [video tutorial](https://www.youtube.com/watch?v=0oXYLzuucwE&list=PL55RiY5tL51q4D-B63KBnygU6opNPFk_q)
 - Creating React Applications
     - [video tutorial](https://www.youtube.com/watch?v=OxIDLw0M-m0&list=PL4cUxeGkcC9ij8CfkAY2RAGb-tmkNwQHG)
+- "Adobe Illustrator for Scientists"
+    - [video tutorials](https://www.youtube.com/watch?v=z2bcqyRxFrI&list=PLhKpKEPEAauYIsyjnIN2YXztNo7BrZVxQ)
+    - very quick (7-15min) and relevant for both making conceptual diagrams and aligning figure charts
+    - useful for both wet and dry lab memebers
 
 
 ## Contributors
