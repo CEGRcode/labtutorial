@@ -82,7 +82,7 @@ const config = {
             items: [
               {
                 label: 'Wiki Home',
-                to: '/docs/index',
+                to: '/index',
               },
             ],
           },
