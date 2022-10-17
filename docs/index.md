@@ -11,9 +11,9 @@ This website contains installation guides to setup primary software packages and
 
 ## Infrastructure Details
 
-The lab takes advantage of [GALAXY](https://galaxyproject.github.io/) to create data analysis & visualization pipelines for large-scale data processing on the [ACI-ICS](https://ics.psu.edu/about/) clusters and also leverages [XSEDE](https://www.xsede.org/) resources for compute requirements.
+The lab takes advantage of [GALAXY](https://galaxyproject.github.io/) to create data analysis & visualization pipelines for large-scale data processing on the [ACI-ICS](https://ics.psu.edu/about/) clusters and also leverages [ACCESS (fromerly XSEDE)](https://allocations.access-ci.org/) resources for compute requirements.
 
-For day to day bioinformatics, install & start using [Script Manager.](https://github.com/CEGRcode/scriptmanager/releases)
+For day to day bioinformatics, install & start using [ScriptManager.](http://pughlab.mbg.cornell.edu/scriptmanager/)
 
 |ICS-ACI Resource URL|
 |----|
@@ -28,9 +28,9 @@ Below are some the Web development stacks being used in the lab.
 
 |Project | Abbreviation | Stack |
 |----|----|----|
-| Yeast Epigenome Project | YEP | MERN |
-| Protein Capture Reagent Program Validation | PCRP | MERN |
-| Platform for Epigenetic and Genomic Research | PEGR | [MySql](https://www.mysql.com/), [Grails](https://grails.org/), [Groovy](https://groovy-lang.org/) |
+| [Yeast Epigenome Project](http://www.yeastepigenome.org/) | YEP | MERN |
+| [Protein Capture Reagent Program Validation](http://www.pcrpvalidation.org/) | PCRP | MERN |
+| [Platform for Epigenetic and Genomic Research](http://www.pegr.org) | PEGR | [MySql](https://www.mysql.com/), [Grails](https://grails.org/), [Groovy](https://groovy-lang.org/) |
 
 - MERN Stack is made up of [MongoDB](https://www.mongodb.com/), [Express](https://expressjs.com/), [React](https://reactjs.org/), [NodeJS](https://nodejs.org/en/)
 
