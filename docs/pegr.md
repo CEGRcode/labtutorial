@@ -1,5 +1,8 @@
-# PEGR
-
+---
+id: pegr
+title: PEGR
+sidebar_position: 7
+---
 ## Pre-Install
 
 Install curl (For Windows, use Git Bash)
@@ -178,7 +181,7 @@ After the migration, you must test intensively to catch any unexpected errors.
 ---
 
 ## PEGR Upgrade Notes (Grails 2.5.5 -> 3.3.5)
-__Written by:__  Pierce Chaffin 
+__Written by:__  Pierce Chaffin
 __Last Updated:__ 06/27/18
 
 *This is not all inclusive of bugs you will encounter however I am working to add those as soon as I can*
@@ -187,7 +190,7 @@ Notes:
 
 ### Initial Migration of Files
 
-![Alt](/image/grailschanges.png "Title")
+![Alt](./image/grailschanges.png "Title")
 
 * First Step is to create a new grails project in grails 3.3.5 in a new directory.sdf
 * Next is to migrate all relevant files to their new homes in the new file hierarchy in grails 3.x
@@ -236,8 +239,8 @@ class XXXX implements grails.validation.Validateable()
 
 #### A few other notes with regards to syntax … a few packages in grails have changed simply in terminology .. i.e. j_username is now simply username in Spring Security Core (auth.gsp)
 
-![Alt](/image/grailschanges2.png "Title")
-![Alt](/image/grailschanges3.png "Title")
+![Alt](./image/grailschanges2.png "Title")
+![Alt](./image/grailschanges3.png "Title")
 
 * Once you compile successfully you can try to run-app but almost assuredly will find that this doesn’t work
 * Next comes the configuration files … Start by moving URLMappings.groovy to the controllers directory

@@ -1,4 +1,8 @@
-# Frontend Deployment
+---
+id: frontend-dev
+title: Frontend Deployment
+sidebar_position: 5
+---
 
 Instructions to deploy web apps built using `ReactJS` on PSU's VM hosting servers.
 

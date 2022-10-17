@@ -1,4 +1,8 @@
-# Pugh lab website at Cornell
+---
+id: labwebsite
+title: Lab Website @Cornell
+sidebar_position: 8
+---
 
 The current lab website at Cornell is built using [jekyll](https://jekyllrb.com/) and hosted through [GitHub pages](https://pages.github.com/).
 

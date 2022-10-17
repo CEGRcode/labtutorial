@@ -1,4 +1,8 @@
-# Backend Deployment
+---
+id: backend-deployment
+title: Backend Deployment
+sidebar_position: 6
+---
 
 Instructions to deploy web apps built using `NodeJS` on PSU's VM hosting servers.
 

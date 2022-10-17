@@ -1,4 +1,8 @@
-# FAQ
+---
+id: faq
+title: FAQ
+sidebar_position: 10
+---
 
 Frequently Asked Questions
 

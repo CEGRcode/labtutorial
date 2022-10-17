@@ -1,6 +1,13 @@
+---
+id: index
+title: Home
+sidebar_position: 1
+slug: /
+---
+
 ## Introduction
 
-This website contains installation guides to setup primary software packages and development infrastructure for **Mac** Workstations. Maintained and Curated by [PughLab](https://www.pughlab.psu.edu/).
+This website contains installation guides to setup primary software packages and development infrastructure for **Mac** Workstations. Maintained and Curated by [PughLab](https://pughlab.mbg.cornell.edu/).
 
 ## Infrastructure Details
 

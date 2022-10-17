@@ -1,4 +1,8 @@
-# Guidelines
+---
+id: planemo
+title: Planemo
+sidebar_position: 3
+---
 
 _**Best Practices & Standards**_
 

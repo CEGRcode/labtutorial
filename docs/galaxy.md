@@ -1,3 +1,8 @@
+---
+id: galaxy
+title: Galaxy
+sidebar_position: 2
+---
 ## Dependencies
 
 - Assuming you have installed the required [development tools for Mac OS](http://127.0.0.1:8000/#development-tools)

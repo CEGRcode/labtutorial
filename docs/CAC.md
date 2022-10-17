@@ -1,4 +1,8 @@
-# Cornell's CAC server setup
+---
+id: cac
+title: Cornell's CAC server setup
+sidebar_position: 4
+---
 
 Instructions to manually setup Cornell's CAC VM hosting servers.
 
