@@ -27,7 +27,7 @@ Name the projects using the following convention: `<FirstAuthorLastName> <Public
 
 E.g.
 
-**[Badjatia 2021- Cell Reports (Novel Set)](https://thanos.vmhost.psu.edu/pegr/project/show/1251)**
+**[Badjatia 2021- Cell Reports (Novel Set)](https://www.pegr.org/pegr/project/show/1251)**
 
 `Description: Novel published data from Nitika's paper on yeast peroxide stress. Acute stress drives global repression through two independent RNA polymerase II stalling events in Saccharomyces Publication accessions: - PMID - 33472084 - PMCID - PMC7879390 - GEO series - GSE151348 - SRA - SRP265070 - DOI - https://doi.org/10.1016/j.celrep.2020.108640 - Github - https://github.com/CEGRcode/2020-Badjatia_peroxide_stress`
 
@@ -63,7 +63,7 @@ For each publication, we make the analysis and reference files available on Gith
 **Please follow the naming convention of previous publication repos!!!** Once a repository is named, it is difficult to change.
 
 ### Organization of the Repo
-You can reference [previous publication repos](https://github.com/CEGRcode/2022-Mittal_SAGA) as a starting point for how to organize your BED files and code. This should fit most needs but you may opt to adjust the directory structure to suit specific needs.
+You can reference [previous publication repos][mittal-repo] or use the [template repo][template-repo] as a starting point for how to organize your BED files and code. This should fit most needs but you may opt to adjust the directory structure to suit specific needs.
 
 It is critical that your repo includes a `README.md` file in the root level formatted to be consistent with the other publication repos. This includes:
 - [ ] Title of manuscript
@@ -101,3 +101,6 @@ When you have a PMID for the new manuscript, go through and once more check...
   - [ ] Tweet about it [@ThePughLab](https://twitter.com/thepughlab?lang=en)
   - [ ] Update Frank/Will's [My Bibliography](https://www.ncbi.nlm.nih.gov/sites/myncbi/benjamin.pugh.1/bibliography/40517395/public/?sort=date&direction=descending)
   - [ ] Update [Lab Website](http://pughlab.mbg.cornell.edu/) as appropriate
+
+[mittal-repo]:https://github.com/CEGRcode/2022-Mittal_SAGA
+[template-repo]:https://github.com/CEGRcode/20XX-LastName_Journal
