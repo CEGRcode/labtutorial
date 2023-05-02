@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Lab Wiki',
   tagline: 'Internal Docs',
-  url: 'https://github.com/CEGRcode',
+  url: 'https://CEGRcode.github.io',
   baseUrl: '/labtutorial/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
