@@ -68,6 +68,12 @@ const config = {
             label: 'Wiki',
           },
           {
+            type: 'doc',
+            docId: 'Software/faq',
+            position: 'left',
+            label: 'Software',
+          },
+          {
             href: 'https://github.com/CEGRcode',
             className: "header-github-link",
             position: 'right',
