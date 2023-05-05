@@ -74,6 +74,12 @@ const config = {
             label: 'Software',
           },
           {
+            type: 'doc',
+            docId: 'WetBench/introduction',
+            position: 'left',
+            label: 'Wet Bench',
+          },
+          {
             href: 'https://github.com/CEGRcode',
             className: "header-github-link",
             position: 'right',
