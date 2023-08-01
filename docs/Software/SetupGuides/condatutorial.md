@@ -1,8 +1,11 @@
 ---
 id: condatutorial
-title: Setting up conda for Pugh Lab
-sidebar_label: Setting up conda for Pugh Lab
+title: Anaconda set-up
+sidebar_label: Anaconda set-up
+sidebar_position: 2
 ---
+
+import Link from '@docusaurus/Link';
 
 _Instructions for getting set up and going with Anaconda for non-programmers._
 
@@ -23,20 +26,21 @@ _Instructions for getting set up and going with Anaconda for non-programmers._
 
 Homebrew is a handy tool for installing tools on your workstation. I was using this before conda and I use it whenever conda fails me. This may seem roundabout but I find it handy to also have homebrew in my workspaces as a backup anyway. You're welcome to directly install conda without homebrew. I'll add directions to do this later.
 
-```bash
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-```
-(takes ~45min on Chitvan's lab workstation)
-
+<Link
+  className="button button--secondary"
+  href="https://docs.brew.sh/Installation">
+  Directions for installing Homebrew
+</Link>
 
 ## Install Anaconda3 via Homebrew
 
 Once Homebrew finishes installing, you can go ahead and install Anaconda with the following command.
 
-```bash
-brew cask install anaconda
-```
-(takes ~15min on Chitvan's lab workstation)
+<Link
+  className="button button--secondary"
+  href="https://medium.com/ayuth/install-anaconda-on-macos-with-homebrew-c94437d63a37">
+  Directions for installing Anaconda via Homebrew
+</Link>
 
 ## Using conda
 
