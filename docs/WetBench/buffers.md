@@ -12,7 +12,7 @@ This page is meant to serve as a centralized repository for all buffers and solu
 
 ### Making Solutions
 
-Use 50% of the total volume to dissolve the solid or liquid components of the buffers unless the protocol states otherwise. Pour the solution into a graduated cylinder once the components are dissolved and bring up to the final volume with ddH2O. Filter sterilize with a <a href="https://us.vwr.com/store/product/4829245/nalgene-rapid-flowtm-filter-units-and-bottle-top-filters-pes-membrane-sterile-thermo-scientific" target="_blank">Nalgene® Rapid-Flow™ Filter Unit</a> of the appropriate size, and store at the recommended temperature listed under each recipe. 
+Use 50% of the total volume to dissolve the solid or liquid components of the buffers unless the protocol states otherwise. Pour the solution into a graduated cylinder once the components are dissolved and bring up to the final volume with ddH2O. Filter sterilize with a <a href="https://us.vwr.com/store/product/4829245/nalgene-rapid-flowtm-filter-units-and-bottle-top-filters-pes-membrane-sterile-thermo-scientific" target="_blank">Nalgene® Rapid-Flow™ Filter Unit</a> of the appropriate size, and store at the recommended temperature listed under each recipe.
 
 
 ### pH/Conductivity Readings
@@ -73,7 +73,7 @@ Bring final volume to 2 L with ddH2O in a graduated cylinder. Filter sterilize a
 
 Final Conc. of Component | Stock | Amount
 :--------- | :--: | :------:
-10 mM <a href="https://cegrcode.github.io/GeneralLab/buffers/#1-m-tris-hcl-ph-80-1-l" target="_blank">Tris-HCl, pH 8.0</a> | 1 M | 5 mL 
+10 mM <a href="https://cegrcode.github.io/GeneralLab/buffers/#1-m-tris-hcl-ph-80-1-l" target="_blank">Tris-HCl, pH 8.0</a> | 1 M | 5 mL
 1 mM <a href="https://cegrcode.github.io/GeneralLab/buffers/#05-m-edta-ethylenediaminetetraacetic-acid-ph-80-500-ml" target="_blank">EDTA, pH 8.0</a> | 0.5 M | 1 mL
 
 Bring final volume to 500 mL with ddH2O in a graduated cylinder. Filter sterilize and store at RT.
@@ -207,7 +207,7 @@ _USE MASK--IRRITANT_
 Final Conc. of Component | Stock | Amount
 :--------- | :--: | :------:
 20% SDS | | 100 g
-Preheated ddH2O |  | 
+Preheated ddH2O |  |
 
 Start with 300 mL ddH2O in 500 mL glass beaker and heat the water in microwave, then add SDS powder. Bring to 500 mL with ddH2O in a graduated cylinder. Filter sterilize and store at RT.
 
@@ -218,7 +218,7 @@ Start with 300 mL ddH2O in 500 mL glass beaker and heat the water in microwave, 
 Final Conc. of Component | Stock | Amount
 :--------- | :--: | :------:
 5 M <a href="https://us.vwr.com/store/product/4559541/sodium-chloride-99-0-gr-acs" target="_blank">NaCl</a> | | 292.2 g
-Preheated ddH2O |  | 
+Preheated ddH2O |  |
 
 Bring final volume to 1 L with ddH2O in a graduated cylinder. Filter sterilize and store at RT. Occasionally, solution will not flow through the filter immediately--allow the solution to cool and it will flow within a minute.
 
@@ -229,7 +229,7 @@ Bring final volume to 1 L with ddH2O in a graduated cylinder. Filter sterilize a
 Final Conc. of Component | Stock | Amount
 :--------- | :--: | :------:
 2 M <a href="https://www.fishersci.ca/shop/products/potassium-chloride-white-crystals-fisher-bioreagents-2/bp3661" target="_blank">KCl</a> | | 149.1 g
-ddH2O |  | 
+ddH2O |  |
 
 Bring final volume to 1 L with ddH2O in a graduated cylinder. Filter sterilize and store at RT.
 
@@ -240,7 +240,7 @@ Bring final volume to 1 L with ddH2O in a graduated cylinder. Filter sterilize a
 Final Conc. of Component | Stock | Amount
 :--------- | :--: | :------:
 25% <a href="https://www.sigmaaldrich.com/catalog/product/sial/x100?lang=en&region=US" target="_blank">Triton X-100</a> | 100% | 50 mL
-Preheated ddH2O |  | 
+Preheated ddH2O |  |
 
 Measure Triton X-100 directly into 250 mL glass beaker. Bring final volume to 200 mL with preheated ddH2O. Let stir on magnetic plate until completely dissolved (up to one hour) Filter sterilize and store at RT.
 
@@ -251,9 +251,9 @@ Measure Triton X-100 directly into 250 mL glass beaker. Bring final volume to 20
 Final Conc. of Component | Stock | Amount
 :--------- | :--: | :------:
 1 M <a href="https://us.vwr.com/store/product/4562172/tris-hydroxymethyl-aminomethane-tris-trometamol-99-9-dried-basis-ultrapure-bioreagent-molecular-biology-grade-j-t-baker" target="_blank">Tris Base</a> | | 121.2 g
-<a href="https://cegrcode.github.io/GeneralLab/buffers/#1-n-hcl-1-l" target="_blank">HCl</a> | 1 N | 800 mL 
+<a href="https://cegrcode.github.io/GeneralLab/buffers/#1-n-hcl-1-l" target="_blank">HCl</a> | 1 N | 800 mL
 
-Confirm pH with meter and adjust as needed. Bring final volume to 1 L with ddH2O in a graduated cylinder. 
+Confirm pH with meter and adjust as needed. Bring final volume to 1 L with ddH2O in a graduated cylinder.
 
 <p>&nbsp;</p>
 
@@ -273,7 +273,7 @@ Confirm pH with meter and adjust as needed. Bring final volume to 1 L with ddH2O
 Final Conc. of Component | Stock | Amount
 :--------- | :--: | :------:
 10% <a href="https://www.sigmaaldrich.com/catalog/product/sial/i3021?lang=en&region=US" target="_blank">IGEPAL</a> | 100% | 20 mL
-Preheated ddH2O |  | 
+Preheated ddH2O |  |
 
 Measure IGEPAL in a 250 mL glass beaker. Bring final volume to 200 mL with preheated ddH2O. Filter sterilize and store at RT.
 
@@ -435,14 +435,14 @@ Add to 100mL of ddH<sub>2</sub>O
 #### Complete Iscove's Modified Dulbecco's Medium (IMDM) (1.11 L)
 
 Final Conc. of Component | Stock | Amount
-:--------- | :------ | :-----: 
+:--------- | :------ | :-----:
 <a href="https://www.thermofisher.com/order/catalog/product/12440046#/12440046" target="_blank">IMDM</a>| 1X | 1000 mL
 1% <a href="https://www.thermofisher.com/order/catalog/product/15140163#/15140163" target="_blank">Penicillin-Streptomycin</a> | 10,000 U/mL | 10 mL
 10% <a href="https://us.vwr.com/store/product/18706419/avantor-seradigm-usda-approved-origin-fetal-bovine-serum-fbs" target="_blank">Fetal Bovine Serum (FBS)</a> | 100% | 100 mL
 
 *Note: Procedure below prepares enough media for one full week of passaging and harvesting at 3 L scale K562 cell culture. Adjust number of media bottles to prepare as necessary.*
 
-Turn on the UV light in the biological safety cabinet and thaw 2 FBS bottles and 1 Penicillin-Streptomycin bottle in a 37°C water bath for 30 minutes. 
+Turn on the UV light in the biological safety cabinet and thaw 2 FBS bottles and 1 Penicillin-Streptomycin bottle in a 37°C water bath for 30 minutes.
 
 After 30 minutes, obtain 10 IMDM bottles. Wipe down all bottles, one serological pipette, a 50 mL serological pipette tip, and a 10 mL serological pipette tip with 70% ethanol, and place under the hood. Add each component to the IMDM carefully without placing lids on surface of hood. Cap the IMDM bottles and label them with a sharpie with the date and contents (10% FBS, 1% Pen/Strep). Store at 4˚C until needed.
 
@@ -453,12 +453,12 @@ Pour 10% bleach in the empty FBS and Pen/Strep bottles and let incubate for 30 m
 #### Complete Dulbecco's Modified Eagle Medium (DMEM) (1.11 L)
 
 Final Conc. of Component | Stock | Amount
-:--------- | :------ | :-----: 
+:--------- | :------ | :-----:
 <a href="https://www.thermofisher.com/order/catalog/product/11965126#/11965126" target="_blank">DMEM</a>| 1X | 1000 mL
 1% <a href="https://www.thermofisher.com/order/catalog/product/15140163#/15140163" target="_blank">Penicillin-Streptomycin</a> | 10,000 U/mL | 10 mL
 10% <a href="https://us.vwr.com/store/product/18706419/avantor-seradigm-usda-approved-origin-fetal-bovine-serum-fbs" target="_blank">Fetal Bovine Serum (FBS)</a> | 100% | 100 mL
 
-Turn on the UV light in the biological safety cabinet and thaw 1 FBS bottle and 1 Penicillin-Streptomycin bottle in a 37°C water bath for 30 minutes. 
+Turn on the UV light in the biological safety cabinet and thaw 1 FBS bottle and 1 Penicillin-Streptomycin bottle in a 37°C water bath for 30 minutes.
 
 After 30 minutes, obtain 2 DMEM bottles. Wipe down all bottles, one serological pipette, a 50 mL serological pipette tip, and a 10 mL serological pipette tip with 70% ethanol, and place under the hood. Add each component to the DMEM carefully without placing lids on surface of hood. Cap the DMEM bottles and label them with a sharpie with the date and contents (10% FBS, 1% Pen/Strep). Store at 4˚C until needed.
 
@@ -469,7 +469,7 @@ Pour 10% bleach in any empty FBS and Pen/Strep bottles and let incubate for 30 m
 #### Complete Roswell Park Memorial Institute (RPMI) 1640 Medium (1.11 L)
 
 Final Conc. of Component | Stock | Amount
-:--------- | :------ | :-----: 
+:--------- | :------ | :-----:
 <a href="https://www.thermofisher.com/order/catalog/product/11875135#/11875135" target="_blank">RPMI 1640</a> | 1X | 1000 mL
 1% <a href="https://www.thermofisher.com/order/catalog/product/15140163#/15140163" target="_blank">Penicillin-Streptomycin</a> | 10,000 U/mL | 10 mL
 10% Heat-Inactivated <a href="https://us.vwr.com/store/product/18706419/avantor-seradigm-usda-approved-origin-fetal-bovine-serum-fbs" target="_blank">Fetal Bovine Serum (FBS)</a> | 100% | 100 mL
@@ -477,9 +477,9 @@ Final Conc. of Component | Stock | Amount
 
 Thaw 2 FBS bottles in a 37°C water bath for 30 minutes.
 
-After the FBS is thawed, turn on the UV light in the biological safety cabinet, heat-inactivate the 2 FBS bottles in a 56°C water bath for 30 minutes, and thaw 1 Penicillin-Streptomycin bottle in a 37°C water bath for 30 minutes. 
+After the FBS is thawed, turn on the UV light in the biological safety cabinet, heat-inactivate the 2 FBS bottles in a 56°C water bath for 30 minutes, and thaw 1 Penicillin-Streptomycin bottle in a 37°C water bath for 30 minutes.
 
-After 30 minutes, obtain 10 RPMI bottles and one bottle of 2-Mercaptoethanol. Wipe down all bottles, one serological pipette, a 50 mL serological tip, a 10 mL serological tip, a p200 pipette and a p200 tip box with 70% ethanol, and place under the hood. 
+After 30 minutes, obtain 10 RPMI bottles and one bottle of 2-Mercaptoethanol. Wipe down all bottles, one serological pipette, a 50 mL serological tip, a 10 mL serological tip, a p200 pipette and a p200 tip box with 70% ethanol, and place under the hood.
 
 Add each component, except for 2-Mercaptoethanol, to the RPMI 1640 bottles carefully without placing lids on surface of hood. Only add 2-Mercaptoethanol to the first bottle of media you need on that day. Cap the RPMI 1640 bottles and label them with a sharpie with the date and contents (10% FBS, 1% Pen/Strep, 10 µM 2-Mercaptoethanol for the first bottle, and 10% FBS, 1% Pen/Strep for the others). Store at 4˚C until needed.
 
@@ -492,7 +492,7 @@ Pour 10% bleach in any empty FBS and Pen/Strep bottles and let incubate for 30 m
 Final Conc. of Component | Stock | Amount
 :--------- | :--: | :------:
 1 M <a href="https://us.vwr.com/store/product/4562172/tris-hydroxymethyl-aminomethane-tris-trometamol-99-9-dried-basis-ultrapure-bioreagent-molecular-biology-grade-j-t-baker" target="_blank">Tris Base</a> | | 1454.4 g
-<a href="https://cegrcode.github.io/GeneralLab/buffers/#1-n-hcl-1-l" target="_blank">HCl</a> | 37% | 550  mL 
+<a href="https://cegrcode.github.io/GeneralLab/buffers/#1-n-hcl-1-l" target="_blank">HCl</a> | 37% | 550  mL
 
 Confirm pH with meter and adjust as needed. Bring final volume to 4 L with ddH2O in a graduated cylinder. Filter sterilize and store in 1 L glass bottles.
 
@@ -535,7 +535,7 @@ Purchased from <a href="https://www.thermofisher.com/order/catalog/product/14190
 Final Conc. of Component | MW (g/mol) | Amount
 :--------- | :--: | :------:
 2.7 mM <a href="https://www.fishersci.ca/shop/products/potassium-chloride-white-crystals-fisher-bioreagents-2/bp3661" target="_blank">KCl</a> | 74.55 | 0.2 g
-1.47 mM <a href="https://www.sigmaaldrich.com/catalog/product/sigma/p9791?lang=en&region=US" target="_blank">KH2PO4 (monobasic)</a> | 136.09 | 0.2 g 
+1.47 mM <a href="https://www.sigmaaldrich.com/catalog/product/sigma/p9791?lang=en&region=US" target="_blank">KH2PO4 (monobasic)</a> | 136.09 | 0.2 g
 137.9 mM <a href="https://us.vwr.com/store/product/4559541/sodium-chloride-99-0-gr-acs" target="_blank">NaCl</a> | 58.44 | 8 g
 8.1 mM <a href="https://www.sigmaaldrich.com/catalog/product/mm/106586?lang=en&region=US" target="_blank">Na2HPO4 (dibasic)</a> | 141.96 | 1.15 g
 
@@ -634,7 +634,7 @@ Final Conc. of Component | Stock | Amount
 25 mM <a href="https://cegrcode.github.io/GeneralLab/buffers/#1-m-tris-hcl-ph-75-1-l" target="_blank">Tris-HCl, pH 7.5</a> | 1 M | 1.25 mL
 2 mM <a href="https://cegrcode.github.io/GeneralLab/buffers/#05-m-edta-ethylenediaminetetraacetic-acid-ph-80-500-ml" target="_blank">EDTA, pH 8.0</a> | 0.5 M | 0.2 mL
 200 mM <a href="https://cegrcode.github.io/GeneralLab/buffers/#5-m-nacl-1-l" target="_blank">NaCl</a> | 5 M | 2 mL
-0.5% <a href="https://cegrcode.github.io/GeneralLab/buffers/#20-sds-sodium-dodecyl-sulfate-500-ml" target="_blank">SDS</a> | 20% | 1.25 mL 
+0.5% <a href="https://cegrcode.github.io/GeneralLab/buffers/#20-sds-sodium-dodecyl-sulfate-500-ml" target="_blank">SDS</a> | 20% | 1.25 mL
 
 Bring final volume up to 50 mL with ddH2O in a graduated cylinder. Filter sterilize with <a href="https://us.vwr.com/store/product/4830405/pall-acrodisc-sterile-syringe-filters-with-supor-membrane-pall-laboratory" target="_blank">syringe filter</a> and store at RT. Record pH and conductivity reading in buffer log folder.
 
