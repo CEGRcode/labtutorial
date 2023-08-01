@@ -1,7 +1,8 @@
 ---
 id: publication-checklist
 title: Publication Checklist
-sidebar_position: 9
+sidebar_label: Publication Checklist
+sidebar_position: 2
 ---
 
 *last updated Oct 16, 2022 by Olivia for the Mittal et al, 2022 SAGA paper*
