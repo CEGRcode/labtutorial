@@ -1,7 +1,7 @@
 ---
 id: labwebsite
-title: Lab Website @Cornell
-sidebar_position: 8
+title: Pugh Lab Website (@Cornell)
+sidebar_label: Pugh Lab Website
 ---
 
 The current lab website at Cornell is built using [jekyll](https://jekyllrb.com/) and hosted through [GitHub pages](https://pages.github.com/).
