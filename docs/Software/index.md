@@ -1,12 +1,31 @@
 ---
 id: index
-title: Home
-slug: /
+title: Dry Bench Introduction
+sidebar_label: Dry Bench Introduction
+sidebar_position: 1
 ---
 
-## Introduction
+This section contains installation guides to setup primary software packages and development infrastructure for the Pugh/Lai labs.
 
-This website contains installation guides to setup primary software packages and development infrastructure for **Mac** Workstations. Maintained and Curated by [PughLab](https://pughlab.mbg.cornell.edu/).
+Every graduate student (WET AND DRY) in the lab will need to perform bioinformatic analysis at some point. Referencing these guides sooner rather than later can SAVE YOU AND THE DRY-BENCH MEMBERS OF THE LAB A LOT OF TIME.
+
+
+## For wet-bench scientists
+
+We have built infrastructure and tools in the lab to help you with analyzing your genomic datasets. Please reference the following links
+- What is Galaxy?
+- What is PEGR?
+- Install Hombrew & Anaconda3
+-
+
+|Project | Wet-bench scientist | Dry-bench scientist | Undergraduate Researcher |
+| ---- | ---- | ---- | ---- |
+| Galaxy | user | user/dev | - |
+| PEGR | user | user/dev | - |
+
+
+#### Who you are ?
+You are a grad student, postdoc or computational staff having basic knowledge on web technologies (HTML5, CSS3, JS), GitHub and markdown.
 
 ## Infrastructure Details
 
@@ -58,16 +77,12 @@ Below are some the Web development stacks being used in the lab.
     - [video tutorial](https://www.youtube.com/watch?v=0oXYLzuucwE&list=PL55RiY5tL51q4D-B63KBnygU6opNPFk_q)
 - Creating React Applications
     - [video tutorial](https://www.youtube.com/watch?v=OxIDLw0M-m0&list=PL4cUxeGkcC9ij8CfkAY2RAGb-tmkNwQHG)
-- "Adobe Illustrator for Scientists"
-    - [video tutorials](https://www.youtube.com/watch?v=z2bcqyRxFrI&list=PLhKpKEPEAauYIsyjnIN2YXztNo7BrZVxQ)
-    - very quick (7-15min) and relevant for both making conceptual diagrams and aligning figure charts
-    - useful for both wet and dry lab memebers
 
 
-## Contributors
+    ## Contributors
 
-|Name | Lab Position|
-|----|----|
-| Prashant Kumar Kuntala | Computational Scientist |
-| Hedgie Jo | Undergraduate Researcher |
-| Pierce Chaffin | Undergraduate Researcher |
+    |Name | Lab Position|
+    |----|----|
+    | Prashant Kumar Kuntala | Computational Scientist |
+    | Hedgie Jo | Undergraduate Researcher |
+    | Pierce Chaffin | Undergraduate Researcher |

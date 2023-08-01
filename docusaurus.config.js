@@ -53,6 +53,17 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      /* Below is example code for adding an announcement banner if needed */
+      /*
+      announcementBar: {
+        id: 'sitewide-banner',
+        content:
+          'Some message blah blah blah <a target="_blank" rel="noopener noreferrer" href="https://github.com/CEGRcode/labtutorial"> Some link blah blah blah</a>.',
+        backgroundColor: '#000000',
+        textColor: '#fff',
+        isCloseable: false,
+      },
+      */
       navbar: {
         logo: {
           alt: 'Lab logo',
@@ -63,9 +74,9 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'index',
+            docId: 'General/index',
             position: 'left',
-            label: 'Wiki',
+            label: 'General',
           },
           {
             type: 'doc',
@@ -94,7 +105,7 @@ const config = {
             items: [
               {
                 label: 'Wiki Home',
-                to: '/index',
+                to: 'General',
               },
             ],
           },
@@ -116,7 +127,7 @@ const config = {
             items: [
               {
                 label: 'ScriptManager',
-                href: 'http://pughlab.mbg.cornell.edu/scriptmanager',
+                href: 'http://pughlab.mbg.cornell.edu/scriptmanager-docs',
               },
               {
                 label: 'PEGR',
@@ -128,7 +139,7 @@ const config = {
               },
               {
                 label: 'GenoPipe',
-                href: 'http://pughlab.mbg.cornell.edu/GenoPipe',
+                href: 'http://pughlab.mbg.cornell.edu/GenoPipe-docs',
               },
             ],
           },
