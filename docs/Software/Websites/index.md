@@ -2,6 +2,7 @@
 id: index
 title: Websites
 sidebar_label: Websites
+sidebar_position: 5
 ---
 
 We build websites for our tools and papers. Here is some info about the websites we maintain and lab standards for making a new one.

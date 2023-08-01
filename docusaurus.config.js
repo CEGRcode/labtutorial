@@ -80,13 +80,13 @@ const config = {
           },
           {
             type: 'doc',
-            docId: 'Software/PSU_Archive/faq',
+            docId: 'Software/index',
             position: 'left',
             label: 'Software',
           },
           {
             type: 'doc',
-            docId: 'WetBench/introduction',
+            docId: 'WetBench/index',
             position: 'left',
             label: 'Wet Bench',
           },

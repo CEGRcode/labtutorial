@@ -1,5 +1,5 @@
 ---
-id: introduction
+id: index
 title: Wet-Bench Introduction
 sidebar_label: Introduction
 sidebar_position: 1
