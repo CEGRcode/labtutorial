@@ -1,4 +1,9 @@
-#Yeast Processing
+---
+id: yeast
+title: Yeast Processing
+sidebar_label: Yeast Processing
+sidebar_position: 4
+---
 
 ![Yeast Processing](./images/99_Yeast_Processing.png)
 
@@ -7,7 +12,7 @@ Follow the protocols below to grow, harvest, and sonicate yeast.
 
 ---
 
-##Claiming Your Cohort (YEP Only)
+## Claiming Your Cohort (YEP Only)
 
 ---
 
@@ -20,7 +25,7 @@ A full cohort for YEP includes 15 different strains of yeast which will be expos
 
 ---
 
-##Making Media
+## Making Media
 
 ---
 
@@ -32,7 +37,7 @@ A full cohort for YEP includes 15 different strains of yeast which will be expos
 * Aliquot 15x67 mL of liquid YPD into respective glass containers.
 * You will also need extra stock media in order to make starter cultures.
 
-###YPD Agar Plates
+### YPD Agar Plates
 
 *Prepare on the day of plate pouring. Mix in a 1 L glass bottle because the agar will not dissolve until autoclaved.*
 
@@ -67,7 +72,7 @@ Allow the peptone, yeast extract, and dextrose to fully dissolve before bringing
 
 
 
-###YPD Media Liquid
+### YPD Media Liquid
 
 **This section includes protocols for:**
 
@@ -89,7 +94,7 @@ Component | 1L | 2L | 3L | 4 L
 
 Mix until the media is amber in color. Bring the final volume up to final volume with dH<sub>2</sub>O and transfer media into the flasks that will be used for overnight culture. Autoclave using a liquid setting with a 20 minute exposure time. If making a stock bottle of media, pour 50 ml into a conical tube for use in making starter cultures after the bottle has cooled. Starter culture media is to be dispensed using a pipette boy and serological pipette.
 
-####Stock Media
+#### Stock Media
 
 1. Fill a beaker large enough for the volume of media being prepared half way with dH<sub>2</sub>O.  Place it on the magnetic stirrer, place a stir bar at the bottom, and turn the knob up ¼ of the way.
 2. First weigh out the <a href="https://us.vwr.com/store/product/16078053/bactotm-yeast-extract-life-technologies#order" target="_blank">Yeast Extract</a> (10g/1 L) and add this to the beaker.
@@ -102,7 +107,7 @@ Mix until the media is amber in color. Bring the final volume up to final volume
 9. Autoclave using a liquid setting with a 20 minute exposure time.
 10. Leave the bottles to cool at room temperature. It is suggested that media be prepared in this manner at least a week in advance and observed for contamination.
 
-####200 ml Media Flasks
+#### 200 ml Media Flasks
 
 *If it makes the calculations easier, prepare media in variables of 200 and use the remainder as stock media. For example, if you only have 8x200 mL cultures that need to be prepared, make 2 L of media and use the remaining 400 mL as stock media that’s autoclaved in a 1 L glass bottle.*
 
@@ -112,7 +117,7 @@ Mix until the media is amber in color. Bring the final volume up to final volume
 13. Autoclave using a liquid setting with a 20 minute exposure time.
 14. Leave the flasks to cool at room temperature until desired time of inoculation. It is suggested that media be prepared in this manner at least a week in advance so that flasks can be observed for contamination.
 
-####67 ml Media Aliquots
+#### 67 ml Media Aliquots
 
 1. Follow steps 1-7 for preparing stock media
 2. Using a pipette boy and serological pipette, transfer 67 mL of media into each side-armed flask or aliquot bottle. Cover the opening of the flask with a piece of aluminum foil and a strip of autoclave tape.
@@ -121,7 +126,7 @@ Mix until the media is amber in color. Bring the final volume up to final volume
 
 ---
 
-##Locating Your Yeast
+## Locating Your Yeast
 
 ---
 
@@ -151,7 +156,7 @@ Yeast stocks are either in cryogenic tubes or a 96 well plate in -80 freezers. W
 
 ---
 
-##Streaking
+## Streaking
 
 ---
 
@@ -162,7 +167,7 @@ Yeast stocks are either in cryogenic tubes or a 96 well plate in -80 freezers. W
 
 | ***Recipes*** (*Prepare ahead of time*) |
 | ------ |
-| <a href="https://cegrcode.github.io/GeneralLab/yeast/#ypd-agar-plates" target="_blank">YPD Agar Plates</a> |
+| [YPD Agar Plates][ypd-agar-plates] |
 
 ---
 
@@ -200,21 +205,21 @@ Yeast stocks are either in cryogenic tubes or a 96 well plate in -80 freezers. W
 
 ---
 
-##Starter Cultures
+## Starter Cultures
 
 
 | ***Recipes*** (*Prepare ahead of time*) |
 | ----- |
-| <a href="https://cegrcode.github.io/GeneralLab/yeast/#stock-media" target="_blank">YPD Stock Media</a> |
+| [YPD Stock Media][stock-media] |
 
 ---
 
-###5 ml media tubes
+### 5 ml media tubes
 
 1. Wipe down the bench top with ethanol.
 2. Wipe down gloves with ethanol. Allow the ethanol to dry and then ignite the Bunsen burner.  
 3. Use only sterile 16 mm test tubes. Label one tube per strain.  
-4. Using a pipette boy, sterile serological pipette, and stock <a href="https://cegrcode.github.io/GeneralLab/yeast/#ypd-media-liquid" target="_blank">YPD Media</a>, transfer **5 ml** of media into each test tube.
+4. Using a pipette boy, sterile serological pipette, and stock [YPD Media][ypd-media-liquid], transfer **5 ml** of media into each test tube.
 	* Open the YPD media bottle and run the lip of the bottle through the flame.
 	* Use a 5mL serological pipette to be able to draw up 5mL of sterile media.
 		* **NOTE:** If possible, use a larger serological pipette to pull up the total volume you will need (for example, if you're making starter cultures for four different strains, draw up 20 mL of YPD and aliquot 5 mL per 16 mm tube).
@@ -223,7 +228,7 @@ Yeast stocks are either in cryogenic tubes or a 96 well plate in -80 freezers. W
 	* Work with one test tube at a time, being careful to only transfer 5 mL of media to each tube.
 
 
-###Inoculation
+### Inoculation
 
 1. Upon removing the streaked media plate, examine it for contamination and homogenous colony morphology, size, and color. Record notes.
 2. Scoop a colony of cells from the colonies on the plate using sterile disposable inoculation loops and quickly put the plate back on its lid.
@@ -232,7 +237,7 @@ Yeast stocks are either in cryogenic tubes or a 96 well plate in -80 freezers. W
 5. Flame the lip of the tube again before recapping it and setting it back into the rack.
 6. Wrap the perimeter tightly with a strip of parafilm.
 
-###Growth
+### Growth
 
 1. Shake the tubes in the <a href="https://analyticalinstrument.com/images/stories/virtuemart/product/NBincshake01.png" target="_blank">C25 incubator shaker</a> at **25˚C, 250 rpm**, throughout the afternoon (4-5 hours).
 	* Place the tubes on an angle in the incubator to allow for the increased amount of surface area needed for growth and transfer of gases.  
@@ -267,7 +272,7 @@ Ctk1 | 0.88 | 261 uL
 ![Ultra Spec 10](./images/97_ultrospec10.jpeg)
 
 ---
-##Seeding and Overnight Growth (4:00 PM, Day 1)
+## Seeding and Overnight Growth (4:00 PM, Day 1)
 ---
 *Make sure the correct volume of media has been prepped in the correct flask. Volumes between 67 mL and 250 mL should be prepared in a side-arm flask. Volumes greater than this should be prepared in a 2L flask.*
 
@@ -275,12 +280,12 @@ Ctk1 | 0.88 | 261 uL
 
 | ***Recipes*** (*Prepare ahead of time*) |
 | ----- |
-| <a href="https://cegrcode.github.io/GeneralLab/yeast/#ypd-media-liquid" target="_blank">YPD Media</a> |
+| [YPD Media][ypd-media-liquid] |
 
 ---
 
 1. Wipe down both the bench top and gloves with ethanol. Allow gloves to dry fully before igniting Bunsen burner.
-2. Use a pipette with aerosol barrier tips to transfer the measured volume of starter culture into a labeled flask, containing the desired volume of <a href="https://cegrcode.github.io/GeneralLab/yeast/#ypd-media-liquid" target="_blank">YPD Media</a>.
+2. Use a pipette with aerosol barrier tips to transfer the measured volume of starter culture into a labeled flask, containing the desired volume of [YPD Media][ypd-media-liquid].
 	* Remove the foil from flask.
 	* Flame the lip of the selected flask until it’s warm then lightly sit the lid on the opening of the flask until ready to inoculate.
 	* Gently vortex your starter culture.
@@ -296,34 +301,34 @@ Ctk1 | 0.88 | 261 uL
 
 ---
 
-##Harvest (Day 2)
+## Harvest (Day 2)
 
 | ***Recipes*** (*Prepare ahead of time*) |
 | -------- |
-| <a href="https://cegrcode.github.io/GeneralLab/yeast/#ypd-media-liquid" target="_blank">YPD Media</a> |
+| [YPD Media][ypd-media-liquid] |
 | <a href="https://www.fishersci.com/shop/products/formaldehyde-37-by-weight-molecular-biology-fisher-bioreagents-2/BP531500?searchHijack=true&searchTerm=BP531500&searchType=RAPID&matchedCatNo=BP531500" target="_blank">37% Formaldehyde</a> |
-| <a href="https://cegrcode.github.io/GeneralLab/buffers/#25-m-glycine-1-l" target="_blank">2.5M Glycine</a> |
-| <a href="https://cegrcode.github.io/GeneralLab/buffers/#st-buffer-1-l" target="_blank">ST Buffer</a> |
-| <a href="https://cegrcode.github.io/GeneralLab/buffers/#10-mm-hydrogen-peroxide-100-ml" target="_blank">10 mM Hydrogen Peroxide</a> |
+| [2.5M Glycine][25-m-glycine-1-l] |
+| [ST Buffer][st-buffer-1-l] |
+| [10 mM Hydrogen Peroxide][10-mm-hydrogen-peroxide-100-ml] |
 
 * Only prepare hydrogen peroxide when using a protocol which involves an oxidative stress condition
 
-* **REMINDER:** For every 1 mL of <a href="https://cegrcode.github.io/GeneralLab/buffers/#st-buffer-1-l" target="_blank">ST buffer</a> used during a harvest, add 2 uL of <a href="https://cegrcode.github.io/GeneralLab/buffers/#complete-protease-inhibitor-edta-free-cpi-1-ml" target="_blank">CPI</a> to your aliquot of <a href="https://cegrcode.github.io/GeneralLab/buffers/#st-buffer-1-l" target="_blank">ST buffer</a>. For example, 100 mL of <a href="https://cegrcode.github.io/GeneralLab/buffers/#st-buffer-1-l" target="_blank">ST buffer</a> must have 200 uL of <a href="https://cegrcode.github.io/GeneralLab/buffers/#complete-protease-inhibitor-edta-free-cpi-1-ml" target="_blank">CPI</a> added to it before use.
+* **REMINDER:** For every 1 mL of [ST buffer][st-buffer-1-l] used during a harvest, add 2 uL of [CPI][complete-protease-inhibitor-edta-free-cpi-1-ml] to your aliquot of [ST buffer][st-buffer-1-l]. For example, 100 mL of [ST buffer][st-buffer-1-l] must have 200 uL of [CPI][complete-protease-inhibitor-edta-free-cpi-1-ml] added to it before use.
 
 > After creating the starter culture, there are many different conditions in which the yeast can be seeded and harvested.
 
 ---
 
 
-###200 mL YPD, Heat Shock, and Oxidative Stress Harvest (YEP)
+### 200 mL YPD, Heat Shock, and Oxidative Stress Harvest (YEP)
 
 
 *After arriving in the lab in the morning (around 8:00 AM), fast temp incubators to 4˚C, turn on and set the temperature of the incubator used for heat shock treatments, and put heat shock aliquots in the water bath. Quickly check the ODs of the cultures to have an idea of how quickly yeast are growing. If harvesting in the afternoon, do this an hour before harvesting.*
 
 *Make aliquots of reagents and buffers while you are waiting for cells to grow or while you have gaps in the protocol*
 
-1. Place the aliquots of 67 mL of hot <a href="https://cegrcode.github.io/GeneralLab/yeast/#ypd-media-liquid" target="_blank">YPD Media</a> in a water bath at 55°C. Let this media reach 55°C.
-2. Prepare peroxide aliquots: 2 ml <a href="https://cegrcode.github.io/GeneralLab/buffers/#10-mm-hydrogen-peroxide-100-ml" target="_blank">10mM H<sub>2</sub>O<sub>2</sub></a> in a 15 ml conical
+1. Place the aliquots of 67 mL of hot [YPD Media][ypd-media-liquid] in a water bath at 55°C. Let this media reach 55°C.
+2. Prepare peroxide aliquots: 2 ml [10mM H<sub>2</sub>O<sub>2</sub>][10-mm-hydrogen-peroxide-100-ml] in a 15 ml conical
 3. Prepare the following <a href="https://www.fishersci.com/shop/products/formaldehyde-37-by-weight-molecular-biology-fisher-bioreagents-2/BP531500?searchHijack=true&searchTerm=BP531500&searchType=RAPID&matchedCatNo=BP531500" target="_blank">37% formaldehyde</a> aliquots:
 	* ***Heat Shock:*** 45 ml cold dH<sub>2</sub>O + 5 ml <a href="https://www.fishersci.com/shop/products/formaldehyde-37-by-weight-molecular-biology-fisher-bioreagents-2/BP531500?searchHijack=true&searchTerm=BP531500&searchType=RAPID&matchedCatNo=BP531500" target="_blank">37% formaldehyde</a> in a 50 ml conical, place on ice
 	* ***Oxidative Stress and Normal Conditions:*** 2 ml <a href="https://www.fishersci.com/shop/products/formaldehyde-37-by-weight-molecular-biology-fisher-bioreagents-2/BP531500?searchHijack=true&searchTerm=BP531500&searchType=RAPID&matchedCatNo=BP531500" target="_blank">37% formaldehyde</a> in a 15 ml conical
@@ -332,20 +337,20 @@ Ctk1 | 0.88 | 261 uL
 	* Note: You may use your hand to waft at the opening toward your nose. Yeast smells like bread making, whereas bacteria contamination will smell foul.  If foul, kill the culture using bleach.
 5. Once an appropriate OD has been reached, split the 200 ml culture into three 67 ml replicates using a 50 ml serological pipette.
 6. *Quickly* apply the designated treatment to each 67 ml replicate prior to crosslinking.
-	* ***Heat Shock:*** add one aliquot of 67 mL hot <a href="https://cegrcode.github.io/GeneralLab/yeast/#ypd-media-liquid" target="_blank">YPD media</a> to the flask. This should bring the total temperature to 37°C.  Swirl and place flask in a **37°C** shaker for **6 minutes**.
+	* ***Heat Shock:*** add one aliquot of 67 mL hot [YPD Media][ypd-media-liquid] to the flask. This should bring the total temperature to 37°C.  Swirl and place flask in a **37°C** shaker for **6 minutes**.
 	* ***Oxidative Stress:*** add one aliquot of 2 ml 10 mM H<sub>2</sub>0<sub>2</sub> to the flask. Swirl and incubate in a **25°C** shaker for **6 minutes**.
 	* ***Normal Conditions:*** incubate in a 25°C shaker for 6 minutes.
 7. *Quickly* add the corresponding <a href="https://www.fishersci.com/shop/products/formaldehyde-37-by-weight-molecular-biology-fisher-bioreagents-2/BP531500?searchHijack=true&searchTerm=BP531500&searchType=RAPID&matchedCatNo=BP531500" target="_blank">37% formaldehyde</a> aliquot while swirling flask to ensure rapid mixing.
 	* Return flasks to RT (**25˚C**) shaker for **15 minutes** to crosslink.
-	* While cells are crosslinking, prepare aliquots of <a href="https://cegrcode.github.io/GeneralLab/buffers/#25-m-glycine-1-l" target="_blank">**2.5 M Glycine**</a> and place near the incubator.
+	* While cells are crosslinking, prepare aliquots of **[2.5 M Glycine][25-m-glycine-1-l]** and place near the incubator.
 		* ***Heat Shock:*** 12 ml each
 		* ***Oxidative Stress and Normal Conditions:*** 4 ml each
-8. *Quickly* add the <a href="https://cegrcode.github.io/GeneralLab/buffers/#25-m-glycine-1-l" target="_blank">**2.5 M Glycine**</a> and incubate for **5 min** in RT shaker.
+8. *Quickly* add the **[2.5 M Glycine][25-m-glycine-1-l]** and incubate for **5 min** in RT shaker.
 9. Transfer contents of flask to 2 or 4 pre-labeled 50 ml conical tubes (2 for oxidative and normal, and 4 for heat shock).
 10. Centrifuge in <a href="https://assets.fishersci.com/TFS-Assets/CCG/product-images/F127479~p.eps-650.jpg" target="_blank">Eppendorf 5810R tabletop</a>, **4000 rpm, 3 min, 4˚C**.   
-11. Discard supernatant into sink.  Re-suspend one pellet with **20 ml cold <a href="https://cegrcode.github.io/GeneralLab/buffers/#st-buffer-1-l" target="_blank">ST buffer</a>** by pulse vortexing on high, then re-suspend the additional three pellets of the same sample by pouring in the re-suspended first pellet, and repeating until each culture is consolidated into one 50 mL conical tube. Keep tubes on ice.
+11. Discard supernatant into sink.  Re-suspend one pellet with **20 ml cold [ST buffer][st-buffer-1-l]** by pulse vortexing on high, then re-suspend the additional three pellets of the same sample by pouring in the re-suspended first pellet, and repeating until each culture is consolidated into one 50 mL conical tube. Keep tubes on ice.
 12. Spin conical tubes in <a href="https://assets.fishersci.com/TFS-Assets/CCG/product-images/F127479~p.eps-650.jpg" target="_blank">Eppendorf 5810R tabletop</a>, **2400 rpm, 5 min, 4˚C**.  Pour off supernatant.
-13. Re-suspend pellet in **1 ml cold <a href="https://cegrcode.github.io/GeneralLab/buffers/#st-buffer-1-l" target="_blank">ST buffer</a>**.
+13. Re-suspend pellet in **1 ml cold [ST buffer][st-buffer-1-l]**.
 14. Transfer to one pre-labeled 2 ml bead beater tube on ice (label with 67 ml CE).
 15. <a href="https://cdn3.volusion.com/vccfs.mvxtd/v/vspfiles/photos/epp-5424R-2.jpg?v-cache=1556876142" target="_blank">Centrifuge</a> tubes **2 min, 10K rpm, 4˚C**.  Aspirate supernatant with vacuum flask or pipette.
 	* If using the vacuum flask, use the autoclaved, yellow 200 uL tips.
@@ -357,7 +362,7 @@ Ctk1 | 0.88 | 261 uL
 
 ---
 
-###YPD Harvest
+### YPD Harvest
 *This protocol is commonly used to harvest BY4741 controls*
 
 
@@ -369,7 +374,7 @@ Use this table to determine which volumes, tubes, centrifuges, and cell equivale
 | Step in Protocol                    | 67 mL         | 100 ml          | 500 mL    
 | ----------------------------------- |:-------------:|:---------------:|:---------:
 | <sup>1</sup><a href="https://www.fishersci.com/shop/products/formaldehyde-37-by-weight-molecular-biology-fisher-bioreagents-2/BP531500?searchHijack=true&searchTerm=BP531500&searchType=RAPID&matchedCatNo=BP531500" target="_blank">37% Formaldehyde</a>                        | 2 mL          |   3 mL          | 13.5 mL
-| <sup>2</sup><a href="https://cegrcode.github.io/GeneralLab/buffers/#25-m-glycine-1-l" target="_blank">Glycine</a>                             | 4 mL          |   6 mL          | 26.5 mL
+| <sup>2</sup>[Glycine][25-m-glycine-1-l]                             | 4 mL          |   6 mL          | 26.5 mL
 | <sup>3</sup>Transfer contents of flask to _____ | 1 pre-labelled 50 mL Eppendorf tube/sample | 2 pre-labelled 50 mL Eppendorf tube/sample | 2 pre-labelled <a href="https://www.sigmaaldrich.com/content/dam/sigma-aldrich/product7/078/z353736.tif/_jcr_content/renditions/z353736-medium.jpg" target="_blank">GS3 tubes</a>/sample
 | <sup>4</sup>Centrifuge used for first spin down |<a href="https://assets.fishersci.com/TFS-Assets/CCG/product-images/F127479~p.eps-650.jpg" target="_blank">Eppendorf 5810R tabletop</a>|<a href="https://assets.fishersci.com/TFS-Assets/CCG/product-images/F127479~p.eps-650.jpg" target="_blank">Eppendorf 5810R tabletop</a>|<a href="https://assets.fishersci.com/TFS-Assets/CMD/product-images/F75149~p.eps-650.jpg" target="_blank">Sorvall floor centrifuge</a>
 | <sup>5</sup>Volume to resuspend pellet in Step 8| 1 mL/sample   |   1mL/sample    | 5 mL/sample
@@ -379,7 +384,7 @@ Use this table to determine which volumes, tubes, centrifuges, and cell equivale
 
 ***Note about the Sorvall floor centrifuge:*** Do not over-fill tubes or they will leak in the centrifuge and disrupt the balance.  Only 6 tubes will fit in the centrifuge at once, if more than 6 tubes are needed, place them on ice immediately to keep cells cold until ready to centrifuge.  Always wipe out the rotor and the centrifuge as soon as you are finished with it to avoid damaging the instrument and leave the lid open for it to dry overnight.
 
-**REMINDER:** For every 1 mL of <a href="https://cegrcode.github.io/GeneralLab/buffers/#st-buffer-1-l" target="_blank">ST buffer</a> used during a harvest, add 2 uL of <a href="https://cegrcode.github.io/GeneralLab/buffers/#complete-protease-inhibitor-edta-free-cpi-1-ml" target="_blank">CPI</a> to your aliquot of <a href="https://cegrcode.github.io/GeneralLab/buffers/#st-buffer-1-l" target="_blank">ST buffer</a>. For example, 100 mL of <a href="https://cegrcode.github.io/GeneralLab/buffers/#st-buffer-1-l" target="_blank">ST buffer</a> must have 200 uL of <a href="https://cegrcode.github.io/GeneralLab/buffers/#complete-protease-inhibitor-edta-free-cpi-1-ml" target="_blank">CPI</a> added to it before use.
+**REMINDER:** For every 1 mL of [ST buffer][st-buffer-1-l] used during a harvest, add 2 uL of [CPI][complete-protease-inhibitor-edta-free-cpi-1-ml] to your aliquot of [ST buffer][st-buffer-1-l]. For example, 100 mL of [ST buffer][st-buffer-1-l] must have 200 uL of [CPI][complete-protease-inhibitor-edta-free-cpi-1-ml] added to it before use.
 
 
 *Make aliquots of reagents and buffers while you are waiting for cells to grow or while you have gaps in the protocol.*
@@ -391,18 +396,18 @@ Use this table to determine which volumes, tubes, centrifuges, and cell equivale
 	* If cells are ready, <a href="https://www.fishersci.com/shop/products/formaldehyde-37-by-weight-molecular-biology-fisher-bioreagents-2/BP531500?searchHijack=true&searchTerm=BP531500&searchType=RAPID&matchedCatNo=BP531500" target="_blank">formaldehyde</a> must be aliquotted and added almost simultaneously (see step 3).
 3. Quickly add the **<a href="https://www.fishersci.com/shop/products/formaldehyde-37-by-weight-molecular-biology-fisher-bioreagents-2/BP531500?searchHijack=true&searchTerm=BP531500&searchType=RAPID&matchedCatNo=BP531500" target="_blank">37% formaldehyde</a>** while swirling flask to ensure rapid mixing.
 	* Return flasks to RT (25˚C) shaker for **15 min** to crosslink.
-	* While cells are crosslinking, aliquot out **<a href="https://cegrcode.github.io/GeneralLab/buffers/#25-m-glycine-1-l" target="_blank">2.5M Glycine</a>**<sup>2</sup> and place near the incubator.
-4. Quickly add the **<a href="https://cegrcode.github.io/GeneralLab/buffers/#25-m-glycine-1-l" target="_blank">2.5M Glycine</a>** and incubate for **5 min** in RT shaker.
+	* While cells are crosslinking, aliquot out **[2.5M Glycine][25-m-glycine-1-l]**<sup>2</sup> and place near the incubator.
+4. Quickly add the **[2.5M Glycine][25-m-glycine-1-l]** and incubate for **5 min** in RT shaker.
 5. Transfer contents of flask to pre-labeled tubes<sup>3</sup>. Centrifuge<sup>4</sup> at **4000 rpm, 3 min, 4˚C**.   
-6. Discard supernatant into sink.  Resuspend one pellet with **20 ml <a href="https://cegrcode.github.io/GeneralLab/buffers/#st-buffer-1-l" target="_blank">ST buffer</a>** by pulse vortexing on high, then resuspend the second pellet of the same sample by pouring in the resuspended first pellet. Keep tubes on ice.
+6. Discard supernatant into sink.  Resuspend one pellet with **20 ml [ST buffer][st-buffer-1-l]** by pulse vortexing on high, then resuspend the second pellet of the same sample by pouring in the resuspended first pellet. Keep tubes on ice.
 7. Pour each culture into one 50 ml tube and spin in <a href="https://assets.fishersci.com/TFS-Assets/CCG/product-images/F127479~p.eps-650.jpg" target="_blank">Eppendorf 5810R tabletop</a>, **2400 rpm, 5 min, 4˚C**.  Pour off supernatant.
-8. Resuspend pellet in **<a href="https://cegrcode.github.io/GeneralLab/buffers/#st-buffer-1-l" target="_blank">ST buffer</a>**<sup>5</sup>. Divide equally into bead beater tubes<sup>6</sup> (label with CE)<sup>7</sup>.
+8. Resuspend pellet in **[ST buffer][st-buffer-1-l]**<sup>5</sup>. Divide equally into bead beater tubes<sup>6</sup> (label with CE)<sup>7</sup>.
 9. <a href="https://cdn3.volusion.com/vccfs.mvxtd/v/vspfiles/photos/epp-5424R-2.jpg?v-cache=1556876142" target="_blank">Centrifuge</a> tubes for **2 min, 10,000 rpm, 4˚C**. Aspirate supernatant.
 10. Flash-freeze in liquid nitrogen.
 
 ---
 
-###YPD Harvest (Stress Condition: Heat Shock)
+### YPD Harvest (Stress Condition: Heat Shock)
 
 *After arriving in the lab in the morning (around 8:00 AM), fast temp incubators to 4˚C, turn on and set the temperature of the incubator used for heat shock treatments, and put heat shock aliquots in the water bath. Quickly check the ODs of the cultures to have an idea of how quickly yeast are growing. If harvesting in the afternoon, do this an hour before harvesting.*
 
@@ -412,7 +417,7 @@ Use this table to determine which volumes, tubes, centrifuges, and cell equivale
 | ----------------------------------- |:-----------------:|:---------------:
 | <sup>1</sup>Heat shock aliquot      | 67 mL             | 500 mL
 | <sup>2</sup><a href="https://www.fishersci.com/shop/products/formaldehyde-37-by-weight-molecular-biology-fisher-bioreagents-2/BP531500?searchHijack=true&searchTerm=BP531500&searchType=RAPID&matchedCatNo=BP531500" target="_blank">37% Formaldehyde</a>            | 5 mL + 45 mL ddH<sub>2</sub>0| 35 mL + 265 mL ddH<sub>2</sub>0
-| <sup>3</sup><a href="https://cegrcode.github.io/GeneralLab/buffers/#25-m-glycine-1-l" target="_blank">2.5M Glycine</a>                 | 12 mL             | 84 mL
+| <sup>3</sup>[2.5M Glycine][25-m-glycine-1-l]                 | 12 mL             | 84 mL
 | <sup>4</sup>Transfer contents of flask to _____ | 4 pre-labelled 50 mL Eppendorf tube/sample | 6 pre-labelled <a href="https://www.sigmaaldrich.com/content/dam/sigma-aldrich/product7/078/z353736.tif/_jcr_content/renditions/z353736-medium.jpg" target="_blank">GS3 tubes</a>/sample
 | <sup>5</sup>Centrifuge used for first spin down |<a href="https://assets.fishersci.com/TFS-Assets/CCG/product-images/F127479~p.eps-650.jpg" target="_blank">Eppendorf 5810R tabletop</a>|<a href="https://assets.fishersci.com/TFS-Assets/CMD/product-images/F75149~p.eps-650.jpg" target="_blank">Sorvall floor centrifuge</a>
 | <sup>6</sup>Volume to resuspend pellet in Step 8| 1 mL/sample   | 5 mL/sample
@@ -421,7 +426,7 @@ Use this table to determine which volumes, tubes, centrifuges, and cell equivale
 
 ***Note about the Sorvall floor centrifuge:*** Do not over-fill tubes or they will leak in the centrifuge and disrupt the balance.  Only 6 tubes will fit in the centrifuge at once, if more than 6 tubes are needed, place them on ice immediately to keep cells cold until ready to centrifuge.  Always wipe out the rotor and the centrifuge as soon as you are finished with it to avoid damaging the instrument and leave the lid open for it to dry overnight.
 
-**REMINDER:** For every 1 mL of <a href="https://cegrcode.github.io/GeneralLab/buffers/#st-buffer-1-l" target="_blank">ST buffer</a> used during a harvest, add 2 uL of <a href="https://cegrcode.github.io/GeneralLab/buffers/#complete-protease-inhibitor-edta-free-cpi-1-ml" target="_blank">CPI</a> to your aliquot of <a href="https://cegrcode.github.io/GeneralLab/buffers/#st-buffer-1-l" target="_blank">ST buffer</a>. For example, 100 mL of <a href="https://cegrcode.github.io/GeneralLab/buffers/#st-buffer-1-l" target="_blank">ST buffer</a> must have 200 uL of <a href="https://cegrcode.github.io/GeneralLab/buffers/#complete-protease-inhibitor-edta-free-cpi-1-ml" target="_blank">CPI</a> added to it before use.
+**REMINDER:** For every 1 mL of [ST buffer][st-buffer-1-l] used during a harvest, add 2 uL of [CPI][complete-protease-inhibitor-edta-free-cpi-1-ml] to your aliquot of [ST buffer][st-buffer-1-l]. For example, 100 mL of [ST buffer][st-buffer-1-l] must have 200 uL of [CPI][complete-protease-inhibitor-edta-free-cpi-1-ml] added to it before use.
 
 
 
@@ -437,51 +442,51 @@ Use this table to determine which volumes, tubes, centrifuges, and cell equivale
 3. Once an appropriate OD has been reached, add one aliquot of **hot YPD media**<sup>1</sup> to the flask. This should bring the total temperature to 37°C.  Swirl, and place flask in a *37°C* shaker for **6 minutes**.
 4. Add the **cold <a href="https://www.fishersci.com/shop/products/formaldehyde-37-by-weight-molecular-biology-fisher-bioreagents-2/BP531500?searchHijack=true&searchTerm=BP531500&searchType=RAPID&matchedCatNo=BP531500" target="_blank">37% formaldehyde</a> + water mixture**<sup>2</sup>, while swirling flask to ensure rapid mixing. The temperature should return rapidly to 25°C.
 	* Return flasks to RT (*25˚C*) shaker for **15 minutes** to crosslink.
-	* While cells are crosslinking, aliquot out **<a href="https://cegrcode.github.io/GeneralLab/buffers/#25-m-glycine-1-l" target="_blank">2.5M Glycine</a>**<sup>3</sup> and place near the incubator.
-5. Add the **<a href="https://cegrcode.github.io/GeneralLab/buffers/#25-m-glycine-1-l" target="_blank">2.5M Glycine</a>**<sup>3</sup> and incubate for **5 min** in RT shaker.
+	* While cells are crosslinking, aliquot out **[2.5M Glycine][25-m-glycine-1-l]**<sup>3</sup> and place near the incubator.
+5. Add the **[2.5M Glycine][25-m-glycine-1-l]**<sup>3</sup> and incubate for **5 min** in RT shaker.
 6. Transfer contents of flask to pre-labeled tubes<sup>4</sup>. Centrifuge<sup>5</sup> at **4000 rpm, 3 min, 4˚C**.
-7. Discard supernatant into sink.  Resuspend one pellet with **20 ml <a href="https://cegrcode.github.io/GeneralLab/buffers/#st-buffer-1-l" target="_blank">ST buffer</a>** by pulse vortexing on high, then resuspend the second pellet of the same sample by pouring in the resuspended first pellet. Keep tubes on ice.
+7. Discard supernatant into sink.  Resuspend one pellet with **20 ml [ST buffer][st-buffer-1-l]** by pulse vortexing on high, then resuspend the second pellet of the same sample by pouring in the resuspended first pellet. Keep tubes on ice.
 8. Pour each culture into one 50 ml tube and spin in <a href="https://assets.fishersci.com/TFS-Assets/CCG/product-images/F127479~p.eps-650.jpg" target="_blank">Eppendorf 5810R tabletop</a>, **2400 rpm, 5 min, 4˚C**.  Pour off supernatant.
-9. Resuspend pellet in **<a href="https://cegrcode.github.io/GeneralLab/buffers/#st-buffer-1-l" target="_blank">ST buffer</a>**<sup>6</sup>. Divide equally into bead beater tubes.<sup>7</sup>
+9. Resuspend pellet in **[ST buffer][st-buffer-1-l]**<sup>6</sup>. Divide equally into bead beater tubes.<sup>7</sup>
 10. <a href="https://cdn3.volusion.com/vccfs.mvxtd/v/vspfiles/photos/epp-5424R-2.jpg?v-cache=1556876142" target="_blank">Centrifuge</a> tubes for **2 min, 10,000 rpm, 4˚C**. Aspirate supernatant.
 11. Flash-freeze in liquid nitrogen.
 12. Store -80°C freezer indefinitely.
 
 ---
-###YPD Harvest (Stress Condition: Oxidative)
+### YPD Harvest (Stress Condition: Oxidative)
 *After arriving in the lab in the morning (around 8:00 AM), fast temp incubators to 4˚C. Quickly check the ODs of the cultures to have an idea of how quickly yeast are growing. If harvesting in the afternoon, do this an hour before harvesting.*
 
 | Step in Protocol                    | 67 mL             
 | ----------------------------------- |:-----------------:
-| <sup>1</sup><a href="https://cegrcode.github.io/GeneralLab/buffers/#10-mm-hydrogen-peroxide-100-ml" target="_blank">10 mM Hydrogen Peroxide (H<sub>2</sub>0<sub>2</sub>)</a>  aliquot      | 2 mL             
+| <sup>1</sup>[10 mM Hydrogen Peroxide (H<sub>2</sub>0<sub>2</sub>)][10-mm-hydrogen-peroxide-100-ml]  aliquot      | 2 mL             
 | <sup>2</sup><a href="https://www.fishersci.com/shop/products/formaldehyde-37-by-weight-molecular-biology-fisher-bioreagents-2/BP531500?searchHijack=true&searchTerm=BP531500&searchType=RAPID&matchedCatNo=BP531500" target="_blank">37% Formaldehyde</a>            | 2 mL
-| <sup>3</sup><a href="https://cegrcode.github.io/GeneralLab/buffers/#25-m-glycine-1-l" target="_blank">Glycine</a>                 | 4 mL             
+| <sup>3</sup>[Glycine][25-m-glycine-1-l]                 | 4 mL             
 | <sup>4</sup>Transfer contents of flask to _____ | 2 pre-labelled 50 mL Eppendorf tube/sample
 | <sup>5</sup>Centrifuge used for first spin down |<a href="https://assets.fishersci.com/TFS-Assets/CCG/product-images/F127479~p.eps-650.jpg" target="_blank">Eppendorf 5810R tabletop</a>
 | <sup>6</sup>Volume to resuspend pellet in Step 13| 1 mL/sample   
 | <sup>7</sup>Number of bead beater tubes needed  | 1/sample      
 | <sup>8</sup>Cell Equivalent (CE)                | 67 CE         
 
-* **REMINDER:** For every 1 mL of <a href="https://cegrcode.github.io/GeneralLab/buffers/#st-buffer-1-l" target="_blank">ST buffer</a> used during a harvest, add 2 uL of <a href="https://cegrcode.github.io/GeneralLab/buffers/#complete-protease-inhibitor-edta-free-cpi-1-ml" target="_blank">CPI</a> to your aliquot of <a href="https://cegrcode.github.io/GeneralLab/buffers/#st-buffer-1-l" target="_blank">ST buffer</a>. For example, 100 mL of <a href="https://cegrcode.github.io/GeneralLab/buffers/#st-buffer-1-l" target="_blank">ST buffer</a> must have 200 uL of <a href="https://cegrcode.github.io/GeneralLab/buffers/#complete-protease-inhibitor-edta-free-cpi-1-ml" target="_blank">CPI</a> added to it before use.
+* **REMINDER:** For every 1 mL of [ST buffer][st-buffer-1-l] used during a harvest, add 2 uL of [CPI][complete-protease-inhibitor-edta-free-cpi-1-ml] to your aliquot of [ST buffer][st-buffer-1-l]. For example, 100 mL of [ST buffer][st-buffer-1-l] must have 200 uL of [CPI][complete-protease-inhibitor-edta-free-cpi-1-ml] added to it before use.
 
 *Make aliquots of reagents and buffers while you are waiting for cells to grow or while you have gaps in the protocol.*
 
-1. Prepare **<a href="https://cegrcode.github.io/GeneralLab/buffers/#10-mm-hydrogen-peroxide-100-ml" target="_blank">peroxide</a>** aliquots.<sup>1</sup>
+1. Prepare **[peroxide][10-mm-hydrogen-peroxide-100-ml]** aliquots.<sup>1</sup>
 1. Continue monitoring OD by side-arm and recording OD600 until it reaches 0.7-0.9 (ideally 0.8)
 	* *If OD600 exceeds 0.90, dilute the culture accordingly. Cells must double at least once before harvesting. For example, a culture diluted to 0.40 will take ~1.8 hours to double to 0.80. The culture in this example should not be harvested before reaching an OD of 0.80.*
 	* Note: You may use your hand to waft at the opening toward your nose. Yeast smells like bread making, whereas bacteria contamination will smell foul.  If foul, discard by autoclaving.
 2. Providing that cells are not ready, aliquot out **fresh <a href="https://www.fishersci.com/shop/products/formaldehyde-37-by-weight-molecular-biology-fisher-bioreagents-2/BP531500?searchHijack=true&searchTerm=BP531500&searchType=RAPID&matchedCatNo=BP531500" target="_blank">37% formaldehyde</a>**.<sup>2</sup>
 	* If cells are ready, <a href="https://www.fishersci.com/shop/products/formaldehyde-37-by-weight-molecular-biology-fisher-bioreagents-2/BP531500?searchHijack=true&searchTerm=BP531500&searchType=RAPID&matchedCatNo=BP531500" target="_blank">formaldehyde</a> must be aliquoted and added immediately.
-3. Quickly add one aliquot of **<a href="https://cegrcode.github.io/GeneralLab/buffers/#10-mm-hydrogen-peroxide-100-ml" target="_blank">10mM H<sub>2</sub>O<sub>2</sub></a>** to the flask. Swirl and incubate in a 25°C shaker for **6 minutes**.
+3. Quickly add one aliquot of **[10mM H<sub>2</sub>O<sub>2</sub>][10-mm-hydrogen-peroxide-100-ml]** to the flask. Swirl and incubate in a 25°C shaker for **6 minutes**.
 4. Quickly add the corresponding **<a href="https://www.fishersci.com/shop/products/formaldehyde-37-by-weight-molecular-biology-fisher-bioreagents-2/BP531500?searchHijack=true&searchTerm=BP531500&searchType=RAPID&matchedCatNo=BP531500" target="_blank">formaldehyde</a>**<sup>2</sup> aliquot while swirling flask to ensure rapid mixing.
 5. Return flasks to RT (25˚C) shaker for **15 minutes** to crosslink.
-6. While cells are crosslinking, prepare aliquots of **<a href="https://cegrcode.github.io/GeneralLab/buffers/#25-m-glycine-1-l" target="_blank">2.5M Glycine</a>**<sup>3</sup> and place near the incubator.
-7. Quickly add the **<a href="https://cegrcode.github.io/GeneralLab/buffers/#25-m-glycine-1-l" target="_blank">2.5M Glycine</a>**<sup>3</sup> and incubate for **5 min** in RT shaker.
+6. While cells are crosslinking, prepare aliquots of **[2.5M Glycine][25-m-glycine-1-l]**<sup>3</sup> and place near the incubator.
+7. Quickly add the **[2.5M Glycine][25-m-glycine-1-l]**<sup>3</sup> and incubate for **5 min** in RT shaker.
 8. Transfer contents of flask to pre-labeled tubes.<sup>4</sup>
 9. Centrifuge<sup>5</sup> at **4000 rpm, 3 min, 4˚C**.
-10. Discard supernatant into sink. Re-suspend one pellet with **20 ml cold <a href="https://cegrcode.github.io/GeneralLab/buffers/#st-buffer-1-l" target="_blank">ST buffer</a>** by pulse vortexing on high, then re-suspend the additional pellet of the same sample by pouring in the re-suspended first pellet, and repeating until each culture is consolidated into one tube. Keep tubes on ice.
+10. Discard supernatant into sink. Re-suspend one pellet with **20 ml cold [ST buffer][st-buffer-1-l]** by pulse vortexing on high, then re-suspend the additional pellet of the same sample by pouring in the re-suspended first pellet, and repeating until each culture is consolidated into one tube. Keep tubes on ice.
 12. Spin conical tubes in <a href="https://assets.fishersci.com/TFS-Assets/CCG/product-images/F127479~p.eps-650.jpg" target="_blank">Eppendorf 5810R tabletop</a>, **2400 rpm, 5 min, 4˚C**. Pour off supernatant.
-13. Re-suspend pellet in **cold <a href="https://cegrcode.github.io/GeneralLab/buffers/#st-buffer-1-l" target="_blank">ST buffer</a>**.<sup>6</sup>
+13. Re-suspend pellet in **cold [ST buffer][st-buffer-1-l]**.<sup>6</sup>
 14. Transfer to pre-labeled 2 ml bead beater tube on ice.<sup>7</sup>
 15. <a href="https://cdn3.volusion.com/vccfs.mvxtd/v/vspfiles/photos/epp-5424R-2.jpg?v-cache=1556876142" target="_blank">Centrifuge</a> tubes *82 min, 10K rpm, 4˚C**. Aspirate supernatant with vacuum flask or pipette.
 	* If using the vacuum flask, use the autoclaved, yellow 200 uL tips.
@@ -489,13 +494,13 @@ Use this table to determine which volumes, tubes, centrifuges, and cell equivale
 
 ---
 
-###Anchor Away 100mL YPDA Harvest
+### Anchor Away 100mL YPDA Harvest
 
-#####Crosslinking and Harvest (Day 2)
+##### Crosslinking and Harvest (Day 2)
 
 *After arriving in the lab in the morning (around 8:00 AM), fast temp incubators to 4˚C. Quickly check the ODs of the cultures to have an idea of how quickly yeast are growing. If harvesting in the afternoon, do this an hour before harvesting.*
 
-**REMINDER:** For every 1 mL of <a href="https://cegrcode.github.io/GeneralLab/buffers/#st-buffer-1-l" target="_blank">ST buffer</a> used during a harvest, add 2 uL of <a href="https://cegrcode.github.io/GeneralLab/buffers/#complete-protease-inhibitor-edta-free-cpi-1-ml" target="_blank">CPI</a> to your aliquot of <a href="https://cegrcode.github.io/GeneralLab/buffers/#st-buffer-1-l" target="_blank">ST buffer</a>. For example, 100 mL of <a href="https://cegrcode.github.io/GeneralLab/buffers/#st-buffer-1-l" target="_blank">ST buffer</a> must have 200 uL of <a href="https://cegrcode.github.io/GeneralLab/buffers/#complete-protease-inhibitor-edta-free-cpi-1-ml" target="_blank">CPI</a> added to it before use.
+**REMINDER:** For every 1 mL of [ST buffer][st-buffer-1-l] used during a harvest, add 2 uL of [CPI][complete-protease-inhibitor-edta-free-cpi-1-ml] to your aliquot of [ST buffer][st-buffer-1-l]. For example, 100 mL of [ST buffer][st-buffer-1-l] must have 200 uL of [CPI][complete-protease-inhibitor-edta-free-cpi-1-ml] added to it before use.
 
 *Make aliquots of reagents and buffers while you are waiting for cells to grow or while you have gaps in the protocol.*
 
@@ -507,13 +512,13 @@ Use this table to determine which volumes, tubes, centrifuges, and cell equivale
 4. Shake cultures at **25˚C for 30 minutes**.
 5. Immediately add the **<a href="https://www.fishersci.com/shop/products/formaldehyde-37-by-weight-molecular-biology-fisher-bioreagents-2/BP531500?searchHijack=true&searchTerm=BP531500&searchType=RAPID&matchedCatNo=BP531500" target="_blank">37% formaldehyde</a>** while swirling flask to ensure rapid mixing.
 	* Return flasks to 25˚C shaker for **15 min** to crosslink.
-	* While cells are crosslinking, aliquot out **6 mL of <a href="https://cegrcode.github.io/GeneralLab/buffers/#25-m-glycine-1-l" target="_blank">2.5M Glycine</a>** into 15mL conical tubes and place near the incubator.
-6. *Quickly* add the **<a href="https://cegrcode.github.io/GeneralLab/buffers/#25-m-glycine-1-l" target="_blank">2.5M Glycine</a>** and incubate for **5 min** in 25°C shaker.
+	* While cells are crosslinking, aliquot out **6 mL of [2.5M Glycine][25-m-glycine-1-l]** into 15mL conical tubes and place near the incubator.
+6. *Quickly* add the **[2.5M Glycine][25-m-glycine-1-l]** and incubate for **5 min** in 25°C shaker.
 7. Transfer contents of flask to two pre-labeled, pre-cooled (on ice) 50 mL conical tubes.
 8. Centrifuge in <a href="https://assets.fishersci.com/TFS-Assets/CCG/product-images/F127479~p.eps-650.jpg" target="_blank">Eppendorf 5810R tabletop</a>, **4000 rpm, 3 min, 4˚C**.   
-9. Discard supernatant into sink.  Re-suspend one pellet with **20 ml cold <a href="https://cegrcode.github.io/GeneralLab/buffers/#st-buffer-1-l" target="_blank">ST buffer</a>** by pulse vortexing on high, then re-suspend the additional three pellets of the same sample by pouring in the re-suspended first pellet, and repeating until each culture is consolidated into one 50 mL conical tube. Keep tubes on ice.
+9. Discard supernatant into sink.  Re-suspend one pellet with **20 ml cold [ST buffer][st-buffer-1-l]** by pulse vortexing on high, then re-suspend the additional three pellets of the same sample by pouring in the re-suspended first pellet, and repeating until each culture is consolidated into one 50 mL conical tube. Keep tubes on ice.
 10. After consolidating each culture into one 50 mL tube, spin in <a href="https://assets.fishersci.com/TFS-Assets/CCG/product-images/F127479~p.eps-650.jpg" target="_blank">Eppendorf 5810R tabletop</a>, **2400 rpm, 5 min, 4˚C**.  Pour off supernatant.
-11. Re-suspend pellet in **1 mL cold <a href="https://cegrcode.github.io/GeneralLab/buffers/#st-buffer-1-l" target="_blank">ST buffer</a>**.
+11. Re-suspend pellet in **1 mL cold [ST buffer][st-buffer-1-l]**.
 12. Transfer to a pre-labeled 2 mL bead beater tube on ice.
 13. <a href="https://cdn3.volusion.com/vccfs.mvxtd/v/vspfiles/photos/epp-5424R-2.jpg?v-cache=1556876142" target="_blank">Centrifuge</a> tubes **2 min, 10K rpm, 4˚C**.  Aspirate supernatant with vacuum flask or pipette.
 14. Flash-freeze the cell pellets in liquid nitrogen.
@@ -523,28 +528,28 @@ Use this table to determine which volumes, tubes, centrifuges, and cell equivale
 
 ---
 
-##Lysis and Sonication
+## Lysis and Sonication
 
 | ***Recipes*** (*Prepare ahead of time*) |
 | -------- |
-| <a href="https://cegrcode.github.io/GeneralLab/buffers/#fa-lysis-buffer-1-l" target="_blank">FA Lysis Buffer</a> |
+| [FA Lysis Buffer][fa-lysis-buffer-1-l] |
 
 ---
 
 *Before you start, fast temp table-top centrifuge and turn on sonicators to cool both to 4°C.*
 
-#####Lysis
+##### Lysis
 
-<img style="float: right;" src="../images/84_Lysis.png">
+<img style={{float:'right'}} src={require('./images/84_Lysis.png').default}/>
 
 
 1. This protocol is written assuming the starting cell pellet contains ***67, 75, 100, or 250 ml cell equivalent (CE)***.
 	* *75 CE is rarely used. Try to avoid using 250 CE as sonication efficacy decreases at a cell equivalent this high.*
 2. Thaw cells at room temperature in RT plastic rack. Process on ice as soon as thawed.
-3. Aliquot a working volume of <a href="https://cegrcode.github.io/GeneralLab/buffers/#fa-lysis-buffer-1-l" target="_blank">FA Lysis Buffer</a> by calculating the amount needed per sample. Add ** <a href="https://cegrcode.github.io/GeneralLab/buffers/#complete-protease-inhibitor-edta-free-cpi-1-ml" target="_blank">CPI</a> ** to the aliquot of <a href="https://cegrcode.github.io/GeneralLab/buffers/#fa-lysis-buffer-1-l" target="_blank">FA Lysis Buffer</a> in 0.2% volume (i.e. when using 50 mL <a href="https://cegrcode.github.io/GeneralLab/buffers/#fa-lysis-buffer-1-l" target="_blank">FA Lysis Buffer</a>, add 100uL of <a href="https://cegrcode.github.io/GeneralLab/buffers/#complete-protease-inhibitor-edta-free-cpi-1-ml" target="_blank">CPI</a>).
-	* NOTE: Once <a href="https://cegrcode.github.io/GeneralLab/buffers/#complete-protease-inhibitor-edta-free-cpi-1-ml" target="_blank">CPI</a> is added to reagents, the working solution is only useable for two days.
-	* For this protocol, calculate approximately *3.5 mL <a href="https://cegrcode.github.io/GeneralLab/buffers/#fa-lysis-buffer-1-l" target="_blank">FA Lysis Buffer</a>* per sample. Remaining <a href="https://cegrcode.github.io/GeneralLab/buffers/#fa-lysis-buffer-1-l" target="_blank">FA Lysis Buffer</a> used for creation of FAT in Chromatin Purification steps. (For 24 samples this is 84 mL; round up to 100 mL <a href="https://cegrcode.github.io/GeneralLab/buffers/#fa-lysis-buffer-1-l" target="_blank">FA Lysis Buffer</a>).
-4. Add **1mL** of ** <a href="https://cegrcode.github.io/GeneralLab/buffers/#fa-lysis-buffer-1-l" target="_blank">FA Lysis Buffer</a> ** to each pellet and vortex.
+3. Aliquot a working volume of [FA Lysis Buffer][fa-lysis-buffer-1-l] by calculating the amount needed per sample. Add ** [CPI][complete-protease-inhibitor-edta-free-cpi-1-ml] ** to the aliquot of [FA Lysis Buffer][fa-lysis-buffer-1-l] in 0.2% volume (i.e. when using 50 mL [FA Lysis Buffer][fa-lysis-buffer-1-l], add 100uL of [CPI][complete-protease-inhibitor-edta-free-cpi-1-ml]).
+	* NOTE: Once [CPI][complete-protease-inhibitor-edta-free-cpi-1-ml] is added to reagents, the working solution is only useable for two days.
+	* For this protocol, calculate approximately *3.5 mL [FA Lysis Buffer][fa-lysis-buffer-1-l]* per sample. Remaining [FA Lysis Buffer][fa-lysis-buffer-1-l] used for creation of FAT in Chromatin Purification steps. (For 24 samples this is 84 mL; round up to 100 mL [FA Lysis Buffer][fa-lysis-buffer-1-l]).
+4. Add **1mL** of ** [FA Lysis Buffer][fa-lysis-buffer-1-l] ** to each pellet and vortex.
 5. Add **500 uL** of **0.5 mm zirconia beads** to each sample. Tightly screw on the cap.
 6. Place tubes into pre-chilled (-20˚C) MBB-96 aluminum tube holder.  Bead beat samples according to the following conditions:
 	* Place aluminum block containing samples in Bead Beater and screw the clamps down tightly. Make sure machine is set to three minutes. Press start.
@@ -562,16 +567,16 @@ Use this table to determine which volumes, tubes, centrifuges, and cell equivale
 	* Do not combine or split samples at this stage. **Transfer only one at a time—be sure to keep tubes appropriately labeled!**
 
 
-#####Chromatin Purification
+##### Chromatin Purification
 
 1. Centrifuge samples in microfuge **14K, 3 min, 4˚C**.  
 2. Pipette off supernatant.
-3. Resuspend chromatin pellets via pipette in **600 uL <a href="https://cegrcode.github.io/GeneralLab/buffers/#fa-lysis-buffer-1-l" target="_blank">FA Lysis Buffer</a>**
+3. Resuspend chromatin pellets via pipette in **600 uL [FA Lysis Buffer][fa-lysis-buffer-1-l]**
 	* IT IS IMPORTANT TO **FULLY RESUSPEND** THE PELLET EACH TIME
 	* This is also a *good stopping point*. You may leave the resuspended pellets up to one hour on ice.
 4. Centrifuge **14K, 3 min, 4˚C**.  
 5. Aspirate supernatant.
-6. Resuspend chromatin pellets via pipette in indicated amount of **<a href="https://cegrcode.github.io/GeneralLab/buffers/#fa-lysis-buffer-1-l" target="_blank">FA Lysis Buffer</a>**
+6. Resuspend chromatin pellets via pipette in indicated amount of **[FA Lysis Buffer][fa-lysis-buffer-1-l]**
 
 Cell Equivalent of Sample (mL) | Chromatin pellet resuspension volume (μL)
 :----------------------------: | :----------------------------------------:
@@ -582,7 +587,7 @@ Cell Equivalent of Sample (mL) | Chromatin pellet resuspension volume (μL)
 
 <p>&nbsp;</p>
 
-#####Sonication – <a href="https://www.diagenode.com/img/product/shearing_technologies/bioruptor_pico.jpg" target="_blank">Diagenode Bioruptor Pico™</a>
+##### Sonication – <a href="https://www.diagenode.com/img/product/shearing_technologies/bioruptor_pico.jpg" target="_blank">Diagenode Bioruptor Pico™</a>
 
 1. Prepare the Bioruptor.
 	* To turn on Bioruptor, flip the power switch on the water cooler, flip the switch on the back of the sanitation unit, and then press the "cool" button on the water cooler. These steps should be done in order.
@@ -600,7 +605,7 @@ Cell Equivalent of Sample (mL) | Chromatin pellet resuspension volume (μL)
 	* If you are going to run a soncheck on the same day, store 50 uL soncheck sample at 4˚C until use. Otherwise, store with cohort in -80˚C freezer.
 6. Flash freeze the sonicated chromatin using dry ice. Store in the -80°C freezer.
 
-#####Setting the Bioruptor
+##### Setting the Bioruptor
 
 Cell Equivalent of Sample (mL) | On Time Per Cycle (s) | Off Time Per Cycle (s) | Number of Cycles
 :----------------------------: | :-------------------: | :--------------------: | :---------------:
@@ -615,3 +620,14 @@ Cell Equivalent of Sample (mL) | On Time Per Cycle (s) | Off Time Per Cycle (s) 
 
 
 ---
+
+[ypd-agar-plates]:/WetBench/yeast#ypd-agar-plates
+[stock-media]:/WetBench/yeast#stock-media
+[ypd-media-liquid]:/WetBench/yeast#ypd-media-liquid
+[header]:/WetBench/yeast#
+[header]:/WetBench/yeast#
+[25-m-glycine-1-l]:/WetBench/buffers#25-m-glycine-1-l
+[st-buffer-1-l]:/WetBench/buffers#st-buffer-1-l
+[10-mm-hydrogen-peroxide-100-ml]:/WetBench/buffers#10-mm-hydrogen-peroxide-100-ml
+[complete-protease-inhibitor-edta-free-cpi-1-ml]:/WetBench/buffers#complete-protease-inhibitor-edta-free-cpi-1-ml
+[fa-lysis-buffer-1-l]:/WetBench/buffers#fa-lysis-buffer-1-l

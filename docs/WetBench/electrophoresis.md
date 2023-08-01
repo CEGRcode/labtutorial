@@ -1,4 +1,9 @@
-# Gel Electrophoresis
+---
+id: electrophoresis
+title: Gel Electrophoresis
+sidebar_label: Gel Electrophoresis
+sidebar_position: 3
+---
 
 ***
 
@@ -16,8 +21,8 @@ This page is meant to serve as a centralized repository for all <a href="https:/
 
 | ***Recipes (Prepare ahead of time)*** |
 |---|
-|<a href="https://cegrcode.github.io/GeneralLab/buffers/#2x-proteinase-k-buffer-50-ml" target="_blank">2X Proteinase K Buffer</a>|
-| <a href="https://cegrcode.github.io/GeneralLab/buffers/#te-tris-edta-500-ml" target="_blank">TE</a>+RNase
+| [2X Proteinase K Buffer][2x-proteinase-k-buffer-50-ml]|
+| [TE][te-tris-edta-500-ml] + RNase |
 
 <p>&nbsp;</p>
 
@@ -34,7 +39,7 @@ This page is meant to serve as a centralized repository for all <a href="https:/
 * PPE including safety glasses throughout, gloves throughout, and a lab coat when working with PCIA
 
 
-#####Quick Reverse Crosslink
+##### Quick Reverse Crosslink
 
 1.	Locate the 50 uL sonication check sample from the -80°C fridge and let thaw.
 2.	Add 175uL TE to each 50uL sonication check sample. Adjust for other sample volumes such that the total is 225 uL (i.e. for a 75 uL son check sample, add 150 uL TE buffer).
@@ -44,7 +49,7 @@ This page is meant to serve as a centralized repository for all <a href="https:/
 	* You may also incubate the samples overnight at 65°C (no more than 16 hours) and skip step 6, continuing to PCIA Extraction/Ethanol Precipitation the following day for a good stopping point.
 6.	Incubate samples at 95°C for 10 minutes. Caps will pop if not properly secured with colored tabs or an aluminum block on top.
 
-#####PCIA Extraction/Ethanol Precipitation
+##### PCIA Extraction/Ethanol Precipitation
 
 1.	Extract by adding 450 uL PCIA. Vortex each sample for ~20 seconds. The sample will become cloudy.
 	* Do this step in the fume hood
@@ -88,7 +93,7 @@ This page is meant to serve as a centralized repository for all <a href="https:/
 
 ### Gel Excision
 
-#####Gel Purification
+##### Gel Purification
 
 1. Thoroughly clean and rinse an appropriate size gel box.
 2. Make a 2% agarose gel using molecular biology grade agarose 100 ml TAE + 2g Agarose + 50 ul 1 mg/ml Ethidium Bromide = 2% gel
@@ -109,7 +114,7 @@ This page is meant to serve as a centralized repository for all <a href="https:/
 
 
 
-#####Qiagen cleanup
+##### Qiagen cleanup
 
 *Notes:  All buffers and centrifuge spins should be at room temperature.*
 
@@ -135,11 +140,11 @@ This page is meant to serve as a centralized repository for all <a href="https:/
 	* 1/10th EB buffer can be used in place of ddH<sub>2</sub>O.
 	* **OPTIONAL:**  If you suspect that your yields are low then: 2x 20ul elutions into separate tubes, Vinesh reports 2-10x more concentrated DNA in the 1st eluate.
 20. Microfuge 1 min, 13,000 rpm, room temperature.
-21. Calculate the crude concentration of the sample using the <a href="https://cegrcode.github.io/GeneralLab/electrophoresis/#qubit-directions" target="_blank">Qubit</a>.
+21. Calculate the crude concentration of the sample using the [Qubit][qubit-directions].
 21. Store sample at -20˚C
 22. Determine concentration of sample via qPCR. Note: A quick estimate of the DNA concentration can be made using the Qubit dsDNA high sensitivity assay kit. A normal library will have a concentration >1 ng/ml when diluted 1:200.
 
-#####<a href="https://media.biocompare.com/m/37/article/162046/qubit.jpg" target="_blank">Qubit</a> Directions
+##### <a href="https://media.biocompare.com/m/37/article/162046/qubit.jpg" target="_blank">Qubit</a> Directions
 1. Add 199 uL of dsDNA High Sensitivity Buffer (big bottle) and 1 uL of Qubit High Sensitivity Reagent to a 1.5 mL Eppendorf tube and gently vortex.
 2. Transfer 199 uL of this mixture to a Qubit tube.
 3. Add 1 uL of your sample to the mixture in the Qubit tube.
@@ -158,3 +163,7 @@ This page is meant to serve as a centralized repository for all <a href="https:/
 ### Oligo Purification
 
 ***
+
+[qubit-directions]:/WetBench/electrophoresis#qubit-directions
+[te-tris-edta-500-ml]:/WetBench/buffers#te-tris-edta-500-ml
+[2x-proteinase-k-buffer-50-ml]:/WetBench/buffers#2x-proteinase-k-buffer-50-ml

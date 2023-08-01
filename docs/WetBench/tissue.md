@@ -1,4 +1,9 @@
-# Tissue Processing
+---
+id: tissue
+title: Tissue Processing
+sidebar_label: Tissue Processing
+sidebar_position: 6
+---
 
 ***
 

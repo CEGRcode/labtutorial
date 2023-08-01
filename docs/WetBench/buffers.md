@@ -1,4 +1,9 @@
-# Buffer Preparation
+---
+id: buffers
+title: Buffer Preparation
+sidebar_label: Buffer Preparation
+sidebar_position: 2
+---
 
 ***
 
@@ -63,7 +68,7 @@ Bring final volume to 1 L with ddH2O in a graduated cylinder. Filter sterilize a
 
 Final Conc. of Component | Stock | Amount
 :--------- | :--: | :------:
-10 mM <a href="https://cegrcode.github.io/GeneralLab/buffers/#1-m-tris-hcl-ph-75-1-l" target="_blank">Tris-HCl, pH 7.5</a> | 1 M | 20 mL
+10 mM [Tris-HCl, pH 7.5][1-m-tris-hcl-ph-75-1-l] | 1 M | 20 mL
 
 Bring final volume to 2 L with ddH2O in a graduated cylinder. Filter sterilize and store at RT.
 
@@ -73,8 +78,8 @@ Bring final volume to 2 L with ddH2O in a graduated cylinder. Filter sterilize a
 
 Final Conc. of Component | Stock | Amount
 :--------- | :--: | :------:
-10 mM <a href="https://cegrcode.github.io/GeneralLab/buffers/#1-m-tris-hcl-ph-80-1-l" target="_blank">Tris-HCl, pH 8.0</a> | 1 M | 5 mL
-1 mM <a href="https://cegrcode.github.io/GeneralLab/buffers/#05-m-edta-ethylenediaminetetraacetic-acid-ph-80-500-ml" target="_blank">EDTA, pH 8.0</a> | 0.5 M | 1 mL
+10 mM [Tris-HCl, pH 8.0][1-m-tris-hcl-ph-80-1-l] | 1 M | 5 mL
+1 mM [EDTA, pH 8.0][05-m-edta-ethylenediaminetetraacetic-acid-ph-80-500-ml] | 0.5 M | 1 mL
 
 Bring final volume to 500 mL with ddH2O in a graduated cylinder. Filter sterilize and store at RT.
 
@@ -84,9 +89,9 @@ Bring final volume to 500 mL with ddH2O in a graduated cylinder. Filter steriliz
 
 Final Conc. of Component | Stock | Amount
 :--------- | :--: | :------:
-40 mM <a href="https://cegrcode.github.io/GeneralLab/buffers/#1-m-tris-hcl-ph-75-1-l" target="_blank">Tris-HCl, pH 7.5</a> | 1 M | 2 mL
-40 mM <a href="https://cegrcode.github.io/GeneralLab/buffers/#05-m-edta-ethylenediaminetetraacetic-acid-ph-80-500-ml" target="_blank">EDTA, pH 8.0</a> | 0.5 M | 4 mL
-2% <a href="https://cegrcode.github.io/GeneralLab/buffers/#20-sds-sodium-dodecyl-sulfate-500-ml" target="_blank">SDS</a> | 20% | 5 mL
+40 mM [Tris-HCl, pH 7.5][1-m-tris-hcl-ph-75-1-l] | 1 M | 2 mL
+40 mM [EDTA, pH 8.0][05-m-edta-ethylenediaminetetraacetic-acid-ph-80-500-ml] | 0.5 M | 4 mL
+2% [SDS][20-sds-sodium-dodecyl-sulfate-500-ml] | 20% | 5 mL
 
 Bring final volume to 50 mL with ddH2O in a graduated cylinder. Filter sterilize with <a href="https://us.vwr.com/store/product/4830405/pall-acrodisc-sterile-syringe-filters-with-supor-membrane-pall-laboratory" target="_blank">syringe filter</a> and store at RT.
 
@@ -98,7 +103,7 @@ Final Conc. of Component | Stock | Amount
 :--------- | :--: | :------:
 200 mM <a href="https://us.vwr.com/store/product/4562172/tris-hydroxymethyl-aminomethane-tris-trometamol-99-9-dried-basis-ultrapure-bioreagent-molecular-biology-grade-j-t-baker" target="_blank">Tris Base</a> |  | 24.2 g
 100 mM <a href="https://www.fishersci.com/shop/products/acetic-acid-glacial-70/S25118" target="_blank">Glacial Acetic Acid</a> | 17.4 M | 5.7 mL
-5 mM <a href="https://cegrcode.github.io/GeneralLab/buffers/#05-m-edta-ethylenediaminetetraacetic-acid-ph-80-500-ml" target="_blank">EDTA, pH 8.0</a> | 0.5 M | 10 mL
+5 mM [EDTA, pH 8.0][05-m-edta-ethylenediaminetetraacetic-acid-ph-80-500-ml] | 0.5 M | 10 mL
 
 Bring final volume to 1 L with ddH2O in a graduated cylinder. Filter sterilize and store at RT.
 
@@ -110,7 +115,7 @@ Final Conc. of Component | Stock | Amount
 :--------- | :--: | :------:
 40 mM <a href="https://us.vwr.com/store/product/4562172/tris-hydroxymethyl-aminomethane-tris-trometamol-99-9-dried-basis-ultrapure-bioreagent-molecular-biology-grade-j-t-baker" target="_blank">Tris Base</a> |  | 96.9 g
 20 mM <a href="https://www.fishersci.com/shop/products/acetic-acid-glacial-70/S25118" target="_blank">Glacial Acetic Acid</a> | 17.4 M | 23 mL
-1 mM <a href="https://cegrcode.github.io/GeneralLab/buffers/#05-m-edta-ethylenediaminetetraacetic-acid-ph-80-500-ml" target="_blank">EDTA, pH 8.0</a> | 0.5 M | 40 mL
+1 mM [EDTA, pH 8.0][05-m-edta-ethylenediaminetetraacetic-acid-ph-80-500-ml] | 0.5 M | 40 mL
 
 Bring final volume to 2 L with ddH2O in a graduated cylinder. Pour into 40 L carboy and add 18 L of ddH2O.
 
@@ -122,7 +127,7 @@ Final Conc. of Component | Stock | Amount
 :--------- | :--: | :------:
 445 mM <a href="https://us.vwr.com/store/product/4562172/tris-hydroxymethyl-aminomethane-tris-trometamol-99-9-dried-basis-ultrapure-bioreagent-molecular-biology-grade-j-t-baker" target="_blank">Tris Base</a> |  | 53.9 g
 445 mM <a href="https://www.sigmaaldrich.com/catalog/product/mm/bx0865?lang=en&region=US" target="_blank">Boric Acid</a>  |  | 27.5 g
-15 mM <a href="https://cegrcode.github.io/GeneralLab/buffers/#05-m-edta-ethylenediaminetetraacetic-acid-ph-80-500-ml" target="_blank">EDTA, pH 8.0</a> | 0.5 M | 30 mL
+15 mM [EDTA, pH 8.0][05-m-edta-ethylenediaminetetraacetic-acid-ph-80-500-ml] | 0.5 M | 30 mL
 
 Bring final volume to 1 L with ddH2O in a graduated cylinder. Filter sterilize and store at RT.
 
@@ -134,7 +139,7 @@ Final Conc. of Component | Stock | Amount
 :--------- | :--: | :------:
 89 mM <a href="https://us.vwr.com/store/product/4562172/tris-hydroxymethyl-aminomethane-tris-trometamol-99-9-dried-basis-ultrapure-bioreagent-molecular-biology-grade-j-t-baker" target="_blank">Tris Base</a> |  | 215.6 g
 89 mM <a href="https://www.sigmaaldrich.com/catalog/product/mm/bx0865?lang=en&region=US" target="_blank">Boric Acid</a> |  | 110 g
-3 mM <a href="https://cegrcode.github.io/GeneralLab/buffers/#05-m-edta-ethylenediaminetetraacetic-acid-ph-80-500-ml" target="_blank">EDTA, pH 8.0</a> | 0.5 M | 120 mL
+3 mM [EDTA, pH 8.0][05-m-edta-ethylenediaminetetraacetic-acid-ph-80-500-ml] | 0.5 M | 120 mL
 
 Bring final volume to 2 L with ddH2O in a graduated cylinder. Pour into 40 L carboy and add 18 L of ddH2O.
 
@@ -146,7 +151,7 @@ Final Conc. of Component | Stock | Amount
 :--------- | :--: | :------:
 25 mM <a href="https://us.vwr.com/store/product/4562172/tris-hydroxymethyl-aminomethane-tris-trometamol-99-9-dried-basis-ultrapure-bioreagent-molecular-biology-grade-j-t-baker" target="_blank">Tris Base</a> |  | 60.6 g
 192 mM <a href="https://us.vwr.com/store/product/4546166/glycine-98-5-101-5-dried-basis-baker-analyzed-biochemical-reagent-j-t-baker" target="_blank">Glycine</a> |  | 288.4 g
-0.1% <a href="https://cegrcode.github.io/GeneralLab/buffers/#20-sds-sodium-dodecyl-sulfate-500-ml" target="_blank">SDS</a> | 20% | 100 mL
+0.1% [SDS][20-sds-sodium-dodecyl-sulfate-500-ml] | 20% | 100 mL
 
 Bring final volume to 2 L with ddH2O in a graduated cylinder. Pour into 40 L carboy and add 18 L of ddH2O.
 
@@ -159,7 +164,7 @@ Final Conc. of Component | Stock | Amount
 10 mM <a href="https://us.vwr.com/store/product/4562172/tris-hydroxymethyl-aminomethane-tris-trometamol-99-9-dried-basis-ultrapure-bioreagent-molecular-biology-grade-j-t-baker" target="_blank">Tris Base</a> |  | 9.7 g
 150 mM <a href="https://us.vwr.com/store/product/4559541/sodium-chloride-99-0-gr-acs" target="_blank">NaCl</a> |  | 70 g
 0.05% <a href="https://www.fishersci.com/shop/products/tween-20-fisher-bioreagents-2/BP337100" target="_blank">Tween-20</a> | 100% | 4 mL
-<a href="https://cegrcode.github.io/GeneralLab/buffers/#1-n-hcl-1-l" target="_blank">HCL</a> | 1 N | 40 mL
+[HCL][1-n-hcl-1-l] | 1 N | 40 mL
 
 Bring final volume to 8 L with ddH20 in a graduated cylinder.
 
@@ -251,7 +256,7 @@ Measure Triton X-100 directly into 250 mL glass beaker. Bring final volume to 20
 Final Conc. of Component | Stock | Amount
 :--------- | :--: | :------:
 1 M <a href="https://us.vwr.com/store/product/4562172/tris-hydroxymethyl-aminomethane-tris-trometamol-99-9-dried-basis-ultrapure-bioreagent-molecular-biology-grade-j-t-baker" target="_blank">Tris Base</a> | | 121.2 g
-<a href="https://cegrcode.github.io/GeneralLab/buffers/#1-n-hcl-1-l" target="_blank">HCl</a> | 1 N | 800 mL
+[HCl][1-n-hcl-1-l] | 1 N | 800 mL
 
 Confirm pH with meter and adjust as needed. Bring final volume to 1 L with ddH2O in a graduated cylinder.
 
@@ -262,7 +267,7 @@ Confirm pH with meter and adjust as needed. Bring final volume to 1 L with ddH2O
 Final Conc. of Component | Stock | Amount
 :--------- | :--: | :------:
 1 M <a href="https://us.vwr.com/store/product/4562172/tris-hydroxymethyl-aminomethane-tris-trometamol-99-9-dried-basis-ultrapure-bioreagent-molecular-biology-grade-j-t-baker" target="_blank">Tris Base</a> | | 121.2 g
-<a href="https://cegrcode.github.io/GeneralLab/buffers/#1-n-hcl-1-l" target="_blank">HCl</a> | 1 N | 500 mL
+[HCl][1-n-hcl-1-l] | 1 N | 500 mL
 
 Confirm pH with meter and adjust as needed. Bring final volume to 1 L with ddH2O in a graduated cylinder.
 
@@ -399,8 +404,8 @@ Preheat 700 mL ddH2O in a 1 L glass beaker. Pour in powder and let dissolve. Bri
 
 Final Conc. of Component | Stock | Amount
 :--------- | :--: | :------:
-10 mM <a href="https://cegrcode.github.io/GeneralLab/buffers/#1-m-tris-hcl-ph-75-1-l" target="_blank">Tris-HCl, pH 7.5</a> | 1 M | 10 mL
-100 mM <a href="https://cegrcode.github.io/GeneralLab/buffers/#5-m-nacl-1-l" target="_blank">NaCl</a> | 5 M | 20 mL
+10 mM [Tris-HCl, pH 7.5][1-m-tris-hcl-ph-75-1-l] | 1 M | 10 mL
+100 mM [NaCl][5-m-nacl-1-l] | 5 M | 20 mL
 
 Bring final volume to 1 L with ddH2O in a graduated cylinder. Filter sterilize and store at 4°C.
 
@@ -410,17 +415,17 @@ Bring final volume to 1 L with ddH2O in a graduated cylinder. Filter sterilize a
 
 Final Conc. of Component | Stock | Amount
 :--------- | :--: | :------:
-50 mM <a href="https://cegrcode.github.io/GeneralLab/buffers/#1-m-hepes-koh-ph-75-1-l" target="_blank">HEPES-KOH, pH 7.5</a> | 1 M | 50 mL
-150 mM <a href="https://cegrcode.github.io/GeneralLab/buffers/#5-m-nacl-1-l" target="_blank">NaCl</a> | 5 M | 30 mL
-2 mM <a href="https://cegrcode.github.io/GeneralLab/buffers/#05-m-edta-ethylenediaminetetraacetic-acid-ph-80-500-ml" target="_blank">EDTA, pH 8.0</a> | 0.5 M | 4 mL
-0.1% <a href="https://cegrcode.github.io/GeneralLab/buffers/#10-sodium-deoxycholate-200-ml" target="_blank">Sodium Deoxycholate</a> | 10% | 10 mL
-1% <a href="https://cegrcode.github.io/GeneralLab/buffers/#25-triton-x-100-200-ml" target="_blank">Triton X-100</a> | 25% | 40 mL
+50 mM [HEPES-KOH, pH 7.5][1-m-hepes-koh-ph-75-1-l] | 1 M | 50 mL
+150 mM [NaCl][5-m-nacl-1-l] | 5 M | 30 mL
+2 mM [EDTA, pH 8.0][05-m-edta-ethylenediaminetetraacetic-acid-ph-80-500-ml] | 0.5 M | 4 mL
+0.1% [Sodium Deoxycholate][10-sodium-deoxycholate-200-ml] | 10% | 10 mL
+1% [Triton X-100][25-triton-x-100-200-ml] | 25% | 40 mL
 
 Bring volume up to 1 L with ddH2O in a graduated cylinder. Filter sterilize and store at 4˚C.
 
 <p>&nbsp;</p>
 
-####10 mM Hydrogen Peroxide (100 mL)
+#### 10 mM Hydrogen Peroxide (100 mL)
 Final Conc. of Component | Stock | Amount
 :----------------------- | :---: | :-----:
 10 mM <a href="https://www.sigmaaldrich.com/catalog/product/sigma/h1009?lang=en&region=US" target="_blank">30% H<sub>2</sub>O<sub>2</sub></a> | 9.7 M | 102 μL
@@ -492,7 +497,7 @@ Pour 10% bleach in any empty FBS and Pen/Strep bottles and let incubate for 30 m
 Final Conc. of Component | Stock | Amount
 :--------- | :--: | :------:
 1 M <a href="https://us.vwr.com/store/product/4562172/tris-hydroxymethyl-aminomethane-tris-trometamol-99-9-dried-basis-ultrapure-bioreagent-molecular-biology-grade-j-t-baker" target="_blank">Tris Base</a> | | 1454.4 g
-<a href="https://cegrcode.github.io/GeneralLab/buffers/#1-n-hcl-1-l" target="_blank">HCl</a> | 37% | 550  mL
+[HCl][1-n-hcl-1-l] | 37% | 550  mL
 
 Confirm pH with meter and adjust as needed. Bring final volume to 4 L with ddH2O in a graduated cylinder. Filter sterilize and store in 1 L glass bottles.
 
@@ -502,10 +507,10 @@ Confirm pH with meter and adjust as needed. Bring final volume to 4 L with ddH2O
 
 Final Conc. of Component | Stock | Amount
 :--------- | :--: | :------:
-20 mM <a href="https://cegrcode.github.io/GeneralLab/buffers/#1-m-tris-hcl-ph-80-1-l" target="_blank">Tris-HCl, pH 8.0</a> | 1 M | 40 mL
-85 mM <a href="https://cegrcode.github.io/GeneralLab/buffers/#2-m-kcl-1-l" target="_blank">KCl</a> | 2 M | 85 mL
-0.5% <a href="https://cegrcode.github.io/GeneralLab/buffers/#10-igepal-chemically-indistinct-from-np-40-200-ml" target="_blank">IGEPAL</a> | 10% | 100 mL
-0.5% <a href="https://cegrcode.github.io/GeneralLab/buffers/#25-triton-x-100-200-ml" target="_blank">Triton X-100</a> | 25% | 40 mL
+20 mM [Tris-HCl, pH 8.0][1-m-tris-hcl-ph-80-1-l] | 1 M | 40 mL
+85 mM [KCl][2-m-kcl-1-l] | 2 M | 85 mL
+0.5% [IGEPAL][10-igepal-chemically-indistinct-from-np-40-200-ml] | 10% | 100 mL
+0.5% [Triton X-100][25-triton-x-100-200-ml] | 25% | 40 mL
 
 Bring final volume to 2 L with ddH2O in a graduated cylinder. Filter sterilize and store at 4°C. Record conductivity reading in buffer log folder.
 
@@ -517,10 +522,10 @@ QC Conductivity Reading: 12 (+/-2) mS/cm
 
 Final Conc. of Component | Stock | Amount
 :--------- | :--: | :------:
-1X <a href="https://cegrcode.github.io/GeneralLab/buffers/#10x-pbs-1-l" target="_blank">PBS</a> | 10X | 200 mL
-1% <a href="https://cegrcode.github.io/GeneralLab/buffers/#10-igepal-chemically-indistinct-from-np-40-200-ml" target="_blank">IGEPAL</a> | 10% | 200 mL
-0.5% <a href="https://cegrcode.github.io/GeneralLab/buffers/#10-sodium-deoxycholate-200-ml" target="_blank">Sodium Deoxycholate</a> | 10% | 100 mL
-0.1% <a href="https://cegrcode.github.io/GeneralLab/buffers/#20-sds-sodium-dodecyl-sulfate-500-ml" target="_blank">SDS</a> | 20% | 10 mL
+1X [PBS][10x-pbs-1-l] | 10X | 200 mL
+1% [IGEPAL][10-igepal-chemically-indistinct-from-np-40-200-ml] | 10% | 200 mL
+0.5% [Sodium Deoxycholate][10-sodium-deoxycholate-200-ml] | 10% | 100 mL
+0.1% [SDS][20-sds-sodium-dodecyl-sulfate-500-ml] | 20% | 10 mL
 
 Bring final volume to 2 L with ddH2O in a graduated cylinder. Filter sterilize and store at 4°C. Record conductivity reading in buffer log folder.
 
@@ -530,7 +535,7 @@ QC Conductivity Reading: 16 (+/-1) mS/cm
 
 #### 1X PBS (1 L)
 
-Purchased from <a href="https://www.thermofisher.com/order/catalog/product/14190250" target="_blank">Thermo Fisher Scientific</a>, but can also be made as a dilution from <a href="https://cegrcode.github.io/GeneralLab/buffers/#10x-pbs-1-l" target="_blank">10X PBS</a>. Components and gram amounts shown below for convenience and knowledge purposes.
+Purchased from <a href="https://www.thermofisher.com/order/catalog/product/14190250" target="_blank">Thermo Fisher Scientific</a>, but can also be made as a dilution from [10X PBS][10x-pbs-1-l]. Components and gram amounts shown below for convenience and knowledge purposes.
 
 Final Conc. of Component | MW (g/mol) | Amount
 :--------- | :--: | :------:
@@ -545,8 +550,8 @@ Final Conc. of Component | MW (g/mol) | Amount
 
 Final Conc. of Component | Stock | Amount
 :--------- | :--: | :------:
-10 mM <a href="https://cegrcode.github.io/GeneralLab/buffers/#1-m-tris-hcl-ph-80-1-l" target="_blank">Tris-HCl, pH 8.0</a> | 1 M | 20 mL
-150 mM <a href="https://cegrcode.github.io/GeneralLab/buffers/#5-m-nacl-1-l" target="_blank">NaCl</a> | 5 M | 60 mL
+10 mM [Tris-HCl, pH 8.0][1-m-tris-hcl-ph-80-1-l] | 1 M | 20 mL
+150 mM [NaCl][5-m-nacl-1-l] | 5 M | 60 mL
 
 QC: Adjust pH using HCl if above 8.0.
 
@@ -559,10 +564,10 @@ Bring final volume to 2 L with ddH2O in a graduated cylinder. Filter sterilize a
 
 Final Conc. of Component | Stock | Amount
 :--------- | :--: | :------:
-20 mM <a href="https://cegrcode.github.io/GeneralLab/buffers/#1-m-tris-hcl-ph-80-1-l" target="_blank">Tris-HCl, pH 8.0</a> | 1 M | 40 mL
-2 mM <a href="https://cegrcode.github.io/GeneralLab/buffers/#05-m-edta-ethylenediaminetetraacetic-acid-ph-80-500-ml" target="_blank">EDTA, pH 8.0</a> | 0.5 M | 8 mL
-150 mM  <a href="https://cegrcode.github.io/GeneralLab/buffers/#5-m-nacl-1-l" target="_blank">NaCl</a> | 5 M | 60 mL
-1% <a href="https://cegrcode.github.io/GeneralLab/buffers/#25-triton-x-100-200-ml" target="_blank">Triton X-100</a> | 25% | 80 mL
+20 mM [Tris-HCl, pH 8.0][1-m-tris-hcl-ph-80-1-l] | 1 M | 40 mL
+2 mM [EDTA, pH 8.0][05-m-edta-ethylenediaminetetraacetic-acid-ph-80-500-ml] | 0.5 M | 8 mL
+150 mM [NaCl][5-m-nacl-1-l] | 5 M | 60 mL
+1% [Triton X-100][25-triton-x-100-200-ml] | 25% | 80 mL
 
 Bring volume up to 2 L with ddH2O. Filter sterilize and store at 4°C.
 
@@ -572,11 +577,11 @@ Bring volume up to 2 L with ddH2O. Filter sterilize and store at 4°C.
 
 Final Conc. of Component | Stock | Amount
 :--------- | :--: | :------:
-50 mM <a href="https://cegrcode.github.io/GeneralLab/buffers/#1-m-hepes-koh-ph-75-1-l" target="_blank">HEPES-KOH, pH 7.5</a>  | 1 M | 100 mL
-150 mM <a href="https://cegrcode.github.io/GeneralLab/buffers/#5-m-nacl-1-l" target="_blank">NaCl</a> | 5 M | 60 mL
-2 mM <a href="https://cegrcode.github.io/GeneralLab/buffers/#05-m-edta-ethylenediaminetetraacetic-acid-ph-80-500-ml" target="_blank">EDTA, pH 8.0</a> | 0.5 M | 8 mL
-0.1% <a href="https://cegrcode.github.io/GeneralLab/buffers/#10-sodium-deoxycholate-200-ml" target="_blank">Sodium Deoxycholate</a> | 10% | 20 mL
-1% <a href="https://cegrcode.github.io/GeneralLab/buffers/#25-triton-x-100-200-ml" target="_blank">Triton X-100</a>  | 25% | 80 mL
+50 mM [HEPES-KOH, pH 7.5][1-m-hepes-koh-ph-75-1-l]  | 1 M | 100 mL
+150 mM [NaCl][5-m-nacl-1-l] | 5 M | 60 mL
+2 mM [EDTA, pH 8.0][05-m-edta-ethylenediaminetetraacetic-acid-ph-80-500-ml] | 0.5 M | 8 mL
+0.1% [Sodium Deoxycholate][10-sodium-deoxycholate-200-ml] | 10% | 20 mL
+1% [Triton X-100][25-triton-x-100-200-ml]  | 25% | 80 mL
 
 Bring volume up to 2 L with ddH2O in a graduated cylinder. Filter sterilize and store at 4˚C. Record conductivity reading in buffer log folder.
 
@@ -588,11 +593,11 @@ QC Conductivity Reading: 18.5(+/-1) mS/cm
 
 Final Conc. of Component | Stock | Amount
 :--------- | :--: | :------:
-50 mM <a href="https://cegrcode.github.io/GeneralLab/buffers/#1-m-hepes-koh-ph-75-1-l" target="_blank">HEPES-KOH, pH 7.5</a> | 1 M | 100 mL
-250 mM <a href="https://cegrcode.github.io/GeneralLab/buffers/#5-m-nacl-1-l" target="_blank">NaCl</a>  | 5 M | 100 mL
-2 mM <a href="https://cegrcode.github.io/GeneralLab/buffers/#05-m-edta-ethylenediaminetetraacetic-acid-ph-80-500-ml" target="_blank">EDTA, pH 8.0</a>  | 0.5 M | 8 mL
-1% <a href="https://cegrcode.github.io/GeneralLab/buffers/#25-triton-x-100-200-ml" target="_blank">Triton X-100</a> | 25% | 80 mL
-0.1% <a href="https://cegrcode.github.io/GeneralLab/buffers/#10-sodium-deoxycholate-200-ml" target="_blank">Sodium Deoxycholate</a> | 10% | 20 mL
+50 mM [HEPES-KOH, pH 7.5][1-m-hepes-koh-ph-75-1-l] | 1 M | 100 mL
+250 mM [NaCl][5-m-nacl-1-l]  | 5 M | 100 mL
+2 mM [EDTA, pH 8.0][05-m-edta-ethylenediaminetetraacetic-acid-ph-80-500-ml]  | 0.5 M | 8 mL
+1% [Triton X-100][25-triton-x-100-200-ml] | 25% | 80 mL
+0.1% [Sodium Deoxycholate][10-sodium-deoxycholate-200-ml] | 10% | 20 mL
 
 Bring volume up to 2 L with ddH2O in a graduated cylinder. Filter sterilize and store at 4˚C. Record conductivity reading in buffer log folder.
 
@@ -604,10 +609,10 @@ QC Conductivity Reading: 25(+/-2) mS/cm
 
 Final Conc. of Component | Stock | Amount
 :--------- | :--: | :------:
-100 mM <a href="https://cegrcode.github.io/GeneralLab/buffers/#1-m-tris-hcl-ph-80-1-l" target="_blank">Tris-HCl, pH 8.0</a> | 1 M | 200 mL
-250 mM <a href="https://cegrcode.github.io/GeneralLab/buffers/#1-m-licl-1-l" target="_blank">LiCl</a> | 1 M | 500 mL
-1% <a href="https://cegrcode.github.io/GeneralLab/buffers/#10-igepal-chemically-indistinct-from-np-40-200-ml" target="_blank">IGEPAL</a> | 10% | 200 mL
-1% <a href="https://cegrcode.github.io/GeneralLab/buffers/#10-sodium-deoxycholate-200-ml" target="_blank">Sodium Deoxycholate</a> | 10% | 200 mL
+100 mM [Tris-HCl, pH 8.0][1-m-tris-hcl-ph-80-1-l] | 1 M | 200 mL
+250 mM [LiCl][1-m-licl-1-l] | 1 M | 500 mL
+1% [IGEPAL][10-igepal-chemically-indistinct-from-np-40-200-ml] | 10% | 200 mL
+1% [Sodium Deoxycholate][10-sodium-deoxycholate-200-ml] | 10% | 200 mL
 
 Bring volume up to 2 L with ddH2O in a graduated cylinder. Filter sterilize and store at 4˚C. Record conductivity reading in buffer log folder.
 
@@ -619,7 +624,7 @@ QC Conductivity Reading: 25(+/-2) mS/cm
 
 Final Conc. of Component | Stock | Amount
 :--------- | :--: | :------:
-10 mM <a href="https://cegrcode.github.io/GeneralLab/buffers/#1-m-tris-hcl-ph-80-1-l" target="_blank">Tris-HCl, pH 8.0</a> | 1 M | 20 mL
+10 mM [Tris-HCl, pH 8.0][1-m-tris-hcl-ph-80-1-l] | 1 M | 20 mL
 
 Bring volume up to 2 L with ddH2O in a graduated cylinder. Filter sterilize and store at 4˚C. Record pH reading in buffer log folder.
 
@@ -631,10 +636,10 @@ QC pH Reading: 8.0
 
 Final Conc. of Component | Stock | Amount
 :--------- | :--: | :------:
-25 mM <a href="https://cegrcode.github.io/GeneralLab/buffers/#1-m-tris-hcl-ph-75-1-l" target="_blank">Tris-HCl, pH 7.5</a> | 1 M | 1.25 mL
-2 mM <a href="https://cegrcode.github.io/GeneralLab/buffers/#05-m-edta-ethylenediaminetetraacetic-acid-ph-80-500-ml" target="_blank">EDTA, pH 8.0</a> | 0.5 M | 0.2 mL
-200 mM <a href="https://cegrcode.github.io/GeneralLab/buffers/#5-m-nacl-1-l" target="_blank">NaCl</a> | 5 M | 2 mL
-0.5% <a href="https://cegrcode.github.io/GeneralLab/buffers/#20-sds-sodium-dodecyl-sulfate-500-ml" target="_blank">SDS</a> | 20% | 1.25 mL
+25 mM [Tris-HCl, pH 7.5][1-m-tris-hcl-ph-75-1-l] | 1 M | 1.25 mL
+2 mM [EDTA, pH 8.0][05-m-edta-ethylenediaminetetraacetic-acid-ph-80-500-ml] | 0.5 M | 0.2 mL
+200 mM [NaCl][5-m-nacl-1-l] | 5 M | 2 mL
+0.5% [SDS][20-sds-sodium-dodecyl-sulfate-500-ml] | 20% | 1.25 mL
 
 Bring final volume up to 50 mL with ddH2O in a graduated cylinder. Filter sterilize with <a href="https://us.vwr.com/store/product/4830405/pall-acrodisc-sterile-syringe-filters-with-supor-membrane-pall-laboratory" target="_blank">syringe filter</a> and store at RT. Record pH and conductivity reading in buffer log folder.
 
@@ -643,3 +648,26 @@ QC pH Reading: 8.0
 QC Conductivity Reading: 23 (+/-1) mS/cm
 
 ***
+
+
+[05-m-edta-ethylenediaminetetraacetic-acid-ph-80-500-ml]:/WetBench/buffers#05-m-edta-ethylenediaminetetraacetic-acid-ph-80-500-ml
+[1-m-hepes-koh-ph-75-1-l]:/WetBench/buffers#1-m-hepes-koh-ph-75-1-l
+[1-m-licl-1-l]:/WetBench/buffers#1-m-licl-1-l
+[1-m-tris-hcl-ph-75-1-l]:/WetBench/buffers#1-m-tris-hcl-ph-75-1-l
+[1-m-tris-hcl-ph-80-1-l]:/WetBench/buffers#1-m-tris-hcl-ph-80-1-l
+[10-sodium-deoxycholate-200-ml]:/WetBench/buffers#10-sodium-deoxycholate-200-ml
+[10-sodium-deoxycholate-200-ml]
+[10-igepal-chemically-indistinct-from-np-40-200-ml]:/WetBench/buffers#10-igepal-chemically-indistinct-from-np-40-200-ml
+[10x-pbs-1-l]:/WetBench/buffers#10x-pbs-1-l
+[20-sds-sodium-dodecyl-sulfate-500-ml]:/WetBench/buffers#20-sds-sodium-dodecyl-sulfate-500-ml
+[25-triton-x-100-200-ml]:/WetBench/buffers#25-triton-x-100-200-ml
+[5-m-nacl-1-l]:/WetBench/buffers#5-m-nacl-1-l
+
+
+[1-n-hcl-1-l]:/WetBench/buffers#1-n-hcl-1-l
+[5-m-nacl-1-l]:/WetBench/buffers#5-m-nacl-1-l
+[1-m-hepes-koh-ph-75-1-l]:/WetBench/buffers#1-m-hepes-koh-ph-75-1-l
+
+[header]:/WetBench/buffers#
+[header]:/WetBench/buffers#
+[header]:/WetBench/buffers#

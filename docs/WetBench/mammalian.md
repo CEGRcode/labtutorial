@@ -1,4 +1,9 @@
-# Mammalian Processing
+---
+id: mammalian
+title: Mammalian Processing
+sidebar_label: Mammalian Processing
+sidebar_position: 5
+---
 
 ***
 
@@ -64,7 +69,7 @@ Suspension cells.
 
 Buffer/Solution | Use | Amount Needed
 :--------- | :------ | :-----:
-<a href="https://cegrcode.github.io/GeneralLab/buffers/#complete-iscoves-modified-dulbeccos-medium-imdm-111-l" target="_blank">Complete IMDM</a>| Media | 29 mL
+[Complete IMDM][complete-iscoves-modified-dulbeccos-medium-imdm-111-l]| Media | 29 mL
 
 <p>&nbsp;</p>
 
@@ -72,12 +77,12 @@ Buffer/Solution | Use | Amount Needed
 
 Day | Buffer/Solution | Use | Amount Needed
 :---------- | :--------- | :------ | :-----:
-Monday | <a href="https://cegrcode.github.io/GeneralLab/buffers/#complete-iscoves-modified-dulbeccos-medium-imdm-111-l" target="_blank">Complete IMDM</a>| Media | 62 mL
-Tuesday | <a href="https://cegrcode.github.io/GeneralLab/buffers/#complete-iscoves-modified-dulbeccos-medium-imdm-111-l" target="_blank">Complete IMDM</a>| Media | 122 mL
-Wednesday | <a href="https://cegrcode.github.io/GeneralLab/buffers/#complete-iscoves-modified-dulbeccos-medium-imdm-111-l" target="_blank">Complete IMDM</a>| Media | 200 mL
-Thursday | <a href="https://cegrcode.github.io/GeneralLab/buffers/#complete-iscoves-modified-dulbeccos-medium-imdm-111-l" target="_blank">Complete IMDM</a>| Media | 400 mL
-Friday | <a href="https://cegrcode.github.io/GeneralLab/buffers/#complete-iscoves-modified-dulbeccos-medium-imdm-111-l" target="_blank">Complete IMDM</a>| Media | 800 mL
-Saturday | <a href="https://cegrcode.github.io/GeneralLab/buffers/#complete-iscoves-modified-dulbeccos-medium-imdm-111-l" target="_blank">Complete IMDM</a>| Media | 1.4 L
+Monday | [Complete IMDM][complete-iscoves-modified-dulbeccos-medium-imdm-111-l]| Media | 62 mL
+Tuesday | [Complete IMDM][complete-iscoves-modified-dulbeccos-medium-imdm-111-l]| Media | 122 mL
+Wednesday | [Complete IMDM][complete-iscoves-modified-dulbeccos-medium-imdm-111-l]| Media | 200 mL
+Thursday | [Complete IMDM][complete-iscoves-modified-dulbeccos-medium-imdm-111-l]| Media | 400 mL
+Friday | [Complete IMDM][complete-iscoves-modified-dulbeccos-medium-imdm-111-l]| Media | 800 mL
+Saturday | [Complete IMDM][complete-iscoves-modified-dulbeccos-medium-imdm-111-l]| Media | 1.4 L
 
 <p>&nbsp;</p>
 
@@ -85,9 +90,9 @@ Saturday | <a href="https://cegrcode.github.io/GeneralLab/buffers/#complete-isco
 
 Day | Buffer/Solution | Use | Amount Needed
 :---------- | :--------- | :------ | :-----:
-Friday | <a href="https://cegrcode.github.io/GeneralLab/buffers/#complete-iscoves-modified-dulbeccos-medium-imdm-111-l" target="_blank">Complete IMDM</a>| Media | 375 mL
-Saturday | <a href="https://cegrcode.github.io/GeneralLab/buffers/#complete-iscoves-modified-dulbeccos-medium-imdm-111-l" target="_blank">Complete IMDM</a>| Media | 750 mL
-Sunday | <a href="https://cegrcode.github.io/GeneralLab/buffers/#complete-iscoves-modified-dulbeccos-medium-imdm-111-l" target="_blank">Complete IMDM</a>| Media | 1.5 L
+Friday | [Complete IMDM][complete-iscoves-modified-dulbeccos-medium-imdm-111-l]| Media | 375 mL
+Saturday | [Complete IMDM][complete-iscoves-modified-dulbeccos-medium-imdm-111-l]| Media | 750 mL
+Sunday | [Complete IMDM][complete-iscoves-modified-dulbeccos-medium-imdm-111-l]| Media | 1.5 L
 
 <p>&nbsp;</p>
 
@@ -95,13 +100,13 @@ Sunday | <a href="https://cegrcode.github.io/GeneralLab/buffers/#complete-iscove
 
 Buffer/Solution | Use | Amount Per Harvest
 :--------- | :------  | :------:
-<a href="https://cegrcode.github.io/GeneralLab/buffers/#complete-iscoves-modified-dulbeccos-medium-imdm-111-l" target="_blank">Complete IMDM</a> | Media | 1.5 L/375 mL
-<a href="https://cegrcode.github.io/GeneralLab/buffers/#complete-protease-inhibitor-edta-free-cpi-1-ml" target="_blank">CPI</a> | Protease Inhibitor | 1 mL
+[Complete IMDM][complete-iscoves-modified-dulbeccos-medium-imdm-111-l] | Media | 1.5 L/375 mL
+[CPI][complete-protease-inhibitor-edta-free-cpi-1-ml] | Protease Inhibitor | 1 mL
 <a href="http://www.emsdiasum.com/microscopy/products/chemicals/formaldehyde.aspx#15700" target="_blank">32% Formaldehyde, Methanol-Free, 10 mL</a> (Old PCRP XL) | Crosslinking | 4.03 mL
 <a href="http://www.emsdiasum.com/microscopy/products/chemicals/formaldehyde.aspx#15700" target="_blank">16% Formaldehyde, Methanol Free, 100 mL</a> | Crosslinking | 100/175 mL
-<a href="https://cegrcode.github.io/GeneralLab/buffers/#25-m-glycine-1-l" target="_blank">2.5 M Glycine</a> (Old PCRP XL) | Quenching | 6.8 mL
-<a href="https://cegrcode.github.io/GeneralLab/buffers/#3-m-tris-hcl-ph-78-4-l" target="_blank">3 M Tris-HCl, pH 7.8</a> | Quenching | 400/700 mL
-<a href="https://cegrcode.github.io/GeneralLab/buffers/#1x-pbs-1-l" target="_blank">1X PBS</a> | Wash Buffer | 150/200 mL
+[2.5 M Glycine][25-m-glycine-1-l] (Old PCRP XL) | Quenching | 6.8 mL
+[3 M Tris-HCl, pH 7.8][3-m-tris-hcl-ph-78-4-l] | Quenching | 400/700 mL
+[1X PBS][1x-pbs-1-l] | Wash Buffer | 150/200 mL
 
 Different volumes above demarcated by slashes indicate required amounts for regular vs. Friday harvest volumes (1.5 L vs. 2.625 L, respectively).
 
@@ -112,7 +117,7 @@ Different volumes above demarcated by slashes indicate required amounts for regu
 *Note: It is recommended to perform seeding on Friday afternoon.*
 
 1. Turn UV light on in the biological safety hood to sterilize the exposed surfaces in the hood.
-2. After 30 minutes of sterilization, make <a href="https://cegrcode.github.io/GeneralLab/buffers/#complete-iscoves-modified-dulbeccos-medium-imdm-111-l" target="_blank">complete IMDM</a>. Place one complete media bottle in the 37˚C water bath and let warm up for 15 minutes. Store remaining complete media bottles at 4˚C.
+2. After 30 minutes of sterilization, make [Complete IMDM][complete-iscoves-modified-dulbeccos-medium-imdm-111-l]. Place one complete media bottle in the 37˚C water bath and let warm up for 15 minutes. Store remaining complete media bottles at 4˚C.
 3. While the media warms up prepare a table-top centrifuge by heating it to 37˚C, and obtain the following things:
 	* One 15 mL conical tube, two T-25 flasks, a tube rack, a serological pipette, three 10 mL serological tips, four 5 mL serological tips, p1000 pipette and tips, a roll of masking tape, and a black sharpie.
 	* Label the 15 mL conical tube and two pieces of thick masking tape with cell line (K562), passage number (p1 for seeding), date, and initials in black sharpie.
@@ -126,8 +131,8 @@ Different volumes above demarcated by slashes indicate required amounts for regu
 10. Wipe conical tube with 70% ethanol, bring back into hood, decant the supernatant with a 10 mL serological tip, and re-suspend the cell pellet in 10 mL complete media using a new 10 mL serological tip.
 11. Transfer 5 mL of solution containing cells to each T-25 flask, using a new 5 mL serological each time.
 	* Remove T-25 flasks from hood, wipe down with 70% ethanol, and place each piece of dated masking tape on the exterior of the flask as shown below on the left.
-	* Place the T-25 flasks in the 37˚C, 5% CO2 incubator with the label-face up and lid tilted up as shown below on the right. <p>&nbsp;</p> <img align="left" src="../images/89_T25_Flask.jpg"> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <img align="right" width="350" height="150" src="../images/83_T25_flask_on_side.jpg"> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
-12. Check on cells in 2-3 days by visualizing an aliquot under the microscope and performing a <a href="https://cegrcode.github.io/GeneralLab/mammalian/#performing-a-cell-count" target="_blank">cell count</a> before beginning scale-up procedure.
+	* Place the T-25 flasks in the 37˚C, 5% CO2 incubator with the label-face up and lid tilted up as shown below on the right. <p>&nbsp;</p> <img align="left" src={require('./images/89_T25_Flask.jpg').default}/> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <img align="right" width="350" height="150" src={require('./images/83_T25_flask_on_side.jpg').default}/> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+12. Check on cells in 2-3 days by visualizing an aliquot under the microscope and performing a [cell count][performing-a-cell-count] before beginning scale-up procedure.
 13. Remove everything from the hood, discard all serological tips, the 15 mL conical, and the K562 seeding tube in the biohazard receptacle, place remaining complete media at 4˚C, turn off the centrifuge, wipe down interior of the hood with 70% ethanol, and UV the hood for 30 minutes.
 
 ### Scale-Up
@@ -149,7 +154,7 @@ Saturday | 3 L spinner | 1 | 1600 mL | 3 L spinner (same flask) | 1 | 3000 mL
 
 ##### Monday
 
-1. Turn on the UV light in the biological safety hood for 30 minutes and warm an open bottle of <a href="https://cegrcode.github.io/GeneralLab/buffers/#complete-iscoves-modified-dulbeccos-medium-imdm-111-l" target="_blank">complete IMDM</a> in a 37˚C water bath.
+1. Turn on the UV light in the biological safety hood for 30 minutes and warm an open bottle of [Complete IMDM][complete-iscoves-modified-dulbeccos-medium-imdm-111-l] in a 37˚C water bath.
 2. While the hood is being cleaned and the media is warming up, obtain the following things:
 	* Two T-175 flasks
 	* Two 5 mL serological tips
@@ -161,21 +166,21 @@ Saturday | 3 L spinner | 1 | 1600 mL | 3 L spinner (same flask) | 1 | 3000 mL
 3. Label two pieces of thick masking tape with cell line (K562), passage number (p2), date, and initials in black sharpie and set them aside for later.
 4. Once the UV light in the hood turns off, wipe down all of the aforementioned items besides the masking tape and the sharpie and place in the hood.
 5. Obtain the two T-25 flasks from the incubator, remove their tape labels to place in a lab notebook, wipe the exterior of the flask with 70% ethanol and place under the hood.
-	* Perform a <a href="https://cegrcode.github.io/GeneralLab/mammalian/#performing-a-cell-count" target="_blank">cell count</a> for each T-25 flask and record in a notebook.
+	* Perform a [cell count][performing-a-cell-count] for each T-25 flask and record in a notebook.
 6. Fetch the media bottle and wipe down its exterior with 70% ethanol and place in the hood.
 7. Carefully transfer the 9 mL in each T-25 flask to one T-175 flask with a new 10 mL serological tip for each T-25 flask.
 	* *Note: Keep flasks standing upright while manipulating media.*
 8. Use a 10 mL and a 50 mL serological tip to transfer 62 mL of fresh media into the T-175 flask containing the 18 mL of cell-containing media from the T-25 flasks.
 9. Transfer 40 mL of the media from the initial T-175 flask to the clean T-175 flask.
 10. Secure the lids on the T-175 flasks, remove them from the hood, wipe them down with 70% ethanol, and affix the tape labels in the orientation shown below on the left.
-	* Place the T-175 flasks in the 37˚C, 5% CO2 incubator with the label face-up and the lid tilted up as shown below on the right. <p>&nbsp;</p> <img align="left" width="200" height="200" src="../images/74_T175_flask_K562_general.jpg"> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <img align="right" width="350" height="150" src="../images/81_T175_flask_on_side.jpg"> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+	* Place the T-175 flasks in the 37˚C, 5% CO2 incubator with the label face-up and the lid tilted up as shown below on the right. <p>&nbsp;</p> <img align="left" width="200" height="200" src={require('./images/74_T175_flask_K562_general.jpg').default}/> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <img align="right" width="350" height="150" src={require('./images/81_T175_flask_on_side.jpg').default}/> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
 11. Discard the empty T-25 flasks and the used serological tips in the biohazard receptacle, and remove all other items from the hood.
 	* Wipe the interior with 70% ethanol and then turn the UV light on for 30 minutes.
 12. Perform the next scale-up phase at the same time on the next day.
 
 ##### Tuesday
 
-13. Repeat steps from previous day, including the <a href="https://cegrcode.github.io/GeneralLab/mammalian/#performing-a-cell-count" target="_blank">cell count</a> for each T-175 flask, but replace required items/consumables with following list:
+13. Repeat steps from previous day, including the [cell count][performing-a-cell-count] for each T-175 flask, but replace required items/consumables with following list:
 	* One bottle of warm media (from previous day)
 	* Two 5 mL serological tips
 	* One 500 mL spinner flask
@@ -186,7 +191,7 @@ Saturday | 3 L spinner | 1 | 1600 mL | 3 L spinner (same flask) | 1 | 3000 mL
 14. Transfer the full 39 mL from each T-175 flask into the 500 mL spinner flask through one of its side lids with two separate 50 mL serological tips.
 	* *Note: Never put down the side lid in the hood.*
 15. Use three separate 50 mL serological tips to transfer a total of 122 mL of fresh media to the 500 mL spinner flask containing 80 mL of cell-containing media through the same side lid.
-16. Be sure that the label is affixed to the flask as shown below after wiping with 70% ethanol, loosening the side lids to final thread, and ensuring that the stir plate is on the correct setting (___) before closing the door to the 37˚C, 5% CO2 incubator. <p>&nbsp;</p> <img align="left" width="300" height="300" src="../images/73_500_mL_flask_K562.jpg"> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+16. Be sure that the label is affixed to the flask as shown below after wiping with 70% ethanol, loosening the side lids to final thread, and ensuring that the stir plate is on the correct setting (___) before closing the door to the 37˚C, 5% CO2 incubator. <p>&nbsp;</p> <img align="left" width="300" height="300" src={require('./images/73_500_mL_flask_K562.jpg').default}/> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
 17. Discard the empty T-175 flasks and serological tips in the biohazard receptacle, and remove all other items from the hood.
 	* Wipe the interior with 70% ethanol and then turn the UV light on for 30 minutes.
 18. Perform next scale-up phase at the same time on the next day.
@@ -205,7 +210,7 @@ Saturday | 3 L spinner | 1 | 1600 mL | 3 L spinner (same flask) | 1 | 3000 mL
 21. Open the door to the 37˚C, 5% CO2 incubator, tighten the side lids on the 500 mL spinner flask and wipe flask down with 70% ethanol before placing inside the hood.
 	* Press the "lightening bolt" button on the outside of the hood to turn on the outlet that provides electricity for the peristaltic pump.
 22. Loosen the right side lid on the flask as well as the lid for the complete media bottle (flask should be all the way on the left, followed by media and then peristaltic pump).
-	* Perform a <a href="https://cegrcode.github.io/GeneralLab/mammalian/#performing-a-cell-count" target="_blank">cell count</a> for the 500 mL flask.
+	* Perform a [cell count][performing-a-cell-count] for the 500 mL flask.
 23. Remove the plastic tubing from the Nalgene bottle and nestle it into the compartment on the front of the peristaltic pump, close the compartment, and press the start button on control pad as shown below. ![Peristaltic Pump](./images/86_Peristaltic_Pump.png)
 	* Take the left end of the tubing in your right hand and the right end of the 	tubing in your left hand (pump feeds out of the right end and takes in through 		the left end).
 	* Carefully remove the lid of the media with your right hand and place the left end of the tubing into the bottle while keeping the lid in hand.
@@ -214,7 +219,7 @@ Saturday | 3 L spinner | 1 | 1600 mL | 3 L spinner (same flask) | 1 | 3000 mL
 	* Transfer 200 mL of media into the 500 mL flask using the gradations on the flask as a guide.
 25. Once the media has been transferred, remove the right end of the tubing from the 500 mL flask and place it in the 500 mL beaker with dH2O, fasten the right side lid on the flask tightly, and remove the left end of the tubing from the media and place in the 500 mL beaker with dH2O.
 26. Remove the 500 mL spinner flask from the hood, wipe down with 70% ethanol, and place the pre-labeled masking tape on the flask as shown below.
-	* Be sure to loosen the side lids on the 500 mL flask to the final thread before closing the incubator door, and check that the setting on the magnetic stir plate reads (___). <p>&nbsp;</p> <img align="left" width="300" height="300" src="../images/73_500_mL_flask_K562.jpg"> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+	* Be sure to loosen the side lids on the 500 mL flask to the final thread before closing the incubator door, and check that the setting on the magnetic stir plate reads (___). <p>&nbsp;</p> <img align="left" width="300" height="300" src={require('./images/73_500_mL_flask_K562.jpg').default}/> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
 27. Remove all items from the hood.
 	* Wipe down the interior of the hood with 70% ethanol and turn on the UV light for 30 minutes.
 	* Replace the used media bottle back in the 4˚C refrigerator.
@@ -236,7 +241,7 @@ Saturday | 3 L spinner | 1 | 1600 mL | 3 L spinner (same flask) | 1 | 3000 mL
 31. Open the door to the 37˚C, 5% CO2 incubator, tighten the side lids on the 500 mL spinner flask and wipe flask down with 70% ethanol before placing inside the hood.
 	* Press the "lightening bolt" button on the outside of the hood to turn on the outlet that provides electricity for the peristaltic pump.
 32. Loosen the right side lid on the 500 mL and 1 L flasks, as well as the lid for the complete media bottle (1 L flask should be all the way on the left, followed by the 500 mL flask, the media and then the peristaltic pump).
-	* Perform a <a href="https://cegrcode.github.io/GeneralLab/mammalian/#performing-a-cell-count" target="_blank">cell count</a> for the 500 mL flask.
+	* Perform a [cell count][performing-a-cell-count] for the 500 mL flask.
 33. Remove the plastic tubing from the Nalgene bottle and nestle it into the compartment on the front of the peristaltic pump, close the compartment, and press the start button on control pad as shown below. ![Peristaltic Pump](./images/86_Peristaltic_Pump.png)
 	* Take the left end of the tubing in your right hand and the right end of the 	tubing in your left hand (pump feeds out of the right end and takes in through 		the left end).
 	* Carefully remove the lid of the media with your right hand and place the left end of the tubing into the bottle while keeping the lid in hand.
@@ -248,7 +253,7 @@ Saturday | 3 L spinner | 1 | 1600 mL | 3 L spinner (same flask) | 1 | 3000 mL
 	* Activate the pump with the foot pedal, and transfer the 400 mL of cell-containing media from the 500 mL spinner flask to the 1 L spinner flask.
 	* Once the cell-containing media has been transferred, remove the right end of the tubing from the 1 L flask and place it in the 500 mL beaker with dH2O, fasten the right side lid on the flask tightly, and remove the left end of the tubing from the 500 mL flask and place in the 500 mL beaker with dH2O.
 36. Remove the 1 L spinner flask from the hood, wipe down with 70% ethanol, and place the pre-labeled masking tape on the flask as shown below.
-	* Be sure to loosen the side lids on the 1 L flask to the final thread before closing the incubator door, and check that the setting on the magnetic stir plate reads (___). <p>&nbsp;</p> <img align="left" width="350" height="350" src="../images/72_1L_spinner_flask_K562.jpeg"> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+	* Be sure to loosen the side lids on the 1 L flask to the final thread before closing the incubator door, and check that the setting on the magnetic stir plate reads (___). <p>&nbsp;</p> <img align="left" width="350" height="350" src={require('./images/72_1L_spinner_flask_K562.jpeg').default}/> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
 37. Remove all items from the hood.
 	* Wipe down the interior of the hood with 70% ethanol and turn on the UV light for 30 minutes.
 	* Replace the used media bottle back in the 4˚C refrigerator.
@@ -270,7 +275,7 @@ Saturday | 3 L spinner | 1 | 1600 mL | 3 L spinner (same flask) | 1 | 3000 mL
 41. Open the door to the 37˚C, 5% CO2 incubator, tighten the side lids on the 1 L spinner flask and wipe flask down with 70% ethanol before placing inside the hood.
 	* Press the "lightening bolt" button on the outside of the hood to turn on the outlet that provides electricity for the peristaltic pump.
 42. Loosen the right side lid on the 1 L and 3 L flasks, as well as the lids for the complete media bottles (3 L flask should be all the way on the left, followed by the 1 L flask, the media and then the peristaltic pump).
-	* Perform a <a href="https://cegrcode.github.io/GeneralLab/mammalian/#performing-a-cell-count" target="_blank">cell count</a> for the 1 L flask.
+	* Perform a [cell count][performing-a-cell-count] for the 1 L flask.
 43. Remove the plastic tubing from the Nalgene bottle and nestle it into the compartment on the front of the peristaltic pump, close the compartment, and press the start button on control pad as shown below. ![Peristaltic Pump](./images/86_Peristaltic_Pump.png)
 	* Take the left end of the tubing in your right hand and the right end of the 	tubing in your left hand (pump feeds out of the right end and takes in through 		the left end).
 	* Carefully remove the lid of the media with your right hand and place the left end of the tubing into the bottle while keeping the lid in hand.
@@ -283,7 +288,7 @@ Saturday | 3 L spinner | 1 | 1600 mL | 3 L spinner (same flask) | 1 | 3000 mL
 	* Activate the pump with the foot pedal, and transfer the 800 mL of cell-containing media from the 1 L spinner flask to the 3 L spinner flask.
 	* Once the cell-containing media has been transferred, remove the right end of the tubing from the 3 L flask and place it in the 500 mL beaker with dH2O, fasten the right side lid on the flask tightly, and remove the left end of the tubing from the 1 L flask and place in the 500 mL beaker with dH2O.
 46. Remove the 3 L spinner flask from the hood, wipe down with 70% ethanol, and place the pre-labeled masking tape on the flask as shown below.
-	* Be sure to loosen the side lids on the 3 L flask to the final thread before closing the incubator door, and check that the setting on the magnetic stir plate reads (___). <p>&nbsp;</p> <img align="left" width="350" height="350" src="../images/87_3L_Spinner_Flask.png"> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+	* Be sure to loosen the side lids on the 3 L flask to the final thread before closing the incubator door, and check that the setting on the magnetic stir plate reads (___). <p>&nbsp;</p> <img align="left" width="350" height="350" src={require('./images/87_3L_Spinner_Flask.png').default}/> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
 47. Remove all items from the hood.
 	* Wipe down the interior of the hood with 70% ethanol and turn on the UV light for 30 minutes.
 	* Replace the used media bottle back in the 4˚C refrigerator.
@@ -305,7 +310,7 @@ Saturday | 3 L spinner | 1 | 1600 mL | 3 L spinner (same flask) | 1 | 3000 mL
 51. Open the door to the 37˚C, 5% CO2 incubator, tighten the side lids on the 3 L spinner flask and wipe flask down with 70% ethanol before placing inside the hood.
 	* Press the "lightening bolt" button on the outside of the hood to turn on the outlet that provides electricity for the peristaltic pump.
 52. Loosen the right side lid on the 3 L flask, as well as the lids for the complete media bottles (3 L flask should be all the way on the left, followed by the media and then the peristaltic pump).
-	* Perform a <a href="https://cegrcode.github.io/GeneralLab/mammalian/#performing-a-cell-count" target="_blank">cell count</a> for the 3 L flask.
+	* Perform a [cell count][performing-a-cell-count] for the 3 L flask.
 53. Remove the plastic tubing from the Nalgene bottle and nestle it into the compartment on the front of the peristaltic pump, close the compartment, and press the start button on control pad as shown below. ![Peristaltic Pump](./images/86_Peristaltic_Pump.png)
 	* Take the left end of the tubing in your right hand and the right end of the 	tubing in your left hand (pump feeds out of the right end and takes in through 		the left end).
 	* Carefully remove the lid of the media with your right hand and place the left end of the tubing into the bottle while keeping the lid in hand.
@@ -315,17 +320,17 @@ Saturday | 3 L spinner | 1 | 1600 mL | 3 L spinner (same flask) | 1 | 3000 mL
 	* You will have to switch media bottles to transfer 1400 mL in total.
 55. Once the media has been transferred, remove the right end of the tubing from the 3 L flask and place it in the 500 mL beaker with dH2O, fasten the right side lid on the flask tightly, and then remove the left end of the tubing from the media bottle and place in the 500 mL beaker with dH2O.
 56. Remove the 3 L spinner flask from the hood, wipe down with 70% ethanol, and place the pre-labeled masking tape on the flask as shown below.
-	* Be sure to loosen the side lids on the 3 L flask to the final thread before closing the incubator door, and check that the setting on the magnetic stir plate reads (___). <p>&nbsp;</p> <img align="left" width="350" height="350" src="../images/87_3L_Spinner_Flask.png"> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+	* Be sure to loosen the side lids on the 3 L flask to the final thread before closing the incubator door, and check that the setting on the magnetic stir plate reads (___). <p>&nbsp;</p> <img align="left" width="350" height="350" src={require('./images/87_3L_Spinner_Flask.png').default}/> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
 57. Remove all items from the hood.
 	* Wipe down the interior of the hood with 70% ethanol and turn on the UV light for 30 minutes.
 	* Replace the used media bottle back in the 4˚C refrigerator.
 	* Pour 10% bleach in the empty media bottles and allow 30 minutes of contact time before discarding the bottle in the biohazard receptacle.
 	* Clean the tubing and the Nalgene jar with <a href="https://www.amazon.com/Procter-Gamble-608-25574-Ivory-Detergent/dp/B00PKHS9WO" target="_blank">Ivory soap</a> two times with tap water, and then rinse once with dH2O.
-58. Perform a <a href="https://cegrcode.github.io/GeneralLab/mammalian/#regularfriday-harvest-protocol" target="_blank">Regular Harvest</a> the following day (Sunday) at the same time.
+58. Perform a [Regular Harvest][regularfriday-harvest-protocol] the following day (Sunday) at the same time.
 
 ##### Sunday
 
-Follow the <a href="https://cegrcode.github.io/GeneralLab/mammalian/#regularfriday-harvest-protocol" target="_blank">Regular Harvest</a> protocol.
+Follow the [Regular Harvest][regularfriday-harvest-protocol] protocol.
 
 #### From Friday Harvest
 
@@ -341,11 +346,11 @@ Sunday | 3 L spinner | 1 | 1500 mL | 3 L spinner (same flask) | 1 | 3000 mL
 
 ##### Friday
 
-See step 20 of <a href="https://cegrcode.github.io/GeneralLab/mammalian/#regularfriday-harvest-protocol" target="_blank">Friday Harvest</a> protocol for more details.
+See step 20 of [Friday Harvest][regularfriday-harvest-protocol] protocol for more details.
 
 ##### Saturday
 
-1. Turn on the UV light in the biological safety hood for 30 minutes and warm an open bottle of <a href="https://cegrcode.github.io/GeneralLab/buffers/#complete-iscoves-modified-dulbeccos-medium-imdm-111-l" target="_blank">complete IMDM</a> in a 37˚C water bath.
+1. Turn on the UV light in the biological safety hood for 30 minutes and warm an open bottle of [Complete IMDM][complete-iscoves-modified-dulbeccos-medium-imdm-111-l] in a 37˚C water bath.
 2. While the hood is being cleaned and the media is warming up, obtain the following things:
 	* One autoclaved <a href="https://us.vwr.com/store/product/4698442/nalgene-polypropylene-straight-sided-jars-thermo-scientific" target="_blank">Nalgene jar</a> containing plastic peristaltic pump tubing
 	* One 5 mL serological tip
@@ -358,7 +363,7 @@ See step 20 of <a href="https://cegrcode.github.io/GeneralLab/mammalian/#regular
 5. Open the door to the 37˚C, 5% CO2 incubator, tighten the side lids on the 3 L spinner flask and wipe flask down with 70% ethanol before placing inside the hood.
 	* Press the "lightening bolt" button on the outside of the hood to turn on the outlet that provides electricity for the peristaltic pump.
 6. Loosen the right side lid on the 3 L flask, as well as the lid for the complete media bottle (3 L flask should be all the way on the left, followed by the media and then the peristaltic pump).
-	* Perform a <a href="https://cegrcode.github.io/GeneralLab/mammalian/#performing-a-cell-count" target="_blank">cell count</a> for the 3 L flask.
+	* Perform a [cell count][performing-a-cell-count] for the 3 L flask.
 7. Remove the plastic tubing from the Nalgene bottle and nestle it into the compartment on the front of the peristaltic pump, close the compartment, and press the start button on control pad as shown below. ![Peristaltic Pump](./images/86_Peristaltic_Pump.png)
 	* Take the left end of the tubing in your right hand and the right end of the 	tubing in your left hand (pump feeds out of the right end and takes in through 		the left end).
 	* Carefully remove the lid of the media with your right hand and place the left end of the tubing into the bottle while keeping the lid in hand.
@@ -367,7 +372,7 @@ See step 20 of <a href="https://cegrcode.github.io/GeneralLab/mammalian/#regular
 	* Transfer 750 mL of media into the 3 L flask using the gradations on the flask as a guide.
 9. Once the media has been transferred, remove the right end of the tubing from the 3 L flask and place it in the 500 mL beaker with dH2O, fasten the right side lid on the flask tightly, and then remove the left end of the tubing from the media bottle and place in the 500 mL beaker with dH2O.
 10. Remove the 3 L spinner flask from the hood, wipe down with 70% ethanol, and place the pre-labeled masking tape on the flask as shown below.
-	* Be sure to loosen the side lids on the 3 L flask to the final thread before closing the incubator door, and check that the setting on the magnetic stir plate reads (___). <p>&nbsp;</p> <img align="left" width="350" height="350" src="../images/87_3L_Spinner_Flask.png"> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+	* Be sure to loosen the side lids on the 3 L flask to the final thread before closing the incubator door, and check that the setting on the magnetic stir plate reads (___). <p>&nbsp;</p> <img align="left" width="350" height="350" src={require('./images/87_3L_Spinner_Flask.png').default}/> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
 11. Remove all items from the hood.
 	* Wipe down the interior of the hood with 70% ethanol and turn on the UV light for 30 minutes.
 	* Replace the used media bottle back in the 4˚C refrigerator.
@@ -389,7 +394,7 @@ See step 20 of <a href="https://cegrcode.github.io/GeneralLab/mammalian/#regular
 15. Open the door to the 37˚C, 5% CO2 incubator, tighten the side lids on the 3 L spinner flask and wipe flask down with 70% ethanol before placing inside the hood.
 	* Press the "lightening bolt" button on the outside of the hood to turn on the outlet that provides electricity for the peristaltic pump.
 16. Loosen the right side lid on the 3 L flask, as well as the lids for the complete media bottles (3 L flask should be all the way on the left, followed by the media and then the peristaltic pump).
-	* Perform a <a href="https://cegrcode.github.io/GeneralLab/mammalian/#performing-a-cell-count" target="_blank">cell count</a> for the 3 L flask.
+	* Perform a [cell count][performing-a-cell-count] for the 3 L flask.
 17. Remove the plastic tubing from the Nalgene bottle and nestle it into the compartment on the front of the peristaltic pump, close the compartment, and press the start button on control pad as shown below. ![Peristaltic Pump](./images/86_Peristaltic_Pump.png)
 	* Take the left end of the tubing in your right hand and the right end of the 	tubing in your left hand (pump feeds out of the right end and takes in through 		the left end).
 	* Carefully remove the lid of the media with your right hand and place the left end of the tubing into the bottle while keeping the lid in hand.
@@ -399,13 +404,13 @@ See step 20 of <a href="https://cegrcode.github.io/GeneralLab/mammalian/#regular
 	* You will have to move the left end of the tubing to a new media bottle to transfer the full 1500 mL to the 3 L spinner flask.
 19. Once the media has been transferred, remove the right end of the tubing from the 3 L flask and place it in the 500 mL beaker with dH2O, fasten the right side lid on the flask tightly, and then remove the left end of the tubing from the media bottle and place in the 500 mL beaker with dH2O.
 20. Remove the 3 L spinner flask from the hood, wipe down with 70% ethanol, and place the pre-labeled masking tape on the flask as shown below.
-	* Be sure to loosen the side lids on the 3 L flask to the final thread before closing the incubator door, and check that the setting on the magnetic stir plate reads (___). <p>&nbsp;</p> <img align="left" width="350" height="350" src="../images/87_3L_Spinner_Flask.png"> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+	* Be sure to loosen the side lids on the 3 L flask to the final thread before closing the incubator door, and check that the setting on the magnetic stir plate reads (___). <p>&nbsp;</p> <img align="left" width="350" height="350" src={require('./images/87_3L_Spinner_Flask.png').default}/> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
 21. Remove all items from the hood.
 	* Wipe down the interior of the hood with 70% ethanol and turn on the UV light for 30 minutes.
 	* Replace the used media bottle back in the 4˚C refrigerator.
 	* Pour 10% bleach in any empty media bottles and allow 30 minutes of contact time before discarding the bottle in the biohazard receptacle.
 	* Clean the tubing and the Nalgene jar with <a href="https://www.amazon.com/Procter-Gamble-608-25574-Ivory-Detergent/dp/B00PKHS9WO" target="_blank">Ivory soap</a> two times with tap water, and then rinse once with dH2O.
-22. Perform a <a href="https://cegrcode.github.io/GeneralLab/mammalian/#regularfriday-harvest-protocol" target="_blank">Regular Harvest</a> the following day (Monday) at the same time.
+22. Perform a [Regular Harvest][regularfriday-harvest-protocol] the following day (Monday) at the same time.
 
 ### Creating Cell Stocks
 
@@ -419,11 +424,11 @@ Buffer/Solution/Consumable/Plasticware | Regular Harvest Amount | Friday Harvest
 :--------- | :------: | :------:
 Labeled 2 mL Screw Cap tubes<sup>1</sup> | 20 | 40
 K562-labeled 50 mL conical tubes<sup>2</sup> | 4 | 5
-50 mL <a href="https://cegrcode.github.io/GeneralLab/buffers/#1x-pbs-1-l" target="_blank">1X PBS</a> w/ 2 µL/mL  <a href="https://cegrcode.github.io/GeneralLab/buffers/#complete-protease-inhibitor-edta-free-cpi-1-ml" target="_blank">CPI</a> aliquots<sup>3</sup> | 3 | 4
+50 mL [1X PBS][1x-pbs-1-l] w/ 2 µL/mL  [CPI][complete-protease-inhibitor-edta-free-cpi-1-ml] aliquots<sup>3</sup> | 3 | 4
 500 mL <a href="https://www.thermofisher.com/order/catalog/product/3141-0250#/3141-0250" target="_blank">Nalgene centrifuge bottles</a><sup>4</sup> | 6 | 8
-<a href="https://cegrcode.github.io/GeneralLab/buffers/#complete-iscoves-modified-dulbeccos-medium-imdm-111-l" target="_blank">Complete IMDM bottles</a><sup>5</sup> | 2 | 1
+[Complete IMDM bottles][complete-iscoves-modified-dulbeccos-medium-imdm-111-l]<sup>5</sup> | 2 | 1
 <a href="http://www.emsdiasum.com/microscopy/products/chemicals/formaldehyde.aspx#15700" target="_blank">16% Formaldehyde, Methanol Free, 100 mL</a><sup>6</sup> | 1 bottle (100 mL) | 2 bottles (175 mL)
-<a href="https://cegrcode.github.io/GeneralLab/buffers/#3-m-tris-hcl-ph-78-4-l" target="_blank">3 M Tris-HCl, pH 7.8</a><sup>7</sup> | 400 mL | 700 mL
+[3 M Tris-HCl, pH 7.8][3-m-tris-hcl-ph-78-4-l]<sup>7</sup> | 400 mL | 700 mL
 
 Superscripts in table above are referenced throughout protocol below where specific quantities are required.
 
@@ -431,17 +436,17 @@ Superscripts in table above are referenced throughout protocol below where speci
 
 #### Regular/Friday Harvest Protocol
 
-1. Turn on the UV light in the biological safety hood for 30 minutes and warm <a href="https://cegrcode.github.io/GeneralLab/buffers/#complete-iscoves-modified-dulbeccos-medium-imdm-111-l" target="_blank">complete IMDM</a><sup>5</sup> bottles in a 37˚C water bath.
+1. Turn on the UV light in the biological safety hood for 30 minutes and warm [Complete IMDM][complete-iscoves-modified-dulbeccos-medium-imdm-111-l]<sup>5</sup> bottles in a 37˚C water bath.
 2. Print <a href="https://us.vwr.com/store/product/12610555/cryo-babies-and-cryo-tags-laser-labels-diversified-biotech" target="_blank">Diversified Biotech Labels</a><sup>1</sup> with information included in the format shown below. ![Mammalian Screw Cap Label](./images/88_Mammalian_Screw_Cap_Label.jpeg)
 3. Pre-label twenty 2 mL conical screw cap tubes<sup>1</sup> from <a href="https://www.usascientific.com/ screw-cap-micro-tube-conical/p/sct-conical-nat" target="_blank">USA Scientific</a> with these printed labels as shown above (Note: label above represents old crosslinking and quenching (PCRP) conditions).
 	* Additionally, label 50 mL conical tubes with K562<sup>2</sup> on the lid.
 4. Fast-temp two <a href="https://www.fishersci.ca/shop/products/sorvall-rc-6-plus-centrifuge/361010816" target="_blank">Thermo Scientific Sorvall Centrifuges</a>, a <a href="https://online-shop.eppendorf.us/US-en/Centrifugation-44533/Centrifuges-44534/Centrifuge-5810-5810R-PF-240994.html" target="_blank">Eppendorf table-top centrifuge</a>, and a <a href="https://online-shop.eppendorf.us/US-en/Centrifugation-44533/Centrifuges-44534/Centrifuge-5418R-PF-240995.html" target="_blank">Eppendorf microcentrifuge</a> to 4˚C.
-5. Prepare 50 mL conicals containing 50 mL <a href="https://cegrcode.github.io/GeneralLab/buffers/#1x-pbs-1-l" target="_blank">1X PBS</a> and 100 µL <a href="https://cegrcode.github.io/GeneralLab/buffers/#complete-protease-inhibitor-edta-free-cpi-1-ml" target="_blank">CPI</a> (2 µL/mL)<sup>3</sup> in an ice bucket.
+5. Prepare 50 mL conicals containing 50 mL [1X PBS][1x-pbs-1-l] and 100 µL [CPI][complete-protease-inhibitor-edta-free-cpi-1-ml] (2 µL/mL)<sup>3</sup> in an ice bucket.
 6. Gather the following things:
 	* **Common Necessities**
 		* 500 mL <a href="https://www.thermofisher.com/order/catalog/product/3141-0250#/3141-0250" target="_blank">Nalgene centrifuge bottles</a><sup>4</sup> with orange gasket in lid
 		* 500 mL plastic beaker with dH2O
-		* 1 L aliquot of <a href="https://cegrcode.github.io/GeneralLab/buffers/#3-m-tris-hcl-ph-78-4-l" target="_blank">3 M Tris-HCl, pH 7.8</a><sup>7</sup>
+		* 1 L aliquot of [3 M Tris-HCl, pH 7.8][3-m-tris-hcl-ph-78-4-l]<sup>7</sup>
 		* <a href="http://www.emsdiasum.com/microscopy/products/chemicals/formaldehyde.aspx#15700" target="_blank">16% Formaldehyde, Methanol Free, 100 mL</a><sup>6</sup>
 		* One autoclaved <a href="https://us.vwr.com/store/product/4698442/nalgene-polypropylene-straight-sided-jars-thermo-scientific" target="_blank">Nalgene jar</a> containing plastic peristaltic pump tubing
 		* Serological pipette
@@ -467,7 +472,7 @@ Superscripts in table above are referenced throughout protocol below where speci
 14. Loosen the side lid on the left side of the flask and rotate it 180 degrees so that the loosened lid is now on the right.
 	* Remove 1 mL of cell-containing media using a serological tip and dispense in the 15 mL conical.
 	* Put the side lid on tightly, remove the flask from the hood, clean its exterior with 70% ethanol before placing back in the incubator, and once placed inside the 	incubator and on the stir plate, loosen both side lids to allow for ample gas 		transfer.
-	* Perform a <a href="https://cegrcode.github.io/GeneralLab/mammalian/#performing-a-cell-count" target="_blank">cell count</a> (looking for 5 * 10^5 - 1 * 10^6 cells/mL).
+	* Perform a [cell count][performing-a-cell-count] (looking for 5 * 10^5 - 1 * 10^6 cells/mL).
 15. Once a cell count has been performed, wash gloves with 70% ethanol, tighten the side lids of the 3 L flask, wipe down with 70% ethanol outside of the incubator, and place in the hood.
 16. Loosen the left side lid and keep in-hand while carefully pouring cell-containing media into the plastic beaker containing formaldehyde.
 	* Promptly start the 10-minute timer once finished pouring and swirl the beaker every 1-2 minutes.
@@ -502,7 +507,7 @@ Superscripts in table above are referenced throughout protocol below where speci
 	* Add 20 mL cold 1X PBS w/ CPI via serological pipette to each 500 mL bottle and re-suspend the pellet.
 	* Transfer two pellets to a pre-labeled 50 mL conical tube (labeled w/ K562) for a total of 40 mL per 50 mL conical tube.
 26. Spin the 50 mL conicals in the tabletop centrifuge for 5 minutes at 1500*g and 4˚C.
-	* While the cells are spinning, obtain a dewar of liquid nitrogen (see below for dewar appearance). <p>&nbsp;</p> <img align="center" width="200" height="200" src="../images/65_liquid_nitrogen_benchtop_dewar.jpg">
+	* While the cells are spinning, obtain a dewar of liquid nitrogen (see below for dewar appearance). <p>&nbsp;</p> <img align="center" width="200" height="200" src={require('./images/65_liquid_nitrogen_benchtop_dewar.jpg').default}/>
 27. Decant the supernatant and re-suspend each pellet with 4.5 mL cold 1X PBS w/ CPI.
 	* Pool all solutions into a new pre-labeled 50 mL conical.
 	* Calculate how much more 1X PBS w/ CPI to add to make the concentration equal to 50*10^6 cells/mL.
@@ -529,9 +534,9 @@ Adherent cells.
 
 Day | Buffer/Solution | Use | Amount Per Flask
 :--- | :--------- | :------ | :-----:
-Seeding Day | <a href="https://cegrcode.github.io/GeneralLab/buffers/#complete-dulbeccos-modified-eagle-medium-dmem-111-l" target="_blank">Complete DMEM</a>| Media | 29 mL
-Day After Seeding | <a href="https://cegrcode.github.io/GeneralLab/buffers/#complete-dulbeccos-modified-eagle-medium-dmem-111-l" target="_blank">Complete DMEM</a>| Media | 40 mL
-Feeding Day | <a href="https://cegrcode.github.io/GeneralLab/buffers/#complete-dulbeccos-modified-eagle-medium-dmem-111-l" target="_blank">Complete DMEM</a>| Media | 40 mL
+Seeding Day | [Complete DMEM][complete-dulbeccos-modified-eagle-medium-dmem-111-l]| Media | 29 mL
+Day After Seeding | [Complete DMEM][complete-dulbeccos-modified-eagle-medium-dmem-111-l]| Media | 40 mL
+Feeding Day | [Complete DMEM][complete-dulbeccos-modified-eagle-medium-dmem-111-l]| Media | 40 mL
 
 <p>&nbsp;</p>
 
@@ -539,9 +544,9 @@ Feeding Day | <a href="https://cegrcode.github.io/GeneralLab/buffers/#complete-d
 
 Buffer/Solution | Use | Amount Per Passage
 :--------- | :------ | :-----:
-<a href="https://cegrcode.github.io/GeneralLab/buffers/#complete-dulbeccos-modified-eagle-medium-dmem-111-l" target="_blank">Complete DMEM</a>| Media | 49 mL
+[Complete DMEM][complete-dulbeccos-modified-eagle-medium-dmem-111-l]| Media | 49 mL
 <a href="https://www.thermofisher.com/order/catalog/product/25300054#/25300054" target="_blank">Trypsin-EDTA (0.05%)</a> | Enzyme | 12 mL
-<a href="https://cegrcode.github.io/GeneralLab/buffers/#1x-pbs-1-l" target="_blank">1X PBS</a> | Wash Buffer | 40 mL
+[1X PBS][1x-pbs-1-l] | Wash Buffer | 40 mL
 
 <p>&nbsp;</p>
 
@@ -549,13 +554,13 @@ Buffer/Solution | Use | Amount Per Passage
 
 Buffer/Solution | Use | Amount Per Harvest
 :--------- | :------ | :-----:
-<a href="https://cegrcode.github.io/GeneralLab/buffers/#complete-dulbeccos-modified-eagle-medium-dmem-111-l" target="_blank">Complete DMEM</a> | Media | 12 mL
+[Complete DMEM][complete-dulbeccos-modified-eagle-medium-dmem-111-l] | Media | 12 mL
 <a href="https://www.thermofisher.com/order/catalog/product/25300054#/25300054" target="_blank">Trypsin-EDTA (0.05%)</a> | Enzyme | 12 mL
-<a href="https://cegrcode.github.io/GeneralLab/buffers/#complete-protease-inhibitor-edta-free-cpi-1-ml" target="_blank">CPI</a> | Protease Inhibitor | 1 mL
+[CPI][complete-protease-inhibitor-edta-free-cpi-1-ml] | Protease Inhibitor | 1 mL
 <a href="http://www.emsdiasum.com/microscopy/products/chemicals/formaldehyde.aspx#15700" target="_blank">32% Formaldehyde, Methanol-Free, 10 mL</a> | Crosslinking | 1.29 mL
-<a href="https://cegrcode.github.io/GeneralLab/buffers/#25-m-glycine-1-l" target="_blank">2.5 M Glycine</a> (Old Quench) | Quenching | 1.5 mL
-<a href="https://cegrcode.github.io/GeneralLab/buffers/#3-m-tris-hcl-ph-78-4-l" target="_blank">3 M Tris-HCl, pH 7.8</a> | Quenching | 9.5 mL
-<a href="https://cegrcode.github.io/GeneralLab/buffers/#1x-pbs-1-l" target="_blank">1X PBS</a> | Wash Buffer | 100 mL
+[2.5 M Glycine][25-m-glycine-1-l] (Old Quench) | Quenching | 1.5 mL
+[3 M Tris-HCl, pH 7.8][3-m-tris-hcl-ph-78-4-l] | Quenching | 9.5 mL
+[1X PBS][1x-pbs-1-l] | Wash Buffer | 100 mL
 
 Amount Per Harvest corresponds to amount of each component needed per T-175 flask containing 40 mL of cells+media.
 
@@ -564,7 +569,7 @@ Amount Per Harvest corresponds to amount of each component needed per T-175 flas
 ### Seeding
 
 1. Turn UV light on in the biological safety hood to sterilize the exposed surfaces in the hood.
-2. After 30 minutes of sterilization, make <a href="https://cegrcode.github.io/GeneralLab/buffers/#complete-dulbeccos-modified-eagle-medium-dmem-111-l" target="_blank">Complete DMEM</a>. Place one complete media bottle in the 37˚C water bath and let warm up for 15 minutes. Store remaining complete media bottles at 4˚C.
+2. After 30 minutes of sterilization, make [Complete DMEM][complete-dulbeccos-modified-eagle-medium-dmem-111-l]. Place one complete media bottle in the 37˚C water bath and let warm up for 15 minutes. Store remaining complete media bottles at 4˚C.
 3. While the media warms up obtain the following things: one T-175 flask, a tube rack, a serological pipette, one 50 mL serological tip, a p1000 pipette and tips, a roll of thick masking tape, and a black sharpie.
 	* Label one piece of thick masking tape with cell line, passage number (p1 for seeding), date, and initials in black sharpie.
 	* Wipe down gloves and then all aforementioned items, except for masking tape and sharpie (they stay outside of hood), with 70% ethanol before placing in the hood.
@@ -573,17 +578,17 @@ Amount Per Harvest corresponds to amount of each component needed per T-175 flas
 6. Rapidly thaw HepG2 seed stock in 37˚C water bath (DO NOT SUBMERGE TUBE), douse tube in 70% ethanol, dry with a paper towel, and place in the tube rack under the hood.
 7. Transfer entire seed stock of HepG2 (1 mL) to T-175 flask containing 29 mL of complete media using a p1000 pipette.
 8. Remove T-175 flask from hood, wipe down with 70% ethanol, and place the piece of dated thick masking tape on the exterior of the flask as shown below on the left.
-	* Place the T-175 flask in the 37˚C, 5% CO2 incubator with the label-face up and lid tilted up as shown below on the right. <p>&nbsp;</p> <img align="left" width="200" height="200" src="../images/82_T175_flask_HepG2_Seed.jpg"> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <img align="right" width="350" height="150" src="../images/81_T175_flask_on_side.jpg"> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+	* Place the T-175 flask in the 37˚C, 5% CO2 incubator with the label-face up and lid tilted up as shown below on the right. <p>&nbsp;</p> <img align="left" width="200" height="200" src={require('./images/82_T175_flask_HepG2_Seed.jpg').default}/> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <img align="right" width="350" height="150" src={require('./images/81_T175_flask_on_side.jpg').default}/> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
 9. Return the next day to change the media for the cells (bring up to 40 mL).
 	* Note: Cells must be split at least 1:8 three days after changing media following initial seeding.
 10. Remove everything from the hood, discard all serological tips and the HepG2 seeding tube in the biohazard receptacle, place remaining complete media at 4˚C, wipe down interior of the hood with 70% ethanol, and UV the hood for 30 minutes.
 
 ### Splitting
 
-1. Turn UV light on in the biological safety hood to sterilize the exposed surfaces in the hood for 30 minutes, and warm up one bottle of <a href="https://cegrcode.github.io/GeneralLab/buffers/#complete-dulbeccos-modified-eagle-medium-dmem-111-l" target="_blank">Complete DMEM</a> and <a href="https://www.thermofisher.com/order/catalog/product/25300054#/25300054" target="_blank">Trypsin-EDTA (0.05%)</a> in the 37˚C water bath for 30 minutes.
+1. Turn UV light on in the biological safety hood to sterilize the exposed surfaces in the hood for 30 minutes, and warm up one bottle of [Complete DMEM][complete-dulbeccos-modified-eagle-medium-dmem-111-l] and <a href="https://www.thermofisher.com/order/catalog/product/25300054#/25300054" target="_blank">Trypsin-EDTA (0.05%)</a> in the 37˚C water bath for 30 minutes.
 2. While the hood is being sterilized and the media is warming up, obtain the following things:
 	* Eight T-175 flasks (could be more depending on scale-up timeframe)
-	* One 50 mL aliquot of <a href="https://cegrcode.github.io/GeneralLab/buffers/#1x-pbs-1-l" target="_blank">1X PBS</a> in a 50 mL conical tube
+	* One 50 mL aliquot of [1X PBS][1x-pbs-1-l] in a 50 mL conical tube
 	* Tube rack
 	* 500 mL plastic beaker
 	* Serological pipette
@@ -606,7 +611,7 @@ Amount Per Harvest corresponds to amount of each component needed per T-175 flas
 11. Use a fresh 25 mL serological tip to transfer 3 mL of the cell-containing media to each of the eight T-175 flasks containing 37 mL of fresh media.
 	* Rock the flask on its side to mix the cells well.
 12. Remove the eight T-175 flasks from the hood and place one of the eight pieces of pre-labeled masking tape on each one as shown below on the left.
-	* Place the flasks in the 37˚C, 5% CO2 incubator with the label side up and the lid tilted up as shown below on the right, and close the incubator door. <p>&nbsp;</p> <img align="left" width="200" height="200" src="../images/75_T175_flask_HepG2_general.jpg"> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <img align="right" width="350" height="150" src="../images/81_T175_flask_on_side.jpg"> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+	* Place the flasks in the 37˚C, 5% CO2 incubator with the label side up and the lid tilted up as shown below on the right, and close the incubator door. <p>&nbsp;</p> <img align="left" width="200" height="200" src={require('./images/75_T175_flask_HepG2_general.jpg').default}/> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <img align="right" width="350" height="150" src={require('./images/81_T175_flask_on_side.jpg').default}/> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
 13. Remove everything from the hood, discard all serological tips in the biohazard receptacle, place remaining complete media and Trypsin-EDTA at 4˚C and -20˚C, respectively, incubate solution in 500 mL beaker with bleach for 30 minutes before discarding, wipe down interior of the hood with 70% ethanol, and UV the hood for 30 minutes.
 14. Cells must be visualized under a confocal microscope every 2-3 days to monitor confluency, and media must be changed every 2-3 days as well (these do not count as passages).
 	* Harvest or split again at 80% confluency, depending upon number of cells needed.
@@ -619,11 +624,11 @@ Amount Per Harvest corresponds to amount of each component needed per T-175 flas
 
 *Note: This protocol is written under the assumption that the user will be harvesting seven T-175 flasks that have reached 80% confluency.*
 
-1. Turn on the UV light in the biological safety hood for 30 minutes, and warm a <a href="https://cegrcode.github.io/GeneralLab/buffers/#complete-dulbeccos-modified-eagle-medium-dmem-111-l" target="_blank">complete DMEM</a> bottle and a <a href="https://www.thermofisher.com/order/catalog/product/25300054#/25300054" target="_blank">Trypsin-EDTA (0.05%)</a> bottle in a 37˚C water bath.
+1. Turn on the UV light in the biological safety hood for 30 minutes, and warm a [Complete DMEM][complete-dulbeccos-modified-eagle-medium-dmem-111-l] bottle and a <a href="https://www.thermofisher.com/order/catalog/product/25300054#/25300054" target="_blank">Trypsin-EDTA (0.05%)</a> bottle in a 37˚C water bath.
 2. Print <a href="https://us.vwr.com/store/product/12610555/cryo-babies-and-cryo-tags-laser-labels-diversified-biotech" target="_blank">Diversified Biotech Labels</a> with information included in the format shown below. ![Mammalian Screw Cap Label](./images/70_Mammalian_Screw_Cap_Label_HepG2.jpeg)
 3. Pre-label two 2 mL conical screw cap tubes from <a href="https://www.usascientific.com/ screw-cap-micro-tube-conical/p/sct-conical-nat" target="_blank">USA Scientific</a> with these printed labels as shown above.
 4. Fast-temp a <a href="https://online-shop.eppendorf.us/US-en/Centrifugation-44533/Centrifuges-44534/Centrifuge-5810-5810R-PF-240994.html" target="_blank">Eppendorf table-top centrifuge</a> and a <a href="https://online-shop.eppendorf.us/US-en/Centrifugation-44533/Centrifuges-44534/Centrifuge-5418R-PF-240995.html" target="_blank">Eppendorf microcentrifuge</a> to 4˚C.
-5. Prepare one 50 mL conical containing 50 mL <a href="https://cegrcode.github.io/GeneralLab/buffers/#1x-pbs-1-l" target="_blank">1X PBS</a> and 100 µL <a href="https://cegrcode.github.io/GeneralLab/buffers/#complete-protease-inhibitor-edta-free-cpi-1-ml" target="_blank">CPI</a> (2 µL/mL) in an ice bucket.
+5. Prepare one 50 mL conical containing 50 mL [1X PBS][1x-pbs-1-l] and 100 µL [CPI][complete-protease-inhibitor-edta-free-cpi-1-ml] (2 µL/mL) in an ice bucket.
 6. For the biological safety hood, prepare/gather the following things:
 	* Seven 1.29 mL aliquots of 32% formaldehyde in 15 mL conical tubes
 	* Seven 9.5 mL aliquots of 9.5 mL 3 M Tris-HCl, pH 7.8 in 15 mL conical tubes
@@ -662,11 +667,11 @@ Amount Per Harvest corresponds to amount of each component needed per T-175 flas
 	* Using a p200 pipette, remove 30 µL from each flask and dispense into a corresponding 0.5 mL tube.
 	* Transfer the 24 mL of cell-containing media into the four pre-labeled 50 mL conicals, 6 mL into each conical, with the same 25 mL serological tip for each flask (each conical should have 42 mL of cell-containing media).
 14. Spin the cells in the pre-cooled table-top centrifuge for 5 minutes at 1500*g and 4˚C.
-	* Perform a <a href="https://cegrcode.github.io/GeneralLab/mammalian/#performing-a-cell-count" target="_blank">cell count</a> while the cells are spinning.
+	* Perform a [cell count][performing-a-cell-count] while the cells are spinning.
 15. When the spin is complete, decant the supernatant and re-suspend the first pellet in 20 mL of chilled 1X PBS w/ CPI using a 25 mL serological tip.
 	* Use that same 20 mL to re-suspend the remaining pellets, such that all pellets are pooled into one 50 mL conical.
 16. Spin the cells for 5 minutes at 1500*g and 4˚C in the same table-top centrifuge.
-	* Obtain a small amount of liquid nitrogen in the bench-top dewar while the cells are spinning (see below for dewar appearance). <p>&nbsp;</p> <img align="center" width="200" height="200" src="../images/65_liquid_nitrogen_benchtop_dewar.jpg">
+	* Obtain a small amount of liquid nitrogen in the bench-top dewar while the cells are spinning (see below for dewar appearance). <p>&nbsp;</p> <img align="center" width="200" height="200" src={require('./images/65_liquid_nitrogen_benchtop_dewar.jpg').default}/>
 17. Decant the supernatant once the cells are finished spinning, and re-suspend the pellet in the requisite amount of 1X PBS + CPI to obtain a cell concentration of 50 M cells/mL.
 	* e.g. For the seven harvested flasks, the densities were all calculated to be 6.25*10^5 cells/mL. 6.25*10^5 cells/mL/flask * 24 mL = 15*10^6 cells/flask. 15*10^6 cells/flask * 7 flasks = 105*10^6 cells.
 	* To get 50*10^6 cells/mL, need 105*10^6 cells / 50*10^6 cells/mL = 2.1 mL
@@ -681,7 +686,7 @@ Amount Per Harvest corresponds to amount of each component needed per T-175 flas
 	* All used serological tips and conical tubes in contact with cell culture media should be placed in the biohazard receptacle.
 	* Empty media bottles should be incubated with 10% bleach for 30 minutes before disposing down sink and throwing away bottle in biohazard receptacle.
 	* Interior of hood should be wiped down with 70% ethanol and the hood's UV light should be turned on before leaving.
-23. Remaining T-175 flask should be split the following day by completing the <a href="https://cegrcode.github.io/GeneralLab/mammalian/#splitting_1" target="_blank">splitting</a> protocol.
+23. Remaining T-175 flask should be split the following day by completing the [splitting][splitting_1] protocol.
 
 ***
 
@@ -699,7 +704,7 @@ Suspension cells.
 
 Buffer/Solution | Use | Amount Needed
 :--------- | :------ | :-----:
-<a href="https://cegrcode.github.io/GeneralLab/buffers/#complete-roswell-park-memorial-institute-rpmi-1640-medium-111-l" target="_blank">Complete RPMI 1640</a> | Media | 19 mL
+[Complete RPMI 1640][complete-dulbeccos-modified-eagle-medium-dmem-111-l] | Media | 19 mL
 
 <p>&nbsp;</p>
 
@@ -707,12 +712,12 @@ Buffer/Solution | Use | Amount Needed
 
 Day | Buffer/Solution | Use | Amount Needed
 :---------- | :--------- | :------ | :-----:
-Monday | <a href="https://cegrcode.github.io/GeneralLab/buffers/#complete-roswell-park-memorial-institute-rpmi-1640-medium-111-l" target="_blank">Complete RPMI 1640</a> | Media | 31 mL
-Tuesday | <a href="https://cegrcode.github.io/GeneralLab/buffers/#complete-roswell-park-memorial-institute-rpmi-1640-medium-111-l" target="_blank">Complete RPMI 1640</a> | Media | 121 mL
-Wednesday | <a href="https://cegrcode.github.io/GeneralLab/buffers/#complete-roswell-park-memorial-institute-rpmi-1640-medium-111-l" target="_blank">Complete RPMI 1640</a> | Media | 240 mL
-Thursday | <a href="https://cegrcode.github.io/GeneralLab/buffers/#complete-roswell-park-memorial-institute-rpmi-1640-medium-111-l" target="_blank">Complete RPMI 1640</a> | Media | 400 mL
-Friday | <a href="https://cegrcode.github.io/GeneralLab/buffers/#complete-roswell-park-memorial-institute-rpmi-1640-medium-111-l" target="_blank">Complete RPMI 1640</a> | Media | 800 mL
-Saturday | <a href="https://cegrcode.github.io/GeneralLab/buffers/#complete-roswell-park-memorial-institute-rpmi-1640-medium-111-l" target="_blank">Complete RPMI 1640</a> | Media | 1.4 L
+Monday | [Complete RPMI 1640][complete-dulbeccos-modified-eagle-medium-dmem-111-l] | Media | 31 mL
+Tuesday | [Complete RPMI 1640][complete-dulbeccos-modified-eagle-medium-dmem-111-l] | Media | 121 mL
+Wednesday | [Complete RPMI 1640][complete-dulbeccos-modified-eagle-medium-dmem-111-l] | Media | 240 mL
+Thursday | [Complete RPMI 1640][complete-dulbeccos-modified-eagle-medium-dmem-111-l] | Media | 400 mL
+Friday | [Complete RPMI 1640][complete-dulbeccos-modified-eagle-medium-dmem-111-l] | Media | 800 mL
+Saturday | [Complete RPMI 1640][complete-dulbeccos-modified-eagle-medium-dmem-111-l] | Media | 1.4 L
 
 <p>&nbsp;</p>
 
@@ -720,9 +725,9 @@ Saturday | <a href="https://cegrcode.github.io/GeneralLab/buffers/#complete-rosw
 
 Day | Buffer/Solution | Use | Amount Needed
 :---------- | :--------- | :------ | :-----:
-Friday | <a href="https://cegrcode.github.io/GeneralLab/buffers/#complete-roswell-park-memorial-institute-rpmi-1640-medium-111-l" target="_blank">Complete RPMI 1640</a> | Media | 375 mL
-Saturday | <a href="https://cegrcode.github.io/GeneralLab/buffers/#complete-roswell-park-memorial-institute-rpmi-1640-medium-111-l" target="_blank">Complete RPMI 1640</a> | Media | 750 mL
-Sunday | <a href="https://cegrcode.github.io/GeneralLab/buffers/#complete-roswell-park-memorial-institute-rpmi-1640-medium-111-l" target="_blank">Complete RPMI 1640</a> | Media | 1.5 L
+Friday | [Complete RPMI 1640][complete-dulbeccos-modified-eagle-medium-dmem-111-l] | Media | 375 mL
+Saturday | [Complete RPMI 1640][complete-dulbeccos-modified-eagle-medium-dmem-111-l] | Media | 750 mL
+Sunday | [Complete RPMI 1640][complete-dulbeccos-modified-eagle-medium-dmem-111-l] | Media | 1.5 L
 
 <p>&nbsp;</p>
 
@@ -730,11 +735,11 @@ Sunday | <a href="https://cegrcode.github.io/GeneralLab/buffers/#complete-roswel
 
 Buffer/Solution | Use | Amount Per Harvest
 :--------- | :------  | :------:
-<a href="https://cegrcode.github.io/GeneralLab/buffers/#complete-roswell-park-memorial-institute-rpmi-1640-medium-111-l" target="_blank">Complete RPMI 1640</a> | Media | 1.5 L/375 mL
-<a href="https://cegrcode.github.io/GeneralLab/buffers/#complete-protease-inhibitor-edta-free-cpi-1-ml" target="_blank">CPI</a> | Protease Inhibitor | 1 mL
+[Complete RPMI 1640][complete-dulbeccos-modified-eagle-medium-dmem-111-l] | Media | 1.5 L/375 mL
+[CPI][complete-protease-inhibitor-edta-free-cpi-1-ml] | Protease Inhibitor | 1 mL
 <a href="http://www.emsdiasum.com/microscopy/products/chemicals/formaldehyde.aspx#15700" target="_blank">16% Formaldehyde, Methanol Free, 100 mL</a> | Crosslinking | 100/175 mL
-<a href="https://cegrcode.github.io/GeneralLab/buffers/#3-m-tris-hcl-ph-78-4-l" target="_blank">3 M Tris-HCl, pH 7.8</a> | Quenching | 400/700 mL
-<a href="https://cegrcode.github.io/GeneralLab/buffers/#1x-pbs-1-l" target="_blank">1X PBS</a> | Wash Buffer | 150/200 mL
+[3 M Tris-HCl, pH 7.8][3-m-tris-hcl-ph-78-4-l] | Quenching | 400/700 mL
+[1X PBS][1x-pbs-1-l] | Wash Buffer | 150/200 mL
 
 Different volumes above demarcated by slashes indicate required amounts for regular vs. Friday harvest volumes (1.5 L vs. 2.625 L, respectively).
 
@@ -745,7 +750,7 @@ Different volumes above demarcated by slashes indicate required amounts for regu
 *Note: It is recommended to perform seeding on Friday afternoon.*
 
 1. Turn UV light on in the biological safety hood to sterilize the exposed surfaces in the hood.
-2. After 30 minutes of sterilization, make <a href="https://cegrcode.github.io/GeneralLab/buffers/#complete-roswell-park-memorial-institute-rpmi-1640-medium-111-l" target="_blank">Complete RPMI 1640</a>. Place the complete media bottle containing 2-Mercaptoethanol in the 37˚C water bath and let warm up for 15 minutes. Store remaining complete media bottles at 4˚C.
+2. After 30 minutes of sterilization, make [Complete RPMI 1640][complete-dulbeccos-modified-eagle-medium-dmem-111-l]. Place the complete media bottle containing 2-Mercaptoethanol in the 37˚C water bath and let warm up for 15 minutes. Store remaining complete media bottles at 4˚C.
 3. While the media warms up prepare a table-top centrifuge by heating it to 37˚C, and obtain the following things: one 15 mL conical tube, one T-25 flask, a tube rack, a serological pipette, three 10 mL serological tips, a p1000 pipette and tips, a roll of masking tape, and a black sharpie.
 	* Label the 15 mL conical tube and one piece of thick masking tape with cell line (CH12), passage number (p1 for seeding), date, and initials in black sharpie.
 	* Wipe down gloves and then all aforementioned items, except for masking tape and sharpie (they stay outside of hood), with 70% ethanol before placing in the hood.
@@ -757,8 +762,8 @@ Different volumes above demarcated by slashes indicate required amounts for regu
 9. Wipe conical tube with 70% ethanol, bring back into hood, decant the supernatant with a 10 mL serological tip, and re-suspend the cell pellet in 10 mL complete media using a new 10 mL serological tip.
 10. Transfer 10 mL of solution containing cells to the T-25 flask, using a new 10 mL serological tip.
 	* Remove T-25 flask the from hood, wipe down with 70% ethanol, and place each piece of dated masking tape on the exterior of the flask as shown below on the left.
-	* Place the T-25 flask in the 37˚C, 5% CO2 incubator with the label-face up and lid tilted up as shown below on the right. <p>&nbsp;</p> <img align="left" src="../images/64_T25_Flask_CH12.jpg"> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <img align="right" width="350" height="150" src="../images/83_T25_flask_on_side.jpg"> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
-11. Check on cells in 2-3 days by visualizing an aliquot under the microscope and performing a <a href="https://cegrcode.github.io/GeneralLab/mammalian/#performing-a-cell-count" target="_blank">cell count</a> before beginning scale-up procedure.
+	* Place the T-25 flask in the 37˚C, 5% CO2 incubator with the label-face up and lid tilted up as shown below on the right. <p>&nbsp;</p> <img align="left" src={require('./images/64_T25_Flask_CH12.jpg').default}/> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <img align="right" width="350" height="150" src={require('./images/83_T25_flask_on_side.jpg').default}/> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+11. Check on cells in 2-3 days by visualizing an aliquot under the microscope and performing a [cell count][performing-a-cell-count] before beginning scale-up procedure.
 12. Remove everything from the hood, discard all serological tips, the 15 mL conical, and the CH12 seeding tube in the biohazard receptacle, place remaining complete media at 4˚C, turn off the centrifuge, wipe down interior of the hood with 70% ethanol, and UV the hood for 30 minutes.
 
 ### Scale-Up
@@ -780,7 +785,7 @@ Saturday | 3 L spinner | 1 | 1600 mL | 3 L spinner (same flask) | 1 | 3000 mL
 
 ##### Monday
 
-1. Turn on the UV light in the biological safety hood for 30 minutes and warm an open bottle of <a href="https://cegrcode.github.io/GeneralLab/buffers/#complete-roswell-park-memorial-institute-rpmi-1640-medium-111-l" target="_blank">Complete RPMI 1640</a> in a 37˚C water bath.
+1. Turn on the UV light in the biological safety hood for 30 minutes and warm an open bottle of [Complete RPMI 1640][complete-dulbeccos-modified-eagle-medium-dmem-111-l] in a 37˚C water bath.
 2. While the hood is being cleaned and the media is warming up, obtain the following things:
 	* One T-175 flask
 	* One 5 mL serological tip
@@ -792,20 +797,20 @@ Saturday | 3 L spinner | 1 | 1600 mL | 3 L spinner (same flask) | 1 | 3000 mL
 3. Label one piece of thick masking tape with cell line (CH12), passage number (p2), date, and initials in black sharpie and set it aside for later.
 4. Once the UV light in the hood turns off, wipe down all of the aforementioned items besides the masking tape and the sharpie and place in the hood.
 5. Obtain the T-25 flask from the incubator, remove the tape label to place in a lab notebook, wipe the exterior of the flask with 70% ethanol and place under the hood.
-	* Perform a <a href="https://cegrcode.github.io/GeneralLab/mammalian/#performing-a-cell-count" target="_blank">cell count</a> for the T-25 flask and record in a notebook.
+	* Perform a [cell count][performing-a-cell-count] for the T-25 flask and record in a notebook.
 6. Fetch the media bottle and wipe down its exterior with 70% ethanol and place in the hood.
 7. Carefully transfer the 9 mL in the T-25 flask to one T-175 flask with a 10 mL serological tip.
 	* *Note: Keep flasks standing upright while manipulating media.*
 8. Use a 50 mL serological tip to transfer 31 mL of fresh media into the T-175 flask containing the 9 mL of cell-containing media from the T-25 flask.
 9. Secure the lid on the T-175 flask, remove it from the hood, wipe it down with 70% ethanol, and affix the tape label in the orientation shown below on the left.
-	* Place the T-175 flask in the 37˚C, 5% CO2 incubator with the label face-up and the lid tilted up as shown below on the right. <p>&nbsp;</p> <img align="left" width="200" height="200" src="../images/58_T175_flask_CH12_general.jpg"> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <img align="right" width="350" height="150" src="../images/81_T175_flask_on_side.jpg"> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+	* Place the T-175 flask in the 37˚C, 5% CO2 incubator with the label face-up and the lid tilted up as shown below on the right. <p>&nbsp;</p> <img align="left" width="200" height="200" src={require('./images/58_T175_flask_CH12_general.jpg').default}/> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <img align="right" width="350" height="150" src={require('./images/81_T175_flask_on_side.jpg').default}/> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
 10. Discard the empty T-25 flask and the used serological tips in the biohazard receptacle, and remove all other items from the hood.
 	* Wipe the interior with 70% ethanol and then turn the UV light on for 30 minutes.
 11. Perform the next scale-up phase at the same time on the next day.
 
 ##### Tuesday
 
-12. Repeat steps from previous day, including the <a href="https://cegrcode.github.io/GeneralLab/mammalian/#performing-a-cell-count" target="_blank">cell count</a> for the T-175 flask, but replace required items/consumables with following list:
+12. Repeat steps from previous day, including the [cell count][performing-a-cell-count] for the T-175 flask, but replace required items/consumables with following list:
 	* One bottle of warm media (from previous day)
 	* One 5 mL serological tip
 	* Four T-175 flasks
@@ -818,7 +823,7 @@ Saturday | 3 L spinner | 1 | 1600 mL | 3 L spinner (same flask) | 1 | 3000 mL
 14. Use three separate 50 mL serological tips to transfer a total of 121 mL of fresh media to the T-175 flask containing 39 mL of cell-containing media.
 15. Use a fresh 50 mL serological tip to split the 160 mL of total media between the remaining three T-175 flasks.
 16. Secure the lids on the T-175 flasks, remove it from the hood, wipe it down with 70% ethanol, and affix the tape label in the orientation shown below on the left.
-	* Place the T-175 flasks in the 37˚C, 5% CO2 incubator with the label face-up and the lid tilted up as shown below on the right. <p>&nbsp;</p> <img align="left" width="200" height="200" src="../images/58_T175_flask_CH12_general.jpg"> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <img align="right" width="350" height="150" src="../images/81_T175_flask_on_side.jpg"> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+	* Place the T-175 flasks in the 37˚C, 5% CO2 incubator with the label face-up and the lid tilted up as shown below on the right. <p>&nbsp;</p> <img align="left" width="200" height="200" src={require('./images/58_T175_flask_CH12_general.jpg').default}/> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <img align="right" width="350" height="150" src={require('./images/81_T175_flask_on_side.jpg').default}/> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
 17. Discard the empty T-175 flask and serological tips in the biohazard receptacle, and remove all other items from the hood.
 	* Wipe the interior with 70% ethanol and then turn the UV light on for 30 minutes.
 18. Perform next scale-up phase at the same time on the next day.
@@ -839,7 +844,7 @@ Saturday | 3 L spinner | 1 | 1600 mL | 3 L spinner (same flask) | 1 | 3000 mL
 21. Open the door to the 37˚C, 5% CO2 incubator, obtain the four T-175 flasks, and wipe them down with 70% ethanol before placing inside the hood.
 	* Press the "lightening bolt" button on the outside of the hood to turn on the outlet that provides electricity for the peristaltic pump.
 22. Loosen the right side lid on the flask as well as the lid for the complete media bottle (flask should be all the way on the left, followed by media and then peristaltic pump).
-	* Perform a <a href="https://cegrcode.github.io/GeneralLab/mammalian/#performing-a-cell-count" target="_blank">cell count</a> for the T175-flasks.
+	* Perform a [cell count][performing-a-cell-count] for the T175-flasks.
 23. Transfer the cell-containing media from the T-175 flasks into the 500 mL spinner flask through the right side lid with fresh 50 mL serological tips for each T-175 flask.
 	* *Note: Never put the side lids down in the hood.*
 24. Remove the plastic tubing from the Nalgene bottle and nestle it into the compartment on the front of the peristaltic pump, close the compartment, and press the start button on control pad as shown below. ![Peristaltic Pump](./images/86_Peristaltic_Pump.png)
@@ -850,7 +855,7 @@ Saturday | 3 L spinner | 1 | 1600 mL | 3 L spinner (same flask) | 1 | 3000 mL
 	* Transfer 240 mL of media into the 500 mL flask using the gradations on the flask as a guide.
 26. Once the media has been transferred, remove the right end of the tubing from the 500 mL flask and place it in the 500 mL beaker with dH2O, fasten the right side lid on the flask tightly, and remove the left end of the tubing from the media and place in the 500 mL beaker with dH2O.
 27. Remove the 500 mL spinner flask from the hood, wipe down with 70% ethanol, and place the pre-labeled masking tape on the flask as shown below.
-	* Be sure to loosen the side lids on the 500 mL flask to the final thread before closing the incubator door, and check that the setting on the magnetic stir plate reads (___). <p>&nbsp;</p> <img align="left" width="300" height="300" src="../images/57_500_mL_flask_CH12.jpg"> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+	* Be sure to loosen the side lids on the 500 mL flask to the final thread before closing the incubator door, and check that the setting on the magnetic stir plate reads (___). <p>&nbsp;</p> <img align="left" width="300" height="300" src={require('./images/57_500_mL_flask_CH12.jpg').default}/> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
 28. Remove all items from the hood.
 	* Discard all serological tips and the T-175 flasks in the biohazard receptacle.
 	* Wipe down the interior of the hood with 70% ethanol and turn on the UV light for 30 minutes.
@@ -873,7 +878,7 @@ Saturday | 3 L spinner | 1 | 1600 mL | 3 L spinner (same flask) | 1 | 3000 mL
 32. Open the door to the 37˚C, 5% CO2 incubator, tighten the side lids on the 500 mL spinner flask and wipe flask down with 70% ethanol before placing inside the hood.
 	* Press the "lightening bolt" button on the outside of the hood to turn on the outlet that provides electricity for the peristaltic pump.
 33. Loosen the right side lid on the 500 mL and 1 L flasks, as well as the lid for the complete media bottle (1 L flask should be all the way on the left, followed by the 500 mL flask, the media and then the peristaltic pump).
-	* Perform a <a href="https://cegrcode.github.io/GeneralLab/mammalian/#performing-a-cell-count" target="_blank">cell count</a> for the 500 mL flask.
+	* Perform a [cell count][performing-a-cell-count] for the 500 mL flask.
 34. Remove the plastic tubing from the Nalgene bottle and nestle it into the compartment on the front of the peristaltic pump, close the compartment, and press the start button on control pad as shown below. ![Peristaltic Pump](./images/86_Peristaltic_Pump.png)
 	* Take the left end of the tubing in your right hand and the right end of the 	tubing in your left hand (pump feeds out of the right end and takes in through 		the left end).
 	* Carefully remove the lid of the media with your right hand and place the left end of the tubing into the bottle while keeping the lid in hand.
@@ -885,7 +890,7 @@ Saturday | 3 L spinner | 1 | 1600 mL | 3 L spinner (same flask) | 1 | 3000 mL
 	* Activate the pump with the foot pedal, and transfer the 400 mL of cell-containing media from the 500 mL spinner flask to the 1 L spinner flask.
 	* Once the cell-containing media has been transferred, remove the right end of the tubing from the 1 L flask and place it in the 500 mL beaker with dH2O, fasten the right side lid on the flask tightly, and remove the left end of the tubing from the 500 mL flask and place in the 500 mL beaker with dH2O.
 37. Remove the 1 L spinner flask from the hood, wipe down with 70% ethanol, and place the pre-labeled masking tape on the flask as shown below.
-	* Be sure to loosen the side lids on the 1 L flask to the final thread before closing the incubator door, and check that the setting on the magnetic stir plate reads (___). <p>&nbsp;</p> <img align="left" width="350" height="350" src="../images/56_1L_spinner_flask_CH12.jpeg"> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+	* Be sure to loosen the side lids on the 1 L flask to the final thread before closing the incubator door, and check that the setting on the magnetic stir plate reads (___). <p>&nbsp;</p> <img align="left" width="350" height="350" src={require('./images/56_1L_spinner_flask_CH12.jpeg').default}/> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
 38. Remove all items from the hood.
 	* Wipe down the interior of the hood with 70% ethanol and turn on the UV light for 30 minutes.
 	* Discard all consumables in the biohazard receptacle.
@@ -908,7 +913,7 @@ Saturday | 3 L spinner | 1 | 1600 mL | 3 L spinner (same flask) | 1 | 3000 mL
 42. Open the door to the 37˚C, 5% CO2 incubator, tighten the side lids on the 1 L spinner flask and wipe flask down with 70% ethanol before placing inside the hood.
 	* Press the "lightening bolt" button on the outside of the hood to turn on the outlet that provides electricity for the peristaltic pump.
 43. Loosen the right side lid on the 1 L and 3 L flasks, as well as the lids for the complete media bottles (3 L flask should be all the way on the left, followed by the 1 L flask, the media and then the peristaltic pump).
-	* Perform a <a href="https://cegrcode.github.io/GeneralLab/mammalian/#performing-a-cell-count" target="_blank">cell count</a> for the 1 L flask.
+	* Perform a [cell count][performing-a-cell-count] for the 1 L flask.
 44. Remove the plastic tubing from the Nalgene bottle and nestle it into the compartment on the front of the peristaltic pump, close the compartment, and press the start button on control pad as shown below. ![Peristaltic Pump](./images/86_Peristaltic_Pump.png)
 	* Take the left end of the tubing in your right hand and the right end of the 	tubing in your left hand (pump feeds out of the right end and takes in through 		the left end).
 	* Carefully remove the lid of the media with your right hand and place the left end of the tubing into the bottle while keeping the lid in hand.
@@ -921,7 +926,7 @@ Saturday | 3 L spinner | 1 | 1600 mL | 3 L spinner (same flask) | 1 | 3000 mL
 	* Activate the pump with the foot pedal, and transfer the 800 mL of cell-containing media from the 1 L spinner flask to the 3 L spinner flask.
 	* Once the cell-containing media has been transferred, remove the right end of the tubing from the 3 L flask and place it in the 500 mL beaker with dH2O, fasten the right side lid on the flask tightly, and remove the left end of the tubing from the 1 L flask and place in the 500 mL beaker with dH2O.
 47. Remove the 3 L spinner flask from the hood, wipe down with 70% ethanol, and place the pre-labeled masking tape on the flask as shown below.
-	* Be sure to loosen the side lids on the 3 L flask to the final thread before closing the incubator door, and check that the setting on the magnetic stir plate reads (___). <p>&nbsp;</p> <img align="left" width="350" height="350" src="../images/55_3L_Spinner_Flask_CH12.png"> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+	* Be sure to loosen the side lids on the 3 L flask to the final thread before closing the incubator door, and check that the setting on the magnetic stir plate reads (___). <p>&nbsp;</p> <img align="left" width="350" height="350" src={require('./images/55_3L_Spinner_Flask_CH12.png').default}/> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
 48. Remove all items from the hood.
 	* Wipe down the interior of the hood with 70% ethanol and turn on the UV light for 30 minutes.
 	* Discard all consumables in biohazard receptacle.
@@ -944,7 +949,7 @@ Saturday | 3 L spinner | 1 | 1600 mL | 3 L spinner (same flask) | 1 | 3000 mL
 52. Open the door to the 37˚C, 5% CO2 incubator, tighten the side lids on the 3 L spinner flask and wipe flask down with 70% ethanol before placing inside the hood.
 	* Press the "lightening bolt" button on the outside of the hood to turn on the outlet that provides electricity for the peristaltic pump.
 53. Loosen the right side lid on the 3 L flask, as well as the lids for the complete media bottles (3 L flask should be all the way on the left, followed by the media and then the peristaltic pump).
-	* Perform a <a href="https://cegrcode.github.io/GeneralLab/mammalian/#performing-a-cell-count" target="_blank">cell count</a> for the 3 L flask.
+	* Perform a [cell count][performing-a-cell-count] for the 3 L flask.
 54. Remove the plastic tubing from the Nalgene bottle and nestle it into the compartment on the front of the peristaltic pump, close the compartment, and press the start button on control pad as shown below. ![Peristaltic Pump](./images/86_Peristaltic_Pump.png)
 	* Take the left end of the tubing in your right hand and the right end of the 	tubing in your left hand (pump feeds out of the right end and takes in through 		the left end).
 	* Carefully remove the lid of the media with your right hand and place the left end of the tubing into the bottle while keeping the lid in hand.
@@ -954,18 +959,18 @@ Saturday | 3 L spinner | 1 | 1600 mL | 3 L spinner (same flask) | 1 | 3000 mL
 	* You will have to switch media bottles to transfer 1400 mL in total.
 56. Once the media has been transferred, remove the right end of the tubing from the 3 L flask and place it in the 500 mL beaker with dH2O, fasten the right side lid on the flask tightly, and then remove the left end of the tubing from the media bottle and place in the 500 mL beaker with dH2O.
 57. Remove the 3 L spinner flask from the hood, wipe down with 70% ethanol, and place the pre-labeled masking tape on the flask as shown below.
-	* Be sure to loosen the side lids on the 3 L flask to the final thread before closing the incubator door, and check that the setting on the magnetic stir plate reads (___). <p>&nbsp;</p> <img align="left" width="350" height="350" src="../images/55_3L_Spinner_Flask_CH12.png"> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+	* Be sure to loosen the side lids on the 3 L flask to the final thread before closing the incubator door, and check that the setting on the magnetic stir plate reads (___). <p>&nbsp;</p> <img align="left" width="350" height="350" src={require('./images/55_3L_Spinner_Flask_CH12.png').default}/> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
 58. Remove all items from the hood.
 	* Wipe down the interior of the hood with 70% ethanol and turn on the UV light for 30 minutes.
 	* Discard all consumables in biohazard receptacle.
 	* Replace the used media bottle back in the 4˚C refrigerator.
 	* Pour 10% bleach in the empty media bottles and allow 30 minutes of contact time before discarding the bottle in the biohazard receptacle.
 	* Clean the tubing and the Nalgene jar with <a href="https://www.amazon.com/Procter-Gamble-608-25574-Ivory-Detergent/dp/B00PKHS9WO" target="_blank">Ivory soap</a> two times with tap water, and then rinse once with dH2O.
-59. Perform a <a href="https://cegrcode.github.io/GeneralLab/mammalian/#regularfriday-harvest-protocol_1" target="_blank">Regular Harvest</a> the following day (Sunday) at the same time.
+59. Perform a [Regular Harvest][regularfriday-harvest-protocol_1] the following day (Sunday) at the same time.
 
 ##### Sunday
 
-Follow the <a href="https://cegrcode.github.io/GeneralLab/mammalian/#regularfriday-harvest-protocol_1" target="_blank">Regular Harvest</a> protocol.
+Follow the [Regular Harvest][regularfriday-harvest-protocol_1] protocol.
 
 #### From Friday Harvest
 
@@ -981,11 +986,11 @@ Sunday | 3 L spinner | 1 | 1500 mL | 3 L spinner (same flask) | 1 | 3000 mL
 
 ##### Friday
 
-See step 20 of <a href="https://cegrcode.github.io/GeneralLab/mammalian/#regularfriday-harvest-protocol_1" target="_blank">Friday Harvest</a> protocol for more details.
+See step 20 of [Friday Harvest][regularfriday-harvest-protocol_1] protocol for more details.
 
 ##### Saturday
 
-1. Turn on the UV light in the biological safety hood for 30 minutes and warm an open bottle of <a href="https://cegrcode.github.io/GeneralLab/buffers/#complete-roswell-park-memorial-institute-rpmi-1640-medium-111-l" target="_blank">Complete RPMI 1640</a> in a 37˚C water bath.
+1. Turn on the UV light in the biological safety hood for 30 minutes and warm an open bottle of [Complete RPMI 1640][complete-dulbeccos-modified-eagle-medium-dmem-111-l] in a 37˚C water bath.
 	* If it is a new media bottle, be sure to have added 2-Mercaptoethanol before using.
 2. While the hood is being cleaned and the media is warming up, obtain the following things:
 	* One autoclaved <a href="https://us.vwr.com/store/product/4698442/nalgene-polypropylene-straight-sided-jars-thermo-scientific" target="_blank">Nalgene jar</a> containing plastic peristaltic pump tubing
@@ -999,7 +1004,7 @@ See step 20 of <a href="https://cegrcode.github.io/GeneralLab/mammalian/#regular
 5. Open the door to the 37˚C, 5% CO2 incubator, tighten the side lids on the 3 L spinner flask and wipe flask down with 70% ethanol before placing inside the hood.
 	* Press the "lightening bolt" button on the outside of the hood to turn on the outlet that provides electricity for the peristaltic pump.
 6. Loosen the right side lid on the 3 L flask, as well as the lid for the complete media bottle (3 L flask should be all the way on the left, followed by the media and then the peristaltic pump).
-	* Perform a <a href="https://cegrcode.github.io/GeneralLab/mammalian/#performing-a-cell-count" target="_blank">cell count</a> for the 3 L flask.
+	* Perform a [cell count][performing-a-cell-count] for the 3 L flask.
 7. Remove the plastic tubing from the Nalgene bottle and nestle it into the compartment on the front of the peristaltic pump, close the compartment, and press the start button on control pad as shown below. ![Peristaltic Pump](./images/86_Peristaltic_Pump.png)
 	* Take the left end of the tubing in your right hand and the right end of the 	tubing in your left hand (pump feeds out of the right end and takes in through 		the left end).
 	* Carefully remove the lid of the media with your right hand and place the left end of the tubing into the bottle while keeping the lid in hand.
@@ -1008,7 +1013,7 @@ See step 20 of <a href="https://cegrcode.github.io/GeneralLab/mammalian/#regular
 	* Transfer 750 mL of media into the 3 L flask using the gradations on the flask as a guide.
 9. Once the media has been transferred, remove the right end of the tubing from the 3 L flask and place it in the 500 mL beaker with dH2O, fasten the right side lid on the flask tightly, and then remove the left end of the tubing from the media bottle and place in the 500 mL beaker with dH2O.
 10. Remove the 3 L spinner flask from the hood, wipe down with 70% ethanol, and place the pre-labeled masking tape on the flask as shown below.
-	* Be sure to loosen the side lids on the 3 L flask to the final thread before closing the incubator door, and check that the setting on the magnetic stir plate reads (___). <p>&nbsp;</p> <img align="left" width="350" height="350" src="../images/55_3L_Spinner_Flask_CH12.png"> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+	* Be sure to loosen the side lids on the 3 L flask to the final thread before closing the incubator door, and check that the setting on the magnetic stir plate reads (___). <p>&nbsp;</p> <img align="left" width="350" height="350" src={require('./images/55_3L_Spinner_Flask_CH12.png').default}/> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
 11. Remove all items from the hood.
 	* Wipe down the interior of the hood with 70% ethanol and turn on the UV light for 30 minutes.
 	* Discard all consumables in biohazard receptacle.
@@ -1031,7 +1036,7 @@ See step 20 of <a href="https://cegrcode.github.io/GeneralLab/mammalian/#regular
 15. Open the door to the 37˚C, 5% CO2 incubator, tighten the side lids on the 3 L spinner flask and wipe flask down with 70% ethanol before placing inside the hood.
 	* Press the "lightening bolt" button on the outside of the hood to turn on the outlet that provides electricity for the peristaltic pump.
 16. Loosen the right side lid on the 3 L flask, as well as the lids for the complete media bottles (3 L flask should be all the way on the left, followed by the media and then the peristaltic pump).
-	* Perform a <a href="https://cegrcode.github.io/GeneralLab/mammalian/#performing-a-cell-count" target="_blank">cell count</a> for the 3 L flask.
+	* Perform a [cell count][performing-a-cell-count] for the 3 L flask.
 17. Remove the plastic tubing from the Nalgene bottle and nestle it into the compartment on the front of the peristaltic pump, close the compartment, and press the start button on control pad as shown below. ![Peristaltic Pump](./images/86_Peristaltic_Pump.png)
 	* Take the left end of the tubing in your right hand and the right end of the 	tubing in your left hand (pump feeds out of the right end and takes in through 		the left end).
 	* Carefully remove the lid of the media with your right hand and place the left end of the tubing into the bottle while keeping the lid in hand.
@@ -1041,14 +1046,14 @@ See step 20 of <a href="https://cegrcode.github.io/GeneralLab/mammalian/#regular
 	* You will have to move the left end of the tubing to a new media bottle to transfer the full 1500 mL to the 3 L spinner flask.
 19. Once the media has been transferred, remove the right end of the tubing from the 3 L flask and place it in the 500 mL beaker with dH2O, fasten the right side lid on the flask tightly, and then remove the left end of the tubing from the media bottle and place in the 500 mL beaker with dH2O.
 20. Remove the 3 L spinner flask from the hood, wipe down with 70% ethanol, and place the pre-labeled masking tape on the flask as shown below.
-	* Be sure to loosen the side lids on the 3 L flask to the final thread before closing the incubator door, and check that the setting on the magnetic stir plate reads (___). <p>&nbsp;</p> <img align="left" width="350" height="350" src="../images/55_3L_Spinner_Flask_CH12.png"> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+	* Be sure to loosen the side lids on the 3 L flask to the final thread before closing the incubator door, and check that the setting on the magnetic stir plate reads (___). <p>&nbsp;</p> <img align="left" width="350" height="350" src={require('./images/55_3L_Spinner_Flask_CH12.png').default}/> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
 21. Remove all items from the hood.
 	* Wipe down the interior of the hood with 70% ethanol and turn on the UV light for 30 minutes.
 	* Discard all consumables in biohazard receptacle.
 	* Replace the used media bottle back in the 4˚C refrigerator.
 	* Pour 10% bleach in any empty media bottles and allow 30 minutes of contact time before discarding the bottle in the biohazard receptacle.
 	* Clean the tubing and the Nalgene jar with <a href="https://www.amazon.com/Procter-Gamble-608-25574-Ivory-Detergent/dp/B00PKHS9WO" target="_blank">Ivory soap</a> two times with tap water, and then rinse once with dH2O.
-22. Perform a <a href="https://cegrcode.github.io/GeneralLab/mammalian/#regularfriday-harvest-protocol_1" target="_blank">Regular Harvest</a> the following day (Monday) at the same time.
+22. Perform a [Regular Harvest][regularfriday-harvest-protocol_1] the following day (Monday) at the same time.
 
 ### Creating Cell Stocks
 
@@ -1062,11 +1067,11 @@ Buffer/Solution/Consumable/Plasticware | Regular Harvest Amount | Friday Harvest
 :--------- | :------: | :------:
 Labeled 2 mL Screw Cap tubes<sup>1</sup> | 20 | 40
 CH12-labeled 50 mL conical tubes<sup>2</sup> | 4 | 5
-50 mL <a href="https://cegrcode.github.io/GeneralLab/buffers/#1x-pbs-1-l" target="_blank">1X PBS</a> w/ 2 µL/mL  <a href="https://cegrcode.github.io/GeneralLab/buffers/#complete-protease-inhibitor-edta-free-cpi-1-ml" target="_blank">CPI</a> aliquots<sup>3</sup> | 3 | 4
+50 mL [1X PBS][1x-pbs-1-l] w/ 2 µL/mL  [CPI][complete-protease-inhibitor-edta-free-cpi-1-ml] aliquots<sup>3</sup> | 3 | 4
 500 mL <a href="https://www.thermofisher.com/order/catalog/product/3141-0250#/3141-0250" target="_blank">Nalgene centrifuge bottles</a><sup>4</sup> | 6 | 8
-<a href="https://cegrcode.github.io/GeneralLab/buffers/#complete-roswell-park-memorial-institute-rpmi-1640-medium-111-l" target="_blank">Complete RPMI 1640</a><sup>5</sup> | 2 | 1
+[Complete RPMI 1640][complete-dulbeccos-modified-eagle-medium-dmem-111-l]<sup>5</sup> | 2 | 1
 <a href="http://www.emsdiasum.com/microscopy/products/chemicals/formaldehyde.aspx#15700" target="_blank">16% Formaldehyde, Methanol Free, 100 mL</a><sup>6</sup> | 1 bottle (100 mL) | 2 bottles (175 mL)
-<a href="https://cegrcode.github.io/GeneralLab/buffers/#3-m-tris-hcl-ph-78-4-l" target="_blank">3 M Tris-HCl, pH 7.8</a><sup>7</sup> | 400 mL | 700 mL
+[3 M Tris-HCl, pH 7.8][3-m-tris-hcl-ph-78-4-l]<sup>7</sup> | 400 mL | 700 mL
 
 Superscripts in table above are referenced throughout protocol below where specific quantities are required.
 
@@ -1074,18 +1079,18 @@ Superscripts in table above are referenced throughout protocol below where speci
 
 #### Regular/Friday Harvest Protocol
 
-1. Turn on the UV light in the biological safety hood for 30 minutes and warm <a href="https://cegrcode.github.io/GeneralLab/buffers/#complete-roswell-park-memorial-institute-rpmi-1640-medium-111-l" target="_blank">Complete RPMI 1640</a><sup>5</sup> bottles in a 37˚C water bath.
+1. Turn on the UV light in the biological safety hood for 30 minutes and warm [Complete RPMI 1640][complete-dulbeccos-modified-eagle-medium-dmem-111-l]<sup>5</sup> bottles in a 37˚C water bath.
 	* Ensure that all media bottles have 2-Mercaptoethanol in them before using.
 2. Print <a href="https://us.vwr.com/store/product/12610555/cryo-babies-and-cryo-tags-laser-labels-diversified-biotech" target="_blank">Diversified Biotech Labels</a><sup>1</sup> with information included in the format shown below. ![Mammalian Screw Cap Label](./images/54_Mammalian_Screw_Cap_Label_CH12.jpeg)
 3. Pre-label twenty 2 mL conical screw cap tubes<sup>1</sup> from <a href="https://www.usascientific.com/ screw-cap-micro-tube-conical/p/sct-conical-nat" target="_blank">USA Scientific</a> with these printed labels as shown above.
 	* Additionally, label 50 mL conical tubes with CH12<sup>2</sup> on the lid.
 4. Fast-temp two <a href="https://www.fishersci.ca/shop/products/sorvall-rc-6-plus-centrifuge/361010816" target="_blank">Thermo Scientific Sorvall Centrifuges</a>, a <a href="https://online-shop.eppendorf.us/US-en/Centrifugation-44533/Centrifuges-44534/Centrifuge-5810-5810R-PF-240994.html" target="_blank">Eppendorf table-top centrifuge</a>, and a <a href="https://online-shop.eppendorf.us/US-en/Centrifugation-44533/Centrifuges-44534/Centrifuge-5418R-PF-240995.html" target="_blank">Eppendorf microcentrifuge</a> to 4˚C.
-5. Prepare 50 mL conicals containing 50 mL <a href="https://cegrcode.github.io/GeneralLab/buffers/#1x-pbs-1-l" target="_blank">1X PBS</a> and 100 µL <a href="https://cegrcode.github.io/GeneralLab/buffers/#complete-protease-inhibitor-edta-free-cpi-1-ml" target="_blank">CPI</a> (2 µL/mL)<sup>3</sup> in an ice bucket.
+5. Prepare 50 mL conicals containing 50 mL [1X PBS][1x-pbs-1-l] and 100 µL [CPI][complete-protease-inhibitor-edta-free-cpi-1-ml] (2 µL/mL)<sup>3</sup> in an ice bucket.
 6. Gather the following things:
 	* **Common Necessities**
 		* 500 mL <a href="https://www.thermofisher.com/order/catalog/product/3141-0250#/3141-0250" target="_blank">Nalgene centrifuge bottles</a><sup>4</sup> with orange gasket in lid
 		* 500 mL plastic beaker with dH2O
-		* 1 L aliquot of <a href="https://cegrcode.github.io/GeneralLab/buffers/#3-m-tris-hcl-ph-78-4-l" target="_blank">3 M Tris-HCl, pH 7.8</a><sup>7</sup>
+		* 1 L aliquot of [3 M Tris-HCl, pH 7.8][3-m-tris-hcl-ph-78-4-l]<sup>7</sup>
 		* <a href="http://www.emsdiasum.com/microscopy/products/chemicals/formaldehyde.aspx#15700" target="_blank">16% Formaldehyde, Methanol Free, 100 mL</a><sup>6</sup>
 		* One autoclaved <a href="https://us.vwr.com/store/product/4698442/nalgene-polypropylene-straight-sided-jars-thermo-scientific" target="_blank">Nalgene jar</a> containing plastic peristaltic pump tubing
 		* Serological pipette
@@ -1111,7 +1116,7 @@ Superscripts in table above are referenced throughout protocol below where speci
 14. Loosen the side lid on the left side of the flask and rotate it 180 degrees so that the loosened lid is now on the right.
 	* Remove 1 mL of cell-containing media using a serological tip and dispense in the 15 mL conical.
 	* Put the side lid on tightly, remove the flask from the hood, clean its exterior with 70% ethanol before placing back in the incubator, and once placed inside the 	incubator and on the stir plate, loosen both side lids to allow for ample gas 		transfer.
-	* Perform a <a href="https://cegrcode.github.io/GeneralLab/mammalian/#performing-a-cell-count" target="_blank">cell count</a> (looking for 5 * 10^5 - 1 * 10^6 cells/mL).
+	* Perform a [cell count][performing-a-cell-count] (looking for 5 * 10^5 - 1 * 10^6 cells/mL).
 15. Once a cell count has been performed, wash gloves with 70% ethanol, tighten the side lids of the 3 L flask, wipe down with 70% ethanol outside of the incubator, and place in the hood.
 16. Loosen the left side lid and keep in-hand while carefully pouring cell-containing media into the plastic beaker containing formaldehyde.
 	* Promptly start the 10-minute timer once finished pouring and swirl the beaker every 1-2 minutes.
@@ -1146,7 +1151,7 @@ Superscripts in table above are referenced throughout protocol below where speci
 	* Add 20 mL cold 1X PBS w/ CPI via serological pipette to each 500 mL bottle and re-suspend the pellet.
 	* Transfer two pellets to a pre-labeled 50 mL conical tube (labeled w/ CH12) for a total of 40 mL per 50 mL conical tube.
 26. Spin the 50 mL conicals in the tabletop centrifuge for 5 minutes at 1500*g and 4˚C.
-	* While the cells are spinning, obtain a dewar of liquid nitrogen (see below for dewar appearance). <p>&nbsp;</p> <img align="center" width="200" height="200" src="../images/65_liquid_nitrogen_benchtop_dewar.jpg">
+	* While the cells are spinning, obtain a dewar of liquid nitrogen (see below for dewar appearance). <p>&nbsp;</p> <img align="center" width="200" height="200" src={require('./images/65_liquid_nitrogen_benchtop_dewar.jpg').default}/>
 27. Decant the supernatant and re-suspend each pellet with 4.5 mL cold 1X PBS w/ CPI.
 	* Pool all solutions into a new pre-labeled 50 mL conical.
 	* Calculate how much more 1X PBS w/ CPI to add to make the concentration equal to 50*10^6 cells/mL.
@@ -1167,14 +1172,14 @@ Superscripts in table above are referenced throughout protocol below where speci
 
 Buffer/Solution | Use | Amount Per Sonication
 :--------- | :------ | :-----:
-<a href="https://cegrcode.github.io/GeneralLab/buffers/#complete-protease-inhibitor-edta-free-cpi-1-ml" target="_blank">CPI</a> | Protease Inhibitor | 1 mL
-<a href="https://cegrcode.github.io/GeneralLab/buffers/#modified-farnham-lysis-buffer-2-l" target="_blank">Modified Farnham Lysis Buffer</a> | Cell Lysis Buffer | 25 mL
-<a href="https://cegrcode.github.io/GeneralLab/buffers/#nuclear-lysis-buffer-ripa-variant-2-l" target="_blank">Nuclear Lysis Buffer -- RIPA</a> | Nuclear Lysis Buffer | 25 mL
-<a href="https://cegrcode.github.io/GeneralLab/buffers/#1x-pbs-1-l" target="_blank">1X PBS</a> (Old PCRP) | Wash Buffer | 25 mL
-<a href="https://cegrcode.github.io/GeneralLab/buffers/#10-mm-tris-hcl-ph-80-150-mm-nacl-2-l" target="_blank">10 mM Tris-HCl, pH 8.0 + 150 mM NaCl (Jordan) </a> | Wash Buffer | 25 mL |
+[CPI][complete-protease-inhibitor-edta-free-cpi-1-ml] | Protease Inhibitor | 1 mL
+[Modified Farnham Lysis Buffer][modified-farnham-lysis-buffer-2-l] | Cell Lysis Buffer | 25 mL
+[Nuclear Lysis Buffer -- RIPA][nuclear-lysis-buffer-ripa-variant-2-l] | Nuclear Lysis Buffer | 25 mL
+[1X PBS][1x-pbs-1-l] (Old PCRP) | Wash Buffer | 25 mL
+[10 mM Tris-HCl, pH 8.0 + 150 mM NaCl (Jordan)][10-mm-tris-hcl-ph-80-150-mm-nacl-2-l] | Wash Buffer | 25 mL |
 <a href="http://www.emsdiasum.com/microscopy/products/chemicals/formaldehyde.aspx#15700" target="_blank">32% Formaldehyde</a> | Crosslinking | 1% Final Concentration |
-<a href="https://cegrcode.github.io/GeneralLab/buffers/#25-m-glycine-1-l" target="_blank">2.5 M Glycine</a> | Quenching | 125 mM Final Concentration |
-<a href="https://cegrcode.github.io/GeneralLab/buffers/#3-m-tris-hcl-ph-78-4-l" target="_blank">3 M Tris-HCl, pH 7.8</a> | Quenching | 0.6 M Final Concentration |
+[2.5 M Glycine][25-m-glycine-1-l] | Quenching | 125 mM Final Concentration |
+[3 M Tris-HCl, pH 7.8][3-m-tris-hcl-ph-78-4-l] | Quenching | 0.6 M Final Concentration |
 
 
 <p>&nbsp;</p>
@@ -1183,10 +1188,10 @@ Buffer/Solution | Use | Amount Per Sonication
 
 ####Crosslinking
 
-*Note:* ***If cells have already been crosslinked***, *proceed to <a href="https://cegrcode.github.io/GeneralLab/mammalian/#lysis-and-sonication_1" target="_blank">lysis and sonication</a>.*
+*Note:* ***If cells have already been crosslinked***, *proceed to [lysis and sonication][lysis-and-sonication_1].*
 
-1. Prep buffers, samples, and equipment according to steps 1-4 from the <a href="https://cegrcode.github.io/GeneralLab/mammalian/#lysis-and-sonication_1" target="_blank">lysis and sonication</a> protocol.
-	* Also aliquot <a href="http://www.emsdiasum.com/microscopy/products/chemicals/formaldehyde.aspx#15700" target="_blank">32% Formaldehyde</a> and <a href="https://cegrcode.github.io/GeneralLab/buffers/#25-m-glycine-1-l" target="_blank">2.5 M Glycine</a> or <a href="https://cegrcode.github.io/GeneralLab/buffers/#3-m-tris-hcl-ph-78-4-l" target="_blank">3 M Tris-HCl, pH 7.8</a>.
+1. Prep buffers, samples, and equipment according to steps 1-4 from the [lysis and sonication][lysis-and-sonication_1] protocol.
+	* Also aliquot <a href="http://www.emsdiasum.com/microscopy/products/chemicals/formaldehyde.aspx#15700" target="_blank">32% Formaldehyde</a> and [2.5 M Glycine][25-m-glycine-1-l] or [3 M Tris-HCl, pH 7.8][3-m-tris-hcl-ph-78-4-l].
 2. Re-suspend all cells in 1X PBS before crosslinking.
 3. Use final concentration of 1% formaldehyde to crosslink the cells, and incubate for 10 minutes on a <a href="https://us.vwr.com/store/product/4787545/vwr-tube-rotator-and-rotisseries" target="_blank">rototorque</a> at room temperature.
 	* e.g. If cells are in 3 mL 1X PBS, add 93.75 µL of 32% formaldehyde to crosslink.
@@ -1200,8 +1205,8 @@ Buffer/Solution | Use | Amount Per Sonication
 
 1. Fast-temp an <a href="https://online-shop.eppendorf.us/US-en/Centrifugation-44533/Centrifuges-44534/Centrifuge-5810-5810R-PF-240994.html" target="_blank">Eppendorf table-top centrifuge</a> and an <a href="https://online-shop.eppendorf.us/US-en/Centrifugation-44533/Centrifuges-44534/Centrifuge-5418R-PF-240995.html" target="_blank">Eppendorf microcentrifuge</a> to 4˚C.
 2. Turn on one or both of the <a href="https://www.diagenode.com/en/p/bioruptor-pico-sonication-device#" target="_blank">Bioruptor Pico sonicators</a> (each sonicator holds 6 samples per run) by flipping switch on refrigeration unit, toggling switch on back of sonicator bath, and then pressing the power button on the refrigeration unit to start cooling the water bath to 4˚C.
-3. Obtain an aliquot of <a href="https://cegrcode.github.io/GeneralLab/buffers/#modified-farnham-lysis-buffer-2-l" target="_blank">Modified Farnham Lysis Buffer</a>, <a href="https://cegrcode.github.io/GeneralLab/buffers/#nuclear-lysis-buffer-ripa-variant-2-l" target="_blank">Nuclear Lysis Buffer -- RIPA</a>, and <a href="https://cegrcode.github.io/GeneralLab/buffers/#1x-pbs-1-l" target="_blank">1X PBS</a>, and place these aliquots on ice.
-	* Add in <a href="https://cegrcode.github.io/GeneralLab/buffers/#complete-protease-inhibitor-edta-free-cpi-1-ml" target="_blank">CPI</a> at 2 µL/mL to each buffer.
+3. Obtain an aliquot of [Modified Farnham Lysis Buffer][modified-farnham-lysis-buffer-2-l], [Nuclear Lysis Buffer -- RIPA][nuclear-lysis-buffer-ripa-variant-2-l], and [1X PBS][1x-pbs-1-l], and place these aliquots on ice.
+	* Add in [CPI][complete-protease-inhibitor-edta-free-cpi-1-ml] at 2 µL/mL to each buffer.
 4. Obtain desired number of cell aliquots (50M cells each) from the -80˚C freezer and place on ice.
 5. Re-suspend cells in 1 mL of Farnham Lysis buffer + CPI.
 	* If all cells are identical in terms of treatment, they can be processed in a single 15 or 50 mL conical tube for the remainder of the experiment.
@@ -1210,11 +1215,11 @@ Buffer/Solution | Use | Amount Per Sonication
 		* Label a partner tube for each different cell/treatment type, add an extra 1 mL to tubes containing cells, and split evenly between partner tube and original tube (see below for explanation).
 	* Regardless of which above situation applies to the experimental conditions, cells must be processed and sonicated at a concentration of, at most, 25 M cells/mL.
 6. Incubate on a <a href="https://us.vwr.com/store/product/4787545/vwr-tube-rotator-and-rotisseries" target="_blank">rototorque</a> for 10 minutes at 4˚C.
-	* After 10 minutes, pass the solution through a 25G needle into an appropriately-sized syringe 10 times (one pass=pulling into syringe, or pushing out of syringe. See below for pictorial description of a single pass through a needle). <p>&nbsp;</p> <img align="left" width="300" height="300" src="../images/79_full_needle.png"> <img align="right" width="300" height="300" src="../images/78_empty_needle.png"> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+	* After 10 minutes, pass the solution through a 25G needle into an appropriately-sized syringe 10 times (one pass=pulling into syringe, or pushing out of syringe. See below for pictorial description of a single pass through a needle). <p>&nbsp;</p> <img align="left" width="300" height="300" src={require('./images/79_full_needle.png').default}/> <img align="right" width="300" height="300" src={require('./images/78_empty_needle.png').default}/> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
 	* Replace the solution on the rototorque and incubate for another 10 minutes at 4˚C.
 	* Note: If processing in a 15 or 50 mL conical tube, use lab tape found at benches to affix tube to rototorque; otherwise, just slide 2 mL screw cap tubes into slots on rototorque attachment.
 7. If not already prepared, fill requisite number of <a href="https://us.vwr.com/store/product/4675790/falcon-centrifuge-tubes-polystyrene-sterile-corning" target="_blank">15 mL Falcon polystyrene tubes</a> with 300 µL of <a href="https://biospec.com/product/zirconia-silica-beads" target="_blank">0.1 mm zirconia/silica beads</a> using the yellow 150 µL scoop.
-	* Note: 300 µL of beads refers to filling 15 mL Falcon polystyrene tube up to third tick from bottom of the tube, corresponding to 300 µL (see below). <p>&nbsp;</p> <img align="center" width="150" height="150" src="../images/80_15mL_polystyrene.jpg"> <p>&nbsp;</p>
+	* Note: 300 µL of beads refers to filling 15 mL Falcon polystyrene tube up to third tick from bottom of the tube, corresponding to 300 µL (see below). <p>&nbsp;</p> <img align="center" width="150" height="150" src={require('./images/80_15mL_polystyrene.jpg').default}/> <p>&nbsp;</p>
 	* Note: Maximum sonication volume is 1 mL, so prepare enough tubes to account for entire volume being processed (e.g. processing 250 M cells, need 10 mL to obtain concentration of 25 M cells/mL --> prepare ten 15 mL Falcon polystyrene tubes).
 8. Spin nuclei at 3148*g, 4˚C for 5 minutes if processing in a 15 or 50 mL conical tube.
 	* Spin at 9391*g. 4˚C for 3 minutes if processing in a 2 mL screw cap tubes.
@@ -1241,3 +1246,25 @@ Buffer/Solution | Use | Amount Per Sonication
 18. Turn off all centrifuges and sonicators.
 
 ***
+
+[complete-iscoves-modified-dulbeccos-medium-imdm-111-l]:/WetBench/buffers#complete-iscoves-modified-dulbeccos-medium-imdm-111-l
+[complete-protease-inhibitor-edta-free-cpi-1-ml]:/WetBench/buffers#complete-protease-inhibitor-edta-free-cpi-1-ml
+[25-m-glycine-1-l]:/WetBench/buffers#25-m-glycine-1-l
+[3-m-tris-hcl-ph-78-4-l]:/WetBench/buffers#3-m-tris-hcl-ph-78-4-l
+[1x-pbs-1-l]:/WetBench/buffers#1x-pbs-1-l
+[complete-dulbeccos-modified-eagle-medium-dmem-111-l]:/WetBench/buffers#complete-dulbeccos-modified-eagle-medium-dmem-111-l
+[complete-roswell-park-memorial-institute-rpmi-1640-medium-111-l]:/WetBench/buffers#complete-roswell-park-memorial-institute-rpmi-1640-medium-111-l
+[modified-farnham-lysis-buffer-2-l]:/WetBench/buffers#modified-farnham-lysis-buffer-2-l
+[nuclear-lysis-buffer-ripa-variant-2-l]:/WetBench/buffers#nuclear-lysis-buffer-ripa-variant-2-l
+[10-mm-tris-hcl-ph-80-150-mm-nacl-2-l]:/WetBench/buffers#10-mm-tris-hcl-ph-80-150-mm-nacl-2-l
+[header]:/WetBench/buffers#
+[header]:/WetBench/buffers#
+[lysis-and-sonication_1]:/WetBench/mammalian#lysis-and-sonication_1
+[performing-a-cell-count]:/WetBench/mammalian#performing-a-cell-count
+[regularfriday-harvest-protocol]:/WetBench/mammalian#regularfriday-harvest-protocol
+[splitting_1]:/WetBench/mammalian#splitting_1
+[regularfriday-harvest-protocol_1]:/WetBench/mammalian#regularfriday-harvest-protocol_1
+[header]:/WetBench/mammalian#
+[header]:/WetBench/mammalian#
+[header]:/WetBench/mammalian#
+[header]:/WetBench/mammalian#
