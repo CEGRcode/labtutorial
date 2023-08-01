@@ -7,18 +7,26 @@ sidebar_position: 2
 
 *last updated Oct 16, 2022 by Olivia for the Mittal et al, 2022 SAGA paper*
 
+:::caution
+DO NOT WAIT UNTIL SUBMISSION TO LOOK AT THIS CHECKLIST! Read this through before you start your analyses to save yourself time. There are lots of suggestions here that will make your life easier to do as you begin analyzing your data instead of combing through your work at the end.
+
+This guide was written to save you time, ensure compliance with NIH/Grant funding requirements, and help with the reproducibility and reliability of your results.
+:::
+
+Before submitting a manuscript, make sure you have the PEGR project, Github repo, GEO submission, and STENCIL(optional) sections described below completed.
+
 ## PEGR projects
-It helps to start the "Working set" PEGR project early in your analysis. The latter two projects should be created closer to publication.
+Create a "Working set" PEGR project as soon as you start analyses. Remember, you can add/remove samples as needed. The latter two projects should be created closer to publication.
 
-- "Working set" - help you to easily track all the PEGR samples that were analyzed (regardless of if they ultimately ended up in the manuscript)
-- "Novel set" - the set of previously UNPUBLISHED samples that will be submitted to GEO as novel sequencing data that need new accessions.
-- "Reanalyzed set" - the set of previously PUBLISHED samples that were reanalyzed for figures included in the manuscript.
+**Name the projects** using the following convention: `<FirstAuthorLastName> <PublicationYear> - <JournalName> (<ProjectType>)`.
 
-Make sure you include relevant keywords, accessions, and identifiers in the project to improve search-ability for future PEGR users.
 
-Name the projects using the following convention: `<FirstAuthorLastName> <PublicationYear> - <JournalName> (<ProjectType>)`. Please also include the following information in the description:
+**Add a description:** to the project that includes the following information:
 - Short description with relevant keywords
 - Manuscript title
+- Make sure you include relevant keywords in the project to improve search-ability for future PEGR users
+
+**Add Linkouts**, some may be left blank at first
 - PMID
 - PMCID
 - GEO Dataseries accession (`GSEXXXXXX`)
@@ -26,7 +34,17 @@ Name the projects using the following convention: `<FirstAuthorLastName> <Public
 - DOI
 - Github
 
-E.g.
+
+### Three project types per manuscript
+
+* **"Working set"** -- Help you to easily track all the PEGR samples that were analyzed (regardless of if they ultimately ended up in the manuscript). It is helpful to create this as early as possible (like when your first samples get processed).
+
+* **"Novel set"** -- The set of previously UNPUBLISHED samples that will be submitted to GEO as novel sequencing data that need new accessions.
+
+* **"Reanalyzed set"** -- The set of previously PUBLISHED samples that were reanalyzed for figures included in the manuscript. (may not be applicable)
+
+
+### Example
 
 **[Badjatia 2021- Cell Reports (Novel Set)](https://www.pegr.org/pegr/project/show/1251)**
 
@@ -35,6 +53,30 @@ E.g.
 :::note
 Some information may be missing when you create the project but this can be filled in later as it becomes available.
 :::
+
+## Github
+For each publication, we make the analysis and reference files available on Github in a publication-specific repository to ensure the reproducibility of our findings.
+
+**Please follow the naming convention of previous publication repos!!!** Once a repository is named, it is annoying to change.
+
+### Organization of the Repo
+You can reference [previous publication repos][mittal-repo] or use the [template repo][template-repo] as a starting point for how to organize your BED files and code. This should fit most needs but you may opt to adjust the directory structure to suit specific needs. READ THE TEMPLATE FILES--there are more details and instructions in the template.
+
+It is critical that your repo includes a `README.md` file in the root level formatted to be consistent with the other publication repos. This includes:
+- [ ] Title of manuscript
+- [ ] Author list
+- [ ] Affiliations
+- [ ] Correspondence
+- [ ] Resources (e.g. STENCIL instance) w/ links
+- [ ] PMID accession w/ link
+- [ ] GEO accession w/ link
+- [ ] Abstract
+- [ ] Brief description of directory structure
+
+## STENCIL
+*Coming soon!*
+Create a [STENCIL](https://pughlab.mbg.cornell.edu/stencil/) instance for each publication to organize and track supplementary analyses.
+
 
 ## GEO Submission
 All data not subject to privacy restrictions (e.g. patient-protected samples) should be made publicly available at one of the national genomic data repositories. We submit through [Gene Expression Omnibus (GEO)](https://www.ncbi.nlm.nih.gov/geo/).
@@ -58,30 +100,7 @@ Important: Previously published samples ("Reanalyzed set") that have been reanal
 8. When the paper is accepted and a publication date is set, you should notify GEO so they can coordinate with the journal to release the data with the manuscript.
 
 
-## Github
-For each publication, we make the analysis and reference files available on Github in a publication-specific repository to ensure the reproducibility of our findings.
-
-**Please follow the naming convention of previous publication repos!!!** Once a repository is named, it is difficult to change.
-
-### Organization of the Repo
-You can reference [previous publication repos][mittal-repo] or use the [template repo][template-repo] as a starting point for how to organize your BED files and code. This should fit most needs but you may opt to adjust the directory structure to suit specific needs.
-
-It is critical that your repo includes a `README.md` file in the root level formatted to be consistent with the other publication repos. This includes:
-- [ ] Title of manuscript
-- [ ] Author list
-- [ ] Affiliations
-- [ ] Correspondence
-- [ ] Resources (e.g. STENCIL instance) w/ links
-- [ ] PMID accession w/ link
-- [ ] GEO accession w/ link
-- [ ] Abstract
-- [ ] Brief description of directory structure
-
-## STENCIL
-*Coming soon!*
-Create a [STENCIL](https://pughlab.mbg.cornell.edu/stencil/) instance for each publication to organize and track supplementary analyses.
-
-## After publication
+## After publication (you think you're done?)
 When you have a PMID for the new manuscript, go through and once more check...
 - Github
   - [ ] PMID linked
@@ -100,8 +119,9 @@ When you have a PMID for the new manuscript, go through and once more check...
   - [ ] Fill in [Submit Data form](https://www.yeastgenome.org/submitData) on SGD's website (makes sure paper is prioritized in curation)
   - [ ] Consider writing a summary of the work for SGD to write a [Research Spotlight](https://www.yeastgenome.org/blog/category/research-spotlight) on the paper
   - [ ] Tweet about it [@ThePughLab](https://twitter.com/thepughlab?lang=en)
-  - [ ] Update Frank/Will's [My Bibliography](https://www.ncbi.nlm.nih.gov/sites/myncbi/benjamin.pugh.1/bibliography/40517395/public/?sort=date&direction=descending)
+  - [ ] Update Frank/Will's [My Bibliography (NCBI)](https://www.ncbi.nlm.nih.gov/sites/myncbi/benjamin.pugh.1/bibliography/40517395/public/?sort=date&direction=descending)
   - [ ] Update [Lab Website](http://pughlab.mbg.cornell.edu/) as appropriate
+  - [ ] Update YOUR links (NCBI My Bibliography, personal website, CV/Resume)
 
 [mittal-repo]:https://github.com/CEGRcode/2022-Mittal_SAGA
 [template-repo]:https://github.com/CEGRcode/20XX-LastName_Journal
