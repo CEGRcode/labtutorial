@@ -69,7 +69,7 @@ const config = {
           },
           {
             type: 'doc',
-            docId: 'Software/faq',
+            docId: 'Software/PSU_Archive/faq',
             position: 'left',
             label: 'Software',
           },
