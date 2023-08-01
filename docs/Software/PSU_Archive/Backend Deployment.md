@@ -4,6 +4,10 @@ title: Backend Deployment
 sidebar_position: 6
 ---
 
+:::warning
+This page includes the outdated instructions for deploying STENCIL instances on the Penn State University systems.
+:::
+
 Instructions to deploy web apps built using `NodeJS` on PSU's VM hosting servers.
 
 ### Deploying the application

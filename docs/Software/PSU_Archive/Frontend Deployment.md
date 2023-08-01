@@ -4,6 +4,10 @@ title: Frontend Deployment
 sidebar_position: 5
 ---
 
+:::warning
+This page includes the outdated instructions for deploying STENCIL instances on the Penn State University systems.
+:::
+
 Instructions to deploy web apps built using `ReactJS` on PSU's VM hosting servers.
 
 ## Pre-requisites

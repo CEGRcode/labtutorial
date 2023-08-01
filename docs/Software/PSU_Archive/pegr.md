@@ -3,6 +3,11 @@ id: pegr
 title: PEGR
 sidebar_position: 7
 ---
+
+:::warning
+This documentation was written for the setting up PEGR on Penn State systems. Please reference the documentation in the [Github repo][github-pegr] for more up-to-date instructions.
+:::
+
 ## Pre-Install
 
 Install curl (For Windows, use Git Bash)
@@ -262,3 +267,4 @@ $ grails s2-quickstart User Role
 [pattern:'/report/togglePreferredAlignment/**', access:['ROLE_ADMIN']],
 ```
 ---
+[github-pegr]:https://github.com/seqcode/pegr

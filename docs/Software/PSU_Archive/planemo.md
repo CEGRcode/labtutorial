@@ -4,6 +4,11 @@ title: Planemo
 sidebar_position: 3
 ---
 
+:::warning
+This documentation was written for setting up Planemo on the Penn State University systems. Keep this in mind if you reference these instructions as they may be out of date.
+:::
+
+
 _**Best Practices & Standards**_
 
 - [Creating Galaxy tools](https://galaxy-iuc-standards.readthedocs.io/en/latest/best_practices.html)

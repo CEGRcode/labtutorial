@@ -3,6 +3,11 @@ id: galaxy
 title: Galaxy
 sidebar_position: 2
 ---
+
+:::warning
+This documentation was written for deploying Galaxy on the Penn State University systems. Keep this in mind if you reference these instructions as they may be out of date.
+:::
+
 ## Dependencies
 
 - Assuming you have installed the required [development tools for Mac OS](http://127.0.0.1:8000/#development-tools)

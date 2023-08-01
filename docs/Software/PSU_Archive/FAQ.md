@@ -4,7 +4,9 @@ title: FAQ
 sidebar_position: 10
 ---
 
-Frequently Asked Questions
+:::warning
+This documentation was written for the Galaxy and Planemo pages. Keep this in mind if you reference these instructions as they may be out of date.
+:::
 
 ### Installation
 
