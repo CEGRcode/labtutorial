@@ -121,7 +121,7 @@ _`sacCer3_cegr` contains `2-micron` regions & chromosome naming is using `decima
 
 ![Manage installed tools](./image/localgalaxy_1.png)
 
-- Download the `sacCer3_cegr` genome from [here](./image/data/sacCer3_cegr.fa)
+- Download the `sacCer3_cegr` genome from **link removed:** `./image/data/sacCer3_cegr.fa`
 - Upload the file you downloaded above into galaxy, using the `upload button` located on the tools menu, as shown in the image below.
 
 ![Upload button location](./image/upload_button.png)
@@ -171,7 +171,7 @@ _All these tools are available from the `Admin > Data > Local data` section. Bel
 
 _We will install the core-sequencing workflow that the lab uses to analyze all the samples that are sequenced. This pipeline is run to create BAM files, peak calling using genetrack and MEME motif analysis._
 
-- Download the workflow file [here.](./image/data/Galaxy-Workflow-paired_002.ga)
+- Download the workflow file **link removed:** `./image/data/Galaxy-Workflow-paired_002.ga`
 - Once you have downloaded the workflow. You can `import` it into your local galaxy from the `Workflow` tab using the `upload or import workflow` button located beside the search bar. _(see image below)._
 
 ![Workflow upload](./image/localgalaxy_16.png)
@@ -324,7 +324,7 @@ _bioblend is a python library to interact with Galaxy, using APIs_
 
 _This step is important, as it lets PEGR know which workflow stats to accept and update on PEGR web frontend_
 
-- Download `getWorkflowid.py` from [here](./image/data/getWorkflowid.py)
+- Download `getWorkflowid.py` from **link removed:** `./image/data/getWorkflowid.py`
 - Open the script and replace the `url` and `key` with your local galaxy url and API key respectively. After adding your API-key, looks like the below image:
 
 ![Get workflowid](./image/getworkflowid.png)

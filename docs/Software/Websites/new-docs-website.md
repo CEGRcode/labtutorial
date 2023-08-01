@@ -53,7 +53,7 @@ Feel free to recycle code from our current documentation websites, especially th
 
 
 
-[conda-tutorial]:/docs/Computational/condatutorial
+[conda-tutorial]:/docs/Software/condatutorial
 [docusaurus-install]:https://docusaurus.io/docs/installation
 [github-pages]:https://pages.github.com/
 [docusaurus]:https://docusaurus.io/
