@@ -1,7 +1,7 @@
 ---
 id: index
-title: Dry Bench Introduction
-sidebar_label: Dry Bench Introduction
+title: Software Introduction
+sidebar_label: Introduction
 sidebar_position: 1
 ---
 
@@ -10,28 +10,23 @@ This section contains installation guides to setup primary software packages and
 Every graduate student (WET AND DRY) in the lab will need to perform bioinformatic analysis at some point. Referencing these guides sooner rather than later can SAVE YOU AND THE DRY-BENCH MEMBERS OF THE LAB A LOT OF TIME.
 
 
-## For wet-bench scientists
+## Infrastructure
 
-We have built infrastructure and tools in the lab to help you with analyzing your genomic datasets. Please reference the following links
-- What is Galaxy?
-- What is PEGR?
-- Install Hombrew & Anaconda3
--
+The Pugh Lab, Lai Lab, and Epigenomics Core (EGC) are supported by an integrated infrastructure of software and tools that facilitates our research.
 
-|Project | Wet-bench scientist | Dry-bench scientist | Undergraduate Researcher |
-| ---- | ---- | ---- | ---- |
-| Galaxy | user | user/dev | - |
-| PEGR | user | user/dev | - |
+<br/>
+
+![PughInfrastructure](images/PughInfrastructure.png)
 
 
-#### Who you are ?
-You are a grad student, postdoc or computational staff having basic knowledge on web technologies (HTML5, CSS3, JS), GitHub and markdown.
+* [PEGR][pegr] - Manage metadata associated with all sequencing runs for looking up samples and downloading processed datafiles (e.g. BAM formatted alignments).
+* [Galaxy][galaxy] - Create data analysis & visualization pipelines for large-scale data processing. The workflow results from these intitial analyses are displayed on PEGR.
+* **[ScriptManger][scriptmanager] - For day-to-day bioinformatics.** Generalized toolbox of scripts we use to perform both our standard ChIP-exo analyses and more customized analyses for most of our papers
+* [GenoPipe][genopipe] - Quality check tool we use to confirm the genotypes of our samples which ultimately contributes to the reproducibility of our research.
 
-## Infrastructure Details
+## Computational resources
 
-The lab takes advantage of [GALAXY](https://galaxyproject.github.io/) to create data analysis & visualization pipelines for large-scale data processing on the [ACI-ICS](https://ics.psu.edu/about/) clusters and also leverages [ACCESS (fromerly XSEDE)](https://allocations.access-ci.org/) resources for compute requirements.
-
-For day to day bioinformatics, install & start using [ScriptManager.](http://pughlab.mbg.cornell.edu/scriptmanager/)
+Galaxy is run on the [ACI-ICS](https://ics.psu.edu/about/) clusters and also leverages [ACCESS (fromerly XSEDE)](https://allocations.access-ci.org/) resources for compute requirements.
 
 |ICS-ACI Resource URL|
 |----|
@@ -79,10 +74,7 @@ Below are some the Web development stacks being used in the lab.
     - [video tutorial](https://www.youtube.com/watch?v=OxIDLw0M-m0&list=PL4cUxeGkcC9ij8CfkAY2RAGb-tmkNwQHG)
 
 
-    ## Contributors
-
-    |Name | Lab Position|
-    |----|----|
-    | Prashant Kumar Kuntala | Computational Scientist |
-    | Hedgie Jo | Undergraduate Researcher |
-    | Pierce Chaffin | Undergraduate Researcher |
+[pegr]:https://www.pegr.org
+[galaxy]:https://galaxyproject.github.io/
+[scriptmanager]:http://pughlab.mbg.cornell.edu/scriptmanager-docs/docs/
+[genopipe]:https://pughlab.mbg.cornell.edu/GenoPipe-docs/
