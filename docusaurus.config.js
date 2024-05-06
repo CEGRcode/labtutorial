@@ -1,6 +1,8 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
+const math = require('remark-math');
+const katex = require('rehype-katex');
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
@@ -39,6 +41,8 @@ const config = {
           // Remove this to remove the "edit this page" links.
           // editUrl:
           //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          remarkPlugins: [math],
+          rehypePlugins: [katex],
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
         },
@@ -76,7 +80,7 @@ const config = {
             type: 'doc',
             docId: 'General/index',
             position: 'left',
-            label: 'General',
+            label: 'Publication Checklist',
           },
           {
             type: 'doc',
@@ -151,6 +155,21 @@ const config = {
         darkTheme: darkCodeTheme,
       },
     }),
+  stylesheets: [
+    {
+      href: 'https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css',
+      type: 'text/css',
+      integrity:
+        'sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM',
+      crossorigin: 'anonymous',
+    },
+    {
+      href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css',
+      type: 'text/css',
+      integrity: 'sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==',
+      crossorigin: 'anonymous',
+    }
+  ],
 };
 
 module.exports = config;
