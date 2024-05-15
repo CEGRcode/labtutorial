@@ -76,7 +76,7 @@ Also update with accession:
 ## After manuscript is accepted...
 Notify GEO so they can coordinate with the journal to release the data with the manuscript. We don't want the manuscript to be in print but not have the data available to readers!
 
-[novel-set]:/PublicationChecklist/pegr-projects#novel-set
-[reanalyzed-set]:/PublicationChecklist/pegr-projects#reanalyzed-set
+[novel-set]:./pegr-projects#novel-set
+[reanalyzed-set]:./pegr-projects#reanalyzed-set
 
 [scriptmanager-md5sum]:https://pughlab.mbg.cornell.edu/scriptmanager-docs/docs/Tools/file-utilities/md5checksum

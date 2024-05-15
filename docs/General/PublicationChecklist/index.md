@@ -1,7 +1,7 @@
 ---
 title: Publication Checklist
 sidebar_label: Publication Checklist
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 *last updated Oct 16, 2022 by Olivia for the Mittal et al, 2022 SAGA paper*
@@ -15,11 +15,11 @@ This guide was written to save you time, ensure compliance with NIH/Grant fundin
 Before submitting a manuscript, make sure you have the PEGR project, Github repo, GEO submission, and STENCIL(optional) sections completed.
 
 ## Before submission
-- [ ] PEGR Projects
-- [ ] Github
-- [ ] GEO Submission
-- [ ] Zenodo
-- [ ] STENCIL (optional)
+- [ ] [PEGR Projects][pegr-projects]
+- [ ] [Github][github]
+- [ ] [GEO Submission][geo-submission]
+- [ ] [Zenodo][zenodo]
+- [ ] [STENCIL (optional)][stencil]
 
 ## After publication (you think you're done?)
 When you have a PMID for the new manuscript, go through and once more check...
@@ -46,3 +46,9 @@ When you have a PMID for the new manuscript, go through and once more check...
 
 [mittal-repo]:https://github.com/CEGRcode/2022-Mittal_SAGA
 [template-repo]:https://github.com/CEGRcode/20XX-LastName_Journal
+
+[pegr-projects]:./pegr-projects.md
+[github]:./github.md
+[geo-submission]:./geo-submission.md
+[zenodo]:./zenodo.md
+[stencil]:./stencil.md
