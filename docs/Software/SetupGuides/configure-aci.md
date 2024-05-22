@@ -1,7 +1,7 @@
 ---
 id: configure-aci
-title: Configuring environment on ACI (ROAR andCollab)
-sidebar_label: ACI configuration
+title: Configuring environment on Collab resources
+sidebar_label: PSU Collab configuration
 sidebar_position: 3
 ---
 
@@ -10,29 +10,13 @@ import TabItem from '@theme/TabItem';
 
 
 ## Login through Terminal
-The following are the Secure Shell (`ssh`) login commands to access ACI-ROAR and ROAR-Collab resources. Just replace `mypsuusername` with your PSU username.
-
-<Tabs>
-  <TabItem value="aci-roar" label="ACI-ROAR" default>
-
-```
-ssh mypsuusername@submit.aci.ics.psu.edu
-# Type PSU password when prompted
-# DUO authenticate
-```
-
-  </TabItem>
-  <TabItem value="roar-collab" label="ROAR-Collab">
+The following are the Secure Shell (`ssh`) login commands to access ROAR-Collab resources. Just replace `mypsuusername` with your PSU username.
 
 ```
 ssh mypsuusername@submit.hpc.psu.edu
 # Type PSU password when prompted
 # DUO authenticate
 ```
-
-  </TabItem>
-</Tabs>
-
 
 Logout with Ctrl-D
 
@@ -89,15 +73,12 @@ Module commands let you turn on/off pre-installed software that the IT/sysadmins
 Before installing Anaconda, Samtools, Bedtools, or BWA yourself, try using the Module system on ACI
 ```
 module load anaconda3
-module load gcc # run this before samtools/bedtools only for ROAR, not Collab
 module load samtools
 module load bedtools
 module load bwa
 ```
 
 [Read more here][module-docs]
-
-
 
 
 [module-docs]:https://modules.readthedocs.io/en/latest/
