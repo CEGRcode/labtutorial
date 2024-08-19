@@ -459,8 +459,8 @@ Pour 10% bleach in the empty FBS and Pen/Strep bottles and let incubate for 30 m
 
 Final Conc. of Component | Stock | Amount
 :--------- | :------ | :-----:
-<a href="https://www.thermofisher.com/order/catalog/product/11965126#/11965126" target="_blank">DMEM</a>| 1X | 1000 mL
-1% <a href="https://www.thermofisher.com/order/catalog/product/15140163#/15140163" target="_blank">Penicillin-Streptomycin</a> | 10,000 U/mL | 10 mL
+<a href="https://www.thermofisher.com/order/catalog/product/11965126#/11965126" target="_blank">DMEM</a> | 1X | 1000 mL
+1% [Penicillin-Streptomycin][penicillin-streptomycin] | 10,000 U/mL | 10 mL
 10% <a href="https://us.vwr.com/store/product/18706419/avantor-seradigm-usda-approved-origin-fetal-bovine-serum-fbs" target="_blank">Fetal Bovine Serum (FBS)</a> | 100% | 100 mL
 
 Turn on the UV light in the biological safety cabinet and thaw 1 FBS bottle and 1 Penicillin-Streptomycin bottle in a 37°C water bath for 30 minutes.
@@ -656,18 +656,15 @@ QC Conductivity Reading: 23 (+/-1) mS/cm
 [1-m-tris-hcl-ph-75-1-l]:/WetBench/buffers#1-m-tris-hcl-ph-75-1-l
 [1-m-tris-hcl-ph-80-1-l]:/WetBench/buffers#1-m-tris-hcl-ph-80-1-l
 [10-sodium-deoxycholate-200-ml]:/WetBench/buffers#10-sodium-deoxycholate-200-ml
-[10-sodium-deoxycholate-200-ml]
 [10-igepal-chemically-indistinct-from-np-40-200-ml]:/WetBench/buffers#10-igepal-chemically-indistinct-from-np-40-200-ml
 [10x-pbs-1-l]:/WetBench/buffers#10x-pbs-1-l
+[2-m-kcl-1-l]:/WetBench/buffers#2-m-kcl-1-l
 [20-sds-sodium-dodecyl-sulfate-500-ml]:/WetBench/buffers#20-sds-sodium-dodecyl-sulfate-500-ml
 [25-triton-x-100-200-ml]:/WetBench/buffers#25-triton-x-100-200-ml
 [5-m-nacl-1-l]:/WetBench/buffers#5-m-nacl-1-l
 
 
 [1-n-hcl-1-l]:/WetBench/buffers#1-n-hcl-1-l
-[5-m-nacl-1-l]:/WetBench/buffers#5-m-nacl-1-l
-[1-m-hepes-koh-ph-75-1-l]:/WetBench/buffers#1-m-hepes-koh-ph-75-1-l
 
-[header]:/WetBench/buffers#
-[header]:/WetBench/buffers#
-[header]:/WetBench/buffers#
+
+[penicillin-streptomycin]:https://www.thermofisher.com/order/catalog/product/15140163#/15140163
