@@ -384,7 +384,7 @@ rm $OUTPUT.tab $OUTPUT.filtered.tab $OUTPUT.forward.bedgraph $OUTPUT.reverse.bed
 #  - /path/to/my-track-basename_reverse.bw (optional)
 ```
 
-[bam-indexer]:/docs/bam-manipulation/bam-indexer
+[bam-indexer]:http://pughlab.mbg.cornell.edu/scriptmanager-docs/docs/bam-manipulation/bam-indexer
 [yep-stencil]:http://www.yeastepigenome.org/
 [github-v14]:https://github.com/CEGRcode/scriptmanager/releases/download/v0.14/ScriptManager-v0.14.jar
 [java-install]:http://pughlab.mbg.cornell.edu/scriptmanager-docs/docs/#java

@@ -34,24 +34,4 @@ const sidebars = {
    */
 };
 
-module.exports = {
-  "docs": {
-    "Software": [
-      "Software/backend-deployment",
-      "Software/cac",
-      "Software/condatutorial",
-      "Software/faq",
-      "Software/frontend-dev",
-      "Software/galaxy",
-      "Software/labwebsite",
-      "Software/pegr",
-      "Software/planemo",
-      "Software/publication-checklist",
-
-      {"Tutorials": [
-      "Software/peakcalling-tutorial"
-      ]
-    }
-    ]
-    }
-}
+module.exports = sidebars;
