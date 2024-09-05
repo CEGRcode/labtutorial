@@ -1,99 +1,70 @@
 ---
 id: download-pegr-samples-aci
-title: Downloading PEGR data on ACI (ROAR)
-sidebar_label: PEGR sample download
+title: Downloading Data from PEGR
+sidebar_label: PEGR Data Download
 sidebar_position: 4
 ---
 
-Besides using the browser, you can set-up your ROAR-ACI account to bulk download files if you have a list of PEGR sample IDs.
+There are many ways to get your genomic data from PEGR.
 
-Keep in mind that these download scripts only work on ACI-ROAR, and not other systems, including your Mac workstation.
+## Download through the browser
+
+:::caution
+Note to Olivia: Add screenshots for downloading files from PEGR here
+:::
+
+## Bulk sample download
 
 ### 1. Clone `CEGRcode/EGC_utility_scripts`
 
-Get the Github scripts for downloading data files from PEGR/Galaxy. There are a variety of ways to do this but we recommend logging into ACI-ROAR and cloning the repo to your home directory.
+Get the Github scripts for downloading data files from PEGR/Galaxy. We recommend using Github Desktop for this.
 
-```
-ssh aci
-# authenticate
-# ...
+### 2. Install Dependencies
 
-```
+Check the [README.md](https://github.com/CEGRcode/EGC_utility_scripts) for the conda-style installation.
 
-
-### 2. Install Bioblend (Galaxy API)
-
-The Galaxy API python library needs to be installed on ACI. Make sure you're logged into ACI and run
-
-```
-pip install bioblend
-```
-
-You may opt to do this from the OpenOnDemand Terminal with the same effect.
-
-### 3. Set-up shortcut
-You have the capacity to run the scripts at this stage but this step will make it more convenient to download samples if you will be doing this a lot throughout your research.
-
-
-#### a. Start by creating a file `~/shortcuts.sh` if it doesn't already exist
-...and add the following lines to the file. Make sure to replace the API key values and your user email.
-```
-function creds() {
-  GALAXY_API_KEY=ABCDEFGHIJKLMNO12345789    # paste Galaxy API Key here
-  PEGR_API_KEY=ABCDEFGHIJKLMNO12345789      # paste PEGR API Key here
-  USER_EMAIL=mypsuusername@psu.edu          # paste email here
-}
-function download-pegr() {
-  python3 ~/EGC_utility_scripts/download_datasets_from_PEGR-Galaxy_curl.py -g $GALAXY_API_KEY -p $PEGR_API_KEY -u $USER_EMAIL -f $1 $2 $3
-}
-function sym-bam() {
-  python3 ~/EGC_utility_scripts/generate_BAM_file_from_PEGR.py -g $GALAXY_API_KEY -p $PEGR_API_KEY -u $USER_EMAIL -f $1 $2 $3
-}
-function sym-fq() {
-  python3 ~/EGC_utility_scripts/generate_FQ_file_from_PEGR.py -g $GALAXY_API_KEY -p $PEGR_API_KEY -u $USER_EMAIL -f $1
-}
-function sym-meme() {
-  python3 ~/EGC_utility_scripts/generate_MEME_file_from_PEGR.py -g $GALAXY_API_KEY -p $PEGR_API_KEY -u $USER_EMAIL -f $1 $2 $3
-}
-function sym-fimo() {
-  python3 ~/EGC_utility_scripts/generate_FIMO_GFF_from_PEGR.py -g $GALAXY_API_KEY -p $PEGR_API_KEY -u $USER_EMAIL -f $1 $2 $3
-}
-```
-
+### 3. Get your credentials
 You can get your `PEGR_API_KEY` by logging into www.pegr.org and going to your Account Profile page (linked in top right of screen).
 
 ![PEGR profile](./images/PEGR-website-profile.png)
 
-#### b. Create your `~/.bashrc` file if it doesn't already exist
-...and add the following lines to the file, as is.
-```
-creds
-source ~/shortcuts.sh
-```
+Make sure you also know what email PEGR uses for your account (if you login with your Cornell NetID, then your `PEGR_EMAIL` is `<mynetid>@cornell.edu`)
 
-#### c. Download data files from PEGR
-
-Given some text file of `samples.txt` with PEGR sample ids in the first tab-delimited column, you can create symlinks different kinds of files from PEGR.
+You can even add these to your `~/.bashrc`/`~/.bash_profile`/`~/.zshrc` file for convenience.
 
 ```
-sym-bam samples.txt
-sym-fq samples.txt
-sym-meme samples.txt
-sym-fimo samples.txt
+export PEGR_API_KEY=ABCDEFGHIJKLMNO12345789      # paste PEGR API Key here
+export USER_EMAIL=mypsuusername@psu.edu          # paste email here
 ```
 
-Symlinks are like shortcuts and can be generated much faster than downloading files from PEGR (involves copying and more I/O).
+### 4. Get the list of samples you want to download
 
-If you wish to create hard-copies, you can simply copy the symlinked files or run the following to download a collection of files for each sample.
+For example, you may have a file called `mysamples.txt` that contains the sample ids like this:
 ```
-download-pegr samples.txt
+12141
+21173
 ```
+
+As long as the PEGR sample ids are in the first tab-delimited column, you can give these scripts any kind of flat text file:
+
+```
+12141	OtherMetadata1
+21173	Whatever you want: and however you want
+```
+
+### 5. Execute any of the scripts from the `EGC_utility_scripts` directory
+
+If you're not sure how to execute them, you can have them print usage statements using the help flag (`-h`):
+
+```
+python generate_FQ_file_from_PEGR.py -h
+```
+
+...or check the README.md for the full list of usage statements.
+
+Make sure you are in the `EGC_utility_scripts` directory.
+
 
 :::caution
-If you are downloading human or other data with a several genome build options in PEGR, it is critical that you include the genome build information (`-b`) (does not apply for `sym-fq` which is genome build-independent).
-
-Example:
-```
-sym-bam samples.txt -b hg19
-```
+If you are downloading human or other data with a several genome build options in PEGR, it is critical that you include the genome build information (`-b`) (does not apply to downloading FASTQ files which is genome build-independent).
 :::
