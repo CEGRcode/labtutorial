@@ -16,7 +16,7 @@ sidebar_position: 1
   - RNA-seq
   - PRO-cap/PRO-seq/CoPRO (see John Lis’s lab for papers about these last few, he is our neighbor on this floor)
   - Enseqlopedia gives high-level summaries of what these assays measure: https://enseqlopedia.com/
-- [Learn the basics of command line][learn-command-line]
+- [Learn the basics of command line][command-line-basics]
 
 ## Recommended Reading
 - _Rossi et al 2021_ - **Yeast Epigenome (YEP) paper**
@@ -60,7 +60,7 @@ sidebar_position: 1
     - [video tutorial](https://www.youtube.com/watch?v=OxIDLw0M-m0&list=PL4cUxeGkcC9ij8CfkAY2RAGb-tmkNwQHG)
 1. [CULearn](https://culearn.cornell.edu/) has a broad variety of courses if you use your Cornell NetID login
 
-[learn-command-line]:learn-command-line
+[command-line-basics]:command-line-basics
 [rossi-2021]:https://pubmed.ncbi.nlm.nih.gov/33692541/
 [plotter]: https://github.com/CEGRcode/plotter
 [linux-for-biologists]: https://biohpc.cornell.edu/ww/1/Default.aspx?wid=145

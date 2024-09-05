@@ -59,7 +59,7 @@ Use Github Desktop to clone repositories and stay up-to-date with the latest ver
    - [ ] CEGRcode/GenoPipe
    - [ ] ...and any other repositories you will be working on/using
 
-Learning Git: [Check out some of our favorite git resources](git-exercises)
+Learning Git: [Check out some of our favorite git resources][git-exercises]
 
 <Link
   className="button button--primary"
