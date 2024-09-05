@@ -2,6 +2,7 @@
 id: peakcalling-tutorial
 title: "ChIP-exo Peak Calling Tutorial"
 sidebar_label: "ChIP-exo Peak Calling"
+sidebar_position: 6
 ---
 
 import Tabs from '@theme/Tabs';

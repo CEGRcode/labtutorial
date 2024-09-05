@@ -9,7 +9,7 @@ import Link from '@docusaurus/Link';
 
 Reccommendations for installation by lab role
 
-| Tasks                                                      | UG-Bio | UG-CB | GR-Rot | GR-Bio | GR-CB | Staff |
+| Tasks                                                      | UG-Bio | UG-CB | GR-Rot | GR/PD-Bio | GR/PD-CB | Staff |
 | ---------------------------------------------------------- | ------ | ----- | ------ | ------ | ----- | ----- |
 | [Install Box Drive][box-drive]                             | ✔️      | ✔️     | ✔️      | ✔️      | ✔️     | ✔️     |
 | [Install Slack Desktop App][slack]                         | ✔️      | ✔️     | ✔️      | ✔️      | ✔️     | ✔️     |
@@ -31,7 +31,7 @@ Facilitates navigating the shared Box directories without having to open your br
   Install Box Drive
 </Link>
 
-### Slack
+### Slack Desktop Application
 
 Access Slack and get notifications without having to open your browser and login every time.
 
@@ -45,11 +45,9 @@ Access Slack and get notifications without having to open your browser and login
 
 Our lab stores code in an organization-type Github account (https://github.com/CEGRcode/) which hosts the collection of repositories for tools, code, and websites we use around lab.
 
-<Link
-  className="button button--primary"
-  href="https://desktop.github.com/">
-  Install Github Desktop
-</Link>
+:::tip
+Check [Github-setup][github-setup] for instructions to join for access private organization repos.
+:::
 
 Use Github Desktop to clone repositories and stay up-to-date with the latest versions of our tools.
 
@@ -60,6 +58,15 @@ Use Github Desktop to clone repositories and stay up-to-date with the latest ver
    - [ ] CEGRcode/scriptmanager
    - [ ] CEGRcode/GenoPipe
    - [ ] ...and any other repositories you will be working on/using
+
+Learning Git: [Check out some of our favorite git resources](git-exercises)
+
+<Link
+  className="button button--primary"
+  href="https://desktop.github.com/">
+  Install Github Desktop
+</Link>
+
 
 ### VS Code
 
@@ -107,3 +114,5 @@ This is an optional convenience for logging into Penn State computing resources.
 [anaconda3-conda]: ./configure-mac-workstation#anaconda3-conda
 [java-for-scriptmanager]: ./configure-mac-workstation#java-for-scriptmanager
 [set-up-ssh-shortcuts]: ./configure-mac-workstation#set-up-ssh-shortcuts
+[github-setup]:../NewMembers/#github-set-up
+[git-exercises]:../NewMembers/reading-exercises#exercises-to-work-through

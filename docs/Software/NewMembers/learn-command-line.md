@@ -2,7 +2,7 @@
 id: command-line-basics
 title: Command Line Basics
 sidebar_label: Command Line Basics
-sidebar_position: 5
+sidebar_position: 3
 ---
 
 import Link from '@docusaurus/Link';
@@ -37,6 +37,12 @@ path/to/dir
 ./path/to/dir
 ```
 
+
+## Editing files
+
+Sometimes when working on remote servers, we need to be able to do some basic file editing. Since not all GUI-based text editors can do this, it is useful to know how to do this through the command line. Check out one of the popular editors (e.g. [vim](https://www.vim.org/), [emacs](https://www.gnu.org/software/emacs/), [nano](https://www.nano-editor.org/))
+
+- [A fun game for learning Vim](https://vim-adventures.com/)
 
 ## Useful Shell/GNU commands for biochemists to know
 
