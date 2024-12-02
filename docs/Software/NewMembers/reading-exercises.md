@@ -38,8 +38,10 @@ sidebar_position: 1
     * An introduction to using [plotter][plotter]
 1. ["Linux for Biologists" workshop][linux-for-biologists]
     * An introduction to basic shell scripting
-1. [Learning Git][git-exercise]
-    * Understanding how branching and merging in git
+1. Learning Git
+    * Using Github Desktop [video tutorial](https://www.youtube.com/watch?v=8Dd7KRpKeaE)
+    * Understanding how branching and merging in git [interactive exercise][git-exercise]
+    * It's also important you learn to write [good commit messages and titles](https://www.freecodecamp.org/news/how-to-write-better-git-commit-messages/)
 
 ### Optional bonus resources
 1. [RSE Training](https://us-rse.org/wg/education_training/training/)
