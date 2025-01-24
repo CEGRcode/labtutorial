@@ -78,9 +78,9 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'General/index',
+            docId: 'General/FigureMaking/index',
             position: 'left',
-            label: 'Publication Checklist',
+            label: 'General',
           },
           {
             type: 'doc',

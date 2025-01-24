@@ -1,13 +1,13 @@
 ---
-id: index
-title: Introduction
-sidebar_label: Introduction
+title: Heatmap & Composite Styling
+sidebar_label: Figure Making
 sidebar_position: 1
 ---
 
-# Figure-making checklist
+<!-- sidebar_label: Styling Heatmaps & Composites -->
+<!-- id: heatmap-composite-styling -->
 
-## Heatmap plot styling checklist
+## Heatmap checklist
 
 Use ScriptManager's [heatmap labeler][label-heatmap] for convenient and bulk-style labeling of heatmaps with the following info
 
@@ -26,22 +26,22 @@ Use ScriptManager's [heatmap labeler][label-heatmap] for convenient and bulk-sty
   - Example: **Reb1 ChIP-exo (12141)**
   - Example: **Sua7 PIP-seq (28576)**
 
-## Composite plot styling checklist
+## Composite checklist
 
 Use [plotter][plotter] to create SVG-style composite figures for presentations and publications. Don't forget to save it as JSON too for your records!
 
-- [ ] legend: label datasets with descriptive names to show which color indicates which
-- [ ] title
-- [ ] x-axis: axis label (RefPT) and range (left, mid, and right bounds)
-- [ ] y-axis: axis label (units, usually "AU" for "Arbitrary units") and range
+- [ ] **legend:** label datasets with descriptive names to show which color indicates which
+- [ ] **title**
+- [ ] **x-axis:** axis label (RefPT) and range (left, mid, and right bounds)
+- [ ] **y-axis:** axis label (units, usually "AU" for "Arbitrary units"/"Abstract units") and range
   - range is automatically taken care of if you use plotter
-  - A common label is "Occupancy (AU)"
-- [ ] n sites (N=XXXXX) summarized by composite
+  - A common label is **Occupancy (AU)**
+- [ ] **n sites (N=XXXXX)** summarized by composite
   - i.e. how many BED coordinates are these composites averaging from (lines in BED file)
-- [ ] normalization label
+- [ ] **normalization** label
   - indicate normalization strategy used (NCIS, Total Tag, NFR strategy)
-- [ ] IgG if appropriate (if not sure, just include it)
-- [ ] check for optimal layer order
+- [ ] **IgG** if appropriate (if not sure, just include it)
+- [ ] check for optimal **layer order**
   - make sure composites aren't hiding behind each other so you can see them all
 
 [plotter]: https://github.com/CEGRcode/plotter
