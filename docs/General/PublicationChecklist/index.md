@@ -39,7 +39,7 @@ When you have a PMID for the new manuscript, go through and once more check...
 - Advertise!
   - [ ] Fill in [Submit Data form](https://www.yeastgenome.org/submitData) on SGD's website (makes sure paper is prioritized in curation)
   - [ ] Consider writing a summary of the work for SGD to write a [Research Spotlight](https://www.yeastgenome.org/blog/category/research-spotlight) on the paper
-  - [ ] Tweet about it [@ThePughLab](https://twitter.com/thepughlab?lang=en)
+  - [ ] Social media posts (Instagram? Bluesky? Reddit? where do people post about it these days?)
   - [ ] Update Frank/Will's [My Bibliography (NCBI)](https://www.ncbi.nlm.nih.gov/sites/myncbi/benjamin.pugh.1/bibliography/40517395/public/?sort=date&direction=descending)
   - [ ] Update [Lab Website](http://pughlab.mbg.cornell.edu/) as appropriate
   - [ ] Update YOUR links (NCBI My Bibliography, personal website, CV/Resume)
