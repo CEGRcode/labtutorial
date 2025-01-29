@@ -1,7 +1,7 @@
 ---
 title: Publication Checklist
 sidebar_label: Publication Checklist
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 *last updated Oct 16, 2022 by Olivia for the Mittal et al, 2022 SAGA paper*
@@ -38,7 +38,7 @@ When you have a PMID for the new manuscript, go through and once more check...
   - [ ] Clean up files and archive under appropriate directory (`03_Disclosures/4_Manuscripts/4_Published/...`)
 - Advertise!
   - [ ] Fill in [Submit Data form](https://www.yeastgenome.org/submitData) on SGD's website (makes sure paper is prioritized in curation)
-  - [ ] Consider writing a summary of the work for SGD to write a [Research Spotlight](https://www.yeastgenome.org/blog/category/research-spotlight) on the paper
+  - [ ] (For yeast papers) Consider writing a summary of the work for SGD to write a [Research Spotlight](https://www.yeastgenome.org/blog/category/research-spotlight) on the paper
   - [ ] Social media posts (Instagram? Bluesky? Reddit? where do people post about it these days?)
   - [ ] Update Frank/Will's [My Bibliography (NCBI)](https://www.ncbi.nlm.nih.gov/sites/myncbi/benjamin.pugh.1/bibliography/40517395/public/?sort=date&direction=descending)
   - [ ] Update [Lab Website](http://pughlab.mbg.cornell.edu/) as appropriate

@@ -1,7 +1,7 @@
 ---
 title: Heatmap & Composite Styling
 sidebar_label: Figure Making
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 <!-- sidebar_label: Styling Heatmaps & Composites -->
