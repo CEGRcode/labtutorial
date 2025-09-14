@@ -63,4 +63,4 @@ The following Youtube video series from DrawBioMed are more molecular biology-sp
 * [Eppendorf tube](https://www.youtube.com/watch?v=OOPBfJiCiJ0&list=PLLwKCHa0QD1ofIVo6B8aaN2wGrwLpIDFI&index=59)
 * [Lungs](https://www.youtube.com/watch?v=NkIZVHwbhAs&list=PLLwKCHa0QD1ofIVo6B8aaN2wGrwLpIDFI&index=64)
 * [Mouse brain](https://www.youtube.com/watch?v=vGWkGn9ET_M&list=PLLwKCHa0QD1ofIVo6B8aaN2wGrwLpIDFI&index=66)
-* [DNA spiral](https://www.youtube.com/watch?v=tgkA1nrgSLA&list=PLLwKCHa0QD1ofIVo6B8aaN2wGrwLpIDFI&index=71)
+* [DNA spiral](https://www.youtube.com/watch?v=-4f7wsZCaZE)
