@@ -1,5 +1,5 @@
 ---
-title: Heatmap & Composite Styling
+title: Figure Making Guidelines & Checklists
 sidebar_label: Figure Making
 sidebar_position: 2
 ---
@@ -7,7 +7,19 @@ sidebar_position: 2
 <!-- sidebar_label: Styling Heatmaps & Composites -->
 <!-- id: heatmap-composite-styling -->
 
-## Heatmap checklist
+## General figure-making rules
+
+- Use RGB mode, not CMYK (in Adobe Illustrator, File > Document Color Mode > RGB Color)
+  - CMYK mode will mute colors which can have consequences on figure clarity
+  - Most people read manuscripts in their digital form so we want things optimized for the screen
+- Artboards:
+  - Use **letter sized**, do not change to custom dimensions. This makes it easier to see how the figure will be sized in the manuscript
+- Minimum font size: 8pt
+- Text should not overlap other lines for clarity and readability
+
+## Heatmap & Composite Styling
+
+### Heatmap styling
 
 Use ScriptManager's [heatmap labeler][label-heatmap] for convenient and bulk-style labeling of heatmaps with the following info
 
@@ -26,7 +38,7 @@ Use ScriptManager's [heatmap labeler][label-heatmap] for convenient and bulk-sty
   - Example: **Reb1 ChIP-exo (12141)**
   - Example: **Sua7 PIP-seq (28576)**
 
-## Composite checklist
+### Composite styling
 
 Use [plotter][plotter] to create SVG-style composite figures for presentations and publications. Don't forget to save it as JSON too for your records!
 
